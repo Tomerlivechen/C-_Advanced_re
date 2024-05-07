@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tomer\Documents\GitHub\C-_Advanced\Taki_Game\obj\Debug\net8.0-windows\
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Taki_Game\obj\Debug\net8.0-windows\
 Taki_Game
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\tomer\Documents\GitHub\C-_Advanced\Taki_Game\App.xaml
-52112108661
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Taki_Game\App.xaml
+51100466131
 
-11-1298734904
-199-957364305
-IndexWindow.xaml;MainWindow.xaml;Resources\Controls\SelectColor.xaml;Resources\Controls\Taki_Card.xaml;Resources\Windows\Help.xaml;
+11-1203257674
+1991593764455
+Resources\Controls\SelectColor.xaml;Resources\Controls\Taki_Card.xaml;Resources\Windows\Help.xaml;Resources\Windows\IndexWindow.xaml;Resources\Windows\MainWindow.xaml;
 
-True
+False
 

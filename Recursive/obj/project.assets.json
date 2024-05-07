@@ -8,20 +8,25 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tomer\\.nuget\\packages\\": {}
+    "C:\\Users\\tomer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Recursive\\Recursive.csproj",
+      "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj",
       "projectName": "Recursive",
-      "projectPath": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Recursive\\Recursive.csproj",
+      "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj",
       "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Recursive\\obj\\",
+      "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
@@ -69,7 +74,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

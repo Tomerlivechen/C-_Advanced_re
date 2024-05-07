@@ -13,7 +13,8 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\tomer\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tomer\\.nuget\\packages"
+      "C:\\Users\\tomer\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts.csproj": {}
+    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts.csproj": {
+    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts.csproj",
+        "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts.csproj",
         "projectName": "Animal_Facts",
-        "projectPath": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts.csproj",
+        "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts.csproj",
         "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\obj\\",
+        "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

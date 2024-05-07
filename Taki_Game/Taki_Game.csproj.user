@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="IndexWindow.xaml.cs">
+    <Compile Update="Resources\Windows\IndexWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Resources\Controls\SelectColor.xaml.cs">
@@ -18,10 +18,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="IndexWindow.xaml">
+    <Page Update="Resources\Windows\IndexWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Resources\Windows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Controls\SelectColor.xaml">
