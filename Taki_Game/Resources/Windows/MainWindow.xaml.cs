@@ -43,7 +43,7 @@ namespace Taki_Game
         }
         public void updatePlayer()
         {
-            player_num.Content = GlobalVars.player.ToString();
+            player_num.Content = $"Player {GlobalVars.player.ToString()}:";
 
                 setPlayer = GlobalVars.player;
 
@@ -51,16 +51,20 @@ namespace Taki_Game
                 {
                     case 1:
                         UpdateCardSet(Game.player1);
+                    player_num.Content += Game.player1.name;
                         break;
                     case 2:
                         UpdateCardSet(Game.player2);
-                        break;
+                    player_num.Content += Game.player2.name;
+                    break;
                     case 3:
                         UpdateCardSet(Game.player3);
-                        break;
+                    player_num.Content += Game.player3.name;
+                    break;
                     case 4:
                         UpdateCardSet(Game.player4);
-                        break;
+                    player_num.Content += Game.player4.name;
+                    break;
                     default: break;
                 }
             
@@ -83,10 +87,12 @@ namespace Taki_Game
                         if (GlobalVars.TakiActive == true)
             {
                 Close_Taki.Visibility = Visibility.Visible;
+                End_turn.Visibility = Visibility.Visible;
             }
             if(GlobalVars.TakiActive == false)
             {
                 Close_Taki.Visibility = Visibility.Collapsed;
+                End_turn.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -154,6 +160,11 @@ namespace Taki_Game
         private void Close_Taki_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.closeTaki();
+            GlobalVars.nextPlayer();
+        }
+
+        private void Close_End_turn(object sender, RoutedEventArgs e)
+        {
             GlobalVars.nextPlayer();
         }
     }

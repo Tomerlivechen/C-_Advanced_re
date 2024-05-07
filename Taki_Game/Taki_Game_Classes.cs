@@ -118,6 +118,7 @@ namespace Taki_Game
                     if (this.val == "2+")
                     {
                         MessageBox.Show("Impossible move", "Impossible move");
+                        return;
                     }
                 }
                 else
@@ -330,6 +331,7 @@ namespace Taki_Game
             }
             GlobalVars.nextCardOutStack(GlobalVars.activeDeck[0]);
             GlobalVars.activeDeck.Remove(GlobalVars.activeDeck[0]);
+            GlobalVars.closeTaki();
         }
 
         public static void GetCards(Player_class player)
@@ -343,10 +345,7 @@ namespace Taki_Game
 
         public static void DrawCard(Player_class player, bool inTurn=false)
         {
-            if (GlobalVars.TakiActive == true)
-            {
-                GlobalVars.closeTaki();
-            }
+
             if (GlobalVars.activeDeck.Count <= 1)
             {
                 reShuffleStack();
@@ -768,7 +767,6 @@ namespace Taki_Game
 
         public static void nextPlayer(bool skip = false)
         {
-            GlobalVars.closeTaki();
             if (player == 0)
             {
                 player = 1;
@@ -791,7 +789,7 @@ namespace Taki_Game
             player += index;
             if (player <= 0)
             {
-                player = NumOfPlayers - player;
+                player = NumOfPlayers + player;
                 playerTurnMessage();
                 return;
             }

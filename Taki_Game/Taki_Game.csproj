@@ -60,6 +60,7 @@
     <None Remove="Resources\Images\R_Plus.png" />
     <None Remove="Resources\Images\R_Stop.png" />
     <None Remove="Resources\Images\R_Taki.png" />
+    <None Remove="Resources\Images\Table_Top.png" />
     <None Remove="Resources\Images\Taki.png" />
     <None Remove="Resources\Images\Y_1.png" />
     <None Remove="Resources\Images\Y_2+.png" />
@@ -234,6 +235,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\R_Taki.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Table_Top.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Taki.png">
