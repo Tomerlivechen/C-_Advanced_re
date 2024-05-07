@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Advanced_Lesson_5/1.0.0": {
+        "dependencies": {
+          "ClassLibrary_Advanced_Lesson_5": "1.0.0"
+        },
+        "runtime": {
+          "Advanced_Lesson_5.dll": {}
+        }
+      },
+      "ClassLibrary_Advanced_Lesson_5/1.0.0": {
+        "runtime": {
+          "ClassLibrary_Advanced_Lesson_5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Advanced_Lesson_5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibrary_Advanced_Lesson_5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

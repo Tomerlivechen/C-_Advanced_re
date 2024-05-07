@@ -1,0 +1,15 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\bin\Debug\net8.0\Lesson_5_Classwork.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\bin\Debug\net8.0\Lesson_5_Classwork.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\bin\Debug\net8.0\Lesson_5_Classwork.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\bin\Debug\net8.0\Lesson_5_Classwork.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\bin\Debug\net8.0\Lesson_5_Classwork.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\refint\Lesson_5_Classwork.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\Lesson_5_Classwork.genruntimeconfig.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Lesson_5_Classwork\obj\Debug\net8.0\ref\Lesson_5_Classwork.dll

@@ -1,0 +1,83 @@
+﻿<Window x:Class="WpfApp_Lesson2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:WpfApp_Lesson2.Resources.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <!--Main Menu-->
+            <Menu Grid.Row="0" FontSize="20">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Close"/>
+                </MenuItem>
+                <MenuItem Header="_View">
+                    <MenuItem Header="_Close"/>
+                </MenuItem>
+            </Menu>
+            <!--Header-->
+
+            <controls:Header Grid.Row="1" />
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Name="LeftPanel" Width="Auto"/>
+                    <ColumnDefinition Name="RighttPanel" Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <!--Costumer list-->
+                <Grid Grid.Column="0" Background="DarkGray" Name="CostumerListMainGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                  
+                    
+                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+                        <Button Margin="4,5,2,2" Height="20">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Resources/Images/Plus.png" Width="18" Margin="2"/>
+                                <TextBlock Text="Add" VerticalAlignment="Bottom"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Height="20" Margin="4,5,2,2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                            <TextBlock Text="Delete" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                        </Button>
+                        <Button Height="20" Margin="4,5,2,2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="SwitchButton_Click">
+                            <TextBlock Text="&#x1F844; &#x1F846;" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+
+                    <ListView Margin="5,5,5,5" Grid.Row="1" FontSize="18" Width="120" Name="CostumerlistView" >
+                        <ListViewItem Content="Julia"></ListViewItem>
+                        <ListViewItem Content="Alex"></ListViewItem>
+                        <ListViewItem Content="Thomas"></ListViewItem>
+                    </ListView>
+                </Grid>
+                <!--Costumer Form-->
+                <StackPanel Name="CostumerFormMainStack" Orientation="Vertical" Grid.Column="1">
+                    <Label Content="First Name:" VerticalAlignment="Center" Margin="15,15,5,05"></Label>
+                    <TextBox Margin="15,0,20,5" Text="{Binding ElementName=CostumerlistView, Path=SelectedItem.Content, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    <Label Content="Last Name:" VerticalAlignment="Center" Margin="15,5,5,05"></Label>
+                    <TextBox Margin="15,0,20,5"></TextBox>
+                    <StackPanel Orientation="Horizontal" Margin="15,0,20,5">
+                        <CheckBox VerticalAlignment="Center"></CheckBox>
+                        <Label Content="Is Deveoper" VerticalAlignment="Center" Margin="5,5,5,05"></Label>
+                    </StackPanel>
+                </StackPanel>
+                
+            </Grid>
+            <!--Footer-->
+            <StatusBar Grid.Row="3">
+                <StatusBarItem Content="Costumer App V1.4" FontSize="14"></StatusBarItem>
+            </StatusBar>
+        </Grid>
+        
+    </Grid>
+</Window>

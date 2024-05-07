@@ -1,0 +1,15 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\bin\Debug\net8.0\Classworek.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\bin\Debug\net8.0\Classworek.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\bin\Debug\net8.0\Classworek.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\bin\Debug\net8.0\Classworek.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\bin\Debug\net8.0\Classworek.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\refint\Classworek.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\Classworek.genruntimeconfig.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Classworek\obj\Debug\net8.0\ref\Classworek.dll

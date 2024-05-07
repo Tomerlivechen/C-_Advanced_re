@@ -1,0 +1,214 @@
+﻿using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using Common_Classes;
+using PriorityDefiner.Resources;
+
+using static Common_Classes.My_Message_Box_Classes;
+using static Common_Classes.Message_Box_Classes;
+using System.Collections.Generic;
+using PriorityDefiner;
+using PriorityDefiner.windows;
+using System.Diagnostics;
+
+namespace PrioratyDefiner
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class ListCreation : Window
+    {
+        public int listsize;
+        public List<string> textBoxes;
+
+        public ListCreation()
+        {
+            InitializeComponent();
+            DataContext = this;
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (
+                Number_of_tasks.Text != null
+                && Foolproofing.ValueVarification(1, 50, Number_of_tasks.Text)
+            )
+            {
+                int.TryParse(Number_of_tasks.Text, out listsize);
+                Submittitle.Visibility = Visibility.Hidden;
+                Number_of_tasks.Visibility = Visibility.Hidden;
+                Submit.Visibility = Visibility.Hidden;
+                Taskstitle.Visibility = Visibility.Visible;
+                tasks.Visibility = Visibility.Visible;
+                start.Visibility = Visibility.Visible;
+                for (int i = 0; i < listsize; i++)
+                {
+                    TextBox textbox = new TextBox()
+                    {
+                        Margin = new Thickness(1),
+                        Height = 30,
+                        Width = 250,
+                        FontSize = 20,
+                    };
+                    tasks.Children.Add(textbox);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Must be a number between 1 and under 50", "Error");
+            }
+        }
+
+        private void start_Click(object sender, RoutedEventArgs e)
+        {
+            if (!Check_tasks_unique())
+            {
+                textBoxes = new List<string>();
+
+                foreach (var item in tasks.Children)
+                {
+                    if (item is TextBox textBox)
+                    {
+                        textBoxes.Add(textBox.Text);
+                    }
+                }
+                run_priority();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Task Names must be unique", "Error");
+            }
+        }
+
+        public List<string> run_priority()
+        {
+            string[,] priorityMatrix = new string[listsize, listsize];
+
+            for (int i = 0; i < textBoxes.Count; i++)
+            {
+                string textvalue = textBoxes[i];
+                priorityMatrix[i, i] = textvalue;
+                for (int j = 0; j < i; j++)
+                {
+                    string secondtextvalue = textBoxes[j];
+                    if (textvalue != secondtextvalue)
+                    {
+                        string resposne = Message_Box_Classes.PiorityMesageBox(
+                            textvalue,
+                            secondtextvalue
+                        );
+                        if (resposne == textvalue)
+                        {
+                            priorityMatrix[i, j] = (textvalue);
+                        }
+                        else if (resposne == secondtextvalue)
+                        {
+                            priorityMatrix[i, j] = (secondtextvalue);
+                        }
+                    }
+                }
+            }
+
+            SortedDictionary<string, int> counts = Priority_Classes.CountValues(priorityMatrix);
+            MyTaskList taskList = new MyTaskList();
+            //taskList.Task_List = new List<MyTask>();
+            Taskstitle.Text = "Final priority list";
+            tasks.Visibility = Visibility.Hidden;
+            start.Visibility = Visibility.Hidden;
+
+            foreach (var count in counts)
+            {
+                MyTask task = new MyTask();
+                task.priority = count.Value;
+                task.task = count.Key;
+                taskList.Task_List.Add(task);
+            }
+            GlobalVars.SortThisTaskList(taskList);
+            GlobalVars.addlist(taskList);
+            GlobalVars.SaveTasklists();
+
+            foreach (MyTaskList item in GlobalVars.allTaskLists.listOfLists)
+            {
+                if (taskList.TaskListName == item.TaskListName)
+                {
+                    Show_list show_List = new Show_list(item);
+                    show_List.ShowDialog();
+                }
+            }
+
+            //string[] keysArray = counts.Keys.ToArray();
+
+            //int index = 0;
+            //for (int i = keysArray.Length; i >=1 ; i--)
+            //    {
+            //    index++;
+            //    string task = counts.FirstOrDefault(x => x.Value == i).Key;
+            //    Final_List.Text += $" {index}.{task} \n";
+            //    }
+
+
+
+            return null;
+        }
+
+        //public bool askForPriority(string priority1, string priority2)
+        //{
+        //    Func<bool> priority1Answer=() => true;
+
+        //    Func<bool> priority2Answer = () => false; ;
+
+
+        //    MYMessageBoxobject askpriority = new MYMessageBoxobject(
+        //        "Prioritize",
+        //        "Which of these two is higher priority",
+        //        new string[] { priority1, priority2 },
+        //        new bool[] { true, false },
+        //        new Delegate[] { priority1Answer, priority2Answer }
+        //    );
+
+
+        //    CustomeMessagebox window = new CustomeMessagebox(askpriority);
+        //    window.ShowDialog();
+        //    int selectedIndex = window.SelectedButtonIndex;
+
+
+        //    if (selectedIndex == 0)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
+        public bool Check_tasks_unique()
+        {
+            foreach (TextBox item in tasks.Children)
+            {
+                int index = 0;
+
+                foreach (TextBox task in tasks.Children)
+                {
+                    if (item.Text == task.Text)
+                    {
+                        index++;
+                        if (index >= 2)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+    }
+}

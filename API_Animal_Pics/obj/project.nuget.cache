@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lOcmPLvUR5Xs7ngBkB5ajFrOXIO0u3gpWUSqjHzssfQKXNKajaFoYcVPiXYAbTeQ1MAQQJBp4TKqYOXP56oXaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\API_Animal_Pics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tomer\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

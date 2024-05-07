@@ -1,0 +1,15 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\bin\Debug\net8.0\Delegats&events.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\bin\Debug\net8.0\Delegats&events.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\bin\Debug\net8.0\Delegats&events.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\bin\Debug\net8.0\Delegats&events.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\bin\Debug\net8.0\Delegats&events.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\refint\Delegats&events.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\Delegats&events.genruntimeconfig.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Delegats&events\obj\Debug\net8.0\ref\Delegats&events.dll

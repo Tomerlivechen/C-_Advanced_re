@@ -1,0 +1,33 @@
+[
+  {
+    "Name": "Task 1",
+    "Description": "Complete project report",
+    "Priority": 1,
+    "Active": true
+  },
+  {
+    "Name": "Meeting with client",
+    "Description": "Discuss project updates",
+    "Priority": 2,
+    "Active": false
+  },
+  {
+    "Name": "Prepare presentation",
+    "Description": "Gather data and create slides",
+    "Priority": 3,
+    "Active": true
+  },
+  {
+    "Name": "Review code",
+    "Description": "Check for bugs and optimize",
+    "Priority": 2,
+    "Active": true
+  },
+  {
+    "Name": "Training session",
+    "Description": "Attend workshop on new technology",
+    "Priority": 1,
+    "Active": false
+  }
+
+]

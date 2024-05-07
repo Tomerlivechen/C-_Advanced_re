@@ -1,0 +1,34 @@
+﻿<Window x:Class="Advanced_Lesson_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Advanced_Lesson_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition Height="auto">
+
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Grid.Row ="1" Content="Work" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" Click="WorkButton_Click"/>
+        <DataGrid Grid.Column="0" Name ="GridItems" Margin="5" AutoGenerateColumns="False" ColumnWidth="auto" Grid.ColumnSpan="3">
+        <DataGrid.Columns >
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}"/>
+                <DataGridTextColumn Header="Priority" Binding="{Binding Priority}"/>
+                <DataGridCheckBoxColumn Header="Active" Binding="{Binding Active}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

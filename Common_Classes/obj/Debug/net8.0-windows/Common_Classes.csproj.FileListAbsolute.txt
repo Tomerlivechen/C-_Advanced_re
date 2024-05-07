@@ -1,0 +1,38 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\High_score.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\Input_box.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes_MarkupCompile.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes_MarkupCompile.lref
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\High_score.baml
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\Input_box.baml
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.g.resources
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\refint\Common_Classes.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Common_Classes\obj\Debug\net8.0-windows\ref\Common_Classes.dll
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.deps.json
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.dll
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\bin\Debug\net8.0-windows\Common_Classes.pdb
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\High_score.g.cs
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\Input_box.g.cs
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes_MarkupCompile.cache
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes_MarkupCompile.lref
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\High_score.baml
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Elements\Input_box.baml
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.g.resources
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.AssemblyInfo.cs
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.sourcelink.json
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.dll
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\refint\Common_Classes.dll
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\Common_Classes.pdb
+C:\Users\tomer\Documents\GitHub\C-_Advanced\Common_Classes\obj\Debug\net8.0-windows\ref\Common_Classes.dll

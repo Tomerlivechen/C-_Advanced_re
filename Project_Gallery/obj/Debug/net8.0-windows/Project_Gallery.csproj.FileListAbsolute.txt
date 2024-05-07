@@ -1,0 +1,8 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery.csproj.AssemblyReference.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Controles\CustomeMessagebox.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Controles\MessageBox_.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Controles\ProjectButton.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery_MarkupCompile.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery_MarkupCompile.lref

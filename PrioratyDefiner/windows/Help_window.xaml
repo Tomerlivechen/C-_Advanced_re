@@ -1,0 +1,22 @@
+﻿<Window x:Class="PriorityDefiner.windows.Help_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PriorityDefiner.windows"
+        mc:Ignorable="d"
+        Title="Help_window" Height="350" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="About the application" FontSize="23" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" Text ="This application was developed to organize and prioritize tasks in task lists. It uses object-oriented programming in WPF, a custom input box, a customized message box structure, a simplified interaction with message box responses, and works with a JSON data frame to save and retrieve data from a file."/>
+    </Grid>
+</Window>

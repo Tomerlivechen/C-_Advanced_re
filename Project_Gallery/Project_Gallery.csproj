@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\add user.png" />
+    <None Remove="Resources\IndexImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API_In_WPF\API_In_WPF.csproj" />
+    <ProjectReference Include="..\Common_Classes\Common_Classes.csproj" />
+    <ProjectReference Include="..\First_project\First_project.csproj" />
+    <ProjectReference Include="..\Memory_game\Memory_game.csproj" />
+    <ProjectReference Include="..\PrioratyDefiner\PriorityDefiner.csproj" />
+    <ProjectReference Include="..\System_manager\System_manager.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\add user.png" />
+    <Resource Include="Resources\IndexImage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

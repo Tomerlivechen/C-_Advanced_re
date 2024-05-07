@@ -1,0 +1,15 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\bin\Debug\net8.0\Advanced_Lesson_3_HW.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\bin\Debug\net8.0\Advanced_Lesson_3_HW.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\bin\Debug\net8.0\Advanced_Lesson_3_HW.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\bin\Debug\net8.0\Advanced_Lesson_3_HW.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\bin\Debug\net8.0\Advanced_Lesson_3_HW.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\refint\Advanced_Lesson_3_HW.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\Advanced_Lesson_3_HW.genruntimeconfig.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced\Advanced_Lesson_3_HW\obj\Debug\net8.0\ref\Advanced_Lesson_3_HW.dll
