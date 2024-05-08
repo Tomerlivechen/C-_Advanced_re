@@ -110,6 +110,29 @@ namespace Taki_Game
 
         public void PlayCard()
         {
+            if (GlobalVars.Plus2Active && this.val != "2+")
+            {
+                if (GlobalVars.Plus2Active == true)
+                {
+                    GlobalVars.Plus2Active = false;
+                    switch (GlobalVars.player)
+                    {
+                        case 1:
+                            Game.PeneltyDraw(Game.player1);
+                            break;
+                        case 2:
+                            Game.PeneltyDraw(Game.player2);
+                            break;
+                        case 3:
+                            Game.PeneltyDraw(Game.player3);
+                            break;
+                        case 4:
+                            Game.PeneltyDraw(Game.player4);
+                            break;
+                        default: break;
+                    }
+                }
+            }
             if (GlobalVars.TakiActive)
             {
                 if (this.color == GlobalVars.TakiColor)

@@ -119,6 +119,11 @@ namespace Taki_Game
 
         private void Deck_Click(object sender, RoutedEventArgs e)
         {
+            if (GlobalVars.TakiActive)
+            {
+                MessageBox.Show("Impossible move", "Impossible move");
+                return;
+            }
             if (GlobalVars.Plus2Active == true)
             {
                 GlobalVars.Plus2Active = false;
