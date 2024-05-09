@@ -200,13 +200,38 @@ namespace Animal_Facts
         public string Measurement_15 { get; set; }
 
 
-        public class Empty_
-        {
-            public string Name { get; set; } = "Nothig found";
-            public string title { get; set; } = "Nothig found";
-        }
 
 
 
     }
+    public class Empty_
+    {
+        public string Name { get; set; } = "Nothig found";
+        public string title { get; set; } = "Nothig found";
+    }
+
+    public static class Extensions
+    {
+        public static string FirstLetterToUpper(this string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+
+                return input;
+            }
+
+            return char.ToUpper(input[0]) + input.Substring(1).ToLower();
+        }
+
+        public static string RemoveUnderlines(this string input)
+        {
+            return input.Replace('_', ' ');
+        }
+
+        public static string Makelable(this string input)
+        {
+            return input.RemoveUnderlines().FirstLetterToUpper();
+        }
+    }
+
 }

@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Controls;
+using Taki_Game.Resources.Classes;
 
 
 namespace Taki_Game.Resources.Controls

@@ -11,6 +11,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Taki_Game.Resources.Controls;
+using static System.Net.Mime.MediaTypeNames;
+using Taki_Game.Resources.Classes;
 
 namespace Taki_Game
 {
@@ -31,6 +33,8 @@ namespace Taki_Game
             Game.StartGame(players);
             timer1.Start();
             timer1.Tick += visualUpdates;
+
+
         }
 
         private void visualUpdates(object? sender, EventArgs e)
@@ -39,35 +43,36 @@ namespace Taki_Game
             ClosingTaki();
             updatePlayer();
             updateStackSet();
+            updatePlus2();
+            if (Panel.GetZIndex(Table) != 0){
+                Panel.SetZIndex(Table, 0); }
+            if (GlobalVars.Win)
+            {
+                timer1.Stop();
+            }
 
         }
         public void updatePlayer()
         {
-            player_num.Content = $"Player {GlobalVars.player.ToString()}:";
-
+            if (Game.players_list.Count > 0)
+            {
+                player_num.Content = $"Player {GlobalVars.player.ToString()}:";
                 setPlayer = GlobalVars.player;
+                UpdateCardSet(Game.players_list[GlobalVars.player - 1]);
+                player_num.Content += Game.players_list[GlobalVars.player - 1].name;
+            }
+        }
 
-                switch (GlobalVars.player)
-                {
-                    case 1:
-                        UpdateCardSet(Game.player1);
-                    player_num.Content += Game.player1.name;
-                        break;
-                    case 2:
-                        UpdateCardSet(Game.player2);
-                    player_num.Content += Game.player2.name;
-                    break;
-                    case 3:
-                        UpdateCardSet(Game.player3);
-                    player_num.Content += Game.player3.name;
-                    break;
-                    case 4:
-                        UpdateCardSet(Game.player4);
-                    player_num.Content += Game.player4.name;
-                    break;
-                    default: break;
-                }
-            
+        public void updatePlus2() { 
+        if (GlobalVars.Plus2Active)
+            {
+                penalty.Visibility = Visibility.Visible;
+                penalty.Content = $"+2 Penalty {GlobalVars.Plus2Accumulation.ToString()}";
+            }
+            else
+            {
+                penalty.Visibility = Visibility.Collapsed;
+            }
         }
 
 
@@ -127,39 +132,10 @@ namespace Taki_Game
             if (GlobalVars.Plus2Active == true)
             {
                 GlobalVars.Plus2Active = false;
-                switch (GlobalVars.player)
-                {
-                    case 1:
-                        Game.PeneltyDraw(Game.player1);
-                        break;
-                    case 2:
-                        Game.PeneltyDraw(Game.player2);
-                        break;
-                    case 3:
-                        Game.PeneltyDraw(Game.player3);
-                        break;
-                    case 4:
-                        Game.PeneltyDraw(Game.player4);
-                        break;
-                    default: break;
-                }
+                Game.PeneltyDraw(Game.players_list[GlobalVars.player - 1]);
+                return;
             }
-            switch (GlobalVars.player)
-            {
-                case 1:
-                    Game.DrawCard(Game.player1, true);
-                    break;
-                case 2:
-                    Game.DrawCard(Game.player2, true);
-                    break;
-                case 3:
-                    Game.DrawCard(Game.player3, true);
-                    break;
-                case 4:
-                    Game.DrawCard(Game.player4, true);
-                    break;
-                    default: break;
-            }
+            Game.DrawCard(Game.players_list[GlobalVars.player - 1], true);
         }
 
         private void Close_Taki_Click(object sender, RoutedEventArgs e)

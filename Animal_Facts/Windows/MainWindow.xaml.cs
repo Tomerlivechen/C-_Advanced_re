@@ -38,9 +38,9 @@ namespace Animal_Facts
 
         async void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            
             string name = TB_Name.Text.ToString();
-            if (name != null || name != "")
+            if (!string.IsNullOrEmpty(name) && !string.IsNullOrWhiteSpace(name))
             {
                 int API_Type = Get_Api();
 
@@ -76,11 +76,11 @@ namespace Animal_Facts
                     ListDataGrid.ItemsSource = usersReponse;
                     Binding_Column.Binding = new System.Windows.Data.Binding("Name");
                 }
-                if (ListDataGrid.ItemsSource == null)
-                {
-                    List<Empty_> empty = new List<Empty_>();
-                    ListDataGrid.ItemsSource = empty;
-                }
+
+            }
+            if (ListDataGrid.ItemsSource == null)
+            {
+                MessageBox.Show("Nothing found", "Nothing found");
             }
         }
 

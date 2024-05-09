@@ -49,7 +49,7 @@ namespace Animal_Facts.Windows
                 if (prop.GetValue(animal.taxonomy) != null)
                 {
                     TextBlock textBlock = new TextBlock();
-                    textBlock.Text = $"{index}{prop.Name.ToUpper()} : {prop.GetValue(animal.taxonomy)}";
+                    textBlock.Text = $"{index}{prop.Name.Makelable()} : {prop.GetValue(animal.taxonomy)}";
                     textBlock.FontSize = 20;
                     Taxomony_Stack.Children.Add(textBlock);
                     index += "  ";
@@ -63,7 +63,7 @@ namespace Animal_Facts.Windows
                 if (prop.GetValue(animal.characteristics) != null)
                 {
                     TextBlock textBlock = new TextBlock();
-                    textBlock.Text = $"    {prop.Name.ToUpper()} : {prop.GetValue(animal.characteristics)}";
+                    textBlock.Text = $"    {prop.Name.Makelable()} : {prop.GetValue(animal.characteristics)}";
                     textBlock.FontSize = 20;
                     Characteristics_Stack.Children.Add(textBlock);
                 }

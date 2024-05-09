@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Taki_Game.Resources.Windows;
+using Taki_Game.Resources.Classes;
 
 namespace Taki_Game
 {

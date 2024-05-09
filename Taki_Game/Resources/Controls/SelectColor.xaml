@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Taki_Game.Resources.Controls"
         mc:Ignorable="d"
-        Title="SelectColor" Height="99" Width="164">
+        Title="SelectColor" Height="99" Width="164" Name="Color_Window">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

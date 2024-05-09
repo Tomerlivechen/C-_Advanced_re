@@ -77,7 +77,7 @@ namespace Animal_Facts.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Animal_Facts;V1.0.0.0;component/windows/cocktail_recipes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Animal_Facts;component/windows/cocktail_recipes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\Cocktail_recipes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

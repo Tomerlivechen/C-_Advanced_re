@@ -30,7 +30,7 @@
             <StackPanel Name="Taxomony_Stack" Grid.Row="3" Grid.Column="0" Margin="5" Grid.ColumnSpan="2">
                 
             </StackPanel>
-            <Label Grid.Row="4" Grid.Column="0"  FontSize="25" Margin="5" Content="characteristics:" VerticalAlignment="Center"/>
+            <Label Grid.Row="4" Grid.Column="0"  FontSize="25" Margin="5" Content="Characteristics:" VerticalAlignment="Center"/>
             <StackPanel Name="Characteristics_Stack" Grid.Row="5" Grid.Column="0" Margin="5" Grid.ColumnSpan="3">
 
             </StackPanel>

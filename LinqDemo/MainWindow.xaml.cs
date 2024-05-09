@@ -31,7 +31,68 @@ namespace LinqDemo
             AddButtons("GetID1", GetID1_M, GetID1_S);
             AddButtons("OrderByPrice", OrderByPrice_M, OrderByPrice_S);
             AddButtons("OrderByPriceAndName", OrderByCategoryAndName_M, OrderByCategoryAndName_S);
+            AddButtons("First Letter To Upper", FirstletterToUpper_M, FirstletterToUpper_S);
+            AddButtons("Filter", Filter_M, Filter_S);
+            AddButtons("Filter", First_M, First_S);
+            AddButtons("Take", Take_M, Taket_M2);
 
+
+
+
+        }
+
+        private void    Take_M(object sender, RoutedEventArgs e)
+        {
+            var result = RawProductList.Take(4..12);
+            resultsDataGrid.ItemsSource =  result ;
+        }
+
+
+        private void Taket_M2(object sender, RoutedEventArgs e)
+        {
+            var result = RawProductList.Take(^13..^1);
+            resultsDataGrid.ItemsSource = result;
+        }
+
+        private void First_M(object sender, RoutedEventArgs e)
+        {
+            var result = RawProductList.OrderBy(product => product.Name)
+                .FirstOrDefault();
+            resultsDataGrid.ItemsSource = new List<Product>() { result };
+        }
+
+
+        private void First_S(object sender, RoutedEventArgs e)
+        {
+            var result = (from Product in RawProductList orderby Product.Price select Product).FirstOrDefault();
+
+            resultsDataGrid.ItemsSource = new List<Product>() { result };
+        }
+        private void Filter_M(object sender, RoutedEventArgs e)
+        {
+            var result = RawProductList.Where(product => product.CategoryId == 3)
+    .Select(product => product);
+            resultsDataGrid.ItemsSource = result;
+        }
+
+
+        private void Filter_S(object sender, RoutedEventArgs e)
+        {
+        var result = from Product in RawProductList where Product.CategoryId == 3 && Product.Name.StartsWith("P") select Product;
+        resultsDataGrid.ItemsSource = result;
+    }
+        private void FirstletterToUpper_M(object sender, RoutedEventArgs e)
+        {
+            IEnumerable<Product> result = RawProductList.Select(product => new Product { Name = (product.Name.FirstLetterToUpper()), Id = product.Id, CategoryId = product.CategoryId, Price = product.Price  });
+
+            resultsDataGrid.ItemsSource = result;
+        }
+
+        private void FirstletterToUpper_S(object sender, RoutedEventArgs e)
+        {
+            IEnumerable<Product> result = from Product in RawProductList orderby Product.CategoryId, Product.Price select Product;
+
+            resultsDataGrid.ItemsSource = result;
         }
         private void OrderByCategoryAndName_M(object sender, RoutedEventArgs e)
         {

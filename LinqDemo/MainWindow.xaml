@@ -32,9 +32,9 @@
         <DataGrid Name="resultsDataGrid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" AutoGenerateColumns="True" Margin="5">
             
         </DataGrid>
-
-        <StackPanel Name="buttonStack" Grid.Column="2" Grid.Row="1"  Grid.RowSpan="3" Margin="10"></StackPanel>
-        
+        <ScrollViewer Grid.Column="2" Grid.Row="1"  Grid.RowSpan="3">
+        <StackPanel Name="buttonStack"  Margin="10"></StackPanel>
+        </ScrollViewer>
     </Grid>
     
 </Window>

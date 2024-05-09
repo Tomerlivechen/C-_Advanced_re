@@ -3,19 +3,79 @@
   "WorkspaceRootPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\takicard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\taki_game_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\controls\\selectcolor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8692854D-9E71-4590-9077-EA5DC3FFA072}|..\\Common_Classes\\Common_Classes.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\common_classes\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\indexwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\player_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\controls\\taki_card.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\controls\\taki_card.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FB96C9-3EA7-4768-B0F8-041771C16AB8}|..\\LinqDemo\\LinqDemo.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\linqdemo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FB96C9-3EA7-4768-B0F8-041771C16AB8}|..\\LinqDemo\\LinqDemo.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\linqdemo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FB96C9-3EA7-4768-B0F8-041771C16AB8}|..\\LinqDemo\\LinqDemo.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\linqdemo\\stringextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\controls\\selectcolor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\animal_facts_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\receipt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\drinks_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\cocktail_recipes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\animalfacts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AF94DA-B6F3-4958-BAAF-2257857C78E5}|..\\Animal_Facts\\Animal_Facts.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\windows\\animalfacts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2895B1-6646-4A47-A912-01B2833F7ED3}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32F23231-8D07-48D6-B3D3-697D69ADF478}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\windows\\saved_pics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -118,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +186,310 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwGYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:40:57.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Player_class.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:40:10.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Taki_Card.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T14:41:41.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TakiCard.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:36:56.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T20:55:08.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T20:50:22.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IndexWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T21:23:59.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IndexWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAADwvykAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:43:44.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SelectColor.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\SelectColor.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Controls\\SelectColor.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\SelectColor.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Controls\\SelectColor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T18:42:00.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Taki_Game_Classes.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game_Classes.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Taki_Game_Classes.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game_Classes.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Taki_Game_Classes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T20:48:21.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GlobalVars.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwBEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:42:38.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SelectColor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:43:23.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Classes.cs",
+              "RelativeDocumentMoniker": "..\\Common_Classes\\Classes.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Classes.cs",
+              "RelativeToolTip": "..\\Common_Classes\\Classes.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:33:22.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StringExtention.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\StringExtention.cs",
+              "RelativeDocumentMoniker": "..\\LinqDemo\\StringExtention.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\StringExtention.cs",
+              "RelativeToolTip": "..\\LinqDemo\\StringExtention.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:13:48.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\LinqDemo\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\LinqDemo\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:18:08.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Taki_Card.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T18:42:01.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Animal_Facts_Classes.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts_Classes.cs",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Animal_Facts_Classes.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts_Classes.cs",
+              "RelativeToolTip": "..\\Animal_Facts\\Animal_Facts_Classes.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAmwNIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:36:08.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\LinqDemo\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\MainWindow.xaml",
+              "RelativeToolTip": "..\\LinqDemo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T17:49:43.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AnimalFacts.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\AnimalFacts.xaml",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\AnimalFacts.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\AnimalFacts.xaml",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\AnimalFacts.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T15:36:15.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AnimalFacts.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\AnimalFacts.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\AnimalFacts.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\AnimalFacts.xaml.cs",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\AnimalFacts.xaml.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:42:14.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Cocktail_recipes.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Cocktail_recipes.xaml",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\Cocktail_recipes.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Cocktail_recipes.xaml",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\Cocktail_recipes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T15:52:04.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Drinks_Window.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Drinks_Window.xaml",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\Drinks_Window.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Drinks_Window.xaml",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\Drinks_Window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T15:52:07.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Receipt.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Receipt.xaml",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\Receipt.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\Receipt.xaml",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\Receipt.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T15:52:16.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\Animal_Facts\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowFAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:53:23.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\AssemblyInfo.cs",
@@ -138,31 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IndexWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
-              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
-              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T21:23:59.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
-              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAQwHwAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T20:55:08.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "Saved_pics.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
               "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
@@ -173,41 +512,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
-              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T20:50:22.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Taki_Game_Classes.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game_Classes.cs",
-              "RelativeDocumentMoniker": "..\\Taki_Game\\Taki_Game_Classes.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game_Classes.cs",
-              "RelativeToolTip": "..\\Taki_Game\\Taki_Game_Classes.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAI4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T20:48:21.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 26,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\App.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\App.xaml",
               "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\App.xaml",
               "RelativeToolTip": "..\\Taki_Game\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T20:39:09.976Z"
+              "WhenOpened": "2024-05-07T20:39:09.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "priorityOrgenizerClasses.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\PrioratyDefiner\\priorityOrgenizerClasses.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\PrioratyDefiner\\priorityOrgenizerClasses.cs",
@@ -218,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "Animal_Facts_Classes.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts_Classes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Animal_Facts\\Animal_Facts_Classes.cs",
@@ -230,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 30,
               "Title": "Api_Animal_Classes.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Api_Animal_Classes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Api_Animal_Classes.cs",
@@ -242,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 31,
               "Title": "Frogger_Classes.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Frogger_Classes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Frogger_Classes.cs",
@@ -254,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 32,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Animal_Facts\\App.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Animal_Facts\\App.xaml",
@@ -265,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 33,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\App.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\App.xaml",
@@ -276,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 27,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
@@ -288,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 34,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\App.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\App.xaml",
@@ -299,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "Saved_pics.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
@@ -311,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 36,
               "Title": "Saved_pics.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
@@ -322,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "Random_image.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Random_image.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Random_image.xaml",
@@ -333,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 38,
               "Title": "PicInFavList.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Resources\\Controls\\PicInFavList.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Resources\\Controls\\PicInFavList.xaml",
@@ -344,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 39,
               "Title": "IndexWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Windows\\IndexWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Windows\\IndexWindow.xaml.cs",
@@ -356,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 40,
               "Title": "Memory_Game_Classes.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Memory_game\\Memory_Game_Classes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Memory_game\\Memory_Game_Classes.cs",
@@ -368,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 41,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Memory_game\\App.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Memory_game\\App.xaml",
@@ -379,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 42,
               "Title": "Memory_game.csproj",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Memory_game\\Memory_game.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Memory_game\\Memory_game.csproj",
@@ -391,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 43,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Windows\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Windows\\IndexWindow.xaml",
@@ -402,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 44,
               "Title": "Help.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Windows\\Help.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Windows\\Help.xaml",
@@ -413,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 45,
               "Title": "Game_window.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Windows\\Game_window.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Windows\\Game_window.xaml.cs",
@@ -425,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 46,
               "Title": "Game_window.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Frogger\\Windows\\Game_window.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Frogger\\Windows\\Game_window.xaml",
@@ -436,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 47,
               "Title": "Help.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\Resources\\Windows\\Help.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\Resources\\Windows\\Help.xaml",
@@ -447,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 48,
               "Title": "Taki_Game.csproj",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\Taki_Game.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\Taki_Game.csproj",
@@ -459,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 49,
               "Title": "Help.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Help.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\API_Animal_Pics\\Windows\\Help.xaml",
@@ -470,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "IndexWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\IndexWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\IndexWindow.xaml.cs",
@@ -482,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 51,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\IndexWindow.xaml",
@@ -493,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 52,
               "Title": "SelectColor.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\Resources\\Controls\\SelectColor.xaml.cs",
@@ -505,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 53,
               "Title": "Taki_Game_Classes.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\Taki_Game_Classes.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\Taki_Game_Classes.cs",
@@ -517,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 54,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\MainWindow.xaml.cs",
@@ -529,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 55,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\GitHub\\C-_Advanced\\Taki_Game\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\GitHub\\C-_Advanced\\Taki_Game\\MainWindow.xaml",
