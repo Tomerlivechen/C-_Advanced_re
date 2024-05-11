@@ -11,8 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
-namespace Animal_Facts.Windows
+using API_hub.Classes;
+namespace API_hub.Windows
 {
     /// <summary>
     /// Interaction logic for Drinks_Window.xaml

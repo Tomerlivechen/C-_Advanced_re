@@ -18,7 +18,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-
+using API_Animal_Pics.Classes;
+using Common_Classes.Classes;
+using WpfAnimatedGif;
+using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Media.Animation;
 namespace API_Animal_Pics.Windows;
 
 /// <summary>
@@ -37,6 +41,7 @@ public partial class Random_image : Window
 
 
         InitializeComponent();
+        InitializeImages();
         Activated += Window_Activated;
         Closed += Window_Closed;
         timer3.Tick += Timed_03_Actions;
@@ -44,6 +49,12 @@ public partial class Random_image : Window
         timer3.Start();
     }
 
+
+    public void InitializeImages()
+    {
+
+        Loading_pic.Source = GlobalVars.SetImageForSource("Loading.png");
+    }
     public void Timed_03_Actions(object sender, EventArgs e)
     {
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FBFBFB"));
@@ -106,10 +117,17 @@ public partial class Random_image : Window
             currentPic.id = $"{width}x{hight}";
             return $"https://placebear.com/{width}/{hight}.jpg";
         }
-
-        List<AnimalPic>? json = JsonSerializer.Deserialize<List<AnimalPic>>(response);
-        currentPic = json[0];
-        return (json[0].url);
+        try
+        {
+            List<AnimalPic>? json = JsonSerializer.Deserialize<List<AnimalPic>>(response);
+            currentPic = json[0];
+            return (json[0].url);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"API Error: {ex.Message}");
+            return null;
+        }
     }
 
 

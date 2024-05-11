@@ -1,4 +1,4 @@
-﻿using Animal_Facts.Windows;
+﻿
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
@@ -12,9 +12,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
-using static Animal_Facts.Drink;
-
-namespace Animal_Facts
+using API_hub.Classes;
+using API_hub.Windows;
+namespace API_hub
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

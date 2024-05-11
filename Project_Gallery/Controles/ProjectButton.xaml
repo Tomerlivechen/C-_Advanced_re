@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Project_Gallery.Controles"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="100">
+             d:DesignHeight="150" d:DesignWidth="150">
     <Button Name="MainButton">
         <StackPanel Orientation="Vertical" Margin="5">
-            <Image Source="{Binding Image}" Width="60" Height="65"/>
+            <Image Source="{Binding Image}" Width="100" Height="100"/>
             <TextBlock Text="{Binding Name}" TextAlignment="Center"  FontSize="16" Name="ProjectName"/>
         </StackPanel>
             

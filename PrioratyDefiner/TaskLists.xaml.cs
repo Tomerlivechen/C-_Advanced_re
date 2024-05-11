@@ -16,8 +16,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using PriorityDefiner.Classes;
+using Common_Classes.Classes;
 namespace PriorityDefiner
+
 {
     /// <summary>
     /// Interaction logic for TaskLists.xaml

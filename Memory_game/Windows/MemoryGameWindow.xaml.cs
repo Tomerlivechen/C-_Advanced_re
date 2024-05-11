@@ -16,7 +16,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using static System.Formats.Asn1.AsnWriter;
-
+using Memory_game.Classes;
+using Common_Classes.Classes;
 namespace Memory_game
 {
     /// <summary>

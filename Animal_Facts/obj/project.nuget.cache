@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JVR7d8WrKqbRGnurDigDNz0DaElU9zGyvMakUrINWvhisgKJ4S4Op5peLRg4BC8N9mzI1G32s3OCNeh18Z7DXA==",
+  "dgSpecHash": "t99cWILynInpGTHncLCmr7oPL7WHmTKYk0fKtpx7BFzSES1+pbqadMfYcTfmnVhZRH0hQkoovl4SGK6wk4g+kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Animal_Facts.csproj",
+  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

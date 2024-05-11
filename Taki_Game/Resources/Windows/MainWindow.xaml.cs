@@ -28,7 +28,7 @@ namespace Taki_Game
         public MainWindow(int players)
         {
             InitializeComponent();
-
+            InitializeImages();
             GlobalVars.setNumOfPlayers(players);
             Game.StartGame(players);
             timer1.Start();
@@ -36,6 +36,13 @@ namespace Taki_Game
 
 
         }
+
+        public void InitializeImages()
+        {
+            Table.Source = GlobalVars.LoadImageFromResource("Table_Top.png");
+            Deck_image.Source = GlobalVars.LoadImageFromResource("CardImageBack.png");
+        }
+        
 
         private void visualUpdates(object? sender, EventArgs e)
         {

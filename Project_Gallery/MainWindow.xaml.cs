@@ -22,10 +22,14 @@ public partial class MainWindow : Window
 {
     private IProjectMeta[] Projects = new IProjectMeta[]
     {
-        new First_project.Project(),
-        new PrioratyDefiner.Project(),
-        new System_manager.Project(),
+        new API_Animal_Pics.Project(),
+        new API_hub.Project(),
+        new Frogger.Project(),
         new Memory_game.Project(),
+        new Taki_Game.Project(),
+        new TickTackTow_WPF.Project(),
+        new PrioratyDefiner.Project(),
+
 
     };
 
@@ -40,25 +44,12 @@ public partial class MainWindow : Window
         foreach (var project in Projects)
         {
             int i = 0;
-            //Button button = new Button()
-            //{
-            //    Width = 100, Height = 100, Margin= new Thickness (10)
 
-            //};
-
-            //StackPanel panel = new StackPanel();
-            //panel.Orientation = Orientation.Vertical;
-
-            //Image image = new Image();
-
-            //panel.Children.Add(image);
-
-            //button.Content = panel;
             ProjectButton button = new ProjectButton(project)
             {
                 Margin = new Thickness(10),
-                Height = 100,
-                Width = 100,
+                Height = 150,
+                Width = 150,
             };
             ProjectButtons.Children.Add(button);
         }

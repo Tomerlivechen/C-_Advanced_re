@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Resources\fullscreen.png" />
+    <None Remove="Resources\Images\Loading.png" />
+    <None Remove="Resources\IndexImage.png" />
     <None Remove="Resources\Loading.gif" />
     <None Remove="Resources\Table_Top.png" />
     <None Remove="Resources\trash.png" />
@@ -27,13 +29,16 @@
     <Resource Include="Resources\Images\fullscreen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Images\Loading.gif">
+    <Resource Include="Resources\Images\Loading.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Table_Top.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\trash.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\IndexImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

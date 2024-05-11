@@ -12,9 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static Common_Classes.Message_Box_Classes;
-using static Common_Classes.My_Message_Box_Classes;
-
+using Common_Classes.Classes;
 
 namespace Project_Gallery.Controles
 {

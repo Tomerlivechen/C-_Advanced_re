@@ -38,6 +38,6 @@
             <ComboBoxItem Content="Near Impossible" Tag="7"/>
         </ComboBox>
         <Button Name="Start_Game" Content="Start Game" Grid.Column="1" Grid.Row="3" FontSize="40" FontStyle="Italic" FontWeight="Bold" Margin="10" Height="60" Click="Start_Game_Click"/>
-        <Button Name="Hight_Scores" Content="Hight Scores" Grid.Column="2" Grid.Row="3" FontSize="40" FontStyle="Italic" FontWeight="Bold" Margin="10" Height="60" Click="Hight_Scores_Click"/>
+        <Button Name="Hight_Scores" Content="High Scores" Grid.Column="2" Grid.Row="3" FontSize="40" FontStyle="Italic" FontWeight="Bold" Margin="10" Height="60" Click="Hight_Scores_Click"/>
     </Grid>
 </Window>

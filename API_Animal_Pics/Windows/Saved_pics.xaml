@@ -20,7 +20,7 @@
             </MenuItem>
         </Menu>
         <TextBlock Name="List_Name" FontSize="20" Text="List name" FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.Row="1" Foreground="White"/>
-        <Image Source="/Resources/Images/Table_Top.png" Stretch="Fill" Grid.Row="2"/>
+        <Image Name="Table" Source="/Resources/Images/Table_Top.png" Stretch="Fill" Grid.Row="2"/>
         <ScrollViewer Grid.Row="2">
         <WrapPanel Name="ImageSet" Grid.Row="2"></WrapPanel>
         </ScrollViewer>

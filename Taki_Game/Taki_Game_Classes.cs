@@ -15,12 +15,31 @@ using Common_Classes;
 using Common_Classes.Common_Elements;
 using static System.Formats.Asn1.AsnWriter;
 using Taki_Game.Resources.Classes;
+using Taki_Game.Resources.Windows;
 namespace Taki_Game
 {
-    class Taki_Game_Classes
+    public class Project : IProjectMeta
     {
-    }
+        public string Name { get; set; } = "TAKI Game";
 
+        public BitmapImage Image
+        {
+            get
+            {
+                string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
+                Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
+                return new BitmapImage(uri);
+
+            }
+        }
+        //   public BitmapImage Image => new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}/Resources/IndexImage1.png", UriKind.Absolute));
+
+        public void Run()
+        {
+            IndexWindow window = new IndexWindow();
+            window.ShowDialog();
+        }
+    }
 
 
 }

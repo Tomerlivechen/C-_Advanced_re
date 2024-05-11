@@ -9,6 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Memory_game.Classes;
+using Common_Classes.Classes;
 
 namespace Memory_game
 {

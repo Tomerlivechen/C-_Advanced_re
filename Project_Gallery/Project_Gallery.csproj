@@ -14,12 +14,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Animal_Facts\API_hub.csproj" />
+    <ProjectReference Include="..\API_Animal_Pics\API_Animal_Pics.csproj" />
     <ProjectReference Include="..\API_In_WPF\API_In_WPF.csproj" />
     <ProjectReference Include="..\Common_Classes\Common_Classes.csproj" />
     <ProjectReference Include="..\First_project\First_project.csproj" />
+    <ProjectReference Include="..\Frogger\Frogger.csproj" />
     <ProjectReference Include="..\Memory_game\Memory_game.csproj" />
     <ProjectReference Include="..\PrioratyDefiner\PriorityDefiner.csproj" />
     <ProjectReference Include="..\System_manager\System_manager.csproj" />
+    <ProjectReference Include="..\Taki_Game\Taki_Game.csproj" />
+    <ProjectReference Include="..\TickTackTow_WPF\TickTackTow_WPF.csproj" />
   </ItemGroup>
 
   <ItemGroup>

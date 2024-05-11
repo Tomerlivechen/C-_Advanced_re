@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using System.Windows.Controls;
-
+using Memory_game.Classes;
 namespace Memory_game.Controls
 {
     /// <summary>
@@ -15,6 +15,7 @@ namespace Memory_game.Controls
 
             Card_Button.Click += (sender, e) =>
             {
+                if (card.Viable && card.Face == false)
                 card.Flip(sender, e);
             };
         }

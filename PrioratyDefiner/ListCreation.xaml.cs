@@ -10,15 +10,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Common_Classes;
-using PriorityDefiner.Resources;
-
-using static Common_Classes.My_Message_Box_Classes;
-using static Common_Classes.Message_Box_Classes;
+using PriorityDefiner.Classes;
 using System.Collections.Generic;
 using PriorityDefiner;
 using PriorityDefiner.windows;
 using System.Diagnostics;
-
+using Common_Classes.Classes;
 namespace PrioratyDefiner
 {
     /// <summary>
@@ -120,7 +117,6 @@ namespace PrioratyDefiner
 
             SortedDictionary<string, int> counts = Priority_Classes.CountValues(priorityMatrix);
             MyTaskList taskList = new MyTaskList();
-            //taskList.Task_List = new List<MyTask>();
             Taskstitle.Text = "Final priority list";
             tasks.Visibility = Visibility.Hidden;
             start.Visibility = Visibility.Hidden;
@@ -145,51 +141,10 @@ namespace PrioratyDefiner
                 }
             }
 
-            //string[] keysArray = counts.Keys.ToArray();
-
-            //int index = 0;
-            //for (int i = keysArray.Length; i >=1 ; i--)
-            //    {
-            //    index++;
-            //    string task = counts.FirstOrDefault(x => x.Value == i).Key;
-            //    Final_List.Text += $" {index}.{task} \n";
-            //    }
-
-
 
             return null;
         }
 
-        //public bool askForPriority(string priority1, string priority2)
-        //{
-        //    Func<bool> priority1Answer=() => true;
-
-        //    Func<bool> priority2Answer = () => false; ;
-
-
-        //    MYMessageBoxobject askpriority = new MYMessageBoxobject(
-        //        "Prioritize",
-        //        "Which of these two is higher priority",
-        //        new string[] { priority1, priority2 },
-        //        new bool[] { true, false },
-        //        new Delegate[] { priority1Answer, priority2Answer }
-        //    );
-
-
-        //    CustomeMessagebox window = new CustomeMessagebox(askpriority);
-        //    window.ShowDialog();
-        //    int selectedIndex = window.SelectedButtonIndex;
-
-
-        //    if (selectedIndex == 0)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
-        //}
         public bool Check_tasks_unique()
         {
             foreach (TextBox item in tasks.Children)

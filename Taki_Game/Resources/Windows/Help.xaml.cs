@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+using Taki_Game.Resources.Classes;
 namespace Taki_Game.Resources.Windows
 {
     /// <summary>
@@ -22,6 +24,15 @@ namespace Taki_Game.Resources.Windows
         public Help()
         {
             InitializeComponent();
+            B_Taki.Source = GlobalVars.LoadImageFromResource("B_Taki.png");
+            B_Taki.Source = GlobalVars.LoadImageFromResource("B_Taki.png");
+            Taki.Source = GlobalVars.LoadImageFromResource("Taki.png");
+            R_COrder.Source = GlobalVars.LoadImageFromResource("R_COrder.png");
+            R_Stop.Source = GlobalVars.LoadImageFromResource("R_Stop.png");
+            _Color.Source = GlobalVars.LoadImageFromResource("Color.png");
+            Y_2P.Source = GlobalVars.LoadImageFromResource("Y_2+.png");
+            Change.Source = GlobalVars.LoadImageFromResource("Change.png");
         }
     }
+
 }

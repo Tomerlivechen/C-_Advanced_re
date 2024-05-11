@@ -14,7 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using Common_Classes;
-
+using Common_Classes.Classes;
+using API_Animal_Pics.Classes;
+using static System.Net.Mime.MediaTypeNames;
 namespace API_Animal_Pics.Resources
 {
     /// <summary>
@@ -26,6 +28,7 @@ namespace API_Animal_Pics.Resources
         public PicInFavList(AnimalPic pic, Animallist animallist)
         {
             InitializeComponent();
+            InitializeImages();
             listName = animallist.Name;
 
             DataContext = pic;
@@ -75,5 +78,10 @@ namespace API_Animal_Pics.Resources
             pic.Visibility = Visibility.Collapsed;
         }
 
+        public void InitializeImages()
+        {
+            FillScreen.Source = GlobalVars.SetImageForSource("fullscreen.png");
+            Trash.Source = GlobalVars.SetImageForSource("trash.png");
+        }
     }
 }

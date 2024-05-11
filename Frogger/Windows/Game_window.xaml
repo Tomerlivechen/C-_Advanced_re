@@ -55,7 +55,7 @@
             <Image Width="75" Height="25" Tag="Left 0" Name="Log2_1" Canvas.Top="75" Canvas.Left="460" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_3.png" Panel.ZIndex="1"/>
             <Image Width="75" Height="25" Tag="Left 0" Name="Log2_2" Canvas.Top="75" Canvas.Left="193" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_3.png" Panel.ZIndex="1" />
             <Image Width="75" Height="25" Tag="Left 0" Name="Log2_3" Canvas.Top="75" Canvas.Left="29" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_3.png" Panel.ZIndex="1"/>
-            <Image Width="126" Height="25" Tag="Right 0" Name="Log3_1" Canvas.Top="110" Canvas.Left="542" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/Resources/Log.png" Panel.ZIndex="1"/>
+            <Image Width="126" Height="25" Tag="Right 0" Name="Log3_1" Canvas.Top="110" Canvas.Left="542" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Log.png" Panel.ZIndex="1"/>
             <Image Width="125" Height="25" Tag="Right 0" Name="Log3_2" Canvas.Top="110" Canvas.Left="331" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Log.png" Panel.ZIndex="1"/>
             <Image Width="125" Height="25" Tag="Right 0" Name="Log3_3" Canvas.Top="110" Canvas.Left="95" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Log.png" Panel.ZIndex="1"/>
             <Image Width="100" Height="25" Tag="Left 0" Name="Log4_1" Canvas.Top="145" Canvas.Left="501" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_4.png" Panel.ZIndex="1"/>
@@ -65,14 +65,14 @@
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_1" Canvas.Top="215" Canvas.Left="50" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="/Resources/FastCar_Left.png" Panel.ZIndex="3" />
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_2" Canvas.Top="215" Canvas.Left="390" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/FastCar_Left.png" Panel.ZIndex="3"/>
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_3" Canvas.Top="215" Canvas.Left="208" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/FastCar_Left.png" Panel.ZIndex="3"/>
-            <Image Width="50" Height="25" Tag="Right 10" Name="Log7_1" Canvas.Top="250" Canvas.Left="100" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/Resources/Car_Right.png" Panel.ZIndex="3"/>
+            <Image Width="50" Height="25" Tag="Right 10" Name="Log7_1" Canvas.Top="250" Canvas.Left="100" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/Car_Right.png" Panel.ZIndex="3"/>
             <Image Width="50" Height="25" Tag="Right 10" Name="Log7_2" Canvas.Top="250" Canvas.Left="511" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Car_Right.png" Panel.ZIndex="3"/>
             <Image Width="50" Height="25" Tag="Right 10" Name="Log7_3" Canvas.Top="250" Canvas.Left="301" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Car_Right.png" Panel.ZIndex="3"/>
             <Image Width="50" Height="25" Tag="Left 12" Name="Log8_1" Canvas.Top="285" Canvas.Left="7" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Car_Left.png" Panel.ZIndex="3" />
             <Image Width="50" Height="25" Tag="Left 12" Name="Log8_2" Canvas.Top="285" Canvas.Left="434" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Car_Left.png" Panel.ZIndex="3" />
             <Image Width="50" Height="25" Tag="Left 12" Name="Log8_3" Canvas.Top="285" Canvas.Left="198" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Car_Left.png" Panel.ZIndex="3" />
             <Image Width="100" Height="25" Tag="Right 7" Name="Log9_1" Canvas.Top="320" Canvas.Left="53" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Truck_Right.png" Panel.ZIndex="3" />
-            <Image Width="100" Height="26" Tag="Right 7" Name="Log9_2" Canvas.Top="320" Canvas.Left="499" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/Resources/Truck_Right.png" Panel.ZIndex="3"/>
+            <Image Width="100" Height="26" Tag="Right 7" Name="Log9_2" Canvas.Top="320" Canvas.Left="499" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/Truck_Right.png" Panel.ZIndex="3"/>
             <Image Width="100" Height="25" Tag="Right 7" Name="Log9_3" Canvas.Top="320" Canvas.Left="293" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/Truck_Right.png" Panel.ZIndex="3"/>
             <Rectangle Width="70" Height="35" Fill="Green" Canvas.Left="560" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Rectangle Width="70" Height="35" Fill="Green" Canvas.Left="455" HorizontalAlignment="Left" VerticalAlignment="Center" />

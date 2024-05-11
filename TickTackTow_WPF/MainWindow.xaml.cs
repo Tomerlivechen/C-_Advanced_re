@@ -9,8 +9,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static TickTackTow_WPF.WPF_adaptation;
 using System.Windows.Threading;
+using TickTackTow_WPF.Classes;
 
 namespace TickTackTow_WPF
 {
@@ -42,13 +42,18 @@ namespace TickTackTow_WPF
             player2 = new Player(2);
             timer.Interval = TimeSpan.FromSeconds(0.5);
             timer.Tick += Timer_Tick;
+            Closed += Window_Closed;
         }
 
+        public void Window_Closed(object sender, EventArgs e)
+        {
+            timer.Stop();
+        }
         private async void Timer_Tick(object sender, EventArgs e)
         {
 
             int smartposition = makeSmartMove();
-            makemove(gameboard, smartposition);
+            WPF_adaptation.makemove(gameboard, smartposition);
             Updateboard(gameboard);
             if (CheckCompleation()) { return; };
             gameboard.switchplayer();
@@ -200,7 +205,7 @@ namespace TickTackTow_WPF
 
             if (gametype == 2)
             {
-                makemove(gameboard, position);
+                WPF_adaptation.makemove(gameboard, position);
                 Updateboard(gameboard);
                 if (CheckCompleation()) { return; };
                 gameboard.switchplayer();
@@ -211,12 +216,12 @@ namespace TickTackTow_WPF
             {
                 if (gameboard.player == 1)
                 {
-                    makemove(gameboard, position);
+                    WPF_adaptation.makemove(gameboard, position);
                     Updateboard(gameboard);
                     if(CheckCompleation()) { return; };
                     gameboard.switchplayer();
                     int smartposition = makeSmartMove();
-                    makemove(gameboard, smartposition);
+                    WPF_adaptation.makemove(gameboard, smartposition);
                     Updateboard(gameboard);
                     if (CheckCompleation()) { return; };
                     gameboard.switchplayer();

@@ -13,7 +13,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using API_Animal_Pics.Classes;
+using Common_Classes.Classes;
+using System.Security.Cryptography.X509Certificates;
 namespace API_Animal_Pics.Windows
 {
     /// <summary>
@@ -27,6 +29,7 @@ namespace API_Animal_Pics.Windows
             listName = $"List name: {animallist.Name}";
             
             InitializeComponent();
+            InitializeImages();
             Initializeboard(animallist);
             Closed += Window_Closed;
             List_Name.Text = listName;
@@ -67,5 +70,11 @@ namespace API_Animal_Pics.Windows
         {
             Close();
         }
+
+        public void InitializeImages()
+        {
+            Table.Source = GlobalVars.SetImageForSource("Table_Top.png");
+        }
+        
     }
 }

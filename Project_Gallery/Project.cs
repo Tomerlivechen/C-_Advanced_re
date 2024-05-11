@@ -9,9 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using Common_Classes;
 using Project_Gallery.Controles;
-using static Common_Classes.Message_Box_Classes;
-using static Common_Classes.My_Message_Box_Classes;
-
+using Common_Classes.Classes;
 namespace Project_Gallery;
 
 public class Project : IProjectMeta

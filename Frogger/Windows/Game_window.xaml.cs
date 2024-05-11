@@ -13,7 +13,8 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.Xml.Linq;
 using static System.Formats.Asn1.AsnWriter;
-
+using Frogger.Classes;
+using Common_Classes.Classes;
 namespace Frogger;
 
 /// <summary>
@@ -41,8 +42,8 @@ public partial class Game_window : Window
 
         InitializeComponent();
         initialzeObjects();
+        initialzeImages();
 
-        DispatcherTimer timer05 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(0.5) };
 
         void Timed_100_Actions(object sender, EventArgs e)
         {
@@ -67,13 +68,7 @@ public partial class Game_window : Window
 
         }
 
-        void Timed_05_Actions(object sender, EventArgs e)
-        {
 
-
-
-
-        }
         void Timed_1_Actions(object sender, EventArgs e)
         {
 
@@ -94,6 +89,7 @@ public partial class Game_window : Window
                 {
                     initialzeGame();
                     GlobalVars.ResetTimerCount();
+                    initialzeImages();
 
                 }
                 else
@@ -105,30 +101,24 @@ public partial class Game_window : Window
 
 
 
-
-
-
-
-
         timer1.Tick += Timed_1_Actions;
         timer100.Tick += Timed_100_Actions;
-        timer05.Tick += Timed_05_Actions;
         timer1.Start();
         timer100.Start();
-        timer05.Start();
-
         Closed += Window_Closed;
 
         void Window_Closed(object sender, EventArgs e)
         {
             timer1.Stop();
             timer100.Stop();
-            timer05.Stop();
             GlobalVars.ResetTimerCount();
         }
 
 
     }
+
+
+
 
 
     public void notonlog()
@@ -152,13 +142,55 @@ public partial class Game_window : Window
         Canvas.SetLeft(frog, 285);
 
 
+
     }
+    public void initialzeImages()
+    {
+        frog.Source = Frogger_Classes.LoadImageFromResource("Frog_top.png");
+        Log1_1.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log1_2.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log1_3.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log2_1.Source = Frogger_Classes.LoadImageFromResource("LilyPad_3.png");
+        Log2_2.Source = Frogger_Classes.LoadImageFromResource("LilyPad_3.png");
+        Log2_3.Source = Frogger_Classes.LoadImageFromResource("LilyPad_3.png");
+        Log3_1.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log3_2.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log3_3.Source = Frogger_Classes.LoadImageFromResource("Log.png");
+        Log4_1.Source = Frogger_Classes.LoadImageFromResource("LilyPad_4.png");
+        Log4_2.Source = Frogger_Classes.LoadImageFromResource("LilyPad_4.png");
+        Log4_3.Source = Frogger_Classes.LoadImageFromResource("LilyPad_4.png");
+        Log5_1.Source = Frogger_Classes.LoadImageFromResource("Scorpion.png");
+        Log6_1.Source = Frogger_Classes.LoadImageFromResource("FastCar_Left.png");
+        Log6_2.Source = Frogger_Classes.LoadImageFromResource("FastCar_Left.png");
+        Log6_3.Source = Frogger_Classes.LoadImageFromResource("FastCar_Left.png");
+        Log7_1.Source = Frogger_Classes.LoadImageFromResource("Car_Right.png");
+        Log7_2.Source = Frogger_Classes.LoadImageFromResource("Car_Right.png");
+        Log7_3.Source = Frogger_Classes.LoadImageFromResource("Car_Right.png");
+        Log8_1.Source = Frogger_Classes.LoadImageFromResource("Car_Left.png");
+        Log8_2.Source = Frogger_Classes.LoadImageFromResource("Car_Left.png");
+        Log8_3.Source = Frogger_Classes.LoadImageFromResource("Car_Left.png");
+        Log9_1.Source = Frogger_Classes.LoadImageFromResource("Truck_Right.png");
+        Log9_2.Source = Frogger_Classes.LoadImageFromResource("Truck_Right.png");
+        Log9_3.Source = Frogger_Classes.LoadImageFromResource("Truck_Right.png");
+        SafeFrog_1.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
+        SafeFrog_1.Visibility = Visibility.Hidden;
+        SafeFrog_2.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
+        SafeFrog_2.Visibility = Visibility.Hidden;
+        SafeFrog_3.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
+        SafeFrog_3.Visibility = Visibility.Hidden;
+        SafeFrog_4.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
+        SafeFrog_4.Visibility = Visibility.Hidden;
+        SafeFrog_5.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
+        SafeFrog_5.Visibility = Visibility.Hidden;
+    }
+
 
     public void initialzeGame()
     {
         Canvas.SetTop(frog, 355);
         Canvas.SetLeft(frog, 285);
         scores.initialze();
+
 
 
     }
@@ -176,7 +208,6 @@ public partial class Game_window : Window
     {
         initialzeObjects();
         MessageBox.Show("Safe");
-        scores.Lives--;
         scores.Wins++;
 
     }

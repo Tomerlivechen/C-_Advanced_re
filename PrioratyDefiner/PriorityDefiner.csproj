@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Resource Include="Resources\Error.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\IndexImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
