@@ -24,7 +24,7 @@ namespace API_Animal_Pics
     {
 
         ObservableCollection<Animallist> listOfAnimalPicLists = new ObservableCollection<Animallist>();
-        ICollectionView ImageSetsView;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,10 +35,9 @@ namespace API_Animal_Pics
             ///           Activated += Window_Activated;
             ///           Closed += Window_Closed;
 
-            ImageSetsView = CollectionViewSource.GetDefaultView(listOfAnimalPicLists);
-            ImageListDataGrid.ItemsSource = ImageSetsView;
+
             updateLists();
-            Activated += Window_Activated;
+//            Activated += Window_Activated;
             Closed += Window_Closed;
         }
 
@@ -77,13 +76,8 @@ namespace API_Animal_Pics
 
         public void updateLists()
         {
-            listOfAnimalPicLists.Clear();
-            foreach (Animallist tasklist in GlobalVars.animalPiclists.animalPiclists)
-            {
-                listOfAnimalPicLists.Add(tasklist);
-            }
-            ImageSetsView.Refresh();
-            ImageListDataGrid.ItemsSource = ImageSetsView;
+            IEnumerable<Animallist> result = GlobalVars.animalPiclists.animalPiclists.Select(list => list);
+            ImageListDataGrid.ItemsSource = result;
 
         }
 
@@ -100,15 +94,12 @@ namespace API_Animal_Pics
             int respons = Message_Box_Classes.DisplayMessageBox("Are you sure you want to delete this picture list?", "Deleting picture list");
             if (respons == 1)
             {
-                List<Animallist> listOfpicLists = ImageSetsView.SourceCollection.Cast<Animallist>().ToList();
-                Animallist picListToRemove = listOfpicLists.FirstOrDefault(item => item.Name == Selectd_List.Name);
+                Animallist ListToRemove = GlobalVars.animalPiclists.animalPiclists.FirstOrDefault(item => item.Name == Selectd_List.Name);
 
-                if (picListToRemove != null)
+                if (ListToRemove != null)
                 {
-                    listOfpicLists.Remove(picListToRemove);
-                    ImageSetsView = CollectionViewSource.GetDefaultView(listOfpicLists);
-                    ImageSetsView.Refresh();
-                    ImageListDataGrid.ItemsSource = ImageSetsView;
+                    GlobalVars.animalPiclists.animalPiclists.Remove(ListToRemove);
+                    updateLists();
 
                 }
             }
