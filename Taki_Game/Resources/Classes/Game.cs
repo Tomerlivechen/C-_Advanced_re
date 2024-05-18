@@ -61,9 +61,13 @@ namespace Taki_Game.Resources.Classes
                 var title = $"Insert Name of player {player.index}";
                 var Input_field = new Input_box_field();
                 Input_field.Input_label = "Enter name:";
-                var input_Box = new Input_box(number_of_field, title, Input_field);
-                input_Box.ShowDialog();
+                do
+                {
+                    var input_Box = new Input_box(number_of_field, title, Input_field);
+                    input_Box.ShowDialog();
+                } while (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()));
                 player.name = UniversalVars.inputBoxReturn[0].ToString();
+                UniversalVars.inputBoxReturn.Clear();
             }
         }
 

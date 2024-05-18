@@ -92,3 +92,5 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\Contact_Me.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\Contact_Me.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Windows\Contact_Me_Window.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Windows\Contact_Me_Window.baml

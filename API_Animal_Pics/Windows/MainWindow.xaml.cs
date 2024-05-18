@@ -29,15 +29,9 @@ namespace API_Animal_Pics
         {
             InitializeComponent();
             GlobalVars.LoadPicLists();
-            
-
-
-            ///           Activated += Window_Activated;
-            ///           Closed += Window_Closed;
-
 
             updateLists();
-//            Activated += Window_Activated;
+
             Closed += Window_Closed;
         }
 
@@ -50,7 +44,6 @@ namespace API_Animal_Pics
             int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
             if (respons == 1)
             {
-
                 GlobalVars.SavePiclists();
                 GlobalVars.CheckDuplicate();
             }

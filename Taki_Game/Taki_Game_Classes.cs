@@ -36,7 +36,9 @@ namespace Taki_Game
 
         public void Run()
         {
-            IndexWindow window = new IndexWindow();
+            Opening_Panel OpeningPanel = new Opening_Panel();
+            OpeningPanel.buttonImage = Image;
+            Opening_panel_window window = new Opening_panel_window(OpeningPanel);
             window.ShowDialog();
         }
     }

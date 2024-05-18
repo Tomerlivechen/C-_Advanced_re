@@ -83,7 +83,14 @@ namespace API_Animal_Pics.Classes
                     Input_field.Input_label = "Enter name:";
                     var input_Box = new Input_box(number_of_field, title, Input_field);
                     input_Box.ShowDialog();
-                    animallist.Name = UniversalVars.inputBoxReturn[0].ToString();
+                    if (UniversalVars.inputBoxReturn[0].ToString() != null)
+                    {
+                        animallist.Name = UniversalVars.inputBoxReturn[0].ToString();
+                    }
+                    else
+                    {
+                        animallist.Name = "UnNamed";
+                    }
                     checkName = false;
                     foreach (Animallist pic_list in animalPiclists.animalPiclists)
                     {

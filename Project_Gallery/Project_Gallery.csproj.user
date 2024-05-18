@@ -19,6 +19,9 @@
     <Compile Update="Controles\ProjectButton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\Contact_Me_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controles\Contact_Me.xaml">
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Contact_Me_Window.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

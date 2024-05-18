@@ -34,8 +34,9 @@ namespace Common_Classes.Common_Elements
                 BitmapImage tagImage = new BitmapImage(uri);
                 Image image = new Image();
                 image.Source = tagImage;
-                image.Height = 40;
-                image.Width = 40;
+                image.Height = 50;
+                image.Width = 50;
+                image.Margin = new Thickness(5);
                 Tech_panel.Children.Add(image);
 
             }

@@ -1,4 +1,5 @@
 ﻿using Common_Classes;
+using Common_Classes.Common_Elements;
 using PriorityDefiner;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace PrioratyDefiner
 {
     public class Project : IProjectMeta
     {
-        public string Name { get; set; } = "Prioraty Definer";
+        public string Name { get; set; } = "Prioritizer";
 
         public BitmapImage Image
         {
@@ -28,7 +29,9 @@ namespace PrioratyDefiner
 
         public void Run()
         {
-            TaskLists window = new TaskLists();
+            Opening_Panel OpeningPanel = new Opening_Panel();
+            OpeningPanel.buttonImage = Image;
+            Opening_panel_window window = new Opening_panel_window(OpeningPanel);
             window.ShowDialog();
         }
     }

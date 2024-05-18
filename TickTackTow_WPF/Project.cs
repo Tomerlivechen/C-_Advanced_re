@@ -6,12 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Common_Classes;
+using Common_Classes.Common_Elements;
 
 namespace TickTackTow_WPF
 {
     public class Project : IProjectMeta
     {
-        public string Name { get; set; } = "Tick Tack Tow";
+        public string Name { get; set; } = "Tic Tac Toe";
 
         public BitmapImage Image
         {
@@ -23,11 +24,12 @@ namespace TickTackTow_WPF
 
             }
         }
-        //   public BitmapImage Image => new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}/Resources/IndexImage1.png", UriKind.Absolute));
 
         public void Run()
         {
-            MainWindow window = new MainWindow();
+            Opening_Panel OpeningPanel = new Opening_Panel();
+            OpeningPanel.buttonImage = Image;
+            Opening_panel_window window = new Opening_panel_window(OpeningPanel);
             window.ShowDialog();
         }
     }
