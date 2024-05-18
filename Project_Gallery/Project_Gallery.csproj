@@ -10,6 +10,12 @@
 
   <ItemGroup>
     <None Remove="Resources\add user.png" />
+    <None Remove="Resources\Contact_me_images\Git.png" />
+    <None Remove="Resources\Contact_me_images\info_user.png" />
+    <None Remove="Resources\Contact_me_images\Linked.png" />
+    <None Remove="Resources\Contact_me_images\Mail.png" />
+    <None Remove="Resources\Contact_me_images\Orcid.png" />
+    <None Remove="Resources\Contact_me_images\What.png" />
     <None Remove="Resources\IndexImage.png" />
   </ItemGroup>
 
@@ -29,9 +35,31 @@
 
   <ItemGroup>
     <Resource Include="Resources\add user.png" />
+    <Resource Include="Resources\Contact_me_images\Git.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Contact_me_images\info_user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Contact_me_images\Linked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Contact_me_images\Mail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Contact_me_images\Orcid.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Contact_me_images\What.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\IndexImage.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Windows\" />
   </ItemGroup>
 
 </Project>

@@ -57,13 +57,13 @@ public partial class Game_window : Window
             {
                 if (position[0] < 0) { Death(); }
                 else { moveObject(frog, "Left", waterspeed); }
-                //               else { MoveLeft(position[0]); }
+              
             }
             if (position[1] < 145 && position[1] >= 110 || position[1] < 75 && position[1] >= 40)
             {
                 if (position[0] > 610) { Death(); }
                 else { moveObject(frog, "Right", waterspeed); }
-                //               else { MoveRight(position[0]); }
+                
             }
 
         }

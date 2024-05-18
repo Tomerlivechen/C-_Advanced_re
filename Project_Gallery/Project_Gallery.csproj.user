@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Controles\Contact_Me.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controles\CustomeMessagebox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,6 +21,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Controles\Contact_Me.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Controles\CustomeMessagebox.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Common_Classes;
 using API_hub;
+using Common_Classes.Common_Elements;
+using Common_Classes.Classes;
 
 namespace API_hub
 {
@@ -26,12 +28,18 @@ namespace API_hub
 
             }
         }
-        //   public BitmapImage Image => new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}/Resources/IndexImage1.png", UriKind.Absolute));
+
 
         public void Run()
         {
-            MainWindow window = new MainWindow();
+            Opening_Panel OpeningPanel = new Opening_Panel();
+            OpeningPanel.buttonImage = Image;
+            Opening_panel_window window = new Opening_panel_window(OpeningPanel);
             window.ShowDialog();
         }
+
+
+
+
     }
 }

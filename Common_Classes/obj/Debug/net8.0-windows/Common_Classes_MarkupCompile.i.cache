@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 
-2306905677
+3-1901829898
 
-18-1010731331
+20-1029823783
 198155382431
-Common_Elements\High_score.xaml;Common_Elements\Input_box.xaml;
+Common_Elements\High_score.xaml;Common_Elements\Input_box.xaml;Common_Elements\Opening_panel_window.xaml;
 
-False
+True
 

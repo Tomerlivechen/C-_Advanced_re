@@ -49,8 +49,16 @@ namespace API_hub.Windows
                 if (prop.GetValue(animal.taxonomy) != null)
                 {
                     TextBlock textBlock = new TextBlock();
-                    textBlock.Text = $"{index}{prop.Name.Makelable()} : {prop.GetValue(animal.taxonomy)}";
+                    Run title = new Run($"{index}{prop.Name.Makelable()}: ")
+                    {
+                        FontWeight = FontWeights.Bold
+                    };
+                    Run data = new Run($"{prop.GetValue(animal.taxonomy)}");
+
+                    textBlock.Inlines.Add(title);
+                    textBlock.Inlines.Add(data);
                     textBlock.FontSize = 20;
+
                     Taxomony_Stack.Children.Add(textBlock);
                     index += "  ";
                 }
@@ -63,8 +71,17 @@ namespace API_hub.Windows
                 if (prop.GetValue(animal.characteristics) != null)
                 {
                     TextBlock textBlock = new TextBlock();
-                    textBlock.Text = $"    {prop.Name.Makelable()} : {prop.GetValue(animal.characteristics)}";
+                    Run title = new Run($"{prop.Name.Makelable()}: ")
+                    {
+                        FontWeight = FontWeights.Bold
+                    };
+                    Run data = new Run($"{prop.GetValue(animal.characteristics)}");
+
+                    textBlock.Inlines.Add( title );
+                    textBlock.Inlines.Add(data);
                     textBlock.FontSize = 20;
+                    textBlock.TextWrapping = TextWrapping.Wrap;
+                    textBlock.Width = 600;
                     Characteristics_Stack.Children.Add(textBlock);
                 }
             }

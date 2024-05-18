@@ -12,6 +12,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PrioratyDefiner;
+using System.Drawing;
+using ColorConverter = System.Drawing.ColorConverter;
+
+
 
 namespace Project_Gallery;
 
@@ -44,9 +48,11 @@ public partial class MainWindow : Window
         foreach (var project in Projects)
         {
             int i = 0;
-
-            ProjectButton button = new ProjectButton(project)
+            System.Windows.Media.Color color = new System.Windows.Media.Color() { A = 255, R = 149, G = 242, B = 217 };
+            SolidColorBrush Buttoncolor = new SolidColorBrush(color);
+            ProjectButton button = new ProjectButton(project, Buttoncolor)
             {
+
                 Margin = new Thickness(10),
                 Height = 150,
                 Width = 150,

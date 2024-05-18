@@ -16,5 +16,8 @@
     <Page Update="Common_Elements\Input_box.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Common_Elements\Opening_panel_window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

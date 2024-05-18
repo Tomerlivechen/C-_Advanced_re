@@ -21,10 +21,12 @@ namespace Project_Gallery.Controles
     /// </summary>
     public partial class ProjectButton : UserControl
     {
-        public ProjectButton(IProjectMeta project)
+
+        public ProjectButton(IProjectMeta project , SolidColorBrush buttonColor)
         {
             InitializeComponent();
             DataContext = project;
+            MainButton.Background = buttonColor;
 
             MainButton.Click += (sender, e) => project.Run();
         }

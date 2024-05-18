@@ -61,7 +61,7 @@
             <Image Width="100" Height="25" Tag="Left 0" Name="Log4_1" Canvas.Top="145" Canvas.Left="501" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_4.png" Panel.ZIndex="1"/>
             <Image Width="100" Height="25" Tag="Left 0" Name="Log4_2" Canvas.Top="145" Canvas.Left="265" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_4.png" Panel.ZIndex="1" />
             <Image Width="100" Height="25" Tag="Left 0" Name="Log4_3" Canvas.Top="145" Canvas.Left="45" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/LilyPad_4.png" Panel.ZIndex="1"/>
-            <Image Width="30" Height="25"  Tag="Left 7" Name="Log5_1" Canvas.Top="180" Canvas.Left="572" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="/Resources/Scorpion.png" />
+            <Image Width="30" Height="25"  Tag="Left 7" Name="Log5_1" Canvas.Top="180" Canvas.Left="572" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="/Resources/Scorpion.png" Panel.ZIndex="3" />
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_1" Canvas.Top="215" Canvas.Left="50" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="/Resources/FastCar_Left.png" Panel.ZIndex="3" />
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_2" Canvas.Top="215" Canvas.Left="390" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/FastCar_Left.png" Panel.ZIndex="3"/>
             <Image Width="50" Height="25" Tag="Left 25" Name="Log6_3" Canvas.Top="215" Canvas.Left="208" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Resources/FastCar_Left.png" Panel.ZIndex="3"/>

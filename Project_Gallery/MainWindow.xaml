@@ -3,16 +3,38 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Project_Gallery.Controles"
         xmlns:local="clr-namespace:Project_Gallery"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="580" Width="820"
         Name ="ProjectGallery">
-    <StackPanel>
-        <TextBlock Text="Project_Gallery" TextAlignment="Center" FontSize="30"></TextBlock>
-        <TextBlock Text="These project represen some of my WPF works" TextAlignment="Center" FontSize="20"></TextBlock>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height ="auto"/>
+            <RowDefinition Height ="auto"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#1F9991" Grid.Column="0" Grid.RowSpan="4"/>
+        <Border Background="#1F9991" Grid.Column="2" Grid.RowSpan="4"/>
+        <Border Background="#1F9991" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Border Background="#1F9991" Grid.Row="3" Grid.ColumnSpan="3"/>
+        <Border Background="#3DB1A1" Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2"/>
+        <controls:Contact_Me Grid.Row="0" Grid.Column="1" Height="80" Grid.RowSpan="2" />
+
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+        <TextBlock Text="Project Gallery" TextAlignment="Center" FontSize="30"></TextBlock>
+        <TextBlock Text="These project represent some of my WPF works" TextAlignment="Center" FontSize="20"></TextBlock>
         <WrapPanel Name="ProjectButtons" Margin="10" HorizontalAlignment="Center">
 
             
         </WrapPanel>
     </StackPanel>
+    </Grid>
 </Window>

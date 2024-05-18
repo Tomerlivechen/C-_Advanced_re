@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common_Classes.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace Common_Classes
         public BitmapImage Image { get; }
 
         public void Run();
+
     }
 }
