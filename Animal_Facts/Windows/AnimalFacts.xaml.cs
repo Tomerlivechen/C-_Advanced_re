@@ -27,7 +27,7 @@ namespace API_hub.Windows
         {
             InitializeComponent();
             this.animal = animal;
-            Name.Content = animal.name;
+            Name.Content = animal.name.FirstLetterToUpper(); ;
             if (animal.locations != null)
             {
                 location.Text = "";

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrioratyDefiner"
         mc:Ignorable="d"
-        Title="ListCreation" Height="450" Width="830">
+        Title="ListCreation" Height="450" Width="830" Background="#008080">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

@@ -1,0 +1,30 @@
+[
+  {
+    "CategoryId": 1,
+    "CategoryName": "Electronics"
+  },
+  {
+    "CategoryId": 2,
+    "CategoryName": "Books"
+  },
+  {
+    "CategoryId": 3,
+    "CategoryName": "Office Supplies"
+  },
+  {
+    "CategoryId": 4,
+    "CategoryName": "Footwear"
+  },
+  {
+    "CategoryId": 5,
+    "CategoryName": "Accessories"
+  },
+  {
+    "CategoryId": 6,
+    "CategoryName": "Home Decor"
+  },
+  {
+    "CategoryId": 7,
+    "CategoryName": "Kitchenware"
+  }
+]

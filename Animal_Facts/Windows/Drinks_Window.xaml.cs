@@ -25,7 +25,7 @@ namespace API_hub.Windows
         {
             InitializeComponent();
             drink = passed_drink;
-            Title.Content = drink.Name;
+            Title.Content = drink.Name.FirstLetterToUpper(); ;
             Ingredients.Text = "";
 
             for (int i = 1; i <= 15; i++)

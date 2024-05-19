@@ -10,14 +10,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="0.05*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="0.05*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.05*"/>
         </Grid.ColumnDefinitions>
+        <Border Background="#3DB1A1" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Border Background="#3DB1A1" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Border Background="#3DB1A1" Grid.Column="0" Grid.RowSpan="3"/>
+        <Border Background="#3DB1A1" Grid.Column="2" Grid.RowSpan="3"/>
+        <Border Background="#108D89" Grid.Row="1" Grid.Column="1" />
         <Menu Grid.ColumnSpan="10">
             <MenuItem Header="_File" FontSize="20" >
                 <MenuItem Header="_Close" FontSize="20" Click="Close_action" ></MenuItem>
@@ -26,6 +30,19 @@
                 <MenuItem Header="_About" FontSize="20" Click="About_action" ></MenuItem>
             </MenuItem>
         </Menu>
+        <Grid Grid.Row="1" Grid.Column="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
         <TextBlock Text="Taki Card Game"  Grid.Column="0" Grid.Row="1" FontSize="48" FontStyle="Italic" FontWeight="Bold" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBlock Text="Choose how many Players "  Grid.Column="0" Grid.Row="2" FontSize="30"  FontWeight="Bold" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <ComboBox Name="Player_amount"  Grid.Column="1" Grid.Row="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="200" SelectedIndex="0" HorizontalContentAlignment="Center">
@@ -34,5 +51,6 @@
             <ComboBoxItem Content="4 Players" Tag="4"/>
         </ComboBox>
         <Button Name="Start_Game" Content="Start Game" Grid.Column="1" Grid.Row="3" FontSize="40" FontStyle="Italic" FontWeight="Bold" Margin="10" Height="60" Click="Start_Game_Click"/>
-</Grid>
+        </Grid>
+    </Grid>
 </Window>

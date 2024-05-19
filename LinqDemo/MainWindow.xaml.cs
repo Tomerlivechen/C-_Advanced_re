@@ -19,12 +19,13 @@ namespace LinqDemo
     public partial class MainWindow : Window
     {
         public List<Product> RawProductList;
-
+        public List<Category_ref> CategoryList;
         public MainWindow()
         {
             InitializeComponent();
 
             LoadProducts();
+            LoadCategories();
             AddButtons("GetAll", GetAll_M, GetAll_S);
             AddButtons("Get names length", GetName_M, GetName_S);
             AddButtons("Get only name", GetOnlyName_M, GetOnlyName_S);
@@ -36,11 +37,42 @@ namespace LinqDemo
             AddButtons("Filter", First_M, First_S);
             AddButtons("Take", Take_M, Taket_M2);
 
-
+            AddButtons("Join", Join_M, Join_S);
 
 
         }
 
+
+        private void Join_M(object sender, RoutedEventArgs e)
+        {
+            var result = RawProductList.Join(
+                CategoryList,
+                prod => prod.CategoryId,
+                cat => cat.CategoryId,
+                (prod, cat) => new
+                {
+                    ProductName = prod.Name,
+                    ProductPrice = prod.Price,
+                    ProductCatagory = cat.CategoryName,
+                }
+                );
+            resultsDataGrid.ItemsSource = result;
+        }
+
+
+        private void Join_S(object sender, RoutedEventArgs e)
+        {
+            var result = from prod in RawProductList
+                         join cat in CategoryList on prod.CategoryId equals cat.CategoryId
+                         select new
+                         {
+                             prod.Id,
+                             prod.Name,
+                             prod.Price,
+                             cat.CategoryName
+                         };
+            resultsDataGrid.ItemsSource = result;
+        }
         private void    Take_M(object sender, RoutedEventArgs e)
         {
             var result = RawProductList.Take(4..12);
@@ -185,6 +217,13 @@ namespace LinqDemo
             
         }
 
+        public void LoadCategories()
+        {
+            string RawJSON = File.ReadAllText("Resources/Cat_Names.json");
+            CategoryList = JsonSerializer.Deserialize<List<Category_ref>>(RawJSON);
+
+        }
+
         public void AddButtons(string MethodName,  RoutedEventHandler clickMethod, RoutedEventHandler clickSyntax)
         {
             StackPanel stackPanel = new StackPanel() { Orientation = Orientation.Horizontal, Margin = new Thickness(5) };
@@ -228,6 +267,14 @@ namespace LinqDemo
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+
+    }
+
+    public class Category_ref
+    {
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
 
 
     }

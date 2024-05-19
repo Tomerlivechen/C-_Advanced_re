@@ -82,7 +82,7 @@ namespace PrioratyDefiner
             }
             else
             {
-                MessageBox.Show("Task Names must be unique", "Error");
+                MessageBox.Show("Task Names must be unique and have actual values", "Error");
             }
         }
 
@@ -156,7 +156,7 @@ namespace PrioratyDefiner
                     if (item.Text == task.Text)
                     {
                         index++;
-                        if (index >= 2)
+                        if (index >= 2 || string.IsNullOrWhiteSpace(item.Text))
                         {
                             return true;
                         }

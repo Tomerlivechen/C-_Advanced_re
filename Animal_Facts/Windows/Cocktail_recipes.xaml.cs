@@ -26,7 +26,7 @@ namespace API_hub.Windows
 
             
             cocktail_Data = cocktail;
-            Title.Content = cocktail_Data.Name;
+            Title.Content = (string)cocktail_Data.Name.FirstLetterToUpper() ;
             Ingredients.Text = "";
             foreach (string item in cocktail_Data.Ingredients)
             {

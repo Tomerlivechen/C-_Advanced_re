@@ -31,7 +31,7 @@ namespace API_hub.Windows
         {
             InitializeComponent();
 
-            _title = recipe.title;
+            _title = recipe.title.FirstLetterToUpper();
             _serving = recipe.servings;
             _ingredients = recipe.ingredients;
             _instructions = recipe.instructions;
