@@ -61,9 +61,11 @@ namespace Speed_Racer.Windows
             
             Track_Canvas.Children.Add(fule_Tank);
             Canvas.SetZIndex(fule_Tank, 4);
-            Canvas.SetTop(fule_Tank, 0);
+            Canvas.SetTop(fule_Tank, 800);
             Canvas.SetLeft(fule_Tank, 0);
-            
+            fule_Tank.Tag="Fule";
+
+
         }
 
         public void FourSecondtimer(object sender, EventArgs e)
@@ -398,6 +400,7 @@ namespace Speed_Racer.Windows
                         {
                             if (goody.Visibility == Visibility.Visible)
                             {
+                                if(goody.Tag.ToString() == "Fule")
                                 goody.Visibility = Visibility.Collapsed;
                                 NewGame.AddFule();
                                 return;

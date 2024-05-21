@@ -51,11 +51,11 @@
             <Line Name="Track_line2" X1="0" Y1="0" X2="0" Y2="700" Stroke="White" StrokeThickness="5" StrokeDashArray="5 5" Canvas.Top="-20" Canvas.Left="180" Panel.ZIndex="1"/>
             <Line Name="Track_line3" X1="0" Y1="0" X2="0" Y2="700" Stroke="White" StrokeThickness="5" StrokeDashArray="5 5" Canvas.Top="-20" Canvas.Left="270" Panel.ZIndex="1"/>
             <Image Name="player" Source="/Resources/Images/MaxCar.png"   Width="60" Canvas.Top="447" Canvas.Left="98" HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="2"/>
-            <Image Name="Car2" Tag="Car 1" Source="/Resources/Images/FlippedCar.png"  Width="60" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2" Canvas.Left="188"/>
-            <Image Name="Car3" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="455" Canvas.Left="290" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="2"/>
-            <Image Name="Car5" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="456" Canvas.Left="188" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
-            <Image Name="Car6" Tag="Car 1" Source="/Resources/Images/FlippedCar.png"  Width="60" Canvas.Top="479" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
-            <Image Name="Car8" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="290" Panel.ZIndex="2"/>
+            <Image Name="Car2" Tag="Car 1" Source="/Resources/Images/FlippedCar.png"  Width="60" Canvas.Top="-300" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2" Canvas.Left="188"/>
+            <Image Name="Car3" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="-455" Canvas.Left="290" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="2"/>
+            <Image Name="Car5" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="-456" Canvas.Left="188" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
+            <Image Name="Car6" Tag="Car 1" Source="/Resources/Images/FlippedCar.png"  Width="60" Canvas.Top="-479" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
+            <Image Name="Car8" Tag="Car 1" Source="/Resources/Images/Debris.png"  Width="60" Canvas.Top="-300" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="290" Panel.ZIndex="2"/>
             <Image Height="462" Name="Light" Canvas.Left="40" Source="/Resources/Images/RedLight.png" Visibility="Collapsed" Stretch="Fill" Canvas.Top="138" Width="262" Panel.ZIndex="5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Canvas>
     </Grid>
