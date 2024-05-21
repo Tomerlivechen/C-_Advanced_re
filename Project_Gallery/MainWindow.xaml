@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="620"
         Name ="ProjectGallery">
-    <Grid>
+    <Grid Name="Main_grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.1*"/>
             <ColumnDefinition Width="3*"/>
@@ -25,7 +25,8 @@
         <Border Background="#1F9991" Grid.Row="0" Grid.ColumnSpan="3"/>
         <Border Background="#1F9991" Grid.Row="3" Grid.ColumnSpan="3"/>
         <Border Background="#3DB1A1" Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2"/>
-        <controls:Contact_Me Grid.Row="0" Grid.Column="1" Height="80" Grid.RowSpan="2" />
+        <StackPanel Name="Contact_stack" Grid.Row = "0" Grid.Column = "1" Grid.RowSpan = "2" />
+
 
 
         <StackPanel Grid.Row="2" Grid.Column="1">

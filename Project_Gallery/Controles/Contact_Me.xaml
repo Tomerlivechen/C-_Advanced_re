@@ -15,7 +15,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Name="Contact" Background="#008080" Grid.ColumnSpan="2" Panel.ZIndex="2">
+        <Button Name="Contact" Background="#008080" Grid.ColumnSpan="2" Panel.ZIndex="2" Click="Contact_Click">
             <Image Source="/Resources/Contact_me_images/info_user.png" />
             <Button.Resources>
                 <Style TargetType="Border">

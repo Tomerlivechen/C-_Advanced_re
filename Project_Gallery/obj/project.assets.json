@@ -51,19 +51,6 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "API_In_WPF/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/API_In_WPF.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/API_In_WPF.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "Common_Classes/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -72,22 +59,6 @@
         },
         "runtime": {
           "bin/placeholder/Common_Classes.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
-      "First_project/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Common_Classes": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/First_project.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/First_project.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -136,22 +107,6 @@
         },
         "runtime": {
           "bin/placeholder/PriorityDefiner.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
-      "System_manager/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Common_Classes": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/System_manager.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/System_manager.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -222,20 +177,10 @@
       "path": "../Animal_Facts/API_hub.csproj",
       "msbuildProject": "../Animal_Facts/API_hub.csproj"
     },
-    "API_In_WPF/1.0.0": {
-      "type": "project",
-      "path": "../API_In_WPF/API_In_WPF.csproj",
-      "msbuildProject": "../API_In_WPF/API_In_WPF.csproj"
-    },
     "Common_Classes/1.0.0": {
       "type": "project",
       "path": "../Common_Classes/Common_Classes.csproj",
       "msbuildProject": "../Common_Classes/Common_Classes.csproj"
-    },
-    "First_project/1.0.0": {
-      "type": "project",
-      "path": "../First_project/First_project.csproj",
-      "msbuildProject": "../First_project/First_project.csproj"
     },
     "Frogger/1.0.0": {
       "type": "project",
@@ -252,11 +197,6 @@
       "path": "../PrioratyDefiner/PriorityDefiner.csproj",
       "msbuildProject": "../PrioratyDefiner/PriorityDefiner.csproj"
     },
-    "System_manager/1.0.0": {
-      "type": "project",
-      "path": "../System_manager/System_manager.csproj",
-      "msbuildProject": "../System_manager/System_manager.csproj"
-    },
     "Taki_Game/1.0.0": {
       "type": "project",
       "path": "../Taki_Game/Taki_Game.csproj",
@@ -271,14 +211,11 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "API_Animal_Pics >= 1.0.0",
-      "API_In_WPF >= 1.0.0",
       "API_hub >= 1.0.0",
       "Common_Classes >= 1.0.0",
-      "First_project >= 1.0.0",
       "Frogger >= 1.0.0",
       "Memory_game >= 1.0.0",
       "PriorityDefiner >= 1.0.0",
-      "System_manager >= 1.0.0",
       "Taki_Game >= 1.0.0",
       "TickTackTow_WPF >= 1.0.0"
     ]
@@ -321,14 +258,8 @@
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_In_WPF\\API_In_WPF.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_In_WPF\\API_In_WPF.csproj"
-            },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
-            },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\First_project\\First_project.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\First_project\\First_project.csproj"
             },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Frogger.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Frogger.csproj"
@@ -338,9 +269,6 @@
             },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj"
-            },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\System_manager\\System_manager.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\System_manager\\System_manager.csproj"
             },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj"

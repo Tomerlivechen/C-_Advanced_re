@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Gallery.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace Project_Gallery.Controles
         public Contact_Me()
         {
             InitializeComponent();
+        }
+
+        private void Contact_Click(object sender, RoutedEventArgs e)
+        {
+            Contact_Me_Window contact_Me_Window = new Contact_Me_Window();
+            contact_Me_Window.ShowDialog();
         }
     }
 }

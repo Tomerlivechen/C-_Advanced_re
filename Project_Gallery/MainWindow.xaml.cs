@@ -1,5 +1,4 @@
 ﻿using Common_Classes;
-using First_project;
 using Project_Gallery.Controles;
 using System.Text;
 using System.Windows;
@@ -41,6 +40,11 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         InitializProjectbuttons();
+
+        Contact_Me control = new Contact_Me();
+        control.Height = 80;
+        Contact_stack.Children.Add(control);
+
     }
 
     private void InitializProjectbuttons()
