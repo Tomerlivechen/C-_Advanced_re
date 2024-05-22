@@ -12,7 +12,7 @@ namespace Speed_Racer.Resources.Classes
 {
     public static class Move_objects
     {
-        public static void MoveAllObjects(Canvas Track_Canvas , int difficalty, double Speed)
+        public static void MoveAllObjects(Canvas Track_Canvas, int difficalty, double Speed)
         {
             foreach (var obj in Track_Canvas.Children)
             {
@@ -25,9 +25,10 @@ namespace Speed_Racer.Resources.Classes
                         moveObject(movable, speed, difficalty, Speed);
                     }
                 }
-                if (obj is Colectable tank)
+                if (obj is Colectable goody)
                 {
-                    moveObject(tank, 1, difficalty, Speed);
+                    
+                    moveObject(goody, 1, difficalty, Speed);
                 }
             }
         }
@@ -38,7 +39,7 @@ namespace Speed_Racer.Resources.Classes
             string designation;
             double[] position = Get_From_Canvas.Getposition(element);
             Canvas.SetTop(element, position[1] + speed * (difficalty + 1) * Speed);
-            if (position[1] > 800 || position[1] < -2000)
+            if (position[1] > 800 )
             {
                 if (element is Image image)
                 {
@@ -55,11 +56,13 @@ namespace Speed_Racer.Resources.Classes
                     image.Source = Image_Import.LoadImageFromResource($"{changeCarImageBySpeed(newSpeed)}.png");
                     Canvas.SetLeft(element, rnd.Next(0, 300));
                 }
-                if (element is Colectable Fule_Tank)
+                if (element is Colectable goody)
                 {
-                    Fule_Tank.Visibility = Visibility.Visible;
-                    Canvas.SetLeft(Fule_Tank, rnd.Next(0, 300));
-                    Canvas.SetTop(Fule_Tank, -1 * (500 + 150 * rnd.Next(2, 8)));
+                    int seperator = 1;
+                    goody.Visibility = Visibility.Visible;
+                    if (goody.Tag.ToString() == "Fix") { seperator = 3; }
+                    Canvas.SetLeft(goody, rnd.Next(0, 300));
+                    Canvas.SetTop(goody, -1 * (500 + 150 * rnd.Next(seperator*3, seperator*8)));
                     return;
                 }
                 Canvas.SetTop(element, -1 * (500 + 150 * rnd.Next(2, 5)));
@@ -69,27 +72,35 @@ namespace Speed_Racer.Resources.Classes
         public static string changeCarImageBySpeed(int newspeed)
         {
             Random rnd = new Random();
-            if (newspeed == 1)
+            switch (newspeed)
             {
-                int random = rnd.Next(0, 2);
-                if (random == 0)
-                {
+                case 1:
+                    int random = rnd.Next(0, 2);
+                    if (random == 0)
+                    {
+                        return "Debris";
+                    }
+                    else
+                    {
+                        return "FlippedCar";
+                    }
+                    break;
+                case 2:
+                    return "HunterCar";
+                    break;
+                case 3:
+                    return "VanCar";
+                    break;
+                case 4:
+                    return "ArmoredCar";
+                    break;
+                case 5:
+                    return "BattleCar";
+                    break;
+                default:
                     return "Debris";
-                }
-                else
-                {
-                    return "FlippedCar";
-                }
+
             }
-            if ((newspeed >= 2) && (newspeed <= 4))
-            {
-                return "HunterCar";
-            }
-            if ((newspeed > 4))
-            {
-                return "BattleCar";
-            }
-            return "Debris";
         }
     }
 }

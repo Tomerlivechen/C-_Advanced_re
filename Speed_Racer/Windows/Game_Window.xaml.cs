@@ -14,7 +14,7 @@ namespace Speed_Racer.Windows
     {
         public double speed_Holder = 0.1;
         public double Speed = 0.11;
-        public int difficalty = 1;
+        public int difficalty = 3;
         public bool sidecrash = false;
         public bool start = false;
         public int countDown = 0;
@@ -22,7 +22,8 @@ namespace Speed_Racer.Windows
         DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(10) };
         DispatcherTimer timer1s = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
         DispatcherTimer timer4s = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
-        Colectable fule_Tank = new Colectable();
+        Colectable fule_Tank = new Colectable("Fule.png");
+        Colectable Repairkit = new Colectable("RepairKit.png");
         List<Image> enimyCars;
         Race_Game NewGame;
         Speedometer speedometer;
@@ -45,6 +46,11 @@ namespace Speed_Racer.Windows
             Canvas.SetTop(fule_Tank, 800);
             Canvas.SetLeft(fule_Tank, 0);
             fule_Tank.Tag = "Fule";
+            Track_Canvas.Children.Add(Repairkit);
+            Canvas.SetZIndex(Repairkit, 4);
+            Canvas.SetTop(Repairkit, 800);
+            Canvas.SetLeft(Repairkit, 0);
+            Repairkit.Tag = "Fix";
             enimyCars = new List<Image>() { Car2, Car3, Car5, Car6, Car8 };
             FuleGauge fuleGauge = new FuleGauge(NewGame);
             FuleGaugebox.Children.Add(fuleGauge);

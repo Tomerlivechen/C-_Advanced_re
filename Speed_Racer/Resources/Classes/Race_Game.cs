@@ -80,6 +80,11 @@
         }
 
 
+        public void AddRepair()
+        {
+            repair++;
+        }
+
         public void initilize(int difficulty)
         {
             repair = 5 - difficulty;
@@ -111,6 +116,8 @@
         {
             time++;
         }
+
+
 
         public Race_Game(string _name, int _difficulty)
         {

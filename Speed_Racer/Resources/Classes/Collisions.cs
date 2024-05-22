@@ -51,13 +51,9 @@ namespace Speed_Racer.Resources.Classes
                             }
                         }
                     }
-
                 }
-
-
             }
         }
-
         public static void CheckCollision(Canvas Track_Canvas, Image player, Race_Game NewGame, Game_Window Game_Window)
         {
             double[] carPosition = Get_From_Canvas.Getposition(player);
@@ -103,7 +99,6 @@ namespace Speed_Racer.Resources.Classes
             int horizontalTolerance = (int)player.ActualHeight;
             foreach (var obj in Track_Canvas.Children)
             {
-
                 if (obj is Colectable goody)
                 {
                     verticalTolerance += (int)goody.ActualWidth ;
@@ -118,21 +113,25 @@ namespace Speed_Racer.Resources.Classes
                             if (goody.Visibility == Visibility.Visible)
                             {
                                 if (goody.Tag.ToString() == "Fule")
+                                {
                                     goody.Visibility = Visibility.Collapsed;
-                                NewGame.AddFule();
-                                return;
+                                    NewGame.AddFule();
+                                    return;
+                                }
+
+                                if (goody.Tag.ToString() == "Fix")
+                                {
+                                    goody.Visibility = Visibility.Collapsed;
+                                    NewGame.AddRepair();
+                                    return;
+                                }
                             }
                         }
 
                     }
                 }
             }
-            }
-
-
-
-
-
+        }
         
     }
 }
