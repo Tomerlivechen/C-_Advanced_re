@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-
-namespace Speed_Racer.Resources.Classes
+﻿namespace Speed_Racer.Resources.Classes
 {
-    class Race_Game
+    public class Race_Game
     {
 
         public delegate void WinEventHandeler(object sender, EventArgs e);
@@ -58,7 +51,8 @@ namespace Speed_Racer.Resources.Classes
         {
             distance -= dis;
             if (distance < 0)
-            { distance = 0;
+            {
+                distance = 0;
                 OnWinEvent(EventArgs.Empty);
             }
         }
@@ -73,13 +67,13 @@ namespace Speed_Racer.Resources.Classes
         }
         public void UseFule(double speed)
         {
-            Fule -= (3 - speed)/2;
-            if (Fule < 0 && repair>0)
+            Fule -= (3 - speed) / 2;
+            if (Fule < 0 && repair > 0)
             {
                 Car_death();
                 Fule = 100;
             }
-            if(Fule < 0 && repair <= 0)
+            if (Fule < 0 && repair <= 0)
             {
                 Car_death();
             }
@@ -92,7 +86,7 @@ namespace Speed_Racer.Resources.Classes
             score = 0;
             time = 0;
             Fule = 100;
-            distance = 1000+ 1000 * difficulty;
+            distance = 1000 + 1000 * difficulty;
         }
 
         public int GetScore()

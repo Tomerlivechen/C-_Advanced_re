@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\
+C:\Users\tomer\Desktop\Projects\Programming\C#\C_Project\C-_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\
 Speed_Racer
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\App.xaml
-31468423662
+C:\Users\tomer\Desktop\Projects\Programming\C#\C_Project\C-_Advanced_re\Speed_Racer\App.xaml
+31028372758
 
-12-1894338542
-1991593764455
-MainWindow.xaml;Resources\Controls\Fule_Tank.xaml;Windows\Game_Window.xaml;
+14-1406580669
+198-1509178875
+MainWindow.xaml;Resources\Controls\Colectable.xaml;Windows\Game_Window.xaml;
 
-True
+False
 

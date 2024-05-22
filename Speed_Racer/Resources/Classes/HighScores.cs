@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Speed_Racer.Resources.Classes
@@ -20,7 +15,7 @@ namespace Speed_Racer.Resources.Classes
             {
                 name = "Anonymous";
             }
-            High_score_player highScore_Player = new High_score_player(name ,score);
+            High_score_player highScore_Player = new High_score_player(name, score);
             HighScoreList.Add(highScore_Player);
 
         }
