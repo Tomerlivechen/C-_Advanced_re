@@ -1,4 +1,5 @@
-﻿using Speed_Racer.Resources.Classes;
+﻿using Common_Classes.Classes;
+using Speed_Racer.Resources.Classes;
 using Speed_Racer.Resources.Controls;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,7 +14,7 @@ namespace Speed_Racer.Windows
     {
         public double speed_Holder = 0.1;
         public double Speed = 0.11;
-        public int difficalty = 2;
+        public int difficalty = 1;
         public bool sidecrash = false;
         public bool start = false;
         public int countDown = 0;
@@ -24,6 +25,7 @@ namespace Speed_Racer.Windows
         Colectable fule_Tank = new Colectable();
         List<Image> enimyCars;
         Race_Game NewGame;
+        Speedometer speedometer;
         public Game_Window()
         {
             NewGame = new Race_Game(name, difficalty);
@@ -44,6 +46,12 @@ namespace Speed_Racer.Windows
             Canvas.SetLeft(fule_Tank, 0);
             fule_Tank.Tag = "Fule";
             enimyCars = new List<Image>() { Car2, Car3, Car5, Car6, Car8 };
+            FuleGauge fuleGauge = new FuleGauge(NewGame);
+            FuleGaugebox.Children.Add(fuleGauge);
+            Repair_item repair_Item = new Repair_item(NewGame);
+            Toolbox.Children.Add(repair_Item);
+            speedometer = new Speedometer();
+            SpeedGaugebox.Children.Add(speedometer);
         }
         public void FourSecondtimer(object sender, EventArgs e)
         {
@@ -129,8 +137,10 @@ namespace Speed_Racer.Windows
             Collisions.CheckEnemyCollision(enimyCars);
             Move_objects.MoveAllObjects(Track_Canvas, difficalty, Speed);
             Collisions.CheckCollision(Track_Canvas, player, NewGame, this);
+            Collisions.CheckGoodCollision(Track_Canvas, player, NewGame);
+            speedometer.GenerateGage((int)(Speed * 0.8)+1);
             moveLines();
-            speed_Value.Text = Speed.ToString("F2");
+
         }
         private void secondTimedReaction(object sender, EventArgs e)
         {
@@ -139,10 +149,9 @@ namespace Speed_Racer.Windows
             NewGame.timePass();
             NewGame.moveForward(Speed);
             Distance_Count.Text = NewGame.distance.ToString("F1");
-            Car_Count.Text = NewGame.repair.ToString();
             Time_Count.Text = NewGame.time.ToString();
             Score_Value.Text = NewGame.score.ToString();
-            Fule_Value.Text = NewGame.Fule.ToString("F1");
+            
             NewGame.UseFule(Speed);
         }
         public double[] Getposition(UIElement element)

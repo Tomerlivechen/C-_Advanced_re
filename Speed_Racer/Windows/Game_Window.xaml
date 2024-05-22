@@ -25,16 +25,20 @@
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
         <StackPanel Name="Stats" Grid.Row="1" Grid.Column="7" Panel.ZIndex="4"  >
-            <Label Content="Repair Kits"  Margin="5" FontSize="20"  FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
-            <TextBlock Name="Car_Count" Text="0" Grid.Row="0" Margin="5" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-            <Label Content="Time"  Grid.Row="0" Grid.Column="4" Margin="5" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
-            <TextBlock Name="Time_Count" Text="0" Grid.Row="0" Grid.Column="4" Margin="5" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-            <Label Content="Score"  Grid.Row="0" Grid.Column="3" Margin="5" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
-            <TextBlock Name="Score_Value" Text="0" Grid.Row="0" Grid.Column="4" Margin="5" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
-            <Label Content="Fule"  Grid.Row="0" Grid.Column="3" Margin="5" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
-            <TextBlock Name="Fule_Value" Text="0" Grid.Row="0" Grid.Column="4" Margin="5" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
-            <Label Content="Speed"  Grid.Row="0" Grid.Column="3" Margin="5" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
-            <TextBlock Name="speed_Value" Text="0" Grid.Row="0" Grid.Column="4" Margin="5" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+            <Viewbox Height="70" Width="200">
+                <StackPanel Name="Toolbox"/>
+            </Viewbox>
+            <Label Content="Time"  Grid.Row="0" Grid.Column="4" Margin="1" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+            <TextBlock Name="Time_Count" Text="0" Grid.Row="0" Grid.Column="4" Margin="1" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+            <Label Content="Score"  Grid.Row="0" Grid.Column="3" Margin="1" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+            <TextBlock Name="Score_Value" Text="0" Grid.Row="0" Grid.Column="4" Margin="1" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+            <Viewbox Height="160" Width="200">
+                <StackPanel Name="SpeedGaugebox" Margin="2"/>
+            </Viewbox>
+            
+            <Viewbox Height="200" Width="150">
+                <StackPanel Name="FuleGaugebox"/>
+            </Viewbox>
         </StackPanel>
         <Label Content="Distance" Grid.Row="0" Grid.Column="3" Margin="5" FontSize="20" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
         <TextBlock Name="Distance_Count" Text="0" Grid.Row="0" Grid.Column="3" Margin="5" FontSize="30" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2"/>

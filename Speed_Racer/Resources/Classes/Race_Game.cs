@@ -67,7 +67,7 @@
         }
         public void UseFule(double speed)
         {
-            Fule -= (3 - speed) / 2;
+            Fule -= (5 - speed) / 2;
             if (Fule < 0 && repair > 0)
             {
                 Car_death();
@@ -86,7 +86,7 @@
             score = 0;
             time = 0;
             Fule = 100;
-            distance = 1000 + 1000 * difficulty;
+            distance = 250 + 250 * difficulty;
         }
 
         public int GetScore()

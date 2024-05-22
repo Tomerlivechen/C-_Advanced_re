@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+Jo6KB2072UWEq3t8OaETi6hsaBEUo47Uoye3RRzH57hM6uAzfHlrhCdXNJhcR7S273yLtiSfDgXZyPS5tGhA==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\tomer\\Desktop\\Projects\\Programming\\C#\\C_Project\\C-_Advanced_re\\Speed_Racer\\Speed_Racer.csproj",
+  "dgSpecHash": "Rpfjb5aSmK7E5If5KdUFQsx/YVPVTgZ2sv/O0nQZyo60kfMb4gwUgaqV5i6x0TISzUD2K+9cZE9ide6itVOYHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\tomer\\Desktop\\Projects\\Programming\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\tomer\\Desktop\\Projects\\Programming\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

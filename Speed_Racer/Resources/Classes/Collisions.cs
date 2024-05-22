@@ -34,12 +34,12 @@ namespace Speed_Racer.Resources.Classes
                                 {
                                     if (car.Visibility == Visibility.Visible && car2.Visibility == Visibility.Visible)
                                     {
-                                        if (car.Tag != "terrane 1")
+                                        if (car.Tag.ToString() != "terrane 1")
                                         {
                                             car.Tag = $"terrane 1";
                                             car.Source = Image_Import.LoadImageFromResource($"FlippedCar.png");
                                         }
-                                        if (carImage2.Tag != "terrane 1")
+                                        if (carImage2.Tag.ToString() != "terrane 1")
                                         {
                                             carImage2.Tag = $"terrane 1";
                                             carImage2.Source = Image_Import.LoadImageFromResource($"FlippedCar.png");
@@ -91,12 +91,25 @@ namespace Speed_Racer.Resources.Classes
                     }
 
                 }
+
+            }
+
+        }
+
+        public static void CheckGoodCollision(Canvas Track_Canvas, Image player, Race_Game NewGame)
+        {
+            double[] carPosition = Get_From_Canvas.Getposition(player);
+            int verticalTolerance = (int)player.ActualWidth;
+            int horizontalTolerance = (int)player.ActualHeight;
+            foreach (var obj in Track_Canvas.Children)
+            {
+
                 if (obj is Colectable goody)
                 {
-                    verticalTolerance += (int)goody.ActualWidth;
-                    verticalTolerance = (verticalTolerance / 2) - 5;
-                    horizontalTolerance += (int)goody.ActualHeight;
-                    horizontalTolerance = (horizontalTolerance / 2) - 5;
+                    verticalTolerance += (int)goody.ActualWidth ;
+                    verticalTolerance = (verticalTolerance / 2) ;
+                    horizontalTolerance += (int)goody.ActualHeight ;
+                    horizontalTolerance = (horizontalTolerance / 2) ;
                     double[] ElementPosition = Get_From_Canvas.Getposition(goody);
                     if (carPosition[1] > ElementPosition[1] - horizontalTolerance && carPosition[1] < ElementPosition[1] + horizontalTolerance)
                     {
@@ -113,13 +126,13 @@ namespace Speed_Racer.Resources.Classes
 
                     }
                 }
-
+            }
             }
 
 
 
 
 
-        }
+        
     }
 }

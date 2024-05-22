@@ -1,0 +1,15 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\bin\Debug\net8.0\PreTest.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\bin\Debug\net8.0\PreTest.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\bin\Debug\net8.0\PreTest.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\bin\Debug\net8.0\PreTest.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\bin\Debug\net8.0\PreTest.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.AssemblyInfoInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.AssemblyInfo.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.csproj.CoreCompileInputs.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.sourcelink.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\refint\PreTest.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\PreTest.genruntimeconfig.cache
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PreTest\PreTest\obj\Debug\net8.0\ref\PreTest.dll

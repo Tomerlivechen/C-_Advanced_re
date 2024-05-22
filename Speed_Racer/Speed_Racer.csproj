@@ -14,6 +14,7 @@
     <None Remove="Resources\Images\Explosion.png" />
     <None Remove="Resources\Images\FlippedCar.png" />
     <None Remove="Resources\Images\Fule.png" />
+    <None Remove="Resources\Images\FuleSymbol.png" />
     <None Remove="Resources\Images\GreenLight.png" />
     <None Remove="Resources\Images\HunterCar.png" />
     <None Remove="Resources\Images\MaxCar.png" />
@@ -24,6 +25,8 @@
     <None Remove="Resources\Images\RaceCar6.png" />
     <None Remove="Resources\Images\RaceCar8.png" />
     <None Remove="Resources\Images\RedLight.png" />
+    <None Remove="Resources\Images\RepairKit.png" />
+    <None Remove="Resources\Images\Speed.png" />
     <None Remove="Resources\Images\Water.png" />
     <None Remove="Resources\Images\YellowLight.png" />
   </ItemGroup>
@@ -46,6 +49,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Fule.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\FuleSymbol.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\GreenLight.png">
@@ -76,6 +82,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\RedLight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\RepairKit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Speed.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Water.png">

@@ -19,8 +19,14 @@ namespace Project_Gallery.Classes
             var uri = new Uri(
                 $"pack://application:,,,/{assemblyName};component/Resources/Contact_me_images/{resourceName}"
             );
-
-            return new BitmapImage(uri);
+            try
+            {
+                return new BitmapImage(uri);
+            }
+            catch
+            {
+                return new BitmapImage();
+            }
         }
 
     }
