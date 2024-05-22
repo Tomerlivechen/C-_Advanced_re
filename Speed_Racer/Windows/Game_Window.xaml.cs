@@ -127,7 +127,7 @@ namespace Speed_Racer.Windows
         private void timedReaction(object sender, EventArgs e)
         {
             Collisions.CheckEnemyCollision(enimyCars);
-            MoveAllObjects();
+            Move_objects.MoveAllObjects(Track_Canvas, difficalty, Speed);
             Collisions.CheckCollision(Track_Canvas, player, NewGame, this);
             moveLines();
             speed_Value.Text = Speed.ToString("F2");
@@ -238,83 +238,6 @@ namespace Speed_Racer.Windows
             Speed = speed_Holder;
             NewGame.Car_death();
             moveAllCars(700);
-        }
-        public void moveObject(UIElement element, int speed)
-        {
-            Random rnd = new Random();
-            string designation;
-            double[] position = Getposition(element);
-            Canvas.SetTop(element, position[1] + speed * (difficalty + 1) * Speed);
-            if (position[1] > 800 || position[1] < -2000)
-            {
-                if (element is Image image)
-                {
-                    int newSpeed = rnd.Next(1, 6);
-                    if (newSpeed == 1)
-                    {
-                        designation = "terrane";
-                    }
-                    else
-                    {
-                        designation = "Car";
-                    }
-                    image.Tag = $"{designation} {newSpeed}";
-                    image.Source = Image_Import.LoadImageFromResource($"{changeCarImageBySpeed(newSpeed)}.png");
-                    Canvas.SetLeft(element, rnd.Next(0, 300));
-                }
-                if (element is Colectable Fule_Tank)
-                {
-                    Fule_Tank.Visibility = Visibility.Visible;
-                    Canvas.SetLeft(Fule_Tank, rnd.Next(0, 300));
-                    Canvas.SetTop(Fule_Tank, -1 * (500 + 150 * rnd.Next(2, 8)));
-                    return;
-                }
-                Canvas.SetTop(element, -1 * (500 + 150 * rnd.Next(2, 5)));
-            }
-        }
-        public string changeCarImageBySpeed(int newspeed)
-        {
-            Random rnd = new Random();
-            if (newspeed == 1)
-            {
-                int random = rnd.Next(0, 2);
-                if (random == 0)
-                {
-                    return "Debris";
-                }
-                else
-                {
-                    return "FlippedCar";
-                }
-            }
-            if ((newspeed >= 2) && (newspeed <= 4))
-            {
-                return "HunterCar";
-            }
-            if ((newspeed > 4))
-            {
-                return "BattleCar";
-            }
-            return "Debris";
-        }
-        public void MoveAllObjects()
-        {
-            foreach (var obj in Track_Canvas.Children)
-            {
-                if (obj is Image movable)
-                {
-                    if (movable.Tag != null)
-                    {
-                        string[] parts = movable.Tag.ToString().Split(' ');
-                        int.TryParse(parts[1], out int speed);
-                        moveObject(movable, speed);
-                    }
-                }
-                if (obj is Colectable tank)
-                {
-                    moveObject(tank, 1);
-                }
-            }
         }
         private void Mouse_move(object sender, MouseEventArgs e)
         {
