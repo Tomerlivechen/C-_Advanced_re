@@ -14,7 +14,7 @@ namespace Speed_Racer.Windows
     {
         public double speed_Holder = 0.1;
         public double Speed = 0.11;
-        public int difficalty = 3;
+        public int difficalty = 0;
         public bool sidecrash = false;
         public bool start = false;
         public int countDown = 0;
@@ -24,9 +24,11 @@ namespace Speed_Racer.Windows
         DispatcherTimer timer4s = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
         Colectable fule_Tank = new Colectable("Fule.png");
         Colectable Repairkit = new Colectable("RepairKit.png");
+        Colectable Chocolate = new Colectable("Chocolate.png");
         List<Image> enimyCars;
         Race_Game NewGame;
         Speedometer speedometer;
+        DistanceView distanceView = new DistanceView();
         public Game_Window()
         {
             NewGame = new Race_Game(name, difficalty);
@@ -41,16 +43,10 @@ namespace Speed_Racer.Windows
             NewGame.LoseEvent += Lose_fuction;
             //moveAllCars(600);
 
-            Track_Canvas.Children.Add(fule_Tank);
-            Canvas.SetZIndex(fule_Tank, 4);
-            Canvas.SetTop(fule_Tank, 800);
-            Canvas.SetLeft(fule_Tank, 0);
-            fule_Tank.Tag = "Fule";
-            Track_Canvas.Children.Add(Repairkit);
-            Canvas.SetZIndex(Repairkit, 4);
-            Canvas.SetTop(Repairkit, 800);
-            Canvas.SetLeft(Repairkit, 0);
-            Repairkit.Tag = "Fix";
+            insertColectables(fule_Tank, "Fule");
+            insertColectables(Repairkit, "Fix");
+            insertColectables(Chocolate, "Chocolate");
+
             enimyCars = new List<Image>() { Car2, Car3, Car5, Car6, Car8 };
             FuleGauge fuleGauge = new FuleGauge(NewGame);
             FuleGaugebox.Children.Add(fuleGauge);
@@ -58,26 +54,38 @@ namespace Speed_Racer.Windows
             Toolbox.Children.Add(repair_Item);
             speedometer = new Speedometer();
             SpeedGaugebox.Children.Add(speedometer);
+            Distance_layout.Children.Add(distanceView);
         }
+
+        public void insertColectables(Colectable colectable, string tag)
+        {
+            Track_Canvas.Children.Add(colectable);
+            Canvas.SetZIndex(colectable, 4);
+            Canvas.SetTop(colectable, 800);
+            Canvas.SetLeft(colectable, 0);
+            colectable.Tag = tag;
+
+        }
+
         public void FourSecondtimer(object sender, EventArgs e)
         {
             if (countDown == 0)
             {
                 setCarsFordifficalty(difficalty);
-                Light.Source = Image_Import.LoadImageFromResource("RedLight.png");
+                Light.Source = Image_Import.LoadImageFromResource("Radio1.png");
                 Light.Visibility = Visibility.Visible;
                 countDown++;
                 return;
             }
             if (countDown == 1)
             {
-                Light.Source = Image_Import.LoadImageFromResource("YellowLight.png");
+                Light.Source = Image_Import.LoadImageFromResource("Radio2.png");
                 countDown++;
                 return;
             }
             if (countDown == 2)
             {
-                Light.Source = Image_Import.LoadImageFromResource("GreenLight.png");
+                Light.Source = Image_Import.LoadImageFromResource("Radio3.png");
                 countDown = 0;
                 timer1.Start();
                 timer1s.Start();
@@ -154,7 +162,7 @@ namespace Speed_Racer.Windows
             timer4s.Stop();
             NewGame.timePass();
             NewGame.moveForward(Speed);
-            Distance_Count.Text = NewGame.distance.ToString("F1");
+            distanceView.moveCar(NewGame.distance, NewGame.fullDistance);
             Time_Count.Text = NewGame.time.ToString();
             Score_Value.Text = NewGame.score.ToString();
             
@@ -191,6 +199,7 @@ namespace Speed_Racer.Windows
                     timer1.Stop();
                     timer1s.Stop();
                     start = false;
+                    pause_screen.Visibility= Visibility.Visible;
                     return;
                 }
                 if (!start)
@@ -198,6 +207,7 @@ namespace Speed_Racer.Windows
                     timer1.Start();
                     timer1s.Start();
                     start = true;
+                    pause_screen.Visibility = Visibility.Collapsed;
                     return;
                 }
             }

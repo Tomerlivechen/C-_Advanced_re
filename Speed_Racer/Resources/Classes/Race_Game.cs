@@ -42,6 +42,8 @@
         public double Fule { get; set; }
         public double distance { get; set; }
 
+        public double fullDistance { get; set; }
+
         public void addToScore(int points)
         {
             score += points;
@@ -92,6 +94,7 @@
             time = 0;
             Fule = 100;
             distance = 250 + 250 * difficulty;
+            fullDistance= distance;
         }
 
         public int GetScore()

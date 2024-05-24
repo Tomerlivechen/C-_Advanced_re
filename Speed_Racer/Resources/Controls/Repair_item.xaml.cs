@@ -46,7 +46,7 @@ namespace Speed_Racer.Resources.Controls
             for (int i = 0; i < number; i++)
             {
                 Image image = new Image();
-                image.Source = Image_Import.LoadImageFromResource("RepairKit.png");
+                image.Source = Image_Import.LoadImageFromResource("RepairKit_stat.png");
                 repair_holder.Children.Add(image);
             }
 

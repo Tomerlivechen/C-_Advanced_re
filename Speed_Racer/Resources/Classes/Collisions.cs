@@ -125,6 +125,13 @@ namespace Speed_Racer.Resources.Classes
                                     NewGame.AddRepair();
                                     return;
                                 }
+
+                                if (goody.Tag.ToString() == "Chocolate")
+                                {
+                                    goody.Visibility = Visibility.Collapsed;
+                                    NewGame.addToScore(50);
+                                    return;
+                                }
                             }
                         }
 

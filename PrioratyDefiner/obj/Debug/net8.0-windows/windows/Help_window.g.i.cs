@@ -53,7 +53,7 @@ namespace PriorityDefiner.windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PriorityDefiner;V1.0.0.0;component/windows/help_window.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PriorityDefiner;component/windows/help_window.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\windows\Help_window.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

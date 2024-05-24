@@ -10,6 +10,9 @@
     <Compile Update="Resources\Controls\Colectable.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Resources\Controls\DistanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Resources\Controls\FuleGauge.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Controls\Colectable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Controls\DistanceView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Controls\FuleGauge.xaml">
