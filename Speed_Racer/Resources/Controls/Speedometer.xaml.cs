@@ -45,19 +45,19 @@ namespace Speed_Racer.Resources.Controls
                 rectangle.Margin = new Thickness(5);
                 if (i > 7)
                 {
-                    rectangle.Fill = Brushes.Green;
+                    rectangle.Fill = Brushes.Red;
                 }
                 else if (i > 5)
                 {
-                    rectangle.Fill = Brushes.Yellow;
+                    rectangle.Fill = Brushes.Orange;
                 }
                 else if (i > 3)
                 {
-                    rectangle.Fill = Brushes.Orange;
+                    rectangle.Fill = Brushes.Yellow;
                 }
                 else if (i <= 3)
                 {
-                    rectangle.Fill = Brushes.Red;
+                    rectangle.Fill = Brushes.Green;
                 }
                 SpeedPanel.Children.Add(rectangle);
             }

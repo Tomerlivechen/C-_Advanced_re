@@ -25,6 +25,9 @@
     <Compile Update="Windows\Game_Window.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\IndexWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Game_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\IndexWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

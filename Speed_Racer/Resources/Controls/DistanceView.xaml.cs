@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Speed_Racer.Resources.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,13 +24,13 @@ namespace Speed_Racer.Resources.Controls
         public DistanceView()
         {
             InitializeComponent();
-            road.Width = 400;
+            Car.Source = Image_Import.LoadImageFromResource("MaxCarLeft.png");
         }
 
         public void moveCar(double distance, double fulldistance)
         {
             double fullsize = road.ActualWidth;
-            double position = (fulldistance-distance) / (fullsize / fulldistance);
+            double position = (fulldistance-distance) / ( fulldistance/(fullsize-(Car.ActualWidth)));
             Canvas.SetLeft(Car, position);
             
 

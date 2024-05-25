@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Text.Json;
 using System.Windows;
+using Common_Classes.Classes;
 
 namespace Speed_Racer.Resources.Classes
 {
@@ -11,12 +12,13 @@ namespace Speed_Racer.Resources.Classes
 
         public static void AddHighScore(string name, int score)
         {
-            if (string.IsNullOrEmpty(name)) ;
+            if (string.IsNullOrEmpty(name)) 
             {
                 name = "Anonymous";
             }
             High_score_player highScore_Player = new High_score_player(name, score);
             HighScoreList.Add(highScore_Player);
+            SaveHighscores();
 
         }
 

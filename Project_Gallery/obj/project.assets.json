@@ -112,6 +112,22 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Speed_Racer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Common_Classes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Speed_Racer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Speed_Racer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Taki_Game/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -197,6 +213,11 @@
       "path": "../PrioratyDefiner/PriorityDefiner.csproj",
       "msbuildProject": "../PrioratyDefiner/PriorityDefiner.csproj"
     },
+    "Speed_Racer/1.0.0": {
+      "type": "project",
+      "path": "../Speed_Racer/Speed_Racer.csproj",
+      "msbuildProject": "../Speed_Racer/Speed_Racer.csproj"
+    },
     "Taki_Game/1.0.0": {
       "type": "project",
       "path": "../Taki_Game/Taki_Game.csproj",
@@ -216,6 +237,7 @@
       "Frogger >= 1.0.0",
       "Memory_game >= 1.0.0",
       "PriorityDefiner >= 1.0.0",
+      "Speed_Racer >= 1.0.0",
       "Taki_Game >= 1.0.0",
       "TickTackTow_WPF >= 1.0.0"
     ]
@@ -269,6 +291,9 @@
             },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj"
+            },
+            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj": {
+              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj"
             },
             "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj": {
               "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj"

@@ -69,3 +69,8 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery.genruntimeconfig.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\ref\Project_Gallery.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug\net8.0-windows\Speed_Racer.deps.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug\net8.0-windows\Speed_Racer.runtimeconfig.json
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug\net8.0-windows\Speed_Racer.exe
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug\net8.0-windows\Speed_Racer.dll
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug\net8.0-windows\Speed_Racer.pdb

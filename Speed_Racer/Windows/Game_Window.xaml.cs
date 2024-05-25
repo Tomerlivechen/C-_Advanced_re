@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Threading;
+using static System.Formats.Asn1.AsnWriter;
 namespace Speed_Racer.Windows
 {
     /// <summary>
@@ -29,8 +30,13 @@ namespace Speed_Racer.Windows
         Race_Game NewGame;
         Speedometer speedometer;
         DistanceView distanceView = new DistanceView();
-        public Game_Window()
+        public Game_Window(int _difficalty, string _name)
         {
+            difficalty = _difficalty;
+            name = _name;
+            if (difficalty == 3) {
+                sidecrash = true;
+            }
             NewGame = new Race_Game(name, difficalty);
             InitializeComponent();
             timer4s.Start();
@@ -54,7 +60,13 @@ namespace Speed_Racer.Windows
             Toolbox.Children.Add(repair_Item);
             speedometer = new Speedometer();
             SpeedGaugebox.Children.Add(speedometer);
-            Distance_layout.Children.Add(distanceView);
+
+            Distance_layout.Child = distanceView;
+            distanceView.Height = Distance_layout.Height;
+            distanceView.Width = Distance_layout.Width;
+            distanceView.HorizontalAlignment = HorizontalAlignment.Stretch;
+            distanceView.VerticalAlignment = VerticalAlignment.Stretch;
+
         }
 
         public void insertColectables(Colectable colectable, string tag)
@@ -144,6 +156,9 @@ namespace Speed_Racer.Windows
             timer1s.Stop();
             MessageBox.Show("You Win");
             start = false;
+            MessageBox.Show("You Have been added to the high score list");
+            int newScore = NewGame.GetScore();
+            HighScores.AddHighScore(name, newScore);
             GameOver(sender, e);
         }
         private void timedReaction(object sender, EventArgs e)
@@ -234,7 +249,7 @@ namespace Speed_Racer.Windows
         public void GameOver(object sender, EventArgs e)
         {
             int response = Message_Box_Classes.DisplayMessageBox("Game over, Do you Want to play again?", "GAME OVER");
-            if (response == 0)
+            if (response == 2)
             {
                 Close();
             }
@@ -260,6 +275,8 @@ namespace Speed_Racer.Windows
             timer1.Start();
             timer1s.Start();
             Fix();
+            Canvas.SetLeft(player, 100);
+            
             Speed = speed_Holder;
             NewGame.Car_death();
             moveAllCars(700);

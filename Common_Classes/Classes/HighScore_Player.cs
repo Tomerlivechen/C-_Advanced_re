@@ -11,4 +11,5 @@ namespace Common_Classes.Classes
         public int time_complete { get; set; }
         public string player_Name { get; set; } = "";
     }
+
 }

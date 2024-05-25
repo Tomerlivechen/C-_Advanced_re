@@ -33,6 +33,7 @@ namespace Speed_Racer.Resources.Controls
             _game = game;
             timer1.Start();
             timer1.Tick += TimedAction;
+            Tank_image.Source = Image_Import.LoadImageFromResource("FuleSymbol.png");
 
         }
 

@@ -40,8 +40,7 @@
                 <StackPanel Name="FuleGaugebox"/>
             </Viewbox>
         </StackPanel>
-        <Viewbox  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="4" Panel.ZIndex="5">
-            <StackPanel  Name="Distance_layout" Panel.ZIndex="5"/>
+        <Viewbox Name="Distance_layout"  Panel.ZIndex="5" Grid.Row="0" Grid.Column="2"  Grid.ColumnSpan="4" Margin="5" Height="50" Width="350">
         </Viewbox>
         <Label Content="Game Paused" Name="pause_screen" Visibility="Collapsed" Grid.Row="1" Grid.Column="2" Margin="5" FontSize="60" Panel.ZIndex="4" FontWeight="ExtraBold" HorizontalAlignment="Center" Grid.ColumnSpan="5" VerticalAlignment="Center" />
         <Border Background="#525257"  Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4"/>

@@ -26,6 +26,7 @@
     <ProjectReference Include="..\Frogger\Frogger.csproj" />
     <ProjectReference Include="..\Memory_game\Memory_game.csproj" />
     <ProjectReference Include="..\PrioratyDefiner\PriorityDefiner.csproj" />
+    <ProjectReference Include="..\Speed_Racer\Speed_Racer.csproj" />
     <ProjectReference Include="..\Taki_Game\Taki_Game.csproj" />
     <ProjectReference Include="..\TickTackTow_WPF\TickTackTow_WPF.csproj" />
   </ItemGroup>

@@ -32,6 +32,7 @@ public partial class MainWindow : Window
         new Taki_Game.Project(),
         new TickTackTow_WPF.Project(),
         new PrioratyDefiner.Project(),
+        new Speed_Racer.Project(),
 
 
     };

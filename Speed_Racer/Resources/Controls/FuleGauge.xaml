@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" Width="270">
     <Grid >
-        <Image Margin="160,185,0,155" Source="/Resources/Images/FuleSymbol.png" Stretch="Fill"/>
+        <Image Name="Tank_image"  Margin="160,185,0,155" Source="../Resources/Images/FuleSymbol.png" Stretch="Fill"/>
         <StackPanel Name="fule_panel" Orientation="Vertical" Margin="10" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
 
 

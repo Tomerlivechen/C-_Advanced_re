@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common_Classes.Classes;
+using static System.Formats.Asn1.AsnWriter;
 namespace Common_Classes.Common_Elements
 {
     /// <summary>
@@ -33,12 +34,7 @@ namespace Common_Classes.Common_Elements
 
                 DataContext = high_scores;
 
-                ObservableCollection<HighScore_Player> playerListBox = new ObservableCollection<HighScore_Player>();
-                foreach (HighScore_Player player in high_scores.player_list)
-                {
-                    playerListBox.Add(player);
-                }
-                PlayerListBox.ItemsSource = playerListBox;
+                PlayerDataGrid.ItemsSource = high_scores.player_list;
             }
             if (high_scores_set is HighScore_Set_Frogger)
             {
@@ -47,14 +43,25 @@ namespace Common_Classes.Common_Elements
                 this.Width = 650;
                 Card_s.Text = "";
                 DataContext = high_scores_frogger;
-
-                ObservableCollection<HighScore_Player> playerListBox = new ObservableCollection<HighScore_Player>();
-                foreach (HighScore_Player player in high_scores_frogger.player_list)
-                {
-                    playerListBox.Add(player);
-                }
-                PlayerListBox.ItemsSource = playerListBox;
+                PlayerDataGrid.ItemsSource = high_scores_frogger.player_list;
             }
+            if (high_scores_set is List<High_score_player> high_scores_fury)
+            {
+                Cards.Text = $" Fury Road";
+                this.Width = 650;
+                Card_s.Text = "";
+                Score_hedder.Header = "Score";
+                var high_Score_Players = from player in high_scores_fury orderby player.Score descending
+                                         select new HighScore_Player
+                                         {
+                                             player_Name = player.Name,
+                                             time_complete = player.Score
+                                         };
+                DataContext = high_Score_Players;
+               PlayerDataGrid.ItemsSource = high_Score_Players;
+            }
+
+
         }
 
         private void Close_BT_Click(object sender, RoutedEventArgs e)
