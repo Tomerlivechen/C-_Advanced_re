@@ -1,0 +1,46 @@
+﻿<Window x:Class="Store_Database.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Store_Database"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="1">
+            <MenuItem Header="_File" FontSize="20">
+                <MenuItem Header="_Close" FontSize="20" Click="Close_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <DataGrid Name="resultsDataGrid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  AutoGenerateColumns="True" Margin="5">
+        </DataGrid>
+        <StackPanel Grid.Row="2" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="Add_Button" Height="30" Width="150" Content="Add" FontSize="21" Margin="5"/>
+            <Button Name="Delete_Button" Height="30" Width="150" Content="Delete" FontSize="21" Margin="5"/>
+            <Button Name="Filter_Button" Height="30" Width="150" Content="Filter" FontSize="21" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center"  >
+            <ComboBox Name="Catagory1" SelectedIndex="0" FontSize="18" Height="30" Width="150" Margin="5">
+                <ComboBoxItem Content="Main Catagory"/>
+            </ComboBox>
+            <ComboBox Name="Catagory2" SelectedIndex="0" FontSize="18" Height="30" Width="150" Margin="5">
+                <ComboBoxItem Content="Main Catagory"/>
+            </ComboBox>
+            <TextBox Name="Search"  FontSize="18" Height="30" Width="150" Margin="5"></TextBox>
+        </StackPanel>
+
+    </Grid>
+</Window>
