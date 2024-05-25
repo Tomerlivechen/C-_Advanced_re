@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Store_Database.Resources.Classes
@@ -13,8 +14,8 @@ namespace Store_Database.Resources.Classes
 
         public string ID { get; set; }
         public string ItemName { get; set; }
-        public string MainCatigory { get; set; }
-        public string SeconderyCatigory { get; set; }
+        public string MainCategory { get; set; }
+        public string SeconderyCategory { get; set; }
 
         public double Amount {  get; set; }
 
@@ -23,18 +24,35 @@ namespace Store_Database.Resources.Classes
         public string AddedDate { get; set; }
 
         public string LastUpdate { get; set; }
+        public string LastUpdater { get; set; }
 
-        public DB_Item(string _ItemName, string _MainCatigory, string _SeconderyCatigory, double _Amount, double _MinAmount )
+        public DB_Item(string itemName, string mainCategory, string seconderyCategory, double amount, double minAmount , string lastUpdater )
         {
             AddedDate = DateTime.ToString("yyyy-MM-dd");
             LastUpdate = DateTime.ToString();
             ID = Guid.NewGuid().ToString();
-            ItemName = _ItemName;
-            MainCatigory = _MainCatigory;
-            SeconderyCatigory = _SeconderyCatigory;
-            Amount = _Amount;
-            MinAmount = _MinAmount;
+            ItemName = itemName;
+            MainCategory = mainCategory;
+            SeconderyCategory = seconderyCategory;
+            Amount = amount;
+            MinAmount = minAmount;
+            LastUpdater = lastUpdater;
         }
+
+        [JsonConstructor]
+        public DB_Item(string ID, string ItemName, string MainCategory, string SeconderyCategory, double Amount, double MinAmount, string AddedDate, string LastUpdate, string LastUpdater)
+        {
+            this.ID = ID;
+            this.ItemName = ItemName;
+            this.MainCategory = MainCategory;
+            this.SeconderyCategory = SeconderyCategory;
+            this.Amount = Amount;
+            this.MinAmount = MinAmount;
+            this.AddedDate = AddedDate;
+            this.LastUpdate = LastUpdate;
+            this.LastUpdater = LastUpdater;
+    }
+
 
         public void AddAmount(double _Amount)
         {
@@ -63,13 +81,13 @@ namespace Store_Database.Resources.Classes
 
         public void ChangeCat1(string _CatName)
         {
-            MainCatigory = _CatName;
+            MainCategory = _CatName;
             updateLastUpdate();
         }
 
         public void ChangeCat2(string _CatName)
         {
-            MainCatigory = _CatName;
+            MainCategory = _CatName;
             updateLastUpdate();
         }
     }

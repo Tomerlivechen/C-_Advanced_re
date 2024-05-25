@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Store_Database"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="500">
+        Title="MainWindow" Height="500" Width="650">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -14,33 +14,40 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="3*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" Grid.ColumnSpan="1">
             <MenuItem Header="_File" FontSize="20">
+                <MenuItem Header="Change _API Address" FontSize="20" Click="ChangeAPIAddress_Click"/>
                 <MenuItem Header="_Close" FontSize="20" Click="Close_Click"/>
             </MenuItem>
         </Menu>
-
-        <DataGrid Name="resultsDataGrid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  AutoGenerateColumns="True" Margin="5">
+        <Label Grid.Row="1" Content="Store Invetory" FontSize="26" HorizontalAlignment="Center" FontWeight="Heavy"></Label>
+        <DataGrid Name="resultsDataGrid" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"  AutoGenerateColumns="True" Margin="5" ColumnWidth="*"  IsReadOnly="True">
         </DataGrid>
-        <StackPanel Grid.Row="2" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Name="Add_Button" Height="30" Width="150" Content="Add" FontSize="21" Margin="5"/>
-            <Button Name="Delete_Button" Height="30" Width="150" Content="Delete" FontSize="21" Margin="5"/>
-            <Button Name="Filter_Button" Height="30" Width="150" Content="Filter" FontSize="21" Margin="5"/>
+        <StackPanel Grid.Row="3" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="Add_Button" Height="30" Width="200" Content="Add" FontSize="21" Margin="5" Click="Add_Button_Click"/>
+            <Button Name="Delete_Button" Height="30" Width="200" Content="Delete" FontSize="21" Margin="5" Click="Delete_Button_Click"/>
+            <Button Name="Load_Button" Height="30" Width="200" Content="Load" FontSize="21" Margin="5" Click="Load_Button_Click"/>
         </StackPanel>
-        <StackPanel Grid.Row="3" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center"  >
-            <ComboBox Name="Catagory1" SelectedIndex="0" FontSize="18" Height="30" Width="150" Margin="5">
-                <ComboBoxItem Content="Main Catagory"/>
+        <StackPanel Grid.Row="4" Margin="4" Orientation="Horizontal" HorizontalAlignment="Center"  >
+            <ComboBox Name="Catagories1" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories1_SelectionChanged">
+                <ComboBoxItem Content="Main Category" Tag=""/>
             </ComboBox>
-            <ComboBox Name="Catagory2" SelectedIndex="0" FontSize="18" Height="30" Width="150" Margin="5">
-                <ComboBoxItem Content="Main Catagory"/>
+            <ComboBox Name="Catagories2" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories2_SelectionChanged">
+                <ComboBoxItem Content="Secondery Category" Tag=""/>
             </ComboBox>
-            <TextBox Name="Search"  FontSize="18" Height="30" Width="150" Margin="5"></TextBox>
+            <TextBox Name="Search"  FontSize="18" Height="30" Width="200" Margin="5"></TextBox>
         </StackPanel>
-
+        <StackPanel Grid.Row="5" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="Edit_Button" Height="30" Width="200" Content="Edit" FontSize="21" Margin="5" Click="Edit_Button_Click"/>
+            <Button Name="Undermin_Button" Height="30" Width="200" Content="UnderMin" FontSize="21" Margin="5" Click="Undermin_Button_Click"/>
+            <Button Name="Filter_Button" Height="30" Width="200" Content="Filter" FontSize="21" Margin="5" Click="Filter_Button_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

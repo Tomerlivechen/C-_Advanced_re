@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Store_Database.Resources.Classes
 {
-    public class Catagories
+    public class Categories
     {
         public string Name { get; set; }
     }

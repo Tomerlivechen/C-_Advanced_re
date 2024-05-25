@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Windows\" />
+    <ProjectReference Include="..\Common_Classes\Common_Classes.csproj" />
   </ItemGroup>
 
 </Project>

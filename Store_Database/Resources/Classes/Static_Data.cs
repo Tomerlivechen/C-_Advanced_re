@@ -10,8 +10,8 @@ namespace Store_Database.Resources.Classes
 {
     public class Static_Data
     {
-        public static Catagories MainCatagories { get; set; } 
-        public static Catagories SeconderyCatagories { get; set; }
+        public static List<Categories> MainCatagories { get; set; } 
+        public static List<Categories> SeconderyCatagories { get; set; }
 
         public static List<DB_Item> BDItems { get; set; } = new List<DB_Item>();
 
