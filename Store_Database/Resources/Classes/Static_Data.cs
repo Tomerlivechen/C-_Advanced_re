@@ -14,7 +14,9 @@ namespace Store_Database.Resources.Classes
         public static List<Categories> SeconderyCatagories { get; set; }
 
         public static List<DB_Item> BDItems { get; set; } = new List<DB_Item>();
+        public static List<Users> ShopWorkors { get; set; } = new List<Users>();
 
+        public string ManagerPassward { get; set; } = "0000";
         public static void LoadStoredDataBase()
         {
             string RawJSON = File.ReadAllText("Resources/Products.json");

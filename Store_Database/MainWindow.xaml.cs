@@ -33,6 +33,7 @@ namespace Store_Database
         public List<DB_Item> RawProductList;
         Uri apiadress = new Uri("https://662006073bf790e070aec029.mockapi.io/Tlc/");
         string apiResource = "Store_items";
+        public string ManagerPassward;
         public MainWindow()
         {
             InitializeComponent();
@@ -109,9 +110,12 @@ namespace Store_Database
             {
                 if (resultsDataGrid.SelectedItem is DB_Item itemToDelete)
                 {
-                    await client.DeleteAsync($"{apiResource}/{itemToDelete.ID}");
+                    if (checkManagerCode())
+                    {
+                        await client.DeleteAsync($"{apiResource}/{itemToDelete.ID}");
+                        Load_Button_Click(sender, e);
+                    }
 
-                    Load_Button_Click(sender, e);
                 }
                 return;
             }
@@ -200,17 +204,47 @@ namespace Store_Database
             }
         }
 
+
+        public bool checkManagerCode()
+        {
+            bool hasInput = false;
+            var number_of_field = 1;
+            var title = "Manager Approval";
+            var Input_field1 = new Input_box_field();
+            Input_field1.Input_label = "Insert Manager Passcode";
+            do
+            {
+                var input_Box = new Input_box(number_of_field, title, Input_field1);
+                input_Box.ShowDialog();
+
+                if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()) )
+                {
+                    hasInput = false;
+                }
+                if (UniversalVars.inputBoxReturn.Count == 1 && !string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) && !string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()) )
+                {
+                    hasInput = true;
+                }
+
+            } while (!hasInput);
+            if (UniversalVars.inputBoxReturn[1].ToString() == ManagerPassward)
+            {
+                return true;
+            }
+            MessageBox.Show("Wrong Passcode");
+            return false;
+        }
+
+
         private void ChangeAPIAddress_Click(object sender, RoutedEventArgs e)
         {
-
             bool hasInput=false;
-
-                var number_of_field = 2;
-                var title = "Insert your API info";
+            var number_of_field = 2;
+            var title = "Insert your API info";
             var Input_field1 = new Input_box_field();
             var Input_field2 = new Input_box_field();
             Input_field1.Input_label = "Enter API Uri:";
-                Input_field2.Input_label = "Enter API Resource:";
+            Input_field2.Input_label = "Enter API Resource:";
             do
             {
                 var input_Box = new Input_box(number_of_field, title, Input_field1, Input_field2);
