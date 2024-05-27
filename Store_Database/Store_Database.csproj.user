@@ -10,7 +10,10 @@
     <Compile Update="Resources\Windows\Add&amp;EditWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Resources\Windows\Users.xaml.cs">
+    <Compile Update="Resources\Windows\Add_EditUserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Resources\Windows\UsersWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +24,10 @@
     <Page Update="Resources\Windows\Add&amp;EditWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Resources\Windows\Users.xaml">
+    <Page Update="Resources\Windows\Add_EditUserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Windows\UsersWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

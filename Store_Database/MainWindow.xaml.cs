@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using Store_Database.Resources.Classes;
 using Common_Classes.Classes;
 using Common_Classes.Common_Elements;
+using Store_Database.Resources.Windows;
 
 namespace Store_Database
 {
@@ -33,18 +34,28 @@ namespace Store_Database
         public List<DB_Item> RawProductList;
         Uri apiadress = new Uri("https://662006073bf790e070aec029.mockapi.io/Tlc/");
         string apiResource = "Store_items";
-        public string ManagerPassward;
+        string apiUsers = "Users";
+        public string ManagerPassward = "0000";
+        public DB_Item tempDbItem;
         public MainWindow()
         {
             InitializeComponent();
             client.BaseAddress = apiadress;
- //           Static_Data.LoadStoredDataBase();
-  //          LoadDataBase();
+            LoadUsers();
         }
 
-        public void LoadDataBase()
+
+        public void InitializeVars()
         {
-            
+
+        }
+
+        async void LoadUsers()
+        {
+            var response = await client.GetAsync(apiUsers);
+            response.EnsureSuccessStatusCode();
+            var data = await response.Content.ReadFromJsonAsync<List<Users>>();
+            Static_Data.ShopWorkors = data;
         }
 
         
@@ -54,7 +65,6 @@ namespace Store_Database
             var response = await client.GetAsync(apiResource);
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadFromJsonAsync<List<DB_Item>>();
-            getComboBoxes(data);
             return data;
         }
 
@@ -63,6 +73,7 @@ namespace Store_Database
             var apiReponse = await GetUsersAsync();
             RawProductList = apiReponse;
             resultsDataGrid.ItemsSource = RawProductList;
+            getComboBoxes(apiReponse);
 
         }
 
@@ -98,8 +109,20 @@ namespace Store_Database
             }
         }
 
-        private void Add_Button_Click(object sender, RoutedEventArgs e)
+        async void Add_Button_Click(object sender, RoutedEventArgs e)
         {
+            Add_EditWindow add_EditWindow = new Add_EditWindow(tempDbItem, "Add");
+            add_EditWindow.ShowDialog();
+            if (Static_Data.BDItem.ItemName != null)
+            {
+                await client.PostAsJsonAsync(apiResource, Static_Data.BDItem);
+                Static_Data.BDItem = null;
+                Load_Button_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("No Item Added","Error");
+            }
 
         }
 
@@ -125,9 +148,25 @@ namespace Store_Database
             }
         }
 
-        private void Edit_Button_Click(object sender, RoutedEventArgs e)
+        async void Edit_Button_Click(object sender, RoutedEventArgs e)
         {
 
+            if (resultsDataGrid.SelectedItem != null)
+            {
+                DB_Item dB_Item = resultsDataGrid.SelectedItem as DB_Item;
+                Add_EditWindow add_EditWindow = new Add_EditWindow(dB_Item, "Edit");
+                add_EditWindow.ShowDialog();
+                if (Static_Data.BDItem.ItemName != null)
+                {
+                    await client.PutAsJsonAsync($"{apiResource}/{Static_Data.BDItem.ID}", Static_Data.BDItem);
+                    Static_Data.BDItem = null;
+                    Load_Button_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Item Error", "Error");
+                }
+            }
         }
 
         private void Filter_Button_Click(object sender, RoutedEventArgs e)
@@ -159,12 +198,14 @@ namespace Store_Database
 
                 if (sender is ComboBox comboBox && comboBox.SelectedItem != null)
                 {
-                    ComboBoxItem comboBoxsender = (ComboBoxItem)comboBox.SelectedItem;
-                    if (!string.IsNullOrEmpty(comboBoxsender.Tag.ToString()))
+                    if (comboBox.SelectedItem is ComboBoxItem comboBoxsender && comboBoxsender.Tag != null)
                     {
-                        var result = from items in RawProductList where items.SeconderyCategory == comboBoxsender.Tag.ToString() select items;
-                        resultsDataGrid.ItemsSource = result;
-                        return;
+                        if (!string.IsNullOrEmpty(comboBoxsender.Tag.ToString()))
+                        {
+                            var result = from items in RawProductList where items.SeconderyCategory == comboBoxsender.Tag.ToString() select items;
+                            resultsDataGrid.ItemsSource = result;
+                            return;
+                        }
                     }
                 }
             }
@@ -195,12 +236,13 @@ namespace Store_Database
         {
             if (sender is ComboBox comboBox && comboBox.SelectedItem != null)
             {
-                ComboBoxItem comboBoxsender = (ComboBoxItem)comboBox.SelectedItem;
+                if (comboBox.SelectedItem is ComboBoxItem comboBoxsender && comboBoxsender.Tag != null) { 
                 if (!string.IsNullOrEmpty(comboBoxsender.Tag.ToString()))
                 {
                     var result = from items in RawProductList where items.MainCategory == comboBoxsender.Tag.ToString() select items;
                     resultsDataGrid.ItemsSource = result;
                 }
+            }
             }
         }
 
@@ -227,7 +269,7 @@ namespace Store_Database
                 }
 
             } while (!hasInput);
-            if (UniversalVars.inputBoxReturn[1].ToString() == ManagerPassward)
+            if (UniversalVars.inputBoxReturn[0].ToString() == ManagerPassward)
             {
                 return true;
             }
@@ -273,5 +315,51 @@ namespace Store_Database
 
         }
 
+        private void ChangePasscode_Click(object sender, RoutedEventArgs e)
+        {
+            bool hasInput = false;
+            var number_of_field = 3;
+            var title = "Insert New Manager passcode";
+            var Input_field1 = new Input_box_field();
+            var Input_field2 = new Input_box_field();
+            var Input_field3 = new Input_box_field();
+            Input_field1.Input_label = "Enter Manager edit passcode:";
+            Input_field2.Input_label = "Enter Old Manager passcode:";
+            Input_field3.Input_label = "Enter New Manager passcode:";
+            do
+            {
+                var input_Box = new Input_box(number_of_field, title, Input_field1, Input_field2, Input_field3);
+                input_Box.ShowDialog();
+
+                if (UniversalVars.inputBoxReturn.Count == 3 )
+                {
+                    hasInput = true;
+                }
+
+            } while (!hasInput);
+
+            if (UniversalVars.inputBoxReturn[0].ToString() == Static_Data.ManagerEditPassward)
+            {
+                if (UniversalVars.inputBoxReturn[1].ToString() == Static_Data.ManagerPassward)
+                {
+                    Static_Data.ManagerPassward = UniversalVars.inputBoxReturn[2].ToString();
+                    MessageBox.Show("Passcode changed successfully", "success");
+                    return;
+                }
+                MessageBox.Show("Manager passcode incorrect", "Error");
+                return;
+
+
+            }
+            MessageBox.Show("Manager edit passcode incorrect", "Error");
+            return;
+
+        }
+
+        private void VeiwWorkers_Click(object sender, RoutedEventArgs e)
+        {
+            UsersWindow usersWindow = new UsersWindow();
+            usersWindow.ShowDialog();
+        }
     }
 }

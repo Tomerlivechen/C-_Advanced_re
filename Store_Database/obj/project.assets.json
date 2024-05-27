@@ -1,29 +1,54 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "Common_Classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common_Classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common_Classes.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Common_Classes/1.0.0": {
+      "type": "project",
+      "path": "../Common_Classes/Common_Classes.csproj",
+      "msbuildProject": "../Common_Classes/Common_Classes.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "F:\\Common_Classes\\Common_Classes.csproj"
+      "Common_Classes >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomer\\.nuget\\packages\\": {}
+    "C:\\Users\\tomer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Store_Database\\Store_Database.csproj",
+      "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\Store_Database.csproj",
       "projectName": "Store_Database",
-      "projectPath": "F:\\Store_Database\\Store_Database.csproj",
+      "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\Store_Database.csproj",
       "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-      "outputPath": "F:\\Store_Database\\obj\\",
+      "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
@@ -36,8 +61,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "F:\\Common_Classes\\Common_Classes.csproj": {
-              "projectPath": "F:\\Common_Classes\\Common_Classes.csproj"
+            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
+              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
             }
           }
         }
@@ -75,19 +100,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'F:\\Common_Classes\\Common_Classes.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "F:\\Common_Classes\\Common_Classes.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

@@ -24,5 +24,9 @@ namespace Store_Database.Resources.Classes
             this.StillEmployed = StillEmployed;
             this.Manager = Manager;
         }
+        public Users()
+        {
+        }
+
     }
 }

@@ -40,18 +40,19 @@ namespace Common_Classes.Common_Elements
                     Field2_lable.Content = Input_field2.Input_label.ToString();
                     Field2_lable.Visibility = Visibility.Visible;
                     Field2_TB.Visibility = Visibility.Visible;
-                    this.Height = 390;
+                    Field1_lable.Content = Input_field1.Input_label.ToString();
+                    this.Height = 400;
                     break;
                 case 2:
                     Field2_lable.Content = Input_field2.Input_label.ToString();
                     Field2_lable.Visibility = Visibility.Visible;
                     Field2_TB.Visibility = Visibility.Visible;
                     Field1_lable.Content = Input_field1.Input_label.ToString(); ;
-                    this.Height = 300;
+                    this.Height = 320;
                     break;
                 case 1:
                     Field1_lable.Content = Input_field1.Input_label.ToString();
-                    this.Height = 220;
+                    this.Height = 250;
                     break;
                 default:
                     break;

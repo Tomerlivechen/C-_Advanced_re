@@ -39,6 +39,11 @@ namespace Store_Database.Resources.Classes
             LastUpdater = lastUpdater;
         }
 
+        public DB_Item()
+        {
+
+        }
+
         [JsonConstructor]
         public DB_Item(string ID, string ItemName, string MainCategory, string SeconderyCategory, double Amount, double MinAmount, string AddedDate, string LastUpdate, string LastUpdater)
         {
@@ -56,15 +61,10 @@ namespace Store_Database.Resources.Classes
 
         public void AddAmount(double _Amount)
         {
-            Amount += _Amount;
+            Amount = _Amount;
             updateLastUpdate();
         }
 
-        public void RemoveAmount(double _Amount)
-        {
-            Amount -= _Amount;
-            updateLastUpdate();
-        }
 
         public void UpdateMinAmount (double _Amount)
         {

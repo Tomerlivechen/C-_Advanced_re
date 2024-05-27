@@ -24,6 +24,8 @@
         <Menu Grid.Row="0" Grid.ColumnSpan="1">
             <MenuItem Header="_File" FontSize="20">
                 <MenuItem Header="Change _API Address" FontSize="20" Click="ChangeAPIAddress_Click"/>
+                <MenuItem Header="Change _Manager Passcode" FontSize="20" Click="ChangePasscode_Click"/>
+                <MenuItem Header="Veiw _Workers" FontSize="20" Click="VeiwWorkers_Click"/>
                 <MenuItem Header="_Close" FontSize="20" Click="Close_Click"/>
             </MenuItem>
         </Menu>
@@ -36,12 +38,18 @@
             <Button Name="Load_Button" Height="30" Width="200" Content="Load" FontSize="21" Margin="5" Click="Load_Button_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Margin="4" Orientation="Horizontal" HorizontalAlignment="Center"  >
-            <ComboBox Name="Catagories1" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories1_SelectionChanged">
-                <ComboBoxItem Content="Main Category" Tag=""/>
-            </ComboBox>
-            <ComboBox Name="Catagories2" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories2_SelectionChanged">
-                <ComboBoxItem Content="Secondery Category" Tag=""/>
-            </ComboBox>
+            <StackPanel Orientation="Vertical">
+                <Label  Content="Main Category" FontSize="15" HorizontalAlignment="Center" />
+                <ComboBox  Name="Catagories1" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories1_SelectionChanged">
+                    <ComboBoxItem Content="Main Category"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label  Content="Secondery Category" FontSize="15" HorizontalAlignment="Center" />
+                <ComboBox  Name="Catagories2" SelectedIndex="0" FontSize="18" Height="30" Width="200" Margin="5" SelectionChanged="Catagories2_SelectionChanged">
+                    <ComboBoxItem Content="Secondery Category" />
+                </ComboBox>
+            </StackPanel>
             <TextBox Name="Search"  FontSize="18" Height="30" Width="200" Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="5" Margin="5" Orientation="Horizontal" HorizontalAlignment="Center">
