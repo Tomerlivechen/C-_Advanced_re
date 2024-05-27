@@ -20,6 +20,7 @@ namespace Store_Database.Resources.Classes
 
         public static DB_Item? BDItem { get; set; } = new DB_Item();
         public static Users? tempUser { get; set; } = new Users();
+        public static Users? tempUser2 { get; set; } = new Users();
 
         public static string ManagerPassward { get; set; } = "0000";
         public static string ManagerEditPassward { get; set; } = "0101";

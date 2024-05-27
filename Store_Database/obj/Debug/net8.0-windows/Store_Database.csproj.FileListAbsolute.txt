@@ -29,3 +29,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\obj\Debug\
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\obj\Debug\net8.0-windows\Store_Database.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\obj\Debug\net8.0-windows\Store_Database.genruntimeconfig.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\obj\Debug\net8.0-windows\ref\Store_Database.dll
+F:\Store_Database\obj\Debug\net8.0-windows\Store_Database.dll
+F:\Store_Database\obj\Debug\net8.0-windows\refint\Store_Database.dll
+F:\Store_Database\obj\Debug\net8.0-windows\Store_Database.pdb

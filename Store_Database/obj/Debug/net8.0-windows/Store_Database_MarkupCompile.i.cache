@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\obj\Debug\net8.0-windows\
+F:\Store_Database\obj\Debug\net8.0-windows\
 Store_Database
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\App.xaml
+F:\Store_Database\App.xaml
 4-1470356997
 
-13-127452631
-1991593764455
+16-1508528068
+198-1509178875
 MainWindow.xaml;Resources\Windows\Add&EditWindow.xaml;Resources\Windows\Add_EditUserWindow.xaml;Resources\Windows\UsersWindow.xaml;
 
-False
+True
 

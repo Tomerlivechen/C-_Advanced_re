@@ -41,7 +41,6 @@ namespace Store_Database.Resources.Classes
 
         public DB_Item()
         {
-
         }
 
         [JsonConstructor]
@@ -63,6 +62,7 @@ namespace Store_Database.Resources.Classes
         {
             Amount = _Amount;
             updateLastUpdate();
+            Log.addToLog($"{this.ToString()} amount edited");
         }
 
 
@@ -70,8 +70,14 @@ namespace Store_Database.Resources.Classes
         {
             MinAmount = _Amount;
             updateLastUpdate();
+            Log.addToLog($"{this.ToString()} min-amount edited");
         }
 
+        public override string ToString()
+        {
+            string tostring = $"ID:{ID} , Item Name:{ItemName} , Main Category:{MainCategory} , Secondery Category:{SeconderyCategory} , Amount:{Amount} , Min Amount:{MinAmount} , Added Date:{AddedDate}, LastUpdate:{LastUpdate},Last Updater:{LastUpdater}";
+            return tostring;
+        }
 
         public void updateLastUpdate()
         {
@@ -83,12 +89,14 @@ namespace Store_Database.Resources.Classes
         {
             MainCategory = _CatName;
             updateLastUpdate();
+            Log.addToLog($"{this.ToString()} Main Category edited");
         }
 
         public void ChangeCat2(string _CatName)
         {
-            MainCategory = _CatName;
+            SeconderyCategory = _CatName;
             updateLastUpdate();
+            Log.addToLog($"{this.ToString()} Secondery Category edited");
         }
     }
 
