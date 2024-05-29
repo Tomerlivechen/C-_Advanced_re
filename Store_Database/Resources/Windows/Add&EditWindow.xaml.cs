@@ -39,6 +39,7 @@ namespace Store_Database.Resources.Windows
             }else
             {
                 Title.Content = "Add New Item";
+                Item = new DB_Item();
             }
         }
 
@@ -64,6 +65,7 @@ namespace Store_Database.Resources.Windows
 
         public void addToComboBox(ComboBox comboBox, List<Categories> categories)
         {
+            comboBox.Items.Clear();
             foreach (Categories title in categories)
             {
                 ComboBoxItem comboBoxItem = new ComboBoxItem() { Content = title.Name.ToString(), Tag = title.Name.ToString() };
@@ -82,9 +84,9 @@ namespace Store_Database.Resources.Windows
                 }
                 else
                 {
-                    if (Catagories1.SelectedItem is ComboBoxItem comboBoxItem)
+                    if (Catagories1.SelectedItem is ComboBoxItem comboCat1BoxItem)
                     {
-                        Item.ChangeCat1(comboBoxItem.Tag.ToString());
+                        Item.ChangeCat1(comboCat1BoxItem.Tag.ToString());
                     }
                 }
                 if (!string.IsNullOrEmpty(Catagories2_text.Text))
@@ -93,9 +95,9 @@ namespace Store_Database.Resources.Windows
                 }
                 else
                 {
-                    if (Catagories2.SelectedItem is ComboBoxItem comboBoxItem)
+                    if (Catagories2.SelectedItem is ComboBoxItem comboCat2BoxItem)
                     {
-                        Item.ChangeCat1(comboBoxItem.Tag.ToString());
+                        Item.ChangeCat2(comboCat2BoxItem.Tag.ToString());
                     }
                 }
 
@@ -148,7 +150,7 @@ namespace Store_Database.Resources.Windows
                 Close();
             }
 
-            if (AddorEdit == "ADD")
+            if (AddorEdit == "Add")
             {
                 if (!string.IsNullOrEmpty(Catagories1_text.Text))
                 {
@@ -156,7 +158,10 @@ namespace Store_Database.Resources.Windows
                 }
                 else
                 {
-                    Item.ChangeCat1(Catagories1.SelectedItem.ToString());
+                    if (Catagories1.SelectedItem is ComboBoxItem cat1BoxItem)
+                    {
+                        Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+                    }
                 }
                 if (!string.IsNullOrEmpty(Catagories2_text.Text))
                 {
@@ -164,7 +169,10 @@ namespace Store_Database.Resources.Windows
                 }
                 else
                 {
-                    Item.ChangeCat2(Catagories2.SelectedItem.ToString());
+                    if (Catagories2.SelectedItem is ComboBoxItem cat2BoxItem)
+                    {
+                        Item.ChangeCat2(cat2BoxItem.Tag.ToString());
+                    }
                 }
                 if (!string.IsNullOrEmpty(ItemName_text.Text.ToString())) {
                     Item.ItemName = ItemName_text.Text.ToString();

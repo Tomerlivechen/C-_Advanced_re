@@ -33,6 +33,7 @@ public partial class MainWindow : Window
         new TickTackTow_WPF.Project(),
         new PrioratyDefiner.Project(),
         new Speed_Racer.Project(),
+        new Store_Database.Project(),
 
 
     };

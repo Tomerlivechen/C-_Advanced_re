@@ -10,7 +10,7 @@ namespace Store_Database.Resources.Classes
 {
     public static class Log
     {
-        public static string logFilePath { get; set; } = "Resources/lod.txt";
+        public static string logFilePath { get; set; } = "Resources/log.txt";
 
         public static void addToLog(string addedLogLine)
         {

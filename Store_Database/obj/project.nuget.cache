@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pEUIV4nTAs2EEdEfIKwotB030pIqU8oropLdzKZceuwQB8tRGXWPGiw2ah+MoER9IkiuPC1nVerM9+NIp2mCqw==",
-  "success": false,
-  "projectFilePath": "F:\\Store_Database\\Store_Database.csproj",
+  "dgSpecHash": "ZZiL2qXm7Ji6s1wgLFKF80PqEU/zQXhq7Ys3t8IlL4NPVQvF9Pt/iJUo7kWSa1Nsva0NFml2OoPiez4de57obg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\Store_Database.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'F:\\Common_Classes\\Common_Classes.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "F:\\Common_Classes\\Common_Classes.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

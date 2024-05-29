@@ -15,6 +15,7 @@
           "Memory_game": "1.0.0",
           "PriorityDefiner": "1.0.0",
           "Speed_Racer": "1.0.0",
+          "Store_Database": "1.0.0",
           "Taki_Game": "1.0.0",
           "TickTackTow_WPF": "1.0.0"
         },
@@ -84,6 +85,14 @@
           "Speed_Racer.dll": {}
         }
       },
+      "Store_Database/1.0.0": {
+        "dependencies": {
+          "Common_Classes": "1.0.0"
+        },
+        "runtime": {
+          "Store_Database.dll": {}
+        }
+      },
       "Taki_Game/1.0.0": {
         "dependencies": {
           "Common_Classes": "1.0.0"
@@ -146,6 +155,11 @@
       "sha512": ""
     },
     "Speed_Racer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Store_Database/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

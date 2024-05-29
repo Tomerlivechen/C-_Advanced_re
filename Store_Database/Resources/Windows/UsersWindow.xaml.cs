@@ -1,6 +1,9 @@
-﻿using Store_Database.Resources.Classes;
+﻿using Common_Classes.Classes;
+using Common_Classes.Common_Elements;
+using Store_Database.Resources.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -40,25 +43,27 @@ namespace Store_Database.Resources.Windows
                 Static_Data.tempUser = null;
                 Static_Data.tempUser2 = null;
                 Users user = UserGrid.SelectedItem as Users;
-                Add_EditUserWindow add_EditUserWindow = new Add_EditUserWindow(user, "Edit");
+                Add_EditUserWindow add_EditUserWindow = new Add_EditUserWindow("Edit",user );
                 add_EditUserWindow.ShowDialog();
-                if (Static_Data.tempUser2.ID != null)
+                if (Static_Data.tempUser2 != null)
                 {
-                    await client.DeleteAsync($"{apiUsers}/{Static_Data.tempUser.ID}");
+                    await client.DeleteAsync($"{apiUsers}/{Static_Data.tempUser.Index}");
                     await client.PostAsJsonAsync(apiUsers, Static_Data.tempUser2);
                     Log.addToLog($"{Static_Data.tempUser2.ToString()} worker edited");
                     MessageBox.Show("Worker edited", "Success");
                     Static_Data.tempUser = null;
                     Static_Data.tempUser2 = null;
+                    LoadUsers();
                     return;
                 }
-                if (Static_Data.tempUser2.ID == null && Static_Data.tempUser.ID != null)
+                if (Static_Data.tempUser2 == null && Static_Data.tempUser != null)
                 {
-                    await client.PutAsJsonAsync($"{apiUsers}/{Static_Data.tempUser.ID}", Static_Data.tempUser);
+                    await client.PutAsJsonAsync($"{apiUsers}/{Static_Data.tempUser.Index}", Static_Data.tempUser);
                     Log.addToLog($"{Static_Data.tempUser.ToString()} worker edited");
                     MessageBox.Show("Worker edited", "Success");
                     Static_Data.tempUser = null ;
                     Static_Data.tempUser2 = null;
+                    LoadUsers();
                     return;
                 }
                 else
@@ -85,9 +90,9 @@ namespace Store_Database.Resources.Windows
         async void Add_Button_Click(object sender, RoutedEventArgs e)
         {
             Static_Data.tempUser = null;
-            Add_EditUserWindow add_EditUserWindow = new Add_EditUserWindow(Static_Data.tempUser, "Add");
+            Add_EditUserWindow add_EditUserWindow = new Add_EditUserWindow("Add");
             add_EditUserWindow.ShowDialog();
-            if (Static_Data.tempUser.ID != null)
+            if (Static_Data.tempUser != null)
             {
                 await client.PostAsJsonAsync(apiUsers, Static_Data.tempUser);
                 Log.addToLog($"{Static_Data.tempUser.ToString()} worker added");
@@ -103,7 +108,7 @@ namespace Store_Database.Resources.Windows
 
         }
 
-        private void LetGo_Button_Click(object sender, RoutedEventArgs e)
+        async void LetGo_Button_Click(object sender, RoutedEventArgs e)
         {
             if (Security.checkManagerCode())
             {
@@ -111,6 +116,7 @@ namespace Store_Database.Resources.Windows
                 {
                     Users user = UserGrid.SelectedItem as Users;
                     user.LetGo();
+                    await client.PutAsJsonAsync($"{apiUsers}/{user.Index}", user);
                     Log.addToLog($"{user.ToString()} worker Let Go");
                     LoadUsers();
                 }
@@ -121,19 +127,18 @@ namespace Store_Database.Resources.Windows
         {
             var result = from users in Static_Data.ShopWorkors where users.Name.ToUpper().Contains(Filter_Text.Text.ToUpper().ToString()) select users;
             UserGrid.ItemsSource = result;
-
         }
 
         private void Only_Managers_Click(object sender, RoutedEventArgs e)
         {
-
                 var result = from users in Static_Data.ShopWorkors where users.Manager == true select users;
                 UserGrid.ItemsSource = result;
         }
 
         private void Only_Workers_Click(object sender, RoutedEventArgs e)
         {
-
+            var result = from users in Static_Data.ShopWorkors where users.Manager == false select users;
+            UserGrid.ItemsSource = result;
         }
 
         private void Only_Employed_Click(object sender, RoutedEventArgs e)
@@ -141,5 +146,43 @@ namespace Store_Database.Resources.Windows
             var result = from users in Static_Data.ShopWorkors where users.StillEmployed == true select users;
             UserGrid.ItemsSource = result;
         }
+
+        private void Report_Button_Click(object sender, RoutedEventArgs e)
+        {
+            List<Users> report_list = new List<Users>();
+            report_list = UserGrid.Items.Cast<Users>().ToList();
+            bool hasInput = false;
+            var number_of_field = 1;
+            var title = "Name the report";
+            var Input_field1 = new Input_box_field();
+            Input_field1.Input_label = "Report Name";
+            do
+            {
+                var input_Box = new Input_box(number_of_field, title, Input_field1);
+                input_Box.ShowDialog();
+
+                if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
+                {
+                    hasInput = false;
+                }
+                if (UniversalVars.inputBoxReturn.Count == 1 && !string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) && !string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
+                {
+                    hasInput = true;
+                }
+
+            } while (!hasInput);
+            if (!Directory.Exists("Reports/"))
+            {
+                Directory.CreateDirectory("Reports/");
+            }
+            File.AppendAllText($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{UniversalVars.inputBoxReturn[0].ToString()}____{DateTime.Now}\n");
+            foreach (Users item in report_list)
+            {
+                File.AppendAllText($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{item.ToString()}\n");
+            }
+            Log.addToLog($"Report {UniversalVars.inputBoxReturn[0].ToString()} Generated");
+            UniversalVars.inputBoxReturn = null;
+        }
     }
+    
 }

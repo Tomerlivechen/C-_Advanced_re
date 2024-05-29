@@ -25,7 +25,10 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition Height="0.1*"/>
+            
         </Grid.RowDefinitions>
+        <Border Background="#3DB1A1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="8" Grid.ColumnSpan="7"/>
+        <Border Background="#008080" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
         <Label Name="Title" Grid.Row="1" Content="Add New Item" Grid.Column="2" Grid.ColumnSpan="3" FontSize="30" FontWeight="ExtraBlack" HorizontalAlignment="Center"/>
         <Label  Grid.Row="2" Content="Item Name" Grid.Column="4" Grid.ColumnSpan="3" FontSize="30" FontWeight="ExtraBlack" HorizontalAlignment="Center"/>
         <TextBox Name="ItemName_text"  FontSize="18" Height="30" Width="200" Margin="5"  Grid.Column="4" Grid.Row="2" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>

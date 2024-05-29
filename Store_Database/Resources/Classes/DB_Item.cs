@@ -26,10 +26,12 @@ namespace Store_Database.Resources.Classes
         public string LastUpdate { get; set; }
         public string LastUpdater { get; set; }
 
+        public int Index {  get; set; }
+
         public DB_Item(string itemName, string mainCategory, string seconderyCategory, double amount, double minAmount , string lastUpdater )
         {
-            AddedDate = DateTime.ToString("yyyy-MM-dd");
-            LastUpdate = DateTime.ToString();
+            AddedDate = DateTime.Now.ToShortDateString();
+            LastUpdate = DateTime.Now.ToShortDateString();
             ID = Guid.NewGuid().ToString();
             ItemName = itemName;
             MainCategory = mainCategory;
@@ -44,8 +46,9 @@ namespace Store_Database.Resources.Classes
         }
 
         [JsonConstructor]
-        public DB_Item(string ID, string ItemName, string MainCategory, string SeconderyCategory, double Amount, double MinAmount, string AddedDate, string LastUpdate, string LastUpdater)
+        public DB_Item(int Index, string ID, string ItemName, string MainCategory, string SeconderyCategory, double Amount, double MinAmount, string AddedDate, string LastUpdate, string LastUpdater)
         {
+            this.Index = Index;
             this.ID = ID;
             this.ItemName = ItemName;
             this.MainCategory = MainCategory;
@@ -81,8 +84,7 @@ namespace Store_Database.Resources.Classes
 
         public void updateLastUpdate()
         {
-            DateTime DateTime = DateTime.Now;
-            LastUpdate = DateTime.ToString();
+            LastUpdate = DateTime.Now.ToShortDateString();
         }
 
         public void ChangeCat1(string _CatName)

@@ -13,6 +13,7 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Repair_item.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Speedometer.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\Game_Window.g.cs
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\IndexWindow.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer_MarkupCompile.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer_MarkupCompile.lref
@@ -23,6 +24,7 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Repair_item.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Speedometer.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\Game_Window.baml
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\IndexWindow.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.g.resources
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.AssemblyInfoInputs.cache
@@ -35,5 +37,3 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.genruntimeconfig.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\ref\Speed_Racer.dll
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\IndexWindow.g.cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Windows\IndexWindow.baml

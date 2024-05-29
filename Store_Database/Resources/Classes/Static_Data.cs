@@ -15,8 +15,8 @@ namespace Store_Database.Resources.Classes
         public static List<Categories> MainCatagories { get; set; } 
         public static List<Categories> SeconderyCatagories { get; set; }
 
-        public static List<DB_Item> BDItems { get; set; } = new List<DB_Item>();
-        public static List<Users> ShopWorkors { get; set; } = new List<Users>();
+        public static List<DB_Item>? BDItems { get; set; } = new List<DB_Item>();
+        public static List<Users>? ShopWorkors { get; set; } = new List<Users>();
 
         public static DB_Item? BDItem { get; set; } = new DB_Item();
         public static Users? tempUser { get; set; } = new Users();

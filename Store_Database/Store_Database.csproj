@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\IndexImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Common_Classes\Common_Classes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\IndexImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

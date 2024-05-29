@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Store_Database\App.xaml
-4-1470356997
+4-1458721553
 
-11843417094
+16-1737871934
 1991593764455
-MainWindow.xaml;Resources\Windows\Add&EditWindow.xaml;Resources\Windows\Add_EditUserWindow.xaml;Resources\Windows\UsersWindow.xaml;
+Resources\Windows\Add&EditWindow.xaml;Resources\Windows\Add_EditUserWindow.xaml;Resources\Windows\IndexWindow.xaml;Resources\Windows\UsersWindow.xaml;
 
 False
 

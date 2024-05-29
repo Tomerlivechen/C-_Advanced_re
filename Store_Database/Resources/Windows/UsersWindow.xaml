@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Store_Database.Resources.Windows"
         mc:Ignorable="d"
-        Title="Users" Height="600" Width="400">
+        Title="Users" Height="600" Width="550">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.05*"/>
@@ -48,9 +48,11 @@
             <Button Name="Add_Button" Height="30" Width="100" Content="Add" FontSize="21" Margin="5" Click="Add_Button_Click"/>
             <Button Name="LetGo_Button" Height="30" Width="100" Content="Let Go" FontSize="21" Margin="5" Click="LetGo_Button_Click"/>
             <Button Name="Edit_Button" Height="30" Width="100" Content="Edit" FontSize="21" Margin="5" Click="Edit_Button_Click"/>
+            <Button Name="Report_Button" Height="30" Width="100" Content="Report" FontSize="21" Margin="5" Click="Report_Button_Click"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center">
             <Button Name="Only_Employed_Button" Height="35" Width="150" Content="Only Employed" FontSize="21" Margin="5" Click="Only_Employed_Click"/>
+            <Button Name="Only_Workers_Button" Height="35" Width="150" Content="Only Workers" FontSize="21" Margin="5" Click="Only_Workers_Click"/>
             <Button Name="Only_Managers_Button" Height="35" Width="150" Content="Only Managers" FontSize="21" Margin="5" Click="Only_Managers_Click"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center">
