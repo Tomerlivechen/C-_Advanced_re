@@ -41,10 +41,10 @@
         <Label  Grid.Row="5" Content="Updater ID" Grid.Column="4" Grid.ColumnSpan="2" FontSize="30" FontWeight="ExtraBlack" HorizontalAlignment="Center"/>
         <TextBox Name="Updater_text"  FontSize="18" Height="30" Width="200" Margin="5"  Grid.Column="4" Grid.Row="5" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
         <Button Content="Submit" Grid.Column="3" Grid.Row="6" Height="50" FontSize="30" FontWeight="Bold" Click="Button_Click"/>
-        <ComboBox Name="Catagories1"  FontSize="18" Height="30" Width="200" Margin="5" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
+        <ComboBox Name="Catagories1"  FontSize="18" Height="30" Width="200" Margin="5" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" SelectionChanged="Catagories1_SelectionChanged">
         </ComboBox>
         <TextBox Name="Catagories1_text"  FontSize="18" Height="30" Width="200" Margin="5"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"></TextBox>
-        <ComboBox Name="Catagories2"  FontSize="18" Height="30" Width="200" Margin="5" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
+        <ComboBox Name="Catagories2"  FontSize="18" Height="30" Width="200" Margin="5" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Bottom" SelectionChanged="Catagories2_SelectionChanged">
         </ComboBox>
         <TextBox Name="Catagories2_text"  FontSize="18" Height="30" Width="200" Margin="5"  Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2"></TextBox>
 

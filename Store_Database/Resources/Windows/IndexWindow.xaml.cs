@@ -132,7 +132,7 @@ namespace Store_Database
             comboBox.Items.Clear();
             foreach (Categories title in categories)
             {
-                ComboBoxItem comboBoxItem = new ComboBoxItem() { Content= title.Name.ToString(), Tag= title.Name.ToString() };
+                ComboBoxItem comboBoxItem = new ComboBoxItem() { Content= title.Name.ToString().Trim(), Tag= title.Name.ToString().Trim() };
                 comboBox.Items.Add( comboBoxItem );
             }
         }
@@ -185,10 +185,11 @@ namespace Store_Database
 
             if (resultsDataGrid.SelectedItem != null)
             {
+                Static_Data.BDItem = null;
                 DB_Item dB_Item = resultsDataGrid.SelectedItem as DB_Item;
                 Add_EditWindow add_EditWindow = new Add_EditWindow(dB_Item, "Edit");
                 add_EditWindow.ShowDialog();
-                if (Static_Data.BDItem.ItemName != null)
+                if (Static_Data.BDItem != null)
                 {
                     await client.PutAsJsonAsync($"{apiResource}/{Static_Data.BDItem.Index}", Static_Data.BDItem);
                     Log.addToLog($"{Static_Data.BDItem.ToString()} Edited");

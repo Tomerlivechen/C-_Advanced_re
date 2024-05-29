@@ -86,7 +86,7 @@ namespace Store_Database.Resources.Windows
                     }
                     if (isRepeatID == false)
                     {
-                        Static_Data.tempUser = new Users(Name_text.Text, ID_text.Text, true, (bool)Manager_Check.IsChecked);
+                        Static_Data.tempUser = new Users(Name_text.Text, ID_text.Text, true, (bool)Manager_Check.IsChecked , Static_Data.ShopWorkors.Count());
                         Close();
                         return;
                     }

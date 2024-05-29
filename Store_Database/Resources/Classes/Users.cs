@@ -18,7 +18,7 @@ namespace Store_Database.Resources.Classes
         public bool Manager { get; set; }
         public int Index { get; set; }
 
-        public Users(string Name, string ID, bool StillEmployed, bool Manager)
+        public Users(string Name, string ID, bool StillEmployed, bool Manager, int index)
         {
             this.Name = Name;
             this.ID = ID;
@@ -26,6 +26,7 @@ namespace Store_Database.Resources.Classes
             this.EndDate = null;
             this.StillEmployed = StillEmployed;
             this.Manager = Manager;
+            this.Index = index;
         }
         [JsonConstructor]
         public Users(int Index, string Name, string ID, string StartDate, string EndDate, bool StillEmployed, bool Manager)

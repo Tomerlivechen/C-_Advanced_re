@@ -31,8 +31,8 @@ namespace Store_Database.Resources.Windows
 
             if (addOrEdit == "Edit" ) {
                 Title.Content = "Edit Item";
-                Catagories1.SelectedItem = GetComboBoxItem(Catagories1, dB_Item.MainCategory);
-                Catagories2.SelectedItem = GetComboBoxItem(Catagories2, dB_Item.SeconderyCategory);
+                Catagories1.Text =  Item.MainCategory.ToString();
+                Catagories2.Text = Item.SeconderyCategory.ToString();
                 ItemName_text.Text = dB_Item.ItemName.ToString();
                 Amount_text.Text = dB_Item.Amount.ToString();
                 MinAmount_text.Text = dB_Item.MinAmount.ToString();
@@ -124,13 +124,18 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Minumum amount must be a number");
                     return;
                 }
+                if (string.IsNullOrEmpty(Updater_text.Text.ToString()) || (string.IsNullOrWhiteSpace(Updater_text.Text.ToString())))
+                {
+                    MessageBox.Show("Must give a vlaid worker ID");
+                    return;
+                }
 
-                if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
+                    if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
                 {
                     bool updaterValid = false;
                 foreach (Users user in Static_Data.ShopWorkors)
                 {
-                    if (user.ID.ToString() == Updater_text.Text.ToString())
+                    if (user.ID.ToString() == Updater_text.Text.ToString() && user.StillEmployed)
                         {
                             updaterValid = true;
                             Item.LastUpdater = Updater_text.Text.ToString();
@@ -210,13 +215,14 @@ namespace Store_Database.Resources.Windows
                     {
                         if (user.ID.ToString() == Updater_text.Text.ToString())
                         {
+                            updaterValid = false;
                             if (user.StillEmployed ==true)
                             {
                                 updaterValid = true;
                                 Item.LastUpdater = Updater_text.Text.ToString();
                                 break;
                             }
-                            if (user.StillEmployed == false)
+                            if (updaterValid = true && user.StillEmployed == false)
                             {
                                 MessageBox.Show("This worker dosen't work here any more");
                                 return;
@@ -241,6 +247,16 @@ namespace Store_Database.Resources.Windows
             }
 
 
+        }
+
+        private void Catagories1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Catagories1_text.Text = string.Empty;
+        }
+
+        private void Catagories2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Catagories2_text.Text = string.Empty;
         }
     }
 }
