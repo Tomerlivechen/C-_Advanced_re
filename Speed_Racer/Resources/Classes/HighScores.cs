@@ -49,7 +49,7 @@ namespace Speed_Racer.Resources.Classes
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"File reading error {ex.Message}");
+                MessageBox.Show($"No High scores available");
             }
         }
 

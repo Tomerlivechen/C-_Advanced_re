@@ -71,7 +71,7 @@ namespace PriorityDefiner.Classes
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"File reading error {ex.Message}");
+                MessageBox.Show($"No Task lists available");
             }
         }
         public static void SaveTasklists()

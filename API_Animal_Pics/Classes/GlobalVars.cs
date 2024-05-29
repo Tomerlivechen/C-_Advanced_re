@@ -44,7 +44,7 @@ namespace API_Animal_Pics.Classes
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"File reading error {ex.Message}");
+                MessageBox.Show($"No pic lists available");
             }
         }
 
