@@ -13,9 +13,24 @@ namespace Taki_Game.Resources.Classes
 
         public class TakiCard : INotifyPropertyChanged
         {
-            public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
-            public TakiCard() => VisibleImage = Back;
+        public BitmapImage Image => GlobalVars.LoadImageFromResource($"{Pic}.png");
+
+        public static BitmapImage Back => GlobalVars.LoadImageFromResource("CardImageBack.png");
+
+        public bool Decak { get; set; } = false;
+        public bool Stack { get; set; } = false;
+        public bool Hand { get; set; } = false;
+
+        public bool notStack { get; set; } = false;
+
+        public string color { get; set; }
+        public string val { get; set; }
+        public string Pic { get; set; }
+
+        public int Player { get; set; }
+        public TakiCard() => VisibleImage = Back;
 
             BitmapImage _visibleImage;
             public BitmapImage VisibleImage
@@ -33,9 +48,6 @@ namespace Taki_Game.Resources.Classes
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
             }
 
-            public string color { get; set; }
-            public string val { get; set; }
-            public string Pic { get; set; }
 
 
             public void setSetColor(string value) => color = value;
@@ -60,17 +72,7 @@ namespace Taki_Game.Resources.Classes
             }
 
 
-            public BitmapImage Image => GlobalVars.LoadImageFromResource($"{Pic}.png");
 
-            public static BitmapImage Back => GlobalVars.LoadImageFromResource("CardImageBack.png");
-
-            public bool Decak { get; set; } = false;
-            public bool Stack { get; set; } = false;
-            public bool Hand { get; set; } = false;
-
-            public bool notStack { get; set; } = false;
-
-            public int Player { get; set; }
 
             public void Internalflip(int player)
             {

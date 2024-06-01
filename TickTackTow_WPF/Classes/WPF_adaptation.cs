@@ -10,12 +10,6 @@ namespace TickTackTow_WPF.Classes
     {
 
 
-
-        public class GameEventArgs : EventArgs
-        {
-            public int player;
-        }
-
         public static void makemove(Gameboard gameboard, int position)
         {
             int counter = 0;

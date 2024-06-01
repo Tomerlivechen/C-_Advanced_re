@@ -29,7 +29,6 @@ namespace Memory_game
         public MemoryGameWindow(int card_amount)
         {
             InitializeComponent();
-
            int[] screenSize= Initialization_Of_Game.screen_size(card_amount);
             this.Height = screenSize[0];
             this.Width = screenSize[1];
@@ -47,8 +46,6 @@ namespace Memory_game
             {
                 foreach (Memory_Card card in GameCards)
                 {
-
-                    ;
                     Card M_card = new Card(card)
                     {
                         Margin = new Thickness(3),
@@ -58,7 +55,6 @@ namespace Memory_game
                     Card_set.Children.Add(M_card);
                 }
             }
-
             void Timed_Actions(object sender, EventArgs e)
             {
                 int freeCards = 0;
@@ -70,7 +66,6 @@ namespace Memory_game
                     {
                         freeCards++;
                     }
-
                 }
                 if (freeCards == 0)
                 {
@@ -82,7 +77,6 @@ namespace Memory_game
                         Card_set.Children.Clear();
                         Initializeboard();
                         GlobalVars.ResetTimerCount();
-
                     }
                     else
                     {
@@ -90,16 +84,10 @@ namespace Memory_game
                     }
                 }
             }
-
-
             timer.Tick += Timed_Actions;
-
             timer.Start();
-
-
             void Window_Closed(object sender, EventArgs e)
             {
-
                 timer.Stop();
             }
         }

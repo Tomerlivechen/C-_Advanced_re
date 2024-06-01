@@ -29,9 +29,7 @@ namespace API_Animal_Pics
         {
             InitializeComponent();
             GlobalVars.LoadPicLists();
-
             updateLists();
-
             Closed += Window_Closed;
         }
 

@@ -9,27 +9,19 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using Common_Classes.Classes;
-
 namespace Memory_game.Classes
 {
     public static class GlobalVars
     {
         public static Memory_Card first_Card { get; set; } = null;
-
         public static void SetFirstCard(Memory_Card value) => first_Card = value;
-
         public static Memory_Card second_Card { get; set; } = null;
-
         public static void SetSecondCard(Memory_Card value) => second_Card = value;
-
         public static int Timer_count { get; set; } = 0;
         public static void SetTimerCount() => Timer_count++;
-
         public static void ResetTimerCount() => Timer_count = 0;
-
         const string filePath = (@"Resources\HighScore.json");
         public static HighScore_Total highScore_Total { get; set; }
-
         public static void AddHighScore(int cardNum, int score)
         {
             var highScore_Player = new HighScore_Player();
@@ -54,7 +46,6 @@ namespace Memory_game.Classes
             {
                 highScore_Player.player_Name = "Anonymous";
             }
-
             switch (cardNum)
             {
                 case 12:
@@ -79,7 +70,6 @@ namespace Memory_game.Classes
                     break;
             }
         }
-
         public static void LoadHighscores()
         {
             if (!File.Exists(filePath))
@@ -89,13 +79,10 @@ namespace Memory_game.Classes
                 SaveHighscores();
                 return;
             }
-
             try
             {
                 var rawData = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<HighScore_Total>(rawData);
-
-
                 if (result == null)
                 {
                     HighScore_Total NewHighScored = new HighScore_Total();
@@ -109,7 +96,6 @@ namespace Memory_game.Classes
                 MessageBox.Show($"No High scores available");
             }
         }
-
         public static void SaveHighscores()
         {
             var export = JsonSerializer.Serialize(highScore_Total);
@@ -132,6 +118,4 @@ namespace Memory_game.Classes
             LoadHighscores();
         }
     }
-
-
-}
+}

@@ -23,8 +23,6 @@ namespace TickTackTow_WPF
 
         public Player player1;
         public Player player2;
-        public CompPlayer Computer1;
-        public CompPlayer Computer2;
         public int gametype = 3;
         bool algorithem_off = false;
 
@@ -106,17 +104,6 @@ namespace TickTackTow_WPF
             }
         }
 
-        public int whosPlaying()
-        {
-            if (player_Mark.Text == "X")
-            {
-                return 1;
-            }
-            else
-            {
-                return 2;
-            }
-        }
 
         public void updatePlayer(Gameboard gameboard)
         {

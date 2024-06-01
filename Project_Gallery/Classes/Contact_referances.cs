@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common_Classes.Classes;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -33,40 +34,60 @@ namespace Project_Gallery.Classes
             }
             if (title.Contains("@"))
             {
-                string body = "Dear Tomer Chen \n We would like to contact you about a job offer \n Best Regards";
+                string body = "Dear Tomer Chen \nWe would like to contact you about a job offer \nBest Regards";
                 string subject = "Job Offer";
-                try
+                int respns = Message_Box_Classes.DisplayMessageBox("Would you like to send me an e-mail via Gmail? ", "Send an Email");
+                if (respns == 1)
                 {
-                    Process.Start(new ProcessStartInfo
+                    try
                     {
-                        FileName = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=" + title + "&su=" + Uri.EscapeDataString(subject) + "&body=" + Uri.EscapeDataString(body),
-                        UseShellExecute = true
-                    });
+
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=" + title + "&su=" + Uri.EscapeDataString(subject) + "&body=" + Uri.EscapeDataString(body),
+                            UseShellExecute = true
+                        });
+                    }
+                    catch
+                    {
+                        Clipboard.SetText(title);
+                        MessageBox.Show("An error occurred while opening Gmail \nMy E-mail address has been added to your clipboard");
+                    }
                 }
-                catch
+                if (respns == 2)
                 {
                     Clipboard.SetText(title);
-                    MessageBox.Show("An error occurred while opening Gmail My E-mail address has been added to your clipboard");
+                    MessageBox.Show("My E-mail address has been added to your clipboard");
                 }
             }
             if (title.StartsWith("+"))
             {
-                string body = "Dear Tomer Chen \n We would like to contact you about a job offer \n Best Regards";
-                try
+                string body = "Dear Tomer Chen \nWe would like to contact you about a job offer \nBest Regards";
+                int respns = Message_Box_Classes.DisplayMessageBox("Would you like to send me a message via Whatsapp Web? ", "Send a Message");
+                if (respns == 1)
                 {
-                    string whatsAppUri = $"https://web.whatsapp.com/send?phone={title}&text={Uri.EscapeDataString(body)}";
-
-                    Process.Start(new ProcessStartInfo
+                    try
                     {
-                        FileName = whatsAppUri,
-                        UseShellExecute = true
-                    });
+                        string whatsAppUri = $"https://web.whatsapp.com/send?phone={title}&text={Uri.EscapeDataString(body)}";
+
+                        Process.Start(new ProcessStartInfo
+                        {
+                            FileName = whatsAppUri,
+                            UseShellExecute = true
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        Clipboard.SetText(title);
+                        MessageBox.Show("An error occurred while opening WhatsApp\nMy phone number has been added to your clipboard");
+                    }
                 }
-                catch (Exception ex)
+                if (respns == 2)
                 {
                     Clipboard.SetText(title);
-                    MessageBox.Show("An error occurred while opening WhatsApp My phone number has been added to your clipboard");
+                    MessageBox.Show("My phone number has been added to your clipboard");
                 }
+
             }
 
         }

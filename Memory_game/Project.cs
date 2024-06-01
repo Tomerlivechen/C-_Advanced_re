@@ -12,10 +12,7 @@ namespace Memory_game
 {
     public class Project : IProjectMeta
     {
-
         public string Name { get; set; } = "Memory Game";
-
-
         public BitmapImage Image
         {
             get
@@ -23,10 +20,8 @@ namespace Memory_game
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();

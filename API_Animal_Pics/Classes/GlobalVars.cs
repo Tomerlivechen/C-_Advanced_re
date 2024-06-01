@@ -28,13 +28,11 @@ namespace API_Animal_Pics.Classes
                 animalPiclists = NewAnimallists;
                 return;
             }
-
             try
             {
                 var rawData = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<Animallists>(rawData);
                 animalPiclists = result;
-
                 if (result == null)
                 {
                     Animallists NewAnimallists = new Animallists();
@@ -42,6 +40,7 @@ namespace API_Animal_Pics.Classes
                     return;
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show($"No pic lists available");

@@ -16,6 +16,7 @@ namespace Project_Gallery.Classes
         new Contact_referances("Linked.png", "https://www.linkedin.com/in/tomer-chen-642933a6"),
         new Contact_referances("Git.png", "https://github.com/Tomerlivechen"),
         new Contact_referances("Orcid.png", "https://orcid.org/0000-0001-9320-0009"),
-    };
+
+        };
     }
 }

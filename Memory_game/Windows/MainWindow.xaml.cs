@@ -11,7 +11,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Memory_game.Classes;
 using Common_Classes.Classes;
-
 namespace Memory_game
 {
     /// <summary>
@@ -24,15 +23,12 @@ namespace Memory_game
             InitializeComponent();
             GlobalVars.LoadHighscores();
         }
-
         private void Start_Game_Click(object sender, RoutedEventArgs e)
         {
             int amount = Get_card_amount();
-
             MemoryGameWindow window = new MemoryGameWindow(amount);
             window.ShowDialog();
         }
-
         private void Hight_Scores_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.SaveHighscores();
@@ -66,9 +62,7 @@ namespace Memory_game
                 default:
                     break;
             }
-
         }
-
         public int Get_card_amount() {
             ComboBoxItem selectedItem = Card_amount.SelectedItem as ComboBoxItem;
             int amount;

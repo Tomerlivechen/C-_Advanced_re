@@ -47,7 +47,6 @@ namespace Speed_Racer.Windows
 
             NewGame.WinEvent += win_fuction;
             NewGame.LoseEvent += Lose_fuction;
-            //moveAllCars(600);
 
             insertColectables(fule_Tank, "Fule");
             insertColectables(Repairkit, "Fix");
