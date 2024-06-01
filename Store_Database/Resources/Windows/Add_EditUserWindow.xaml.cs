@@ -12,7 +12,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 namespace Store_Database.Resources.Windows
 {
     /// <summary>
@@ -49,10 +48,7 @@ namespace Store_Database.Resources.Windows
                 Still_Check.IsChecked = true;
                 Still_Check.IsEnabled = false;
             }
-
-
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (Security.checkManagerCode())
@@ -70,10 +66,8 @@ namespace Store_Database.Resources.Windows
                     Close();
                     return;
                 }
-
                 if (AddorEdit == "Add")
                 {
-
                     bool isRepeatID = false;
                     foreach (Users user in Static_Data.ShopWorkors)
                     {
@@ -90,12 +84,8 @@ namespace Store_Database.Resources.Windows
                         Close();
                         return;
                     }
-
-
                 }
-
             }
         }
-
     }
-}
+}

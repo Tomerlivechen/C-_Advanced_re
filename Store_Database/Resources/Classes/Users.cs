@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
 namespace Store_Database.Resources.Classes
 {
     public class Users
     {
-
         public string Name { get; set; }
         public string ID { get; set; }
         public string StartDate { get; set; }
@@ -17,7 +15,6 @@ namespace Store_Database.Resources.Classes
         public bool StillEmployed { get; set; }
         public bool Manager { get; set; }
         public int Index { get; set; }
-
         public Users(string Name, string ID, bool StillEmployed, bool Manager, int index)
         {
             this.Name = Name;
@@ -42,20 +39,16 @@ namespace Store_Database.Resources.Classes
         public Users()
         {
         }
-
         public void LetGo()
         {
             EndDate = DateTime.Now.ToShortDateString();
             StillEmployed = false;
         }
-
         public override string ToString()
         {
             string tostring;
             tostring = $"ID:{ID} , Name:{Name} , Start Date:{StartDate} , End Date:{EndDate} , Manager:{Manager} , Still Employed:{StillEmployed}";
             return tostring;
-
-
         }
     }
-}
+}

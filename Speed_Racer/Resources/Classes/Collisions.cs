@@ -2,23 +2,19 @@
 using Speed_Racer.Windows;
 using System.Windows;
 using System.Windows.Controls;
-
 namespace Speed_Racer.Resources.Classes
 {
     public static class Collisions
     {
         public static void CheckEnemyCollision(List<Image> enimyCars)
         {
-
             foreach (Image car in enimyCars)
             {
-
                 double[] carPosition = Get_From_Canvas.Getposition(car);
                 int verticalTolerance = (int)car.ActualWidth;
                 int horizontalTolerance = (int)car.ActualHeight;
                 foreach (UIElement car2 in enimyCars)
                 {
-
                     if (car != car2)
                     {
                         if (car2 is Image carImage2)
@@ -44,10 +40,8 @@ namespace Speed_Racer.Resources.Classes
                                             carImage2.Tag = $"terrane 1";
                                             carImage2.Source = Image_Import.LoadImageFromResource($"FlippedCar.png");
                                         }
-
                                     }
                                 }
-
                             }
                         }
                     }
@@ -61,10 +55,8 @@ namespace Speed_Racer.Resources.Classes
             int horizontalTolerance = (int)player.ActualHeight;
             foreach (var obj in Track_Canvas.Children)
             {
-
                 if (obj is Image movable)
                 {
-
                     if (movable.Tag != null)
                     {
                         verticalTolerance += (int)movable.ActualWidth;
@@ -82,16 +74,11 @@ namespace Speed_Racer.Resources.Classes
                                     return;
                                 }
                             }
-
                         }
                     }
-
                 }
-
             }
-
         }
-
         public static void CheckGoodCollision(Canvas Track_Canvas, Image player, Race_Game NewGame)
         {
             double[] carPosition = Get_From_Canvas.Getposition(player);
@@ -118,14 +105,12 @@ namespace Speed_Racer.Resources.Classes
                                     NewGame.AddFule();
                                     return;
                                 }
-
                                 if (goody.Tag.ToString() == "Fix")
                                 {
                                     goody.Visibility = Visibility.Collapsed;
                                     NewGame.AddRepair();
                                     return;
                                 }
-
                                 if (goody.Tag.ToString() == "Chocolate")
                                 {
                                     goody.Visibility = Visibility.Collapsed;
@@ -134,11 +119,9 @@ namespace Speed_Racer.Resources.Classes
                                 }
                             }
                         }
-
                     }
                 }
             }
         }
-        
     }
-}
+}

@@ -15,31 +15,26 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace Speed_Racer.Resources.Controls
 {
     /// <summary>
     /// Interaction logic for Repair_item.xaml
     /// </summary>
-
     public partial class Repair_item : UserControl
     {
         DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
         Race_Game _game;
         public Repair_item(Race_Game game)
         {
-
             InitializeComponent();
             _game = game;
             timer1.Start();
             timer1.Tick += TimedAction;
         }
-
         public void TimedAction(object sender, EventArgs e)
         {
             setUpItems(_game.repair);
         }
-
         public void setUpItems (int number)
         {
             repair_holder.Children.Clear();
@@ -49,10 +44,6 @@ namespace Speed_Racer.Resources.Controls
                 image.Source = Image_Import.LoadImageFromResource("RepairKit_stat.png");
                 repair_holder.Children.Add(image);
             }
-
-
-
         }
-
     }
-}
+}

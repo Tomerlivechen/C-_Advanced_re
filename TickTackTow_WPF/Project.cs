@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Common_Classes;
 using Common_Classes.Common_Elements;
-
 namespace TickTackTow_WPF
 {
     public class Project : IProjectMeta
     {
         public string Name { get; set; } = "Tic Tac Toe";
-
         public BitmapImage Image
         {
             get
@@ -21,10 +19,8 @@ namespace TickTackTow_WPF
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();
@@ -33,4 +29,4 @@ namespace TickTackTow_WPF
             window.ShowDialog();
         }
     }
-}
+}

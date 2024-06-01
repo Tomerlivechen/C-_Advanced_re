@@ -18,7 +18,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Xps.Packaging;
-
 namespace Store_Database.Resources.Windows
 {
     /// <summary>
@@ -35,7 +34,6 @@ namespace Store_Database.Resources.Windows
             client.BaseAddress = apiadress;
             UserGrid.ItemsSource = Static_Data.ShopWorkors;
         }
-
         async void Edit_Button_Click(object sender, RoutedEventArgs e)
         {
             if (UserGrid.SelectedItem != null)
@@ -73,11 +71,8 @@ namespace Store_Database.Resources.Windows
                     Static_Data.tempUser2 = null;
                     return;
                 }
-
-
             }
         }
-
         async void LoadUsers()
         {
             var response = await client.GetAsync(apiUsers);
@@ -86,7 +81,6 @@ namespace Store_Database.Resources.Windows
             Static_Data.ShopWorkors = data;
             UserGrid.ItemsSource = Static_Data.ShopWorkors;
         }
-
         async void Add_Button_Click(object sender, RoutedEventArgs e)
         {
             Static_Data.tempUser = null;
@@ -104,10 +98,7 @@ namespace Store_Database.Resources.Windows
             {
                 MessageBox.Show("No worker added", "Error");
             }
-
-
         }
-
         async void LetGo_Button_Click(object sender, RoutedEventArgs e)
         {
             if (Security.checkManagerCode())
@@ -122,31 +113,26 @@ namespace Store_Database.Resources.Windows
                 }
             }
         }
-
         private void Filter_Click(object sender, RoutedEventArgs e)
         {
             var result = from users in Static_Data.ShopWorkors where users.Name.ToUpper().Contains(Filter_Text.Text.ToUpper().ToString()) select users;
             UserGrid.ItemsSource = result;
         }
-
         private void Only_Managers_Click(object sender, RoutedEventArgs e)
         {
                 var result = from users in Static_Data.ShopWorkors where users.Manager == true select users;
                 UserGrid.ItemsSource = result;
         }
-
         private void Only_Workers_Click(object sender, RoutedEventArgs e)
         {
             var result = from users in Static_Data.ShopWorkors where users.Manager == false select users;
             UserGrid.ItemsSource = result;
         }
-
         private void Only_Employed_Click(object sender, RoutedEventArgs e)
         {
             var result = from users in Static_Data.ShopWorkors where users.StillEmployed == true select users;
             UserGrid.ItemsSource = result;
         }
-
         private void Report_Button_Click(object sender, RoutedEventArgs e)
         {
             List<Users> report_list = new List<Users>();
@@ -160,7 +146,6 @@ namespace Store_Database.Resources.Windows
             {
                 var input_Box = new Input_box(number_of_field, title, Input_field1);
                 input_Box.ShowDialog();
-
                 if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
                 {
                     hasInput = false;
@@ -169,7 +154,6 @@ namespace Store_Database.Resources.Windows
                 {
                     hasInput = true;
                 }
-
             } while (!hasInput);
             if (!Directory.Exists("Reports/"))
             {
@@ -185,4 +169,4 @@ namespace Store_Database.Resources.Windows
         }
     }
     
-}
+}

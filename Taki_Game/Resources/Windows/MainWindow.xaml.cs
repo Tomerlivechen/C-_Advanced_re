@@ -13,7 +13,6 @@ using System.Windows.Threading;
 using Taki_Game.Resources.Controls;
 using static System.Net.Mime.MediaTypeNames;
 using Taki_Game.Resources.Classes;
-
 namespace Taki_Game
 {
     /// <summary>
@@ -33,17 +32,13 @@ namespace Taki_Game
             Game.StartGame(players);
             timer1.Start();
             timer1.Tick += visualUpdates;
-
-
         }
-
         public void InitializeImages()
         {
             Table.Source = GlobalVars.LoadImageFromResource("Table_Top.png");
             Deck_image.Source = GlobalVars.LoadImageFromResource("CardImageBack.png");
         }
         
-
         private void visualUpdates(object? sender, EventArgs e)
         {
             Game.checkWin(GlobalVars.NumOfPlayers);
@@ -57,7 +52,6 @@ namespace Taki_Game
             {
                 timer1.Stop();
             }
-
         }
         public void updatePlayer()
         {
@@ -69,7 +63,6 @@ namespace Taki_Game
                 player_num.Content += Game.players_list[GlobalVars.player - 1].name;
             }
         }
-
         public void updatePlus2() { 
         if (GlobalVars.Plus2Active)
             {
@@ -81,8 +74,6 @@ namespace Taki_Game
                 penalty.Visibility = Visibility.Collapsed;
             }
         }
-
-
         public void updateStackSet()
         {
             card_stack.Children.Clear();
@@ -107,14 +98,11 @@ namespace Taki_Game
                 End_turn.Visibility = Visibility.Collapsed;
             }
         }
-
         public void UpdateCardSet(Player_class player)
         {
-
                 player_wrap.Children.Clear();
                 foreach (TakiCard card in player.DeckInHand)
                 {
-
                     Taki_Card T_card = new Taki_Card(card)
                     {
                         Margin = new Thickness(3),
@@ -122,13 +110,8 @@ namespace Taki_Game
                         Width = 90,
                     };
                     player_wrap.Children.Add(T_card);
-
                 }
-
         }
-
-
-
         private void Deck_Click(object sender, RoutedEventArgs e)
         {
             if (GlobalVars.TakiActive)
@@ -144,13 +127,11 @@ namespace Taki_Game
             }
             Game.DrawCard(Game.players_list[GlobalVars.player - 1], true);
         }
-
         private void Close_Taki_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.closeTaki();
             GlobalVars.nextPlayer();
         }
-
         private void Close_End_turn(object sender, RoutedEventArgs e)
         {
             GlobalVars.nextPlayer();

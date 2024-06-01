@@ -12,7 +12,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 namespace Store_Database.Resources.Windows
 {
     /// <summary>
@@ -28,7 +27,6 @@ namespace Store_Database.Resources.Windows
             AddorEdit  = addOrEdit;
             InitializeComponent();
             getComboBoxes();
-
             if (addOrEdit == "Edit" ) {
                 Title.Content = "Edit Item";
                 Catagories1.Text =  Item.MainCategory.ToString();
@@ -42,15 +40,11 @@ namespace Store_Database.Resources.Windows
                 Item = new DB_Item();
             }
         }
-
         public void getComboBoxes()
         {
-
             addToComboBox(Catagories1, Static_Data.MainCatagories);
             addToComboBox(Catagories2, Static_Data.SeconderyCatagories);
-
         }
-
         public ComboBoxItem? GetComboBoxItem( ComboBox combo,  string tag)
         {
             foreach (ComboBoxItem item in combo.Items)
@@ -62,7 +56,6 @@ namespace Store_Database.Resources.Windows
             }
             return null;
         }
-
         public void addToComboBox(ComboBox comboBox, List<Categories> categories)
         {
             comboBox.Items.Clear();
@@ -72,8 +65,6 @@ namespace Store_Database.Resources.Windows
                 comboBox.Items.Add(comboBoxItem);
             }
         }
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(AddorEdit == "Edit")
@@ -100,12 +91,10 @@ namespace Store_Database.Resources.Windows
                         Item.ChangeCat2(comboCat2BoxItem.Tag.ToString());
                     }
                 }
-
                 if (!string.IsNullOrEmpty(ItemName_text.Text.ToString()))
                 {
                     Item.ItemName = ItemName_text.Text.ToString();
                 }
-
                 if (double.TryParse(Amount_text.Text.ToString(), out double amount)){
                     Item.AddAmount(amount);
                 }
@@ -114,7 +103,6 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Amount must be a number");
                     return;
                 }
-
                 if (double.TryParse(MinAmount_text.Text.ToString(), out double minamount))
                 {
                     Item.UpdateMinAmount(minamount);
@@ -129,7 +117,6 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Must give a vlaid worker ID");
                     return;
                 }
-
                     if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
                 {
                     bool updaterValid = false;
@@ -150,11 +137,9 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Must give a vlaid worker ID");
                     return;
                 }
-
                 Static_Data.BDItem = Item;
                 Close();
             }
-
             if (AddorEdit == "Add")
             {
                 if (!string.IsNullOrEmpty(Catagories1_text.Text))
@@ -187,7 +172,6 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Item Must have a name");
                     return;
                 }
-
                 if (double.TryParse(Amount_text.Text.ToString(), out double amount))
                 {
                     Item.AddAmount(amount);
@@ -197,7 +181,6 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Amount must be a number");
                     return;
                 }
-
                 if (double.TryParse(MinAmount_text.Text.ToString(), out double minamount))
                 {
                     Item.UpdateMinAmount(minamount);
@@ -207,7 +190,6 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Minumum amount must be a number");
                     return;
                 }
-
                 if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
                 {
                     bool updaterValid = false;
@@ -227,7 +209,6 @@ namespace Store_Database.Resources.Windows
                                 MessageBox.Show("This worker dosen't work here any more");
                                 return;
                             }
-
                         }
                     }
                     if (updaterValid == false)
@@ -241,22 +222,17 @@ namespace Store_Database.Resources.Windows
                     MessageBox.Show("Must give a vlaid worker ID");
                     return;
                 }
-
                 Static_Data.BDItem = new DB_Item(Item.ItemName, Item.MainCategory, Item.SeconderyCategory, Item.Amount, Item.MinAmount, Item.LastUpdater);
                 Close();
             }
-
-
         }
-
         private void Catagories1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Catagories1_text.Text = string.Empty;
         }
-
         private void Catagories2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Catagories2_text.Text = string.Empty;
         }
     }
-}
+}

@@ -13,9 +13,6 @@
     <Compile Update="Controles\CustomeMessagebox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Controles\MessageBox_.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Controles\ProjectButton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,9 +25,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controles\CustomeMessagebox.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Controles\MessageBox_.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controles\ProjectButton.xaml">

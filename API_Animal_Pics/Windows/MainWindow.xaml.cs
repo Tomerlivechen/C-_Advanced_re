@@ -22,9 +22,7 @@ namespace API_Animal_Pics
     
     public partial class MainWindow : Window
     {
-
         ObservableCollection<Animallist> listOfAnimalPicLists = new ObservableCollection<Animallist>();
-
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +30,6 @@ namespace API_Animal_Pics
             updateLists();
             Closed += Window_Closed;
         }
-
         public void Window_Activated(object sender, EventArgs e)
         {
             updateLists();
@@ -47,31 +44,25 @@ namespace API_Animal_Pics
             }
             else { return; }
         }
-
         private void Add_new_list_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.AddPicList();
             updateLists();
         }
-
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         private void About_Click(object sender, RoutedEventArgs e)
         {
             Help help = new Help();
             help.ShowDialog();
         }
-
         public void updateLists()
         {
             IEnumerable<Animallist> result = GlobalVars.animalPiclists.animalPiclists.Select(list => list);
             ImageListDataGrid.ItemsSource = result;
-
         }
-
         private void Delete_Button_Click(object sender, RoutedEventArgs e)
         {
             Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
@@ -86,16 +77,13 @@ namespace API_Animal_Pics
             if (respons == 1)
             {
                 Animallist ListToRemove = GlobalVars.animalPiclists.animalPiclists.FirstOrDefault(item => item.Name == Selectd_List.Name);
-
                 if (ListToRemove != null)
                 {
                     GlobalVars.animalPiclists.animalPiclists.Remove(ListToRemove);
                     updateLists();
-
                 }
             }
         }
-
         private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
             Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
@@ -110,14 +98,12 @@ namespace API_Animal_Pics
             }
             updateLists();
         }
-
         private void View_Button_Click(object sender, RoutedEventArgs e)
         {
             Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
             Saved_pics window = new Saved_pics(Selectd_List);
             window.ShowDialog();
         }
-
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.SavePiclists();

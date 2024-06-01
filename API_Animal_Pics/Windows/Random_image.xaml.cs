@@ -24,35 +24,27 @@ using WpfAnimatedGif;
 using static System.Net.Mime.MediaTypeNames;
 using System.Windows.Media.Animation;
 namespace API_Animal_Pics.Windows;
-
 /// <summary>
 /// Interaction logic for Random_image.xaml
 /// </summary>
 public partial class Random_image : Window
 {
     DispatcherTimer timer3 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(3) };
-
     public HttpClient client = new HttpClient();
     public string animallistname;
     public AnimalPic currentPic = new AnimalPic();
     public Random_image(Animallist animallist)
     {
         animallistname = animallist.Name;
-
-
         InitializeComponent();
         InitializeImages();
         Activated += Window_Activated;
         Closed += Window_Closed;
         timer3.Tick += Timed_03_Actions;
-
         timer3.Start();
     }
-
-
     public void InitializeImages()
     {
-
         Loading_pic.Source = GlobalVars.SetImageForSource("Loading.png");
     }
     public void Timed_03_Actions(object sender, EventArgs e)
@@ -60,26 +52,19 @@ public partial class Random_image : Window
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FBFBFB"));
         Status_Bar.Text= string.Empty;
     }
-
-
     public void Window_Activated(object sender, EventArgs e)
     {
-
     }
     public void Window_Closed(object sender, EventArgs e)
     {
         int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
         if (respons == 1)
         {
-
             GlobalVars.SavePiclists();
             GlobalVars.CheckDuplicate();
         }
         else { return; }
     }
-
-
-
     private async void Button_ClickAsync(object sender, RoutedEventArgs e)
     {
         Loading_pic.Visibility = Visibility.Visible;
@@ -88,13 +73,11 @@ public partial class Random_image : Window
         Loading_pic.Visibility = Visibility.Hidden;
         SetImageSource(Animalimage);
     }
-
     private async Task<string> GetPicAPI(string type)
     {
         string response = "";
         if (type == "Dog") { response = await client.GetStringAsync($"https://api.thedogapi.com/v1/images/search"); }
         if (type == "Cat") { response = await client.GetStringAsync($"https://api.thecatapi.com/v1/images/search"); }
-
         if (type == "Fox")
         {
             response = await client.GetStringAsync($"https://randomfox.ca/floof/?ref=apilist.fun");
@@ -105,7 +88,6 @@ public partial class Random_image : Window
             currentPic.url = Foxjson.image;
             return Foxjson.image;
         }
-
         if (type == "Bear")
         {
             Random random = new Random();
@@ -129,8 +111,6 @@ public partial class Random_image : Window
             return null;
         }
     }
-
-
     public BitmapImage setImagetoObject(string imageUrl)
     {
         try
@@ -139,19 +119,14 @@ public partial class Random_image : Window
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(imageUrl);
             bitmap.EndInit();
-
             return bitmap;
-
         }
         catch (Exception ex)
         {
             MessageBox.Show($"Error loading image: {ex.Message}");
             return null;
         }
-
     }
-
-
     private void SetImageSource(string imageUrl)
     {
         try
@@ -160,16 +135,13 @@ public partial class Random_image : Window
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(imageUrl);
             bitmap.EndInit();
-
             Animal_pic.Source = bitmap;
-
         }
         catch (Exception ex)
         {
             MessageBox.Show($"Error loading image: {ex.Message}");
         }
     }
-
     private void Save_image_Click(object sender, RoutedEventArgs e)
     {
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
@@ -177,12 +149,10 @@ public partial class Random_image : Window
         GlobalVars.AddPic(animallistname, currentPic);
         GlobalVars.SavePiclists();
         }
-
     private void Close_Click(object sender, RoutedEventArgs e)
     {
         Close();
     }
-
     private void Save_image_list_Click(object sender, RoutedEventArgs e)
     {
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
@@ -190,4 +160,4 @@ public partial class Random_image : Window
         GlobalVars.SavePiclists();
         GlobalVars.CheckDuplicate();
     }
-}
+}

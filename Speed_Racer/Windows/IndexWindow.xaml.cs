@@ -14,7 +14,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Speed_Racer.Resources.Classes;
-
 namespace Speed_Racer.Windows
 {
     /// <summary>
@@ -27,7 +26,6 @@ namespace Speed_Racer.Windows
             InitializeComponent();
             HighScores.LoadHighscores();
         }
-
         private void Start_Game_Click(object sender, RoutedEventArgs e)
         {
             int difficulty = Get_Difficulty();
@@ -35,13 +33,11 @@ namespace Speed_Racer.Windows
             Game_Window game_Window = new Game_Window(difficulty, playerName);
             game_Window.ShowDialog();
         }
-
         private void Hight_Scores_Click(object sender, RoutedEventArgs e)
         {
             High_score HS_window = new High_score(HighScores.HighScoreList);
             HS_window.ShowDialog();
         }
-
         public string SetPlayerName()
         {
             string name;
@@ -59,7 +55,6 @@ namespace Speed_Racer.Windows
             return name;
             
         }
-
         public int Get_Difficulty()
         {
             ComboBoxItem selectedItem = Difficulty_level.SelectedItem as ComboBoxItem;
@@ -68,4 +63,4 @@ namespace Speed_Racer.Windows
             return Difficulty;
         }
     }
-}
+}

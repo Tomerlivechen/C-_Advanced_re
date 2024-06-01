@@ -7,31 +7,22 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using System.Windows;
 using System.Numerics;
-
 namespace Taki_Game.Resources.Classes
 {
-
         public class TakiCard : INotifyPropertyChanged
         {
         public event PropertyChangedEventHandler PropertyChanged;
-
         public BitmapImage Image => GlobalVars.LoadImageFromResource($"{Pic}.png");
-
         public static BitmapImage Back => GlobalVars.LoadImageFromResource("CardImageBack.png");
-
         public bool Decak { get; set; } = false;
         public bool Stack { get; set; } = false;
         public bool Hand { get; set; } = false;
-
         public bool notStack { get; set; } = false;
-
         public string color { get; set; }
         public string val { get; set; }
         public string Pic { get; set; }
-
         public int Player { get; set; }
         public TakiCard() => VisibleImage = Back;
-
             BitmapImage _visibleImage;
             public BitmapImage VisibleImage
             {
@@ -42,18 +33,13 @@ namespace Taki_Game.Resources.Classes
                     OnPropertyChanged(nameof(VisibleImage));
                 }
             }
-
             void OnPropertyChanged(string propertyName)
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
             }
-
-
-
             public void setSetColor(string value) => color = value;
             public void setSetValue(string value) => val = value;
             public void setPic() => Pic = $"{color}{val}";
-
             public void ResetCard()
             {
                 Decak = true;
@@ -70,10 +56,6 @@ namespace Taki_Game.Resources.Classes
                 Hand = true;
                 notStack = true;
             }
-
-
-
-
             public void Internalflip(int player)
             {
                 if (Hand)
@@ -94,13 +76,10 @@ namespace Taki_Game.Resources.Classes
             {
                 if (notStack)
                 {
-
                     VisibleImage = Back;
                     return;
                 }
-
             }
-
             public void PlayCard()
             {
                 if (GlobalVars.Plus2Active && this.val != "2+")
@@ -113,7 +92,6 @@ namespace Taki_Game.Resources.Classes
                 {
                     if (this.color == GlobalVars.TakiColor)
                     {
-
                         if (this.val == "2+")
                         {
                             MessageBox.Show("Impossible move", "Impossible move");
@@ -141,10 +119,7 @@ namespace Taki_Game.Resources.Classes
                         MessageBox.Show("Impossible move", "Impossible move");
                     }
                 }
-
             }
-
-
         }
     
-}
+}

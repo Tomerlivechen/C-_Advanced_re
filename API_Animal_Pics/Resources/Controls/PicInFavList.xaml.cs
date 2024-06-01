@@ -30,28 +30,21 @@ namespace API_Animal_Pics.Resources
             InitializeComponent();
             InitializeImages();
             listName = animallist.Name;
-
             DataContext = pic;
-
                 try
                 {
                     BitmapImage bitmap = new BitmapImage();
                     bitmap.BeginInit();
                     bitmap.UriSource = new Uri(pic.url);
                     bitmap.EndInit();
-
                 main_image.Source = bitmap;
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Error loading image: {ex.Message}");
                 }
-
-
             FillScreen_Button.Click += (sender, e) =>
             {
-
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
                     FileName = pic.url,
@@ -68,20 +61,16 @@ namespace API_Animal_Pics.Resources
                     removePic(this);
                 }
                 else { return; }
-
             };
-
         }
-
         public void removePic(PicInFavList pic)
         {
             pic.Visibility = Visibility.Collapsed;
         }
-
         public void InitializeImages()
         {
             FillScreen.Source = GlobalVars.SetImageForSource("fullscreen.png");
             Trash.Source = GlobalVars.SetImageForSource("trash.png");
         }
     }
-}
+}

@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-
 namespace Speed_Racer.Resources.Classes
 {
     public static class Move_objects
@@ -32,7 +31,6 @@ namespace Speed_Racer.Resources.Classes
                 }
             }
         }
-
         public static void moveObject(UIElement element, int speed, int difficalty, double Speed)
         {
             Random rnd = new Random();
@@ -68,7 +66,6 @@ namespace Speed_Racer.Resources.Classes
                 Canvas.SetTop(element, -1 * (500 + 150 * rnd.Next(2, 5)));
             }
         }
-
         public static string changeCarImageBySpeed(int newspeed)
         {
             Random rnd = new Random();
@@ -99,8 +96,7 @@ namespace Speed_Racer.Resources.Classes
                     break;
                 default:
                     return "Debris";
-
             }
         }
     }
-}
+}

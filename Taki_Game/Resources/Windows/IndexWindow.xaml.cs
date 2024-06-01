@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Taki_Game.Resources.Windows;
 using Taki_Game.Resources.Classes;
-
 namespace Taki_Game
 {
     /// <summary>
@@ -24,10 +23,7 @@ namespace Taki_Game
         public IndexWindow()
         {
             InitializeComponent();
-
         }
-
-
         public int Get_Player_amount()
         {
             ComboBoxItem selectedItem = Player_amount.SelectedItem as ComboBoxItem;
@@ -35,7 +31,6 @@ namespace Taki_Game
             int.TryParse((string?)selectedItem.Tag, out amount);
             return amount;
         }
-
         private void Start_Game_Click(object sender, RoutedEventArgs e)
         {
             int amount = Get_Player_amount();
@@ -43,12 +38,10 @@ namespace Taki_Game
             MainWindow window = new MainWindow(amount);
             window.ShowDialog();
         }
-
         private void Close_action(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         private void About_action(object sender, RoutedEventArgs e)
         {
             Help window = new Help();

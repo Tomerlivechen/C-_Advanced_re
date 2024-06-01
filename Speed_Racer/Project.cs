@@ -8,13 +8,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
-
 namespace Speed_Racer
 {
     public class Project : IProjectMeta
     {
         public string Name { get; set; } = "Fury Road";
-
         public BitmapImage Image
         {
             get
@@ -22,10 +20,8 @@ namespace Speed_Racer
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();
@@ -34,4 +30,4 @@ namespace Speed_Racer
             window.ShowDialog();
         }
     }
-}
+}

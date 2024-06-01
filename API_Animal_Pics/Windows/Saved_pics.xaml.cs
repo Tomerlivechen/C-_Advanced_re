@@ -34,7 +34,6 @@ namespace API_Animal_Pics.Windows
             Closed += Window_Closed;
             List_Name.Text = listName;
         }
-
         void Initializeboard(Animallist animallist)
         { 
             foreach (AnimalPic pic in animallist.animalPics)
@@ -53,28 +52,24 @@ namespace API_Animal_Pics.Windows
             int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
             if (respons == 1)
             {
-
                 GlobalVars.SavePiclists();
                 GlobalVars.CheckDuplicate();
             }
             else { return; }
         }
-
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             GlobalVars.SavePiclists();
             GlobalVars.CheckDuplicate();
         }
-
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         public void InitializeImages()
         {
             Table.Source = GlobalVars.SetImageForSource("Table_Top.png");
         }
         
     }
-}
+}

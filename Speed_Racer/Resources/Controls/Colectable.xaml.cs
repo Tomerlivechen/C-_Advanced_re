@@ -1,7 +1,6 @@
 ﻿using Speed_Racer.Resources.Classes;
 using System.Windows.Controls;
 using System.Windows.Threading;
-
 namespace Speed_Racer.Resources.Controls
 {
     /// <summary>
@@ -19,7 +18,6 @@ namespace Speed_Racer.Resources.Controls
             timer1.Tick += moveTank;
             goody_image.Source = Image_Import.LoadImageFromResource(goody);
         }
-
         public void moveTank(object sender, EventArgs e)
         {
             double topPos = Canvas.GetTop(goody_image);
@@ -34,4 +32,4 @@ namespace Speed_Racer.Resources.Controls
             Canvas.SetTop(goody_image, topPos + 0.3 * direction);
         }
     }
-}
+}

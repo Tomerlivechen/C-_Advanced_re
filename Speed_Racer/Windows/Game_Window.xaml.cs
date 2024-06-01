@@ -40,18 +40,14 @@ namespace Speed_Racer.Windows
             NewGame = new Race_Game(name, difficalty);
             InitializeComponent();
             timer4s.Start();
-
             timer1.Tick += timedReaction;
             timer1s.Tick += secondTimedReaction;
             timer4s.Tick += FourSecondtimer;
-
             NewGame.WinEvent += win_fuction;
             NewGame.LoseEvent += Lose_fuction;
-
             insertColectables(fule_Tank, "Fule");
             insertColectables(Repairkit, "Fix");
             insertColectables(Chocolate, "Chocolate");
-
             enimyCars = new List<Image>() { Car2, Car3, Car5, Car6, Car8 };
             FuleGauge fuleGauge = new FuleGauge(NewGame);
             FuleGaugebox.Children.Add(fuleGauge);
@@ -59,15 +55,12 @@ namespace Speed_Racer.Windows
             Toolbox.Children.Add(repair_Item);
             speedometer = new Speedometer();
             SpeedGaugebox.Children.Add(speedometer);
-
             Distance_layout.Child = distanceView;
             distanceView.Height = Distance_layout.Height;
             distanceView.Width = Distance_layout.Width;
             distanceView.HorizontalAlignment = HorizontalAlignment.Stretch;
             distanceView.VerticalAlignment = VerticalAlignment.Stretch;
-
         }
-
         public void insertColectables(Colectable colectable, string tag)
         {
             Track_Canvas.Children.Add(colectable);
@@ -75,9 +68,7 @@ namespace Speed_Racer.Windows
             Canvas.SetTop(colectable, 800);
             Canvas.SetLeft(colectable, 0);
             colectable.Tag = tag;
-
         }
-
         public void FourSecondtimer(object sender, EventArgs e)
         {
             if (countDown == 0)
@@ -168,7 +159,6 @@ namespace Speed_Racer.Windows
             Collisions.CheckGoodCollision(Track_Canvas, player, NewGame);
             speedometer.GenerateGage((int)(Speed * 0.8)+1);
             moveLines();
-
         }
         private void secondTimedReaction(object sender, EventArgs e)
         {
@@ -239,12 +229,10 @@ namespace Speed_Racer.Windows
         {
             player.Source = Image_Import.LoadImageFromResource("Explosion.png");
         }
-
         public void Fix()
         {
             player.Source = Image_Import.LoadImageFromResource("MaxCar.png");
         }
-
         public void GameOver(object sender, EventArgs e)
         {
             int response = Message_Box_Classes.DisplayMessageBox("Game over, Do you Want to play again?", "GAME OVER");
@@ -300,4 +288,4 @@ namespace Speed_Racer.Windows
             }
         }
     }
-}
+}

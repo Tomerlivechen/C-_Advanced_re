@@ -11,14 +11,11 @@ using System.Windows;
 using Common_Classes.Classes;
 using System.Windows.Media.Imaging;
 using System.Reflection;
-
 namespace API_Animal_Pics.Classes
 {
     public static class GlobalVars
     {
-
         const string filePath = (@"Resources\Piclists.json");
-
         public static Animallists animalPiclists = new Animallists();
         public static void LoadPicLists()
         {
@@ -40,13 +37,11 @@ namespace API_Animal_Pics.Classes
                     return;
                 }
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show($"No pic lists available");
             }
         }
-
         public static void SavePiclists()
         {
             var export = JsonSerializer.Serialize(animalPiclists);
@@ -68,7 +63,6 @@ namespace API_Animal_Pics.Classes
             }
             LoadPicLists();
         }
-
         public static void AddPicList()
         {
             {
@@ -93,20 +87,16 @@ namespace API_Animal_Pics.Classes
                     checkName = false;
                     foreach (Animallist pic_list in animalPiclists.animalPiclists)
                     {
-
                         if (pic_list.Name == animallist.Name)
                         {
                             checkName = true;
                             MessageBox.Show("List Name alredy in use", "Name in use");
-
-
                         }
                     }
                 } while (checkName);
                 animalPiclists.animalPiclists.Add(animallist);
             }
         }
-
         public static void AddPic(string animallist, AnimalPic pic)
         {
             Animallist selectedanimallist = animalPiclists.animalPiclists.Find(list => list.Name == animallist);
@@ -115,7 +105,6 @@ namespace API_Animal_Pics.Classes
                 selectedanimallist.animalPics.Add(pic);
             }
         }
-
         public static void RemovePic(string animallist, AnimalPic pic)
         {
             Animallist selectedanimallist = animalPiclists.animalPiclists.Find(list => list.Name == animallist);
@@ -124,16 +113,13 @@ namespace API_Animal_Pics.Classes
                 selectedanimallist.animalPics.Remove(pic);
             }
         }
-
         public static void CheckDuplicate()
         {
-
             foreach (Animallist list in animalPiclists.animalPiclists)
             {
                 List<AnimalPic> imagesToRemove = new List<AnimalPic>();
                 foreach (AnimalPic test_image in list.animalPics)
                 {
-
                     int index = 0;
                     foreach (AnimalPic image in list.animalPics)
                     {
@@ -154,19 +140,13 @@ namespace API_Animal_Pics.Classes
                 }
             }
         }
-
         public static BitmapImage SetImageForSource(string resourceName)
         {
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
-
             var uri = new Uri(
                 $"pack://application:,,,/{assemblyName};component/Resources/Images/{resourceName}"
             );
-
             return new BitmapImage(uri);
         }
-
     }
-
-
-}
+}

@@ -6,30 +6,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-
 namespace Project_Gallery.Classes
 {
     public class Contact_referances
     {
         public string image { get; set; }
         public string title { get; set; }
-
         public Contact_referances(string _image, string _title)
         {
             image = _image;
             title = _title;
         }
-
         public void Run()
         {
             if (title.StartsWith("http"))
             {
-
                 Process.Start(new ProcessStartInfo
                 {
                     FileName = title,
                     UseShellExecute = true
-
                 });
             }
             if (title.Contains("@"))
@@ -41,7 +36,6 @@ namespace Project_Gallery.Classes
                 {
                     try
                     {
-
                         Process.Start(new ProcessStartInfo
                         {
                             FileName = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=" + title + "&su=" + Uri.EscapeDataString(subject) + "&body=" + Uri.EscapeDataString(body),
@@ -69,7 +63,6 @@ namespace Project_Gallery.Classes
                     try
                     {
                         string whatsAppUri = $"https://web.whatsapp.com/send?phone={title}&text={Uri.EscapeDataString(body)}";
-
                         Process.Start(new ProcessStartInfo
                         {
                             FileName = whatsAppUri,
@@ -87,9 +80,7 @@ namespace Project_Gallery.Classes
                     Clipboard.SetText(title);
                     MessageBox.Show("My phone number has been added to your clipboard");
                 }
-
             }
-
         }
     }
-}
+}

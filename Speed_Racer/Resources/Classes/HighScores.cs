@@ -2,14 +2,12 @@
 using System.Text.Json;
 using System.Windows;
 using Common_Classes.Classes;
-
 namespace Speed_Racer.Resources.Classes
 {
     public static class HighScores
     {
         public const string High_Score_file = (@"Resources\HighScore.json");
         public static List<High_score_player> HighScoreList { get; set; } = new List<High_score_player>();
-
         public static void AddHighScore(string name, int score)
         {
             if (string.IsNullOrEmpty(name)) 
@@ -19,9 +17,7 @@ namespace Speed_Racer.Resources.Classes
             High_score_player highScore_Player = new High_score_player(name, score);
             HighScoreList.Add(highScore_Player);
             SaveHighscores();
-
         }
-
         public static void LoadHighscores()
         {
             if (!File.Exists(High_Score_file))
@@ -31,13 +27,10 @@ namespace Speed_Racer.Resources.Classes
                 SaveHighscores();
                 return;
             }
-
             try
             {
                 var rawData = File.ReadAllText(High_Score_file);
                 var result = JsonSerializer.Deserialize<List<High_score_player>>(rawData);
-
-
                 if (result == null)
                 {
                     List<High_score_player> TempHighScoreList = new List<High_score_player>();
@@ -52,7 +45,6 @@ namespace Speed_Racer.Resources.Classes
                 MessageBox.Show($"No High scores available");
             }
         }
-
         public static void SaveHighscores()
         {
             var export = JsonSerializer.Serialize(HighScoreList);
@@ -75,4 +67,4 @@ namespace Speed_Racer.Resources.Classes
             LoadHighscores();
         }
     }
-}
+}

@@ -8,7 +8,6 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
-
 namespace Store_Database.Resources.Classes
 {
     public static class API_Static
@@ -17,7 +16,6 @@ namespace Store_Database.Resources.Classes
         public static string apiResource = "Store_items";
         public static string apiFilePath = "Resources/APIAdress.json";
         public static string apiResourceFilePath = "Resources/APIResource.json";
-
         public static void ChangeAPIAddress_Click()
         {
             bool hasInput = false;
@@ -31,7 +29,6 @@ namespace Store_Database.Resources.Classes
             {
                 var input_Box = new Input_box(number_of_field, title, Input_field1, Input_field2);
                 input_Box.ShowDialog();
-
                 if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[1].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[1].ToString()))
                 {
                     hasInput = false;
@@ -40,7 +37,6 @@ namespace Store_Database.Resources.Classes
                 {
                     hasInput = true;
                 }
-
             } while (!hasInput);
             apiResource = UniversalVars.inputBoxReturn[1].ToString();
             bool isUri = Uri.TryCreate(UniversalVars.inputBoxReturn[0], UriKind.Absolute, out Uri? uriAPI);
@@ -58,7 +54,6 @@ namespace Store_Database.Resources.Classes
                 return;
             }
         }
-
         public static void InitializeAPI()
         {
             LoadAPI();
@@ -69,7 +64,6 @@ namespace Store_Database.Resources.Classes
             SaveAPI();
             SaveAPIResource();
         }
-
         public static void LoadAPI()
         {
             if (!File.Exists(apiFilePath))
@@ -97,7 +91,6 @@ namespace Store_Database.Resources.Classes
                 MessageBox.Show($"File reading error {ex.Message}");
             }
         }
-
         public static void SaveAPI()
         {
             var export = JsonSerializer.Serialize(apiadress);
@@ -119,7 +112,6 @@ namespace Store_Database.Resources.Classes
             }
             LoadAPI();
         }
-
         public static void LoadAPIResource()
         {
             if (!File.Exists(apiResourceFilePath))
@@ -147,7 +139,6 @@ namespace Store_Database.Resources.Classes
                 MessageBox.Show($"File reading error {ex.Message}");
             }
         }
-
         public static void SaveAPIResource()
         {
             var export = JsonSerializer.Serialize(apiResource);
@@ -170,4 +161,4 @@ namespace Store_Database.Resources.Classes
             LoadAPIResource();
         }
     }
-}
+}

@@ -9,7 +9,6 @@ using System.Windows;
 using Common_Classes.Classes;
 namespace Taki_Game.Resources.Classes
 {
-
     public static class Game
     {
         public static void checkWin(int players)
@@ -24,7 +23,6 @@ namespace Taki_Game.Resources.Classes
                         {
                             playerWin(player);
                             GlobalVars.Win = true;
-
                         }
                     }
                 }
@@ -32,8 +30,6 @@ namespace Taki_Game.Resources.Classes
             }
         }
             
-
-
         
         public static void playerWin(Player_class player)
         {
@@ -48,11 +44,8 @@ namespace Taki_Game.Resources.Classes
                     window.Close();
                 }
             }
-
         }
         public static List<Player_class> players_list = new List<Player_class>();
-
-
         public static void SetPlayerName(Player_class player, bool initilize)
         {
             if (initilize)
@@ -70,17 +63,14 @@ namespace Taki_Game.Resources.Classes
                 UniversalVars.inputBoxReturn.Clear();
             }
         }
-
         public static void StartGame(int players, bool initilaize = true)
         {
             players_list.Clear();
             GlobalVars.Win = false;
             GlobalVars.player = 1;
             GlobalVars.setDeck();
-
             if (players > 0)
             {
-
                 for (int i = 0; i < players; i++)
                 {
                     players_list.Add(new Player_class() { index = i + 1, DeckInHand = new List<TakiCard>() });
@@ -89,7 +79,6 @@ namespace Taki_Game.Resources.Classes
                 {
                     SetPlayerName(player, initilaize);
                     GetCards(player);
-
                 }
             }
             GlobalVars.nextCardOutStack(GlobalVars.activeDeck[0]);
@@ -98,19 +87,15 @@ namespace Taki_Game.Resources.Classes
             GlobalVars.Plus2Active = false;
             GlobalVars.Plus2Accumulation = 0;
         }
-
         public static void GetCards(Player_class player)
         {
             for (int i = 0; i < 8; i++)
             {
                 DrawCard(player);
             }
-
         }
-
         public static void DrawCard(Player_class player, bool inTurn = false)
         {
-
             if (GlobalVars.activeDeck.Count <= 1)
             {
                 reShuffleStack();
@@ -122,9 +107,7 @@ namespace Taki_Game.Resources.Classes
             {
                 GlobalVars.nextPlayer();
             }
-
         }
-
         public static void PeneltyDraw(Player_class player)
         {
             if (GlobalVars.activeDeck.Count > GlobalVars.Plus2Accumulation)
@@ -141,12 +124,10 @@ namespace Taki_Game.Resources.Classes
                 {
                     DrawCard(player);
                 }
-
             }
             GlobalVars.Plus2Accumulation = 0;
             GlobalVars.nextPlayer();
         }
-
         public static void reShuffleStack()
         {
             GlobalVars.setDeck();
@@ -158,9 +139,7 @@ namespace Taki_Game.Resources.Classes
             } 
             }
             RemoveCardFromDeck(GlobalVars.lastCardInStack);
-
         }
-
         public static void RemoveCardFromDeck(TakiCard takiCard)
         {
             TakiCard cardToRemove = GlobalVars.activeDeck.Find(card => card.Pic == takiCard.Pic);
@@ -170,5 +149,4 @@ namespace Taki_Game.Resources.Classes
             }
         }
     }
-
-}
+}

@@ -9,15 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Common_Classes.Classes;
-
 namespace API_Animal_Pics
 {
     public class Project : IProjectMeta
     {
-
         public string Name { get; set; } = "Animal Pic API";
-
-
         public BitmapImage Image
         {
             get
@@ -25,11 +21,8 @@ namespace API_Animal_Pics
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();
@@ -38,4 +31,4 @@ namespace API_Animal_Pics
             window.ShowDialog();
         }
     }
-}
+}

@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-
 namespace Store_Database.Resources.Classes
 {
     public static class Security
@@ -22,7 +21,6 @@ namespace Store_Database.Resources.Classes
             {
                 var input_Box = new Input_box(number_of_field, title, Input_field1);
                 input_Box.ShowDialog();
-
                 if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
                 {
                     hasInput = false;
@@ -31,7 +29,6 @@ namespace Store_Database.Resources.Classes
                 {
                     hasInput = true;
                 }
-
             } while (!hasInput);
             if (UniversalVars.inputBoxReturn[0].ToString() == Static_Data.ManagerPassward)
             {
@@ -42,7 +39,6 @@ namespace Store_Database.Resources.Classes
             Log.addToLog($"Manager Passwared failed");
             return false;
         }
-
         public static void changeManagerCode()
         {
             bool hasInput = false;
@@ -58,14 +54,11 @@ namespace Store_Database.Resources.Classes
             {
                 var input_Box = new Input_box(number_of_field, title, Input_field1, Input_field2, Input_field3);
                 input_Box.ShowDialog();
-
                 if (UniversalVars.inputBoxReturn.Count == 3)
                 {
                     hasInput = true;
                 }
-
             } while (!hasInput);
-
             if (UniversalVars.inputBoxReturn[0].ToString() == Static_Data.ManagerEditPassward)
             {
                 if (UniversalVars.inputBoxReturn[1].ToString() == Static_Data.ManagerPassward)
@@ -78,13 +71,10 @@ namespace Store_Database.Resources.Classes
                 MessageBox.Show("Manager passcode incorrect", "Error");
                 Log.addToLog($"Manager Passwared Changed to attempted");
                 return;
-
-
             }
             MessageBox.Show("Manager edit passcode incorrect", "Error");
             Log.addToLog($"Manager Passwared Changed to attempted");
             return;
         }
-
     }
-}
+}

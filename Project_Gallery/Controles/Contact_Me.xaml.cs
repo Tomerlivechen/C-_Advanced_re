@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace Project_Gallery.Controles
 {
     /// <summary>
@@ -25,11 +24,10 @@ namespace Project_Gallery.Controles
         {
             InitializeComponent();
         }
-
         private void Contact_Click(object sender, RoutedEventArgs e)
         {
             Contact_Me_Window contact_Me_Window = new Contact_Me_Window();
             contact_Me_Window.ShowDialog();
         }
     }
-}
+}

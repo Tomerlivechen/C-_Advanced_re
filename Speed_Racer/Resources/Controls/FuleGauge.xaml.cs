@@ -16,7 +16,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace Speed_Racer.Resources.Controls
 {
     /// <summary>
@@ -34,16 +33,12 @@ namespace Speed_Racer.Resources.Controls
             timer1.Start();
             timer1.Tick += TimedAction;
             Tank_image.Source = Image_Import.LoadImageFromResource("FuleSymbol.png");
-
         }
-
         public void TimedAction(object sender, EventArgs e)
         {
             int barNumber = (int)(_game.Fule / 10);
            GenerateGage(barNumber);
-
         }
-
         public void GenerateGage(int number)
         {
             fule_panel.Children.Clear();
@@ -70,8 +65,7 @@ namespace Speed_Racer.Resources.Controls
                     rectangle.Fill = Brushes.Red;
                 }
                 fule_panel.Children.Add(rectangle);
-
             }
         }
     }
-}
+}

@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace Speed_Racer.Resources.Controls
 {
     /// <summary>
@@ -26,14 +25,12 @@ namespace Speed_Racer.Resources.Controls
             InitializeComponent();
             Car.Source = Image_Import.LoadImageFromResource("MaxCarLeft.png");
         }
-
         public void moveCar(double distance, double fulldistance)
         {
             double fullsize = road.ActualWidth;
             double position = (fulldistance-distance) / ( fulldistance/(fullsize-(Car.ActualWidth)));
             Canvas.SetLeft(Car, position);
             
-
         }
     }
-}
+}

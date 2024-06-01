@@ -23,7 +23,6 @@ namespace Taki_Game.Resources.Controls
         {
             InitializeComponent();
         }
-
         private void Color_select_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
@@ -32,7 +31,6 @@ namespace Taki_Game.Resources.Controls
                 GlobalVars.TakiColor = button.Tag.ToString();
             }
             Close();
-
         }
     }
 }

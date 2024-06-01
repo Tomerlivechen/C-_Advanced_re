@@ -7,13 +7,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
-
 namespace Store_Database
 {
     public class Project : IProjectMeta
     {
         public string Name { get; set; } = "Store Inventory";
-
         public BitmapImage Image
         {
             get
@@ -21,10 +19,8 @@ namespace Store_Database
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();
@@ -33,4 +29,4 @@ namespace Store_Database
             window.ShowDialog();
         }
     }
-}
+}

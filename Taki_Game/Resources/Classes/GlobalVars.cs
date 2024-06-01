@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using System.Windows;
 using Taki_Game.Resources.Controls;
-
 namespace Taki_Game.Resources.Classes
 {
     public static class GlobalVars
     {
         public static List<TakiCard> wholeDeck = new List<TakiCard>();
         public static List<TakiCard> activeDeck = new List<TakiCard>();
-
         public static void setDeck()
         {
             for (int i = 0; i < 2; i++)
@@ -42,11 +40,9 @@ namespace Taki_Game.Resources.Classes
                 wholeDeck.Add(takiCard);
             }
             Random rand = new Random();
-
             //          rand.Shuffle(wholeDeck.ToArray());
             wholeDeck.Shuffle();
             activeDeck = wholeDeck;
-
         }
         // copied from stack overflow becuase internal rand.Shuffle didn't work with a list only with an array
         public static void Shuffle<T>(this IList<T> list)
@@ -62,19 +58,14 @@ namespace Taki_Game.Resources.Classes
                 list[n] = value;
             }
         }
-
-
         public static BitmapImage LoadImageFromResource(string resourceName)
         {
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
-
             var uri = new Uri(
                 $"pack://application:,,,/{assemblyName};component/Resources/Images/{resourceName}"
             );
-
             return new BitmapImage(uri);
         }
-
         public static List<string> General_card_types
         {
             get
@@ -83,7 +74,6 @@ namespace Taki_Game.Resources.Classes
                 {
                     "1","2+","3","4","5","6","7","8","9","COrder","Plus","Stop","Taki",
                 };
-
                 return types;
             }
         }
@@ -109,8 +99,6 @@ namespace Taki_Game.Resources.Classes
                 return types;
             }
         }
-
-
         public static void removeCardfromPlayer(TakiCard cardToRemove)
         {
             if (Game.players_list.Count>0)
@@ -118,11 +106,8 @@ namespace Taki_Game.Resources.Classes
              Game.players_list[GlobalVars.player-1].DeckInHand.Remove(cardToRemove);   
             }
             
-
         }
-
         public static TakiCard lastCardInStack;
-
         public static void nextCardOutStack(TakiCard nextcard)
         {
             lastCardInStack = nextcard;
@@ -155,13 +140,10 @@ namespace Taki_Game.Resources.Classes
             {
                 if (NumOfPlayers == 2)
                 {
-
                     List<TakiCard> templist1 = new List<TakiCard>();
                     List<TakiCard> templist2 = new List<TakiCard>();
-
                     templist1 = Game.players_list[0].DeckInHand;
                     templist2 = Game.players_list[1].DeckInHand;
-
                     foreach (TakiCard card in templist1)
                     {
                         card.Player = 2;
@@ -178,12 +160,9 @@ namespace Taki_Game.Resources.Classes
                     List<TakiCard> templist1 = new List<TakiCard>();
                     List<TakiCard> templist2 = new List<TakiCard>();
                     List<TakiCard> templist3 = new List<TakiCard>();
-
                     templist1 = Game.players_list[0].DeckInHand;
                     templist2 = Game.players_list[1].DeckInHand;
                     templist3 = Game.players_list[2].DeckInHand;
-
-
                     foreach (TakiCard card in templist1)
                     {
                         card.Player = 2;
@@ -210,7 +189,6 @@ namespace Taki_Game.Resources.Classes
                     templist2 = Game.players_list[1].DeckInHand;
                     templist3 = Game.players_list[2].DeckInHand;
                     templist4 = Game.players_list[3].DeckInHand;
-
                     foreach (TakiCard card in templist1)
                     {
                         card.Player = 4;
@@ -237,7 +215,6 @@ namespace Taki_Game.Resources.Classes
             {
                 revers = !revers;
             }
-
             if (lastCardInStack.val == "2+")
             {
                 if (Plus2Active)
@@ -253,9 +230,7 @@ namespace Taki_Game.Resources.Classes
             if (Plus2Active && lastCardInStack.val != "2+")
             {
                 Plus2Active = false;
-
                 Game.PeneltyDraw(Game.players_list[player - 1]);
-
             }
             if (lastCardInStack.val == "Plus" || TakiActive == true)
             {
@@ -271,15 +246,12 @@ namespace Taki_Game.Resources.Classes
                 nextPlayer();
                 return;
             }
-
         }
-
         public static void askColor()
         {
             SelectColor selectColor = new SelectColor();
             selectColor.ShowDialog();
         }
-
         public static void InitilizeAllParameters()
         {
             revers = false;
@@ -295,21 +267,15 @@ namespace Taki_Game.Resources.Classes
         public static string TakiColor { get; set; }
         public static bool Plus2Active { get; set; } = false;
         public static int Plus2Accumulation { get; set; }
-
         public static void playerTurnMessage()
         {
             if (Game.players_list.Count>=2)
             {
                 MessageBox.Show($"{Game.players_list[player - 1].name}'s turn");
-
             }
-
         }
-
         public static bool Win { get; set; } = false;
-
         public static int NumOfPlayers { get; set; }
-
         public static void setNumOfPlayers(int num)
         {
             NumOfPlayers = num;
@@ -318,14 +284,11 @@ namespace Taki_Game.Resources.Classes
         {
             TakiActive = false;
         }
-
         public static void Plus2()
         {
             Plus2Accumulation += 2;
         }
-
         public static int player = 0;
-
         public static void nextPlayer(bool skip = false)
         {
             if (player == 0)
@@ -361,7 +324,6 @@ namespace Taki_Game.Resources.Classes
                 return;
             }
             playerTurnMessage();
-
         }
     }
-}
+}

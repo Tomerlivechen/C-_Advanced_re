@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace TickTackTow_WPF.Classes
 {
     internal static class Smart_Move
@@ -15,7 +14,6 @@ namespace TickTackTow_WPF.Classes
             {
                 return random.Next(1, 10);
             }
-
             int enemy = player == 2 ? 1 : 2;
             int attack = Checkwinline(positions, player);
             int defence = Checkwinline(positions, enemy);
@@ -33,7 +31,6 @@ namespace TickTackTow_WPF.Classes
             }
             return random.Next(1, 10);
         }
-
         static int Checkwinline(int[,] positions, int player)
         {
             for (int i = 0; i < 3; i++)
@@ -42,33 +39,27 @@ namespace TickTackTow_WPF.Classes
                 {
                     return sapceConverstion(i, 2);
                 }
-
                 if (positions[i, 0] == player && positions[i, 2] == player && positions[i, 1] == 0)
                 {
                     return sapceConverstion(i, 1);
                 }
-
                 if (positions[i, 1] == player && positions[i, 2] == player && positions[i, 0] == 0)
                 {
                     return sapceConverstion(i, 0);
                 }
-
                 if (positions[0, i] == player && positions[1, i] == player && positions[2, i] == 0)
                 {
                     return sapceConverstion(2, i);
                 }
-
                 if (positions[0, i] == player && positions[2, i] == player && positions[1, i] == 0)
                 {
                     return sapceConverstion(1, i);
                 }
-
                 if (positions[1, i] == player && positions[2, i] == player && positions[0, i] == 0)
                 {
                     return sapceConverstion(0, i);
                 }
             }
-
             if (positions[0, 0] == player && positions[1, 1] == player && positions[2, 2] == 0)
             {
                 return sapceConverstion(2, 2);
@@ -95,7 +86,6 @@ namespace TickTackTow_WPF.Classes
             }
             return 10;
         }
-
         static int sapceConverstion(int pos2, int pos1)
         {
             switch (pos1)

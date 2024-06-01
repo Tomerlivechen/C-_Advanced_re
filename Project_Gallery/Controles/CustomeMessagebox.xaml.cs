@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Common_Classes.Classes;
-
 namespace Project_Gallery.Controles
 {
     /// <summary>
@@ -26,14 +25,11 @@ namespace Project_Gallery.Controles
         {
             InitializeComponent();
             DataContext = messageBoxData;
-
-
             int index = -1;
             foreach (string button in messageBoxData.buttontext)
             {
                 index++;
                 Button setButton = new Button{ Content = button };
-
                 setButton.Click += (sender, e) => {
                     {
                         SelectedButtonIndex = index;
@@ -43,7 +39,6 @@ namespace Project_Gallery.Controles
                 setButton.Height = 30;
                 setButton.Width = 60;
                 setButton.Margin = new Thickness(10);
-
                 buttonPanel.Children.Add(setButton);
             }
         }

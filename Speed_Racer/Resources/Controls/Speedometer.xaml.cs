@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Speed_Racer.Resources.Classes;
 using Speed_Racer.Windows;
-
 namespace Speed_Racer.Resources.Controls
 {
     /// <summary>
@@ -24,13 +23,10 @@ namespace Speed_Racer.Resources.Controls
     public partial class Speedometer : UserControl
     {
         
-
         public Speedometer()
         {
             InitializeComponent();
-
         }
-
         public void GenerateGage(int number)
         {
             if (number > 10) {
@@ -61,7 +57,6 @@ namespace Speed_Racer.Resources.Controls
                 }
                 SpeedPanel.Children.Add(rectangle);
             }
-
         }
     }
-}
+}

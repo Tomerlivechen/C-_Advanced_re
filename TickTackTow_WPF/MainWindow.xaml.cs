@@ -11,7 +11,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using TickTackTow_WPF.Classes;
-
 namespace TickTackTow_WPF
 {
     /// <summary>
@@ -20,46 +19,34 @@ namespace TickTackTow_WPF
     public partial class MainWindow : Window
     {
         public Gameboard gameboard;
-
         public Player player1;
         public Player player2;
         public int gametype = 3;
         bool algorithem_off = false;
-
         DispatcherTimer timer = new DispatcherTimer();
-
         public MainWindow()
         {
             InitializeComponent();
-
             gameboard = new Gameboard();
-
             Updateboard(gameboard);
-
             player1 = new Player(1);
             player2 = new Player(2);
             timer.Interval = TimeSpan.FromSeconds(0.5);
             timer.Tick += Timer_Tick;
             Closed += Window_Closed;
         }
-
         public void Window_Closed(object sender, EventArgs e)
         {
             timer.Stop();
         }
         private async void Timer_Tick(object sender, EventArgs e)
         {
-
             int smartposition = makeSmartMove();
             WPF_adaptation.makemove(gameboard, smartposition);
             Updateboard(gameboard);
             if (CheckCompleation()) { return; };
             gameboard.switchplayer();
-
         }
-
-
-
         public int makeSmartMove()
         {
             bool validmove;
@@ -75,7 +62,6 @@ namespace TickTackTow_WPF
             } while (!validmove);
             return smartposition;
         }
-
         public string PositionValue(int positionValue)
         {
             if (positionValue == 1)
@@ -91,7 +77,6 @@ namespace TickTackTow_WPF
                 return "";
             }
         }
-
         public bool PositionEmpty(int positionValue)
         {
             if (positionValue > 0)
@@ -103,8 +88,6 @@ namespace TickTackTow_WPF
                 return true;
             }
         }
-
-
         public void updatePlayer(Gameboard gameboard)
         {
             if (gametype < 3)
@@ -119,7 +102,6 @@ namespace TickTackTow_WPF
                 }
             }
         }
-
         public void updatePlayerWinsandDraws(Gameboard gameboard)
         {
             player2_wins.Text = player2.wins.ToString();
@@ -129,7 +111,6 @@ namespace TickTackTow_WPF
                 Draws.Text = player1.draws.ToString();
             }
         }
-
         public void Updateboard(Gameboard gameboard)
         {
             updatePlayer(gameboard);
@@ -152,13 +133,11 @@ namespace TickTackTow_WPF
             Square_8.IsEnabled = PositionEmpty(gameboard.positions[2, 1]);
             Square_9.IsEnabled = PositionEmpty(gameboard.positions[2, 2]);
         }
-
         public bool CheckCompleation()
         {
             if (gameboard.CheckWin())
             {
                 MessageBox.Show($"Congradulations player {gameboard.player} you have won \nPress OK to play again");
-
                 if (player1._id == gameboard.player)
                 {
                     player1.wins++;
@@ -184,12 +163,10 @@ namespace TickTackTow_WPF
             }
             return false;
         }
-
         public void Square_Click(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
             int position = int.Parse(clickedButton.Tag.ToString());
-
             if (gametype == 2)
             {
                 WPF_adaptation.makemove(gameboard, position);
@@ -216,7 +193,6 @@ namespace TickTackTow_WPF
                 }
             }
         }
-
         private void Start_Game_Click(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -244,7 +220,6 @@ namespace TickTackTow_WPF
                 }
             }
         }
-
         public string TypeOfGame()
         {
             switch (gametype)
@@ -263,14 +238,11 @@ namespace TickTackTow_WPF
                     break;
             }
         }
-
-
         private void Reset_board_Click(object sender, RoutedEventArgs e)
         {
             gameboard.ResetBoard();
             Updateboard(gameboard);
         }
-
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
             gametype = 3;
@@ -284,7 +256,6 @@ namespace TickTackTow_WPF
             difficulty_lable.Visibility = Visibility.Hidden;
             timer.Stop();
         }
-
         private void Reset_Score_Click(object sender, RoutedEventArgs e)
         {
             player1.wins = 0;
@@ -293,7 +264,6 @@ namespace TickTackTow_WPF
             player2.draws = 0;
             updatePlayerWinsandDraws(gameboard);
         }
-
         private void difficulty_Click(object sender, RoutedEventArgs e)
         {
             if (!algorithem_off)
@@ -308,4 +278,4 @@ namespace TickTackTow_WPF
             }
         }
     }
-}
+}

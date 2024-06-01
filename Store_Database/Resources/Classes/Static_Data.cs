@@ -7,38 +7,29 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
-
 namespace Store_Database.Resources.Classes
 {
     public class Static_Data
     {
         public static List<Categories> MainCatagories { get; set; } 
         public static List<Categories> SeconderyCatagories { get; set; }
-
         public static List<DB_Item>? BDItems { get; set; } = new List<DB_Item>();
         public static List<Users>? ShopWorkors { get; set; } = new List<Users>();
-
         public static DB_Item? BDItem { get; set; } = new DB_Item();
         public static Users? tempUser { get; set; } = new Users();
         public static Users? tempUser2 { get; set; } = new Users();
-
         public static string ManagerPassward { get; set; } = "0000";
         public static string ManagerEditPassward { get; set; } = "0101";
-
         public static string filePath { get; set; } = "Resources/Passcode.json";
-
         public static void LoadStoredDataBase()
         {
             string RawJSON = File.ReadAllText(filePath);
             BDItems = JsonSerializer.Deserialize<List<DB_Item>>(RawJSON);
-
         }
-
         public static void LoadManagerPassward()
         {
             if (!File.Exists("Resources/Passcode.json"))
             {
-
                 ManagerPassward = "0000";
                 SavePasscode();
                 return;
@@ -47,8 +38,6 @@ namespace Store_Database.Resources.Classes
             {
                 var rawData = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<string>(rawData);
-
-
                 if (result == null)
                 {
                     ManagerPassward = "0000";
@@ -62,7 +51,6 @@ namespace Store_Database.Resources.Classes
                 MessageBox.Show($"File reading error {ex.Message}");
             }
         }
-
         public static void SavePasscode()
         {
             var export = JsonSerializer.Serialize(ManagerPassward);
@@ -84,8 +72,5 @@ namespace Store_Database.Resources.Classes
             }
             LoadManagerPassward();
         }
-
-
-
     }
-}
+}
