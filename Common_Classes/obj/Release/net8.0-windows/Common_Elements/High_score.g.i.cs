@@ -93,7 +93,7 @@ namespace Common_Classes.Common_Elements {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Common_Classes;V1.0.0.0;component/common_elements/high_score.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Common_Classes;component/common_elements/high_score.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Common_Elements\High_score.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
