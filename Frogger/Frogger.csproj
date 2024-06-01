@@ -17,6 +17,7 @@
     <None Remove="Resources\Frog_Right.png" />
     <None Remove="Resources\Frog_Safe.png" />
     <None Remove="Resources\Frog_top.png" />
+    <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\IndexImage.png" />
     <None Remove="Resources\LilyPad_3.png" />
     <None Remove="Resources\LilyPad_4.png" />
@@ -52,6 +53,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Frog_top.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Indexicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\IndexImage.png">

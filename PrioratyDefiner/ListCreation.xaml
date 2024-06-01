@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrioratyDefiner"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="ListCreation" Height="450" Width="830" Background="#008080">
     <Grid>

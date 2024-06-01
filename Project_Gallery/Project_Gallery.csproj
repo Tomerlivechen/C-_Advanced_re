@@ -17,6 +17,7 @@
     <None Remove="Resources\Contact_me_images\Mail.png" />
     <None Remove="Resources\Contact_me_images\Orcid.png" />
     <None Remove="Resources\Contact_me_images\What.png" />
+    <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\IndexImage.png" />
   </ItemGroup>
 
@@ -53,8 +54,11 @@
     <Resource Include="Resources\Contact_me_images\What.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Indexicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\IndexImage.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 

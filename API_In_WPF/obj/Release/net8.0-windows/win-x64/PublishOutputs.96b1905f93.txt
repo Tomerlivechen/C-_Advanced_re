@@ -1,0 +1,2 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_In_WPF\bin\Release\net8.0-windows\win-x64\publish\API_In_WPF.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_In_WPF\bin\Release\net8.0-windows\win-x64\publish\API_In_WPF.exe

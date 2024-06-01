@@ -26,8 +26,8 @@ namespace API_Animal_Pics.Windows
         public string listName;
         public Saved_pics(Animallist animallist)
         {
+
             listName = $"List name: {animallist.Name}";
-            
             InitializeComponent();
             InitializeImages();
             Initializeboard(animallist);

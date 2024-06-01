@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NMDW717I+5vrPkXFn1CtKWW9bd/+3VTRnMNMGUkZJFbWwBdX0SS5EEs0krwQVvC3BDBxPGcrjKT2CVsheB/2uw==",
+  "dgSpecHash": "GmoR/jO60gO1I29RW++d45cOcRqIgcebpB0MM8QiRFJvlzyeL272U3wwlHIQP/6Vns6RD6cRh8hzGUIPIJ7IiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

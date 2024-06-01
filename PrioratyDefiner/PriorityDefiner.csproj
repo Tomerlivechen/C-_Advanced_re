@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Resources\Error.png" />
+    <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\IndexImage.png" />
   </ItemGroup>
 
@@ -20,6 +21,9 @@
   <ItemGroup>
     <Resource Include="Resources\Error.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Indexicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\IndexImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

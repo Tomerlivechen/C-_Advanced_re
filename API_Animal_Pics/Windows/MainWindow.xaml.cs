@@ -96,9 +96,11 @@ namespace API_Animal_Pics
         }
         private void View_Button_Click(object sender, RoutedEventArgs e)
         {
-            Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
-            Saved_pics window = new Saved_pics(Selectd_List);
-            window.ShowDialog();
+            if (ImageListDataGrid.SelectedItem is Animallist Selectd_List)
+            {
+                Saved_pics window = new Saved_pics(Selectd_List);
+                window.ShowDialog();
+            }
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {

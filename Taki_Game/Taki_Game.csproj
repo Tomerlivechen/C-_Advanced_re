@@ -77,6 +77,7 @@
     <None Remove="Resources\Images\Y_Plus.png" />
     <None Remove="Resources\Images\Y_Stop.png" />
     <None Remove="Resources\Images\Y_Taki.png" />
+    <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\IndexImage.png" />
   </ItemGroup>
 
@@ -287,6 +288,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Y_Taki.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Indexicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\IndexImage.png">

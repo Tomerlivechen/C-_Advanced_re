@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Speed_Racer.Windows"
         mc:Ignorable="d"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         Title="IndexWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HrpYSJMZDN7f8vvDVrxhmE1cvgf2fzejvQN+69PWgjG1wWgyRnAOQAdRKlbf97kLkUaM6DJKF0fOOnFUgp5Mfg==",
+  "dgSpecHash": "JMPBm23o+QsY1sslRH81RGMxizcMyXSkTtZM8BhXn2dtzobuJwlc9uk57UkBKFtX2QO9YYjsiat758FTEF40Hg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\LinqDemo\\LinqDemo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

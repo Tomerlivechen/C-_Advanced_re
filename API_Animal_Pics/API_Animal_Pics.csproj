@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Resources\fullscreen.png" />
     <None Remove="Resources\Images\Loading.png" />
+    <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\IndexImage.png" />
     <None Remove="Resources\Loading.gif" />
     <None Remove="Resources\Table_Top.png" />
@@ -36,6 +37,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\trash.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Indexicon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\IndexImage.png">

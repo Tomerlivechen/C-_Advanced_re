@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Common_Classes.Common_Elements"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
-        Title="Opening_panel_window" Height="450" Width="800">
+        Title="Opening panel window" Height="450" Width="800">
 
         <Grid>
             <Grid.ColumnDefinitions>

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:API_Animal_Pics.Windows"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="Random_image" Height="450" Width="800" Background="#004040">
     <Grid>

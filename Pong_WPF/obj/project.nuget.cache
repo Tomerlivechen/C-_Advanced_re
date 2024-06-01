@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gDS72lKpJcM4bB3saOACF/9XhrFzygG25K71W/GiBWby9xfIRjsf/9riiLVp5UWMzi2XFAcQ2ELbxXa7HB3evw==",
+  "dgSpecHash": "4gPknnBlGLOvEGzepIVN1VcxKPjIaZww+FmPd6IczhHfL8edp4VZ9xdAOJU7sIsGJ8OE3XZzquS/2Y98Hdv7tQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Pong_WPF\\Pong_WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
+    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

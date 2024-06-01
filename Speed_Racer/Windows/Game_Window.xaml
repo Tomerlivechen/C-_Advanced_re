@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:Speed_Racer.Resources.Controls"
         xmlns:local="clr-namespace:Speed_Racer.Windows" 
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="Game_Window" Height="800" Width="700" ResizeMode="NoResize" KeyDown="Game_Window_KeyDown" MouseMove="Mouse_move">
     <Grid>

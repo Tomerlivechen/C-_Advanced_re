@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Taki_Game.Resources.Windows"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="Help" Height="450" Width="900">
     <Grid>
@@ -16,6 +17,8 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0.05*"/>
         </Grid.ColumnDefinitions>
+        <Border Background="#3DB1A1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <Border Background="#108D89" Grid.Row="1" Grid.Column="1" />
         <TextBlock Text="About the application" FontSize="23" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0"/>
         <ScrollViewer Grid.Column="1" Grid.Row="1">
         <StackPanel >

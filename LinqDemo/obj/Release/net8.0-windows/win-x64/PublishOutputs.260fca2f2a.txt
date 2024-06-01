@@ -1,0 +1,2 @@
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\LinqDemo\bin\Release\net8.0-windows\win-x64\publish\LinqDemo.pdb
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\LinqDemo\bin\Release\net8.0-windows\win-x64\publish\LinqDemo.exe

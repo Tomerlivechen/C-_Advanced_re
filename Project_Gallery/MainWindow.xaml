@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:Project_Gallery.Controles"
         xmlns:local="clr-namespace:Project_Gallery"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="620"
         Name ="ProjectGallery">

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Taki_Game"
         xmlns:controls="clr-namespace:Taki_Game.Resources.Controls;assembly=Taki_Game"
+        Icon="pack://application:,,,/Resources/Indexicon.ico"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000" Name="GameWindow">
     <Grid>
