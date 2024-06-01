@@ -28,25 +28,20 @@ namespace API_hub
         string Cocktail_api_url = "https://api.api-ninjas.com/v1/cocktail?name=";
         string Drinks_api_url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
         string API_KEY = "jlgJxa5rGHkjm6u8o+QUBQ==h7fZtkxmcM0KrikM";
-
         public MainWindow()
         {
             InitializeComponent();
             client.DefaultRequestHeaders.Add("X-Api-Key", API_KEY);
-
         }
-
         async void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            ListDataGrid.ItemsSource = null;
             string name = TB_Name.Text.ToString();
             if (!string.IsNullOrEmpty(name) && !string.IsNullOrWhiteSpace(name))
             {
                 int API_Type = Get_Api();
-
                 if (API_Type == 1)
                 {
-
                     string api_url = Animal_api_url + name;
                     var usersReponse = await GetAnimalsAsync(api_url);
                     ListDataGrid.ItemsSource = usersReponse;
@@ -54,7 +49,6 @@ namespace API_hub
                 }
                 if (API_Type == 2)
                 {
-
                     string api_url = Recipe_api_url + name;
                     var usersReponse = await GetRecipesAsync(api_url);
                     ListDataGrid.ItemsSource = usersReponse;
@@ -62,7 +56,6 @@ namespace API_hub
                 }
                 if (API_Type == 3)
                 {
-
                     string api_url = Cocktail_api_url + name;
                     var usersReponse = await GetCocktailAsync(api_url);
                     ListDataGrid.ItemsSource = usersReponse;
@@ -70,20 +63,17 @@ namespace API_hub
                 }
                 if (API_Type == 4)
                 {
-
                     string api_url = Drinks_api_url + name;
                     var usersReponse = await GetDrinksAsync(api_url);
                     ListDataGrid.ItemsSource = usersReponse;
                     Binding_Column.Binding = new System.Windows.Data.Binding("Name");
                 }
-
             }
             if (ListDataGrid.ItemsSource == null)
             {
                 MessageBox.Show("Nothing found", "Nothing found");
             }
         }
-
         async Task<List<Animal>> GetAnimalsAsync(string api_url)
         {
             HttpResponseMessage response = await client.GetAsync(api_url);
@@ -91,7 +81,6 @@ namespace API_hub
             var data = await response.Content.ReadFromJsonAsync<List<Animal>>();
             return data;
         }
-
         async Task<List<Recipe>> GetRecipesAsync(string api_url)
         {
             HttpResponseMessage response = await client.GetAsync(api_url);
@@ -99,7 +88,6 @@ namespace API_hub
             var data = await response.Content.ReadFromJsonAsync<List<Recipe>>();
             return data;
         }
-
         async Task<List<Cocktail>> GetCocktailAsync(string api_url)
         {
             HttpResponseMessage response = await client.GetAsync(api_url);
@@ -114,8 +102,6 @@ namespace API_hub
             var data = await response.Content.ReadFromJsonAsync<Drinks>();
             return data.drinks;
         }
-
-
         public int Get_Api()
         {
             ComboBoxItem selectedItem = API_Selection.SelectedItem as ComboBoxItem;
@@ -123,13 +109,10 @@ namespace API_hub
             int.TryParse((string?)selectedItem.Tag, out API_Num);
             return API_Num;
         }
-
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
-
         private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (ListDataGrid.SelectedItem is Animal)
@@ -156,10 +139,6 @@ namespace API_hub
                 Drinks_Window window = new Drinks_Window(drink);
                 window.ShowDialog();
             }
-
         }
     }
-
-
-
-}
+}

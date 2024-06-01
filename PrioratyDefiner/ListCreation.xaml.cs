@@ -25,13 +25,11 @@ namespace PrioratyDefiner
     {
         public int listsize;
         public List<string> textBoxes;
-
         public ListCreation()
         {
             InitializeComponent();
             DataContext = this;
         }
-
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
             if (
@@ -63,13 +61,11 @@ namespace PrioratyDefiner
                 MessageBox.Show("Must be a number between 1 and under 50", "Error");
             }
         }
-
         private void start_Click(object sender, RoutedEventArgs e)
         {
             if (!Check_tasks_unique())
             {
                 textBoxes = new List<string>();
-
                 foreach (var item in tasks.Children)
                 {
                     if (item is TextBox textBox)
@@ -85,11 +81,9 @@ namespace PrioratyDefiner
                 MessageBox.Show("Task Names must be unique and have actual values", "Error");
             }
         }
-
         public List<string> run_priority()
         {
             string[,] priorityMatrix = new string[listsize, listsize];
-
             for (int i = 0; i < textBoxes.Count; i++)
             {
                 string textvalue = textBoxes[i];
@@ -114,13 +108,11 @@ namespace PrioratyDefiner
                     }
                 }
             }
-
             SortedDictionary<string, int> counts = Priority_Classes.CountValues(priorityMatrix);
             MyTaskList taskList = new MyTaskList();
             Taskstitle.Text = "Final priority list";
             tasks.Visibility = Visibility.Hidden;
             start.Visibility = Visibility.Hidden;
-
             foreach (var count in counts)
             {
                 MyTask task = new MyTask();
@@ -131,7 +123,6 @@ namespace PrioratyDefiner
             GlobalVars.SortThisTaskList(taskList);
             GlobalVars.addlist(taskList);
             GlobalVars.SaveTasklists();
-
             foreach (MyTaskList item in GlobalVars.allTaskLists.listOfLists)
             {
                 if (taskList.TaskListName == item.TaskListName)
@@ -140,17 +131,13 @@ namespace PrioratyDefiner
                     show_List.ShowDialog();
                 }
             }
-
-
             return null;
         }
-
         public bool Check_tasks_unique()
         {
             foreach (TextBox item in tasks.Children)
             {
                 int index = 0;
-
                 foreach (TextBox task in tasks.Children)
                 {
                     if (item.Text == task.Text)

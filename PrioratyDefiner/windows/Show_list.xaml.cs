@@ -22,33 +22,27 @@ namespace PriorityDefiner.windows
     /// Interaction logic for Show_list.xaml
     /// </summary>
     public partial class Show_list : Window
-
     {
         public string listName { get; set; }
         public string listNameShort { get; set; }
         ICollectionView TaskSetsView;
-
         public Show_list(MyTaskList taskList)
         {
             listName = "Task list : " + taskList.TaskListName;
             listNameShort = taskList.TaskListName;
             InitializeComponent();
-
             ListTitle.Text = listName;
             GlobalVars.LoadTaks();
             Closed += Window_Closed;
             TaskSetsView = CollectionViewSource.GetDefaultView(taskList.Task_List);
             Task_DataGrid.ItemsSource = TaskSetsView;
         }
-
         private void Handle_progress(object sender, RoutedEventArgs e)
         {
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.inProgress = !myTask.inProgress;
-
             TaskSetsView.Refresh();
         }
-
         private void Handle_Complete(object sender, RoutedEventArgs e)
         {
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
@@ -56,10 +50,8 @@ namespace PriorityDefiner.windows
                 myTask.inProgress = false;
             }
             myTask.done = !myTask.done;
-
             TaskSetsView.Refresh();
         }
-
         private void Handle_Delete(object sender, RoutedEventArgs e)
         {
             int respons = Message_Box_Classes.DisplayMessageBox("Are you sure you want to delete this task?", "Deleting task");
@@ -68,7 +60,6 @@ namespace PriorityDefiner.windows
                 MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
                 List<MyTask> TaskDataGrid = TaskSetsView.SourceCollection.Cast<MyTask>().ToList();
                 MyTask taskToRemove = TaskDataGrid.FirstOrDefault(task => task.task == myTask.task);
-
                 if (taskToRemove != null)
                 {
                     TaskDataGrid.Remove(taskToRemove);
@@ -78,26 +69,22 @@ namespace PriorityDefiner.windows
                 }
             }
         }
-
         private void Handle_Close(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         private void Handle_Decrease(object sender, RoutedEventArgs e)
         {
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.priority--;
             update_task_grid();
         }
-
         private void Handle_Increase(object sender, RoutedEventArgs e)
         {
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.priority++;
             update_task_grid();
         }
-
         public void update_task_grid()
         {
             List<MyTask> TaskDataGrid = TaskSetsView.SourceCollection.Cast<MyTask>().ToList();
@@ -108,7 +95,6 @@ namespace PriorityDefiner.windows
             Task_DataGrid.ItemsSource = TaskSetsView;
             TaskSetsView.Refresh();
         }
-
         private void Handle_Save(object sender, RoutedEventArgs e)
         {
             MyTaskList myTaskList = new MyTaskList();
@@ -118,7 +104,6 @@ namespace PriorityDefiner.windows
             GlobalVars.UpdateTaksList(myTaskList);
             GlobalVars.SaveTasklists();
         }
-
         private void Window_Closed(object sender, EventArgs e)
         {
             int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");

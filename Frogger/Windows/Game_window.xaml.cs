@@ -16,7 +16,6 @@ using static System.Formats.Asn1.AsnWriter;
 using Frogger.Classes;
 using Common_Classes.Classes;
 namespace Frogger;
-
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
@@ -39,20 +38,15 @@ public partial class Game_window : Window
         }
         DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
         DispatcherTimer timer100 = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(timeDifficalty) };
-
         InitializeComponent();
         initialzeObjects();
         initialzeImages();
-
-
         void Timed_100_Actions(object sender, EventArgs e)
         {
             MoveAllObjects();
             double[] position = Getposition(frog);
             FrogPosition.Text = $"{position[0]} x {position[1]}";
             SafeFrog(getWinPosition(position[1], position[0]));
-
-
             if (position[1] < 180 && position[1] >= 145 || position[1] < 110 && position[1] >= 75)
             {
                 if (position[0] < 0) { Death(); }
@@ -65,19 +59,13 @@ public partial class Game_window : Window
                 else { moveObject(frog, "Right", waterspeed); }
                 
             }
-
         }
-
-
         void Timed_1_Actions(object sender, EventArgs e)
         {
-
             GlobalVars.SetTimerCount();
             time.Text = GlobalVars.Timer_count.ToString();
             wins.Text = scores.Wins.ToString();
             lives.Text = scores.Lives.ToString();
-
-
             if (scores.Wins == 5 || scores.Lives < 0)
             {
                 string reason = "";
@@ -90,7 +78,6 @@ public partial class Game_window : Window
                     initialzeGame();
                     GlobalVars.ResetTimerCount();
                     initialzeImages();
-
                 }
                 else
                 {
@@ -98,29 +85,18 @@ public partial class Game_window : Window
                 }
             }
         }
-
-
-
         timer1.Tick += Timed_1_Actions;
         timer100.Tick += Timed_100_Actions;
         timer1.Start();
         timer100.Start();
         Closed += Window_Closed;
-
         void Window_Closed(object sender, EventArgs e)
         {
             timer1.Stop();
             timer100.Stop();
             GlobalVars.ResetTimerCount();
         }
-
-
     }
-
-
-
-
-
     public void notonlog()
     {
         double[] position = Getposition(frog);
@@ -135,14 +111,10 @@ public partial class Game_window : Window
         }
     }
     
-
     public void initialzeObjects()
     {
         Canvas.SetTop(frog, 355);
         Canvas.SetLeft(frog, 285);
-
-
-
     }
     public void initialzeImages()
     {
@@ -183,16 +155,11 @@ public partial class Game_window : Window
         SafeFrog_5.Source = Frogger_Classes.LoadImageFromResource("Frog_Safe.png");
         SafeFrog_5.Visibility = Visibility.Hidden;
     }
-
-
     public void initialzeGame()
     {
         Canvas.SetTop(frog, 355);
         Canvas.SetLeft(frog, 285);
         scores.initialze();
-
-
-
     }
     public void Death()
     {
@@ -202,14 +169,12 @@ public partial class Game_window : Window
         MessageBox.Show("You died");
         difficalty = difficaltyHolder;
         
-
     }
     public void Win()
     {
         initialzeObjects();
         MessageBox.Show("Safe");
         scores.Wins++;
-
     }
     public void SafeFrog(int position)
     {
@@ -274,22 +239,17 @@ public partial class Game_window : Window
                 break;
         }
     }
-
-
     public double[] Getposition(UIElement element)
     {
         double currentX = Canvas.GetLeft(element);
         double currentY = Canvas.GetTop(element);
         double[] respons = new double[] { currentX, currentY };
         return respons;
-
     }
-
     private void Window_KeyDown(object sender, KeyEventArgs e)
     {
         double[] position = Getposition(frog);
         notonlog();
-
         if (e.Key == Key.Up)
         {
             MoveUp(position[1], position[0]);
@@ -307,9 +267,7 @@ public partial class Game_window : Window
             MoveRight(position[0]);
         }
         notonlog();
-
     }
-
     public void nightMareActive()
     {
         if (nightMare)
@@ -318,7 +276,6 @@ public partial class Game_window : Window
         }
        
     }
-
     public bool checkEdge(double current, double left)
     {
         if (current <= 40)
@@ -353,11 +310,9 @@ public partial class Game_window : Window
                 nightMareActive();
                 return true;
             }
-
         }
         return false;
     }
-
     public int getWinPosition(double current, double left)
     {
         if (current < 40)
@@ -382,11 +337,9 @@ public partial class Game_window : Window
             {
                 return 5;
             }
-
         }
         return 0;
     }
-
     public void moveObject(UIElement element,string direction, int speed)
     {
         if (speed == 0) { speed = waterspeed; }
@@ -408,17 +361,13 @@ public partial class Game_window : Window
                 Canvas.SetLeft(element, -125 + speed * difficalty);
             }
         }
-
-
     }
-
     public void checkCollision()
     {
         double[] frogPosition= Getposition(frog);
         
         foreach (var obj in MyCanvas.Children)
         {
-
             if (obj is Image)
             {
                 Image image = (Image)obj;
@@ -439,29 +388,21 @@ public partial class Game_window : Window
                                 {
                                     if ((ElementPosition[0] - 15 < frogPosition[0] && ElementPosition[0] + image.Width - 15 > frogPosition[0]))
                                     {
-
-
                                         onlog = true;
                                         return;
                                     }
                                 }
                             }
                         }
-
                     }
-
                 }
             }
-
         }
-
     }
-
     public void MoveAllObjects()
     {
         foreach (var obj in MyCanvas.Children)
         {
-
             if (obj is Image)
             {
                 Image image = (Image)obj;
@@ -476,8 +417,6 @@ public partial class Game_window : Window
             }
         }
     }
-
-
     public void MoveUp(double current, double left)
     {
         frog.Source = Frogger_Classes.LoadImageFromResource("Frog_top.png");
@@ -493,8 +432,6 @@ public partial class Game_window : Window
                 Canvas.SetTop(frog, 5);
             }
         }
-
-
     }
     public void MoveDown(double current)
     {
@@ -507,7 +444,6 @@ public partial class Game_window : Window
         {
             Canvas.SetTop(frog, 355);
         }
-
     }
     public void MoveLeft(double current)
     {
@@ -520,7 +456,6 @@ public partial class Game_window : Window
         {
             Canvas.SetLeft(frog, 5);
         }
-
     }
     public void MoveRight(double current)
     {
@@ -533,18 +468,10 @@ public partial class Game_window : Window
         {
             Canvas.SetLeft(frog, 600);
         }
-
     }
-
     private void Close_button(object sender, RoutedEventArgs e)
     {
         Close();
     }
 
-    private void About_button(object sender, RoutedEventArgs e)
-    {
-        Help window = new Help();
-        window.ShowDialog();
-    }
-}
-
+}

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Common_Classes.Classes
 {
     public class HighScore_Total
@@ -24,4 +23,4 @@ namespace Common_Classes.Classes
             High_Score_48 = new HighScore_Set { card_Number = 48 };
         }
     }
-}
+}

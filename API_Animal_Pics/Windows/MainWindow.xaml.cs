@@ -53,11 +53,7 @@ namespace API_Animal_Pics
         {
             Close();
         }
-        private void About_Click(object sender, RoutedEventArgs e)
-        {
-            Help help = new Help();
-            help.ShowDialog();
-        }
+
         public void updateLists()
         {
             IEnumerable<Animallist> result = GlobalVars.animalPiclists.animalPiclists.Select(list => list);

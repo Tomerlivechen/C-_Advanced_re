@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Common_Classes.Classes
 {
     public class HighScore_Total_Frogger
@@ -26,4 +25,4 @@ namespace Common_Classes.Classes
             Difficalty_7 = new HighScore_Set_Frogger { Difficalty = "Near Impossible" };
         }
     }
-}
+}

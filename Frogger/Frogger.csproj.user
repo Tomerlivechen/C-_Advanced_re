@@ -7,18 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Windows\Help.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Windows\IndexWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Windows\Game_window.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Windows\Help.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\IndexWindow.xaml">

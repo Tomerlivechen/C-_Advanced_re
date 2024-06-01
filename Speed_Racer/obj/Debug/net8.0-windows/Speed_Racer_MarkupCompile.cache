@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\App.xaml
-81857221298
+7450175957
 
-191095270708
+181978316917
 1991593764455
-MainWindow.xaml;Resources\Controls\Colectable.xaml;Resources\Controls\DistanceView.xaml;Resources\Controls\FuleGauge.xaml;Resources\Controls\Repair_item.xaml;Resources\Controls\Speedometer.xaml;Windows\Game_Window.xaml;Windows\IndexWindow.xaml;
+Resources\Controls\Colectable.xaml;Resources\Controls\DistanceView.xaml;Resources\Controls\FuleGauge.xaml;Resources\Controls\Repair_item.xaml;Resources\Controls\Speedometer.xaml;Windows\Game_Window.xaml;Windows\IndexWindow.xaml;
 
 False
 

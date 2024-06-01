@@ -5,16 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
-
 namespace Common_Classes
 {
     public interface IProjectMeta
-
     {
         public string Name { get; }
         public BitmapImage Image { get; }
-
         public void Run();
-
     }
 }

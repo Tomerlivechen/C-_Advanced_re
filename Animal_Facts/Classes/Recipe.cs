@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace API_hub.Classes
 {
     public class Recipe
@@ -13,4 +12,4 @@ namespace API_hub.Classes
         public string servings { get; set; }
         public string instructions { get; set; }
     }
-}
+}

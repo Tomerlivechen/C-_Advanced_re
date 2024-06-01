@@ -10,9 +10,6 @@
     <Compile Update="TaskLists.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\Help_window.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="windows\Show_list.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,9 +19,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TaskLists.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\Help_window.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\Show_list.xaml">

@@ -38,7 +38,6 @@ public partial class Random_image : Window
         animallistname = animallist.Name;
         InitializeComponent();
         InitializeImages();
-        Activated += Window_Activated;
         Closed += Window_Closed;
         timer3.Tick += Timed_03_Actions;
         timer3.Start();
@@ -47,14 +46,12 @@ public partial class Random_image : Window
     {
         Loading_pic.Source = GlobalVars.SetImageForSource("Loading.png");
     }
-    public void Timed_03_Actions(object sender, EventArgs e)
+    private void Timed_03_Actions(object sender, EventArgs e)
     {
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FBFBFB"));
         Status_Bar.Text= string.Empty;
     }
-    public void Window_Activated(object sender, EventArgs e)
-    {
-    }
+
     public void Window_Closed(object sender, EventArgs e)
     {
         int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
@@ -68,10 +65,25 @@ public partial class Random_image : Window
     private async void Button_ClickAsync(object sender, RoutedEventArgs e)
     {
         Loading_pic.Visibility = Visibility.Visible;
-        Button button = (Button)sender;
-        string Animalimage = await GetPicAPI(button.Tag.ToString());
-        Loading_pic.Visibility = Visibility.Hidden;
-        SetImageSource(Animalimage);
+        try
+        {
+            Button button = (Button)sender;
+            string Animalimage = await GetPicAPI(button.Tag.ToString());
+            if (!string.IsNullOrEmpty(Animalimage))
+            {
+                BitmapImage bitmap = SetImageSource(Animalimage);
+                Animal_pic.Source = bitmap;
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Error loading image: {ex.Message}");
+        
+    }
+        finally
+        {
+            Loading_pic.Visibility = Visibility.Hidden;
+        }
     }
     private async Task<string> GetPicAPI(string type)
     {
@@ -111,36 +123,16 @@ public partial class Random_image : Window
             return null;
         }
     }
-    public BitmapImage setImagetoObject(string imageUrl)
+
+    private BitmapImage SetImageSource(string imageUrl)
     {
-        try
-        {
+
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(imageUrl);
             bitmap.EndInit();
             return bitmap;
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Error loading image: {ex.Message}");
-            return null;
-        }
-    }
-    private void SetImageSource(string imageUrl)
-    {
-        try
-        {
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(imageUrl);
-            bitmap.EndInit();
-            Animal_pic.Source = bitmap;
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Error loading image: {ex.Message}");
-        }
+
     }
     private void Save_image_Click(object sender, RoutedEventArgs e)
     {

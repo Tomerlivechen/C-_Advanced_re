@@ -54,7 +54,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\bin\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery.csproj.AssemblyReference.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\Contact_Me.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\CustomeMessagebox.g.cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\MessageBox_.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\ProjectButton.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Windows\Contact_Me_Window.g.cs
@@ -63,7 +62,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Project_Gallery_MarkupCompile.lref
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\Contact_Me.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\CustomeMessagebox.baml
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\MessageBox_.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Controles\ProjectButton.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Project_Gallery\obj\Debug\net8.0-windows\Windows\Contact_Me_Window.baml

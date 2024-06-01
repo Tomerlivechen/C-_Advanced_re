@@ -23,7 +23,6 @@ namespace API_hub.Windows
         public Cocktail_recipes(Cocktail cocktail)
         {
             InitializeComponent();
-
             
             cocktail_Data = cocktail;
             Title.Content = (string)cocktail_Data.Name.FirstLetterToUpper() ;
@@ -34,6 +33,5 @@ namespace API_hub.Windows
             }
             Instructions.Text = cocktail_Data.Instructions;
         }
-
     }
 }

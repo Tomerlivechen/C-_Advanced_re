@@ -14,9 +14,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.VisualBasic;
 using Project_Gallery.Classes;
-
-
-
 namespace Project_Gallery.Windows
 {
     /// <summary>
@@ -31,13 +28,9 @@ namespace Project_Gallery.Windows
             {
                 generatStackPanels(item);
             }
-
         }
-
-
         public void  generatStackPanels(Contact_referances Contact)
         {
-
             if (Contact.image != string.Empty)
             {
                 Contact_Info.Children.Add(generate_contat_button(Contact));
@@ -46,9 +39,7 @@ namespace Project_Gallery.Windows
             {
                 Contact_Info.Children.Add(gelerateLable(Contact.title));
             }
-
         }
-
         public Label gelerateLable(string text)
         {
             Label label = new Label();
@@ -62,11 +53,7 @@ namespace Project_Gallery.Windows
             label.FontWeight = FontWeights.ExtraBold;
             label.Content = text;
             return label;
-
         }
-
-
-
         public Button generate_contat_button(Contact_referances Contact)
         {
             Button button = new Button();
@@ -96,7 +83,6 @@ namespace Project_Gallery.Windows
             stackPanel.Children.Add(textBlock);
             button.Content = stackPanel;
             return button;
-
         }
     }
-}
+}

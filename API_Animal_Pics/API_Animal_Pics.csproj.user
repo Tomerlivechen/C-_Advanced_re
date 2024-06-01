@@ -10,9 +10,6 @@
     <Compile Update="Resources\Controls\PicInFavList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\Help.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Windows\Random_image.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,9 +22,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Controls\PicInFavList.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Windows\Help.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\Random_image.xaml">

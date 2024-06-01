@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
 namespace API_hub.Classes
 {
     public class Drinks
     {
         public List<Drink> drinks { get; set; } = new List<Drink>();
     }
-
-
     public class Drink
     {
         [JsonPropertyName("strDrink")]
@@ -83,6 +80,5 @@ namespace API_hub.Classes
         public string Measurement_14 { get; set; }
         [JsonPropertyName("strMeasure15")]
         public string Measurement_15 { get; set; }
-
     }
-}
+}

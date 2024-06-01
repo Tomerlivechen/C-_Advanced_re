@@ -6,7 +6,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\bin\Debug\net
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\bin\Debug\net8.0-windows\Common_Classes.dll
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\bin\Debug\net8.0-windows\Common_Classes.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer.csproj.AssemblyReference.cache
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Colectable.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\DistanceView.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\FuleGauge.g.cs
@@ -17,7 +16,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer_MarkupCompile.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Speed_Racer_MarkupCompile.lref
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\Colectable.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\DistanceView.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Speed_Racer\obj\Debug\net8.0-windows\Resources\Controls\FuleGauge.baml

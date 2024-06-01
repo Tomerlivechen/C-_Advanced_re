@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
-
 namespace Common_Classes.Classes
 {
     public class My_Message_Box_Classes
@@ -31,7 +30,6 @@ namespace Common_Classes.Classes
             {
                 index++;
                 Button setButton = new Button { Content = button };
-
                 setButton.Click += (sender, e) =>
                 {
                     //                messagebox.buttonCommands[index]?.DynamicInvoke();
@@ -50,10 +48,7 @@ namespace Common_Classes.Classes
             };
             window.Icon = messagebox.image;
             window.ShowDialog();
-
             return (bool)window.DialogResult.HasValue ? MessageBoxResult.OK : MessageBoxResult.None;
         }
-
-
     }
-}
+}

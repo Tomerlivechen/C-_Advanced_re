@@ -9,15 +9,12 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.IO;
 using Common_Classes.Classes;
-
 namespace PriorityDefiner.Classes
 {
     public static class GlobalVars
     {
         const string filePath = (@"Resources\Tasklists.json");
-
         public static MylistOfTakLists allTaskLists = new MylistOfTakLists();
-
         public static void addlist(MyTaskList newTaskList)
         {
             bool checkName = false;
@@ -33,13 +30,10 @@ namespace PriorityDefiner.Classes
                 checkName = false;
                 foreach (MyTaskList task_list in allTaskLists.listOfLists)
                 {
-
                     if (newTaskList.TaskListName == task_list.TaskListName)
                     {
                         checkName = true;
                         MessageBox.Show("List Name alredy in use", "Name in use");
-
-
                     }
                 }
             } while (checkName);
@@ -54,13 +48,10 @@ namespace PriorityDefiner.Classes
                 SaveTasklists();
                 return;
             }
-
             try
             {
                 var rawData = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<MylistOfTakLists>(rawData);
-
-
                 if (result == null)
                 {
                     MylistOfTakLists NewTaskLists = new MylistOfTakLists();
@@ -95,21 +86,17 @@ namespace PriorityDefiner.Classes
             }
             LoadTaks();
         }
-
         public static void UpdateTaksList(MyTaskList tasklist)
         {
-
             foreach (MyTaskList task_list in allTaskLists.listOfLists)
             {
                 if (tasklist.TaskListName == task_list.TaskListName)
                 {
                     task_list.Task_List = tasklist.Task_List;
-
                 }
             }
 ;
         }
-
         public static void SortMyTaskList()
         {
             foreach (MyTaskList tasklist in allTaskLists.listOfLists)
@@ -117,18 +104,15 @@ namespace PriorityDefiner.Classes
                 tasklist.Task_List = tasklist.Task_List.OrderByDescending(MyTask => MyTask.priority).ToList();
             }
         }
-
         public static void SortThisTaskList(MyTaskList tasklist)
         {
             tasklist.Task_List = tasklist.Task_List.OrderByDescending(MyTask => MyTask.priority).ToList();
         }
-
         public static void replaceTaskLists(List<MyTaskList> NewallTaskLists)
         {
             MylistOfTakLists newalltast = new MylistOfTakLists();
             newalltast.listOfLists = NewallTaskLists;
             allTaskLists = newalltast;
         }
-
     }
-}
+}

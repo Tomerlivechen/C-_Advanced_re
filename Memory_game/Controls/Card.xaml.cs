@@ -12,7 +12,6 @@ namespace Memory_game.Controls
         {
             InitializeComponent();
             DataContext = card;
-
             Card_Button.Click += (sender, e) =>
             {
                 if (card.Viable && card.Face == false)

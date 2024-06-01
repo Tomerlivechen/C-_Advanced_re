@@ -27,12 +27,10 @@ namespace API_hub.Windows
             drink = passed_drink;
             Title.Content = drink.Name.FirstLetterToUpper(); ;
             Ingredients.Text = "";
-
             for (int i = 1; i <= 15; i++)
             {
                 string ingredient = (string)drink.GetType().GetProperty("Ingredient_" + i).GetValue(drink);
                 string measurement = (string)drink.GetType().GetProperty("Measurement_" + i).GetValue(drink);
-
                 if (ingredient != null)
                 {
                     Ingredients.Text += measurement + " " + ingredient + "\n";
@@ -40,7 +38,6 @@ namespace API_hub.Windows
             }
             glass.Content += drink.Glass_Type;
             Instructions.Text = drink.Instructions;
-
             picture.Source = setImagetoObject(drink.Picture_link);
         }
         public BitmapImage setImagetoObject(string imageUrl)
@@ -51,16 +48,13 @@ namespace API_hub.Windows
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri(imageUrl);
                 bitmap.EndInit();
-
                 return bitmap;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading image: {ex.Message}");
                 return null;
             }
-
         }
     }
 }

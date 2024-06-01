@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-
 namespace Common_Classes
 {
     public static class Foolproofing
     {
-
-
         public static bool ValueVarification(int min, int max, string value, string message="")
         {
             bool isnumeric = int.TryParse(value, out int verifiedNume);
@@ -29,6 +26,5 @@ namespace Common_Classes
                 return false;
             }
         }
-
     }
 }

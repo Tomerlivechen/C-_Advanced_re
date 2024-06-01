@@ -19,12 +19,10 @@ using System.Windows.Shapes;
 using PriorityDefiner.Classes;
 using Common_Classes.Classes;
 namespace PriorityDefiner
-
 {
     /// <summary>
     /// Interaction logic for TaskLists.xaml
     /// </summary>
-
     public partial class TaskLists : Window, INotifyPropertyChanged
     {
         ObservableCollection<MyTaskList> listOfTaskLists = new ObservableCollection<MyTaskList>();
@@ -38,20 +36,14 @@ namespace PriorityDefiner
             }
         }
         ICollectionView TaskSetsView;
-
         public event PropertyChangedEventHandler? PropertyChanged;
-
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
         public TaskLists()
         {
-
-
             InitializeComponent();
-
             GlobalVars.LoadTaks();
             GlobalVars.SortMyTaskList();
             Activated += Window_Activated;
@@ -61,15 +53,12 @@ namespace PriorityDefiner
             TaskDataGrid.ItemsSource = TaskSetsView;
             updateLists();
         }
-
         private void Handle_Delete(object sender, RoutedEventArgs e)
         {
             MyTaskList Selectd_List = TaskDataGrid.SelectedItem as MyTaskList;
             Delete_item(Selectd_List);
             liveupdate();
         }
-
-
         public void Delete_item(MyTaskList Selectd_List)
         {
             int respons = Message_Box_Classes.DisplayMessageBox("Are you sure you want to delete this task list?", "Deleting task list");
@@ -77,7 +66,6 @@ namespace PriorityDefiner
             {
                 List<MyTaskList> TasklistsDataGrid = TaskSetsView.SourceCollection.Cast<MyTaskList>().ToList();
                 MyTaskList taskListToRemove = TasklistsDataGrid.FirstOrDefault(item => item.TaskListName == Selectd_List.TaskListName);
-
                 if (taskListToRemove != null)
                 {
                     TasklistsDataGrid.Remove(taskListToRemove);
@@ -87,11 +75,9 @@ namespace PriorityDefiner
                     
                 }
             }
-
         }
         private void Handle_Compleat(object sender, RoutedEventArgs e)
         {
-
             MyTaskList Selectd_List = TaskDataGrid.SelectedItem as MyTaskList;
             Selectd_List.CheckComplete();
             if (Selectd_List.incomplete == true)
@@ -107,10 +93,7 @@ namespace PriorityDefiner
             liveupdate();
             updateLists();
             TaskSetsView.Refresh();
-
-
         }
-
         private void Handle_Update(object sender, RoutedEventArgs e)
         {
             MyTaskList Selectd_MyTaskList = TaskDataGrid.SelectedItem as MyTaskList;
@@ -125,9 +108,7 @@ namespace PriorityDefiner
         }
         private void Window_Activated(object sender, EventArgs e)
         {
-
             updateLists();
-
         }
         public void updateLists()
         {
@@ -146,36 +127,30 @@ namespace PriorityDefiner
             {
                 NewTaskLists.Add(tasklist);
             }
-
             ListOfTaskLists.Clear();
             foreach (MyTaskList tasklist in NewTaskLists)
             {
                 ListOfTaskLists.Add(tasklist);
             }
-
             GlobalVars.replaceTaskLists(NewTaskLists);
             GlobalVars.SortMyTaskList();
             TaskSetsView.Refresh();
         }
-
         private void AddTasklist_Click(object sender, RoutedEventArgs e)
         {
             ListCreation newlist = new ListCreation();
             newlist.Show();
             updateLists();
         }
-
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             liveupdate();
             GlobalVars.SaveTasklists();
         }
-
         private void Window_Closed(object sender, EventArgs e)
         {
             int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
@@ -186,7 +161,6 @@ namespace PriorityDefiner
             }
             else { return; }
         }
-
         private void About_Click(object sender, RoutedEventArgs e)
         {
             Help_window help_Window = new Help_window();

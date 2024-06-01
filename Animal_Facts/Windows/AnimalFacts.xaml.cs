@@ -54,16 +54,13 @@ namespace API_hub.Windows
                         FontWeight = FontWeights.Bold
                     };
                     Run data = new Run($"{prop.GetValue(animal.taxonomy)}");
-
                     textBlock.Inlines.Add(title);
                     textBlock.Inlines.Add(data);
                     textBlock.FontSize = 20;
-
                     Taxomony_Stack.Children.Add(textBlock);
                     index += "  ";
                 }
             }
-
             Type type1 = typeof(Characteristics);
             
             foreach (PropertyInfo prop in type1.GetProperties())
@@ -76,7 +73,6 @@ namespace API_hub.Windows
                         FontWeight = FontWeights.Bold
                     };
                     Run data = new Run($"{prop.GetValue(animal.characteristics)}");
-
                     textBlock.Inlines.Add( title );
                     textBlock.Inlines.Add(data);
                     textBlock.FontSize = 20;
@@ -85,7 +81,6 @@ namespace API_hub.Windows
                     Characteristics_Stack.Children.Add(textBlock);
                 }
             }
-
         }
     }
-}
+}

@@ -18,7 +18,6 @@ namespace API_hub.Windows
     /// Interaction logic for Receipt.xaml
     /// </summary>
     
-
     public partial class Receipt : Window
     {
         public string _title;
@@ -30,13 +29,10 @@ namespace API_hub.Windows
         public Receipt(Recipe recipe)
         {
             InitializeComponent();
-
             _title = recipe.title.FirstLetterToUpper();
             _serving = recipe.servings;
             _ingredients = recipe.ingredients;
             _instructions = recipe.instructions;
-
-
             ingredientsList = _ingredients.Split('|');
             foreach (var item in ingredientsList)
             {
@@ -48,6 +44,5 @@ namespace API_hub.Windows
             Ingredients.Text = ingredients_List;
             Instructions.Text = _instructions;
         }
-
     }
 }

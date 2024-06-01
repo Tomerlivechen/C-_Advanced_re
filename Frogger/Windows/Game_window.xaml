@@ -27,9 +27,6 @@
             <MenuItem Header="_File" FontSize="20">
                 <MenuItem Header="_Close" FontSize="20" Click="Close_button" />
             </MenuItem>
-            <MenuItem Header="_Help" FontSize="20">
-                <MenuItem Header="_About" FontSize="20" Click="About_button" />
-            </MenuItem>
         </Menu>
         <Border Background="Green"  Grid.Row="1" Grid.RowSpan="7" Panel.ZIndex="4"/>
         <Border Background="Green" Grid.Column="3" Grid.Row="1" Grid.RowSpan="7" Panel.ZIndex="4"/>

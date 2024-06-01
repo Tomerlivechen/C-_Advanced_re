@@ -9,20 +9,15 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using Common_Classes.Classes;
-
 namespace Frogger.Classes
 {
     public static class GlobalVars
     {
-
         public static int Timer_count { get; set; } = 0;
         public static void SetTimerCount() => Timer_count++;
-
         public static void ResetTimerCount() => Timer_count = 0;
-
         const string filePath = (@"Resources\HighScore.json");
         public static HighScore_Total_Frogger highScore_Total { get; set; }
-
         public static void AddHighScore(int difficalty, int score)
         {
             var highScore_Player = new HighScore_Player();
@@ -33,7 +28,6 @@ namespace Frogger.Classes
             Input_field.Input_label = "Enter name:";
             var input_Box = new Input_box(number_of_field, title, Input_field);
             input_Box.ShowDialog();
-
             try
             {
                 if (!string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()))
@@ -48,8 +42,6 @@ namespace Frogger.Classes
             {
                 highScore_Player.player_Name = "Anonymous";
             }
-
-
             switch (difficalty)
             {
                 case 1:
@@ -77,7 +69,6 @@ namespace Frogger.Classes
                     break;
             }
         }
-
         public static void LoadHighscores()
         {
             if (!File.Exists(filePath))
@@ -87,13 +78,10 @@ namespace Frogger.Classes
                 SaveHighscores();
                 return;
             }
-
             try
             {
                 var rawData = File.ReadAllText(filePath);
                 var result = JsonSerializer.Deserialize<HighScore_Total_Frogger>(rawData);
-
-
                 if (result == null)
                 {
                     HighScore_Total_Frogger NewHighScored = new HighScore_Total_Frogger();
@@ -107,7 +95,6 @@ namespace Frogger.Classes
                 MessageBox.Show($"No High scores available");
             }
         }
-
         public static void SaveHighscores()
         {
             var export = JsonSerializer.Serialize(highScore_Total);
@@ -130,4 +117,4 @@ namespace Frogger.Classes
             LoadHighscores();
         }
     }
-}
+}

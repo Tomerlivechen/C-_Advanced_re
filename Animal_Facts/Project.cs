@@ -9,15 +9,11 @@ using Common_Classes;
 using API_hub;
 using Common_Classes.Common_Elements;
 using Common_Classes.Classes;
-
 namespace API_hub
 {
     public class Project : IProjectMeta
     {
-
         public string Name { get; set; } = "API Hub";
-
-
         public BitmapImage Image
         {
             get
@@ -25,11 +21,8 @@ namespace API_hub
                 string assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
                 Uri uri = new Uri($"pack://application:,,,/{assemblyName};component/Resources/IndexImage.png");
                 return new BitmapImage(uri);
-
             }
         }
-
-
         public void Run()
         {
             Opening_Panel OpeningPanel = new Opening_Panel();
@@ -37,9 +30,5 @@ namespace API_hub
             Opening_panel_window window = new Opening_panel_window(OpeningPanel);
             window.ShowDialog();
         }
-
-
-
-
     }
-}
+}

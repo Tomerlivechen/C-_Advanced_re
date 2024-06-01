@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Common_Classes;
 using Common_Classes.Common_Elements;
-
 namespace Memory_game
 {
     public class Project : IProjectMeta
