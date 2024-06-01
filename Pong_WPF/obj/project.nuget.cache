@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4gPknnBlGLOvEGzepIVN1VcxKPjIaZww+FmPd6IczhHfL8edp4VZ9xdAOJU7sIsGJ8OE3XZzquS/2Y98Hdv7tQ==",
+  "dgSpecHash": "EHF03h3ethHGA0cs3yi6EnzsMcD3BFmFO4bQRGs6acBuNVhR+5Yt6DAcat3clbnyzrOGmF0GoWML8/fWxQROwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Pong_WPF\\Pong_WPF.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
-    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
-    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
-    "C:\\Users\\tomer\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Pong_WPF\\Pong_WPF.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

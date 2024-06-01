@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {}
+    "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {
+    "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
+        "projectUniqueName": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
         "projectName": "API_Animal_Pics",
-        "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
-        "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\obj\\",
+        "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
+        "packagesPath": "C:\\Users\\Tomer Chen\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Tomer Chen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
@@ -32,8 +32,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
-                "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
+              "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
+                "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
               }
             }
           }
@@ -81,22 +81,22 @@
         }
       }
     },
-    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
+    "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj",
+        "projectUniqueName": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj",
         "projectName": "Common_Classes",
-        "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj",
-        "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\obj\\",
+        "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj",
+        "packagesPath": "C:\\Users\\Tomer Chen\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Tomer Chen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
