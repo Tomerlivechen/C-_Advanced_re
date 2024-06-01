@@ -161,10 +161,6 @@ namespace PriorityDefiner
             }
             else { return; }
         }
-        private void About_Click(object sender, RoutedEventArgs e)
-        {
-            Help_window help_Window = new Help_window();
-            help_Window.Show();
-        }
+
     }
 }
