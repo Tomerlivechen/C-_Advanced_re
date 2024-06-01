@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj": {}
+    "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Recursive\\Recursive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj": {
+    "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Recursive\\Recursive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj",
+        "projectUniqueName": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Recursive\\Recursive.csproj",
         "projectName": "Recursive",
-        "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\Recursive.csproj",
-        "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Recursive\\obj\\",
+        "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Recursive\\Recursive.csproj",
+        "packagesPath": "C:\\Users\\Tomer Chen\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Recursive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Tomer Chen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
@@ -48,14 +48,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.4, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -67,20 +59,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.4, 8.0.4]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.4, 8.0.4]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.4, 8.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -90,11 +68,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
