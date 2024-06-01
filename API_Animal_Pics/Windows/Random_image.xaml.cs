@@ -152,4 +152,4 @@ public partial class Random_image : Window
         GlobalVars.SavePiclists();
         GlobalVars.CheckDuplicate();
     }
-}
+}

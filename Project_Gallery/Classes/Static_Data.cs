@@ -17,4 +17,4 @@ namespace Project_Gallery.Classes
         new Contact_referances("Orcid.png", "https://orcid.org/0000-0001-9320-0009"),
         };
     }
-}
+}

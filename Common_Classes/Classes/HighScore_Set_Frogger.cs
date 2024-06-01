@@ -23,4 +23,4 @@ namespace Common_Classes.Classes
             player_list = player_list.OrderBy(player => player.time_complete).ToList();
         }
     }
-}
+}

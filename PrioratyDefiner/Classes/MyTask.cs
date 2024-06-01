@@ -12,4 +12,4 @@ namespace PriorityDefiner.Classes
         public bool inProgress { get; set; }
         public bool done { get; set; }
     }
-}
+}

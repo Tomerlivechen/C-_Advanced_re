@@ -9,10 +9,10 @@ namespace Store_Database.Resources.Classes
 {
     public static class Log
     {
-        public static string logFilePath { get; set; } = "Resources/log.txt";
+        public static string logFilePath { get; set; } = "Resources/Store_Database_log.txt";
         public static void addToLog(string addedLogLine)
         {
             File.AppendAllText(logFilePath, $"{addedLogLine} ___ {DateTime.Now}\n");
         }
     }
-}
+}

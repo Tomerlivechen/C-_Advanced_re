@@ -1,12 +1,7 @@
 ﻿using Common_Classes.Classes;
 using Common_Classes.Common_Elements;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows;
 namespace Store_Database.Resources.Classes
 {
@@ -14,8 +9,8 @@ namespace Store_Database.Resources.Classes
     {
         public static Uri apiadress = new Uri("https://662006073bf790e070aec029.mockapi.io/Tlc/");
         public static string apiResource = "Store_items";
-        public static string apiFilePath = "Resources/APIAdress.json";
-        public static string apiResourceFilePath = "Resources/APIResource.json";
+        public static string apiFilePath = "Resources/Store_Database_APIAdress.json";
+        public static string apiResourceFilePath = "Resources/Store_Database_APIResource.json";
         public static void ChangeAPIAddress_Click()
         {
             bool hasInput = false;
@@ -161,4 +156,4 @@ namespace Store_Database.Resources.Classes
             LoadAPIResource();
         }
     }
-}
+}

@@ -18,4 +18,4 @@ namespace Frogger.Classes
             return new BitmapImage(uri);
         }
     }
-}
+}

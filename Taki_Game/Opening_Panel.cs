@@ -29,4 +29,4 @@ namespace Taki_Game
             window.ShowDialog();
         }
     }
-}
+}

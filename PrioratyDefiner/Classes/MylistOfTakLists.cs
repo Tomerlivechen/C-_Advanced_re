@@ -9,4 +9,4 @@ namespace PriorityDefiner.Classes
     {
         public List<MyTaskList> listOfLists { get; set; } = new List<MyTaskList>();
     }
-}
+}

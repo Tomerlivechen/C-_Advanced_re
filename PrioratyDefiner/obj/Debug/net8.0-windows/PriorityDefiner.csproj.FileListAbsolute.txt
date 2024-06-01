@@ -39,14 +39,12 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\bin\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.csproj.AssemblyReference.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\ListCreation.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\TaskLists.g.cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Help_window.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Show_list.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner_MarkupCompile.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner_MarkupCompile.lref
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\ListCreation.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\TaskLists.baml
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Help_window.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Show_list.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.g.resources
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.GeneratedMSBuildEditorConfig.editorconfig

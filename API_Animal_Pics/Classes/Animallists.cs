@@ -9,4 +9,4 @@ namespace API_Animal_Pics.Classes
     {
         public List<Animallist> animalPiclists { get; set; } = new List<Animallist>();
     }
-}
+}

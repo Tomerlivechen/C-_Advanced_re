@@ -25,4 +25,4 @@ namespace Common_Classes.Classes
             Difficalty_7 = new HighScore_Set_Frogger { Difficalty = "Near Impossible" };
         }
     }
-}
+}

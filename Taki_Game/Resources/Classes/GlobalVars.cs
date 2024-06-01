@@ -326,4 +326,4 @@ namespace Taki_Game.Resources.Classes
             playerTurnMessage();
         }
     }
-}
+}

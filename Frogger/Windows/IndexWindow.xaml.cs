@@ -86,11 +86,7 @@ namespace Frogger.Windows
             Close();
         }
 
-        private void About_button(object sender, RoutedEventArgs e)
-        {
-            Help window = new Help();
-            window.ShowDialog();
-        }
+
     }
     }
 

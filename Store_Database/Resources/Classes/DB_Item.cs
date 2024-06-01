@@ -83,4 +83,4 @@ namespace Store_Database.Resources.Classes
             Log.addToLog($"{this.ToString()} Secondery Category edited");
         }
     }
-}
+}

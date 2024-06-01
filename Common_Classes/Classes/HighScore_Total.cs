@@ -23,4 +23,4 @@ namespace Common_Classes.Classes
             High_Score_48 = new HighScore_Set { card_Number = 48 };
         }
     }
-}
+}

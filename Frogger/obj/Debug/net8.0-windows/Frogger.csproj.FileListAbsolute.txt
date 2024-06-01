@@ -34,13 +34,11 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\bin\Debug\net8.0-
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\bin\Debug\net8.0-windows\Common_Classes.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Frogger.csproj.AssemblyReference.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\Game_window.g.cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\Help.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\IndexWindow.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Frogger_MarkupCompile.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Frogger_MarkupCompile.lref
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\Game_window.baml
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\Help.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Windows\IndexWindow.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Frogger.g.resources
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Frogger\obj\Debug\net8.0-windows\Frogger.GeneratedMSBuildEditorConfig.editorconfig

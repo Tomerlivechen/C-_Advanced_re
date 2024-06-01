@@ -51,4 +51,4 @@ namespace Store_Database.Resources.Classes
             return tostring;
         }
     }
-}
+}

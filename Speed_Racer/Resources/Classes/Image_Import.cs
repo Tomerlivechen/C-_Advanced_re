@@ -13,4 +13,4 @@ namespace Speed_Racer.Resources.Classes
             return new BitmapImage(uri);
         }
     }
-}
+}

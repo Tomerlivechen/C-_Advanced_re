@@ -30,4 +30,4 @@ namespace Project_Gallery.Controles
             contact_Me_Window.ShowDialog();
         }
     }
-}
+}

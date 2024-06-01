@@ -85,4 +85,4 @@ namespace Project_Gallery.Windows
             return button;
         }
     }
-}
+}

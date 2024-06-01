@@ -13,7 +13,7 @@ namespace PriorityDefiner.Classes
 {
     public static class GlobalVars
     {
-        const string filePath = (@"Resources\Tasklists.json");
+        const string filePath = (@"Resources\PriorityDefiner_Tasklists.json");
         public static MylistOfTakLists allTaskLists = new MylistOfTakLists();
         public static void addlist(MyTaskList newTaskList)
         {
@@ -115,4 +115,4 @@ namespace PriorityDefiner.Classes
             allTaskLists = newalltast;
         }
     }
-}
+}

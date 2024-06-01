@@ -99,4 +99,4 @@ namespace Speed_Racer.Resources.Classes
             }
         }
     }
-}
+}

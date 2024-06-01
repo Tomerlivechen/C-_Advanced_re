@@ -73,4 +73,4 @@ namespace API_Animal_Pics.Resources
             Trash.Source = GlobalVars.SetImageForSource("trash.png");
         }
     }
-}
+}

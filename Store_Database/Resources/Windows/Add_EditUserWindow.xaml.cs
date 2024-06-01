@@ -88,4 +88,4 @@ namespace Store_Database.Resources.Windows
             }
         }
     }
-}
+}

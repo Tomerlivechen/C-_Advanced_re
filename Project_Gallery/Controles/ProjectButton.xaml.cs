@@ -28,4 +28,4 @@ namespace Project_Gallery.Controles
             MainButton.Click += (sender, e) => project.Run();
         }
     }
-}
+}

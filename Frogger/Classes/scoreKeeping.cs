@@ -16,4 +16,4 @@ namespace Frogger.Classes
             Wins = 0;
         }
     }
-}
+}

@@ -25,4 +25,4 @@ namespace Project_Gallery.Classes
             }
         }
     }
-}
+}

@@ -20,7 +20,7 @@ namespace Store_Database.Resources.Classes
         public static Users? tempUser2 { get; set; } = new Users();
         public static string ManagerPassward { get; set; } = "0000";
         public static string ManagerEditPassward { get; set; } = "0101";
-        public static string filePath { get; set; } = "Resources/Passcode.json";
+        public static string filePath { get; set; } = "Resources/Store_Database_Passcode.json";
         public static void LoadStoredDataBase()
         {
             string RawJSON = File.ReadAllText(filePath);
@@ -28,7 +28,7 @@ namespace Store_Database.Resources.Classes
         }
         public static void LoadManagerPassward()
         {
-            if (!File.Exists("Resources/Passcode.json"))
+            if (!File.Exists(filePath))
             {
                 ManagerPassward = "0000";
                 SavePasscode();
@@ -73,4 +73,4 @@ namespace Store_Database.Resources.Classes
             LoadManagerPassward();
         }
     }
-}
+}

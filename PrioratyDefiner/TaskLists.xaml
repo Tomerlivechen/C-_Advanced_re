@@ -23,9 +23,6 @@
                 <MenuItem Header="_Save" FontSize="20" Click="Save_Click"/>
                 <MenuItem Header="_Close" FontSize="20" Click="Close_Click"/>
             </MenuItem>
-            <MenuItem Header="_Help" FontSize="20">
-                <MenuItem Header="_About" FontSize="20" Click="About_Click"/>
-            </MenuItem>
         </Menu>
         <DataGrid  SelectionUnit="FullRow" SelectionMode="Single" IsReadOnly="True" AutoGenerateColumns="False" Grid.Column="0" Grid.Row="1" Margin="10" Grid.RowSpan="2" Name="TaskDataGrid" FontSize="20">
             <DataGrid.Resources>

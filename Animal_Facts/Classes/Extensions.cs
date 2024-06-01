@@ -24,4 +24,4 @@ namespace API_hub.Classes
             return input.RemoveUnderlines().FirstLetterToUpper();
         }
     }
-}
+}

@@ -6,7 +6,7 @@ namespace Speed_Racer.Resources.Classes
 {
     public static class HighScores
     {
-        public const string High_Score_file = (@"Resources\HighScore.json");
+        public const string High_Score_file = (@"Resources\Speed_Racer_HighScore.json");
         public static List<High_score_player> HighScoreList { get; set; } = new List<High_score_player>();
         public static void AddHighScore(string name, int score)
         {
@@ -67,4 +67,4 @@ namespace Speed_Racer.Resources.Classes
             LoadHighscores();
         }
     }
-}
+}

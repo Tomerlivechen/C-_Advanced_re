@@ -8,7 +8,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\bin\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\bin\Debug\net8.0-windows\Common_Classes.pdb
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\API_Animal_Pics.csproj.AssemblyReference.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Resources\Controls\PicInFavList.g.cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Help.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Random_image.g.cs
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Saved_pics.g.cs
@@ -16,7 +15,6 @@ C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\API_Animal_Pics_MarkupCompile.cache
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\API_Animal_Pics_MarkupCompile.lref
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Resources\Controls\PicInFavList.baml
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Help.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\MainWindow.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Random_image.baml
 C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\Windows\Saved_pics.baml

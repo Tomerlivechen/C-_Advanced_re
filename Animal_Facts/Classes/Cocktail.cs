@@ -15,4 +15,4 @@ namespace API_hub.Classes
         [JsonPropertyName("ingredients")]
         public string[] Ingredients { get; set; }
     }
-}
+}

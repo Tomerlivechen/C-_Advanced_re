@@ -64,4 +64,4 @@ namespace API_hub.Classes
         public string nesting_location { get; set; } = null;
         public string water_type { get; set; } = null;
     }
-}
+}

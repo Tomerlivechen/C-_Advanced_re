@@ -16,7 +16,7 @@ namespace Frogger.Classes
         public static int Timer_count { get; set; } = 0;
         public static void SetTimerCount() => Timer_count++;
         public static void ResetTimerCount() => Timer_count = 0;
-        const string filePath = (@"Resources\HighScore.json");
+        const string filePath = (@"Resources\Frogger_HighScore.json");
         public static HighScore_Total_Frogger highScore_Total { get; set; }
         public static void AddHighScore(int difficalty, int score)
         {
@@ -117,4 +117,4 @@ namespace Frogger.Classes
             LoadHighscores();
         }
     }
-}
+}

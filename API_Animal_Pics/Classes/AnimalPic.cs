@@ -14,4 +14,4 @@ namespace API_Animal_Pics.Classes
         public string? image { get; set; } = null;
         public string? link { get; set; } = null;
     }
-}
+}

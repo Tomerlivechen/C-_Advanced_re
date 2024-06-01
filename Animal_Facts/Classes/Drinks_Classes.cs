@@ -81,4 +81,4 @@ namespace API_hub.Classes
         [JsonPropertyName("strMeasure15")]
         public string Measurement_15 { get; set; }
     }
-}
+}

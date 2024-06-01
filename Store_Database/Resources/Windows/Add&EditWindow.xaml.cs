@@ -235,4 +235,4 @@ namespace Store_Database.Resources.Windows
             Catagories2_text.Text = string.Empty;
         }
     }
-}
+}

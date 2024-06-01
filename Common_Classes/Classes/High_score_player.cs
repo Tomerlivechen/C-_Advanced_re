@@ -15,4 +15,4 @@ namespace Common_Classes.Classes
             Score = score;
         }
     }
-}
+}

@@ -51,4 +51,4 @@ namespace Common_Classes.Classes
             return (bool)window.DialogResult.HasValue ? MessageBoxResult.OK : MessageBoxResult.None;
         }
     }
-}
+}

@@ -29,9 +29,6 @@
             <MenuItem Header="_File" FontSize="20">
                 <MenuItem Header="_Close" FontSize="20" Click="Close_button" />
             </MenuItem>
-            <MenuItem Header="_Help" FontSize="20">
-                <MenuItem Header="_About" FontSize="20" Click="About_button" />
-            </MenuItem>
         </Menu>
         <TextBlock Text="Frogger"  Grid.Column="0" Grid.Row="1" FontSize="48" FontStyle="Italic" FontWeight="Bold" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBlock Text="Choose Difficulty "  Grid.Column="0" Grid.Row="2" FontSize="30"  FontWeight="Bold" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Top"/>

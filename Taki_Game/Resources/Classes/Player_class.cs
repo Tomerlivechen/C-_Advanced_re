@@ -13,4 +13,4 @@ namespace Taki_Game.Resources.Classes
             public int Wins { get; set; } = 0;
         }
     
-}
+}

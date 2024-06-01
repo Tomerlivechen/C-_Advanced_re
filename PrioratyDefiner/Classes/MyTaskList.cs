@@ -29,4 +29,4 @@ namespace PriorityDefiner.Classes
             complete = !incomplete;
         }
     }
-}
+}

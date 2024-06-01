@@ -12,4 +12,4 @@ namespace API_hub.Classes
         public string servings { get; set; }
         public string instructions { get; set; }
     }
-}
+}

@@ -10,4 +10,4 @@ namespace API_Animal_Pics.Classes
         public string? Name { get; set; }
         public List<AnimalPic> animalPics { get; set; } = new List<AnimalPic>();
     }
-}
+}

@@ -15,7 +15,7 @@ namespace API_Animal_Pics.Classes
 {
     public static class GlobalVars
     {
-        const string filePath = (@"Resources\Piclists.json");
+        const string filePath = (@"Resources\API_Animal_Pics_Piclists.json");
         public static Animallists animalPiclists = new Animallists();
         public static void LoadPicLists()
         {

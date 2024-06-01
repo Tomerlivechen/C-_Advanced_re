@@ -474,4 +474,4 @@ public partial class Game_window : Window
         Close();
     }
 
-}
+}

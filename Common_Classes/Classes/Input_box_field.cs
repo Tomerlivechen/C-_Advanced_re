@@ -9,4 +9,4 @@ namespace Common_Classes.Classes
     {
         public string Input_label { get; set; }
     }
-}
+}

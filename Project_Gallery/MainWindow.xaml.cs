@@ -55,4 +55,4 @@ public partial class MainWindow : Window
             ProjectButtons.Children.Add(button);
         }
     }
-}
+}
