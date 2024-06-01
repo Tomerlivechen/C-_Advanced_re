@@ -77,6 +77,7 @@ namespace Taki_Game.Resources.Classes
                 return types;
             }
         }
+
         public static List<string> Special_card_types
         {
             get
@@ -101,13 +102,24 @@ namespace Taki_Game.Resources.Classes
         }
         public static void removeCardfromPlayer(TakiCard cardToRemove)
         {
-            if (Game.players_list.Count>0)
+            if (Game.players_list.Count > 0)
             {
-             Game.players_list[GlobalVars.player-1].DeckInHand.Remove(cardToRemove);   
+                Game.players_list[GlobalVars.player - 1].DeckInHand.Remove(cardToRemove);
             }
-            
         }
         public static TakiCard lastCardInStack;
+
+        public static void changeStackCardColor(string TakiOrColor)
+        {
+            if (TakiOrColor == "Taki")
+            {
+                lastCardInStack.VisibleImage = LoadImageFromResource($"{TakiColor}Taki.png");
+            }
+            if (TakiOrColor == "Color") 
+            { 
+                lastCardInStack.VisibleImage = LoadImageFromResource($"{TakiColor}Color.png");
+            }
+        }
         public static void nextCardOutStack(TakiCard nextcard)
         {
             lastCardInStack = nextcard;
@@ -129,12 +141,14 @@ namespace Taki_Game.Resources.Classes
                 {
                     askColor();
                     lastCardInStack.color = TakiColor;
+                    changeStackCardColor("Taki");
                 }
             }
             if (lastCardInStack.val == "Color")
             {
                 askColor();
                 lastCardInStack.color = TakiColor;
+                changeStackCardColor("Color");
             }
             if (lastCardInStack.val == "Change")
             {

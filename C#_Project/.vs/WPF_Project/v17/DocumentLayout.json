@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D286F4D-3F64-4A62-81B8-2F2061A72437}|..\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\common_classes\\common_elements\\opening_panel_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D286F4D-3F64-4A62-81B8-2F2061A72437}|..\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\common_classes\\common_elements\\opening_panel_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\player_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B9EF44B-5F67-4472-B8E1-63EF2E5881B6}|..\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\animal_facts\\opening_panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E967DC-BAF0-4BD0-820F-6A3A7B82596B}|..\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E967DC-BAF0-4BD0-820F-6A3A7B82596B}|..\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\opening_panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,62 +34,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Opening_panel_window.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml.cs",
-              "RelativeDocumentMoniker": "..\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml.cs",
-              "RelativeToolTip": "..\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Title": "GlobalVars.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAawIAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T17:02:58.504Z",
+              "WhenOpened": "2024-06-01T20:09:53.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Opening_panel_window.xaml",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",
-              "RelativeDocumentMoniker": "..\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",
-              "RelativeToolTip": "..\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-01T17:02:40.913Z"
+              "Title": "Player_class.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:09:52.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Opening_Panel.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Opening_Panel.cs",
-              "RelativeDocumentMoniker": "..\\C#_Advanced_re\\Animal_Facts\\Opening_Panel.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\Opening_Panel.cs",
-              "RelativeToolTip": "..\\C#_Advanced_re\\Animal_Facts\\Opening_Panel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T17:01:45.976Z"
+              "WhenOpened": "2024-06-01T20:09:28.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Project.cs",
-              "RelativeDocumentMoniker": "..\\C#_Advanced_re\\API_Animal_Pics\\Project.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Project.cs",
-              "RelativeToolTip": "..\\C#_Advanced_re\\API_Animal_Pics\\Project.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T17:01:41.241Z"
+              "WhenOpened": "2024-06-01T20:09:16.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Opening_Panel.cs",
-              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Opening_Panel.cs",
-              "RelativeDocumentMoniker": "..\\C#_Advanced_re\\API_Animal_Pics\\Opening_Panel.cs",
-              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Opening_Panel.cs",
-              "RelativeToolTip": "..\\C#_Advanced_re\\API_Animal_Pics\\Opening_Panel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T17:01:36.204Z"
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-01T20:09:10.517Z",
+              "EditorCaption": ""
             }
           ]
         }
