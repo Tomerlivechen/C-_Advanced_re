@@ -42,7 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Dot_Net course\C#_Advanced_re\Common_Classes\Common_Classes.csproj" />
+    <ProjectReference Include="..\Common_Classes\Common_Classes.csproj" />
   </ItemGroup>
 
   <ItemGroup>

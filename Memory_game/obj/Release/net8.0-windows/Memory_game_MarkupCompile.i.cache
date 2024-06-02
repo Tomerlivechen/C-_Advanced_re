@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Memory_game\obj\Release\net8.0-windows\
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\Memory_game\obj\Release\net8.0-windows\
 Memory_game
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\Memory_game\App.xaml
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\Memory_game\App.xaml
 3-288136960
 
 13106654955
-1991356543565
+199-531426137
 Controls\Card.xaml;Windows\MainWindow.xaml;Windows\MemoryGameWindow.xaml;
 
-True
+False
 
