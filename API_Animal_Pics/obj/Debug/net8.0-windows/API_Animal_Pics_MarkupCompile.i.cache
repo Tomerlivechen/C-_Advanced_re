@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\obj\Debug\net8.0-windows\
 API_Animal_Pics
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\API_Animal_Pics\App.xaml
+C:\Users\tomer\Documents\Dot_Net course\C#_Advanced_re\API_Animal_Pics\App.xaml
 4264318517
 
 15139863273
-200-802909287
+200-1048625535
 Resources\Controls\PicInFavList.xaml;Windows\MainWindow.xaml;Windows\Random_image.xaml;Windows\Saved_pics.xaml;
 
 True

@@ -126,13 +126,11 @@ public partial class Random_image : Window
 
     private BitmapImage SetImageSource(string imageUrl)
     {
-
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(imageUrl);
             bitmap.EndInit();
             return bitmap;
-
     }
     private void Save_image_Click(object sender, RoutedEventArgs e)
     {

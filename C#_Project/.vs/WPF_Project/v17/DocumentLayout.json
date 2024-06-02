@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\taki_game\\resources\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,6 +40,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Random_image.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAiwH8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:39:02.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Random_image.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T14:38:57.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GlobalVars.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
@@ -46,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Player_class.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
@@ -54,12 +85,11 @@
               "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:09:52.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:09:52.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
@@ -67,12 +97,11 @@
               "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:09:28.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:09:28.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
@@ -80,20 +109,18 @@
               "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:09:16.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:09:16.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-01T20:09:10.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:09:10.517Z"
             }
           ]
         }

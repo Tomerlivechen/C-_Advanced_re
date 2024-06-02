@@ -101,7 +101,7 @@ namespace Common_Classes.Common_Elements {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Common_Classes;component/common_elements/opening_panel_window.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Common_Classes;V1.0.0.0;component/common_elements/opening_panel_window.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Common_Elements\Opening_panel_window.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

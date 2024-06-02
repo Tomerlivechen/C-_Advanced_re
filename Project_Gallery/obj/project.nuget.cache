@@ -1,38 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pwe9s7r7/hOxMDOE4La7zAqUrJfDyUPWoch+gsViccszYvXzrhL3eU/GEMniQbQ13PBuObVFJzXRh284cu61Cw==",
-  "success": false,
-  "projectFilePath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
+  "dgSpecHash": "Lt6EHvAA0uQI1W6e4JPdFffWTI5pXorJP7gscpBv0Ze4VxCJTgn2FVMt+ou+L1jfGUVsGB6ynKrux0Ex2AQwfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tomer Chen\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+    "C:\\Users\\tomer\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Store_Database.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Store_Database.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
