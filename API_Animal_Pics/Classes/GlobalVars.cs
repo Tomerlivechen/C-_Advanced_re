@@ -149,4 +149,4 @@ namespace API_Animal_Pics.Classes
             return new BitmapImage(uri);
         }
     }
-}
+}

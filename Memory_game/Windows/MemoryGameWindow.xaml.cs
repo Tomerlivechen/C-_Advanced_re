@@ -25,71 +25,76 @@ namespace Memory_game
     /// </summary>
     public partial class MemoryGameWindow : Window
     {
+        List<Memory_Card> GameCards;
         DispatcherTimer timer = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
-        public MemoryGameWindow(int card_amount)
+        int card_amount;
+        public MemoryGameWindow(int card_amount_)
         {
+            
             InitializeComponent();
-           int[] screenSize= Initialization_Of_Game.screen_size(card_amount);
-            this.Height = screenSize[0];
-            this.Width = screenSize[1];
-            if (card_amount == 48)
-            {
-                this.WindowState = WindowState.Maximized;
-            }
-            List<Memory_Card> GameCards = Initialization_Of_Game.Setgame(card_amount);
             Initializeboard();
             GlobalVars.ResetTimerCount();
-            Closed += Window_Closed;
+            card_amount = card_amount_;
+            int[] screenSize= Initialization_Of_Game.screen_size(card_amount);
+            Height = screenSize[0];
+            Width = screenSize[1];
+            if (card_amount == 48)
+            {
+                WindowState = WindowState.Maximized;
+            }
+            GameCards = Initialization_Of_Game.Setgame(card_amount);
             BG_Image.Source = Initialization_Of_Game.LoadImageFromResource("BG_Image.jpg");
-            
-            void Initializeboard()
-            {
-                foreach (Memory_Card card in GameCards)
-                {
-                    Card M_card = new Card(card)
-                    {
-                        Margin = new Thickness(3),
-                        Height = 225,
-                        Width = 150,
-                    };
-                    Card_set.Children.Add(M_card);
-                }
-            }
-            void Timed_Actions(object sender, EventArgs e)
-            {
-                int freeCards = 0;
-                GlobalVars.SetTimerCount();
-                Time_keeper.Text = GlobalVars.Timer_count.ToString();
-                foreach (Memory_Card card in GameCards)
-                {
-                    if (card.Viable)
-                    {
-                        freeCards++;
-                    }
-                }
-                if (freeCards == 0)
-                {
-                    GlobalVars.AddHighScore(card_amount, GlobalVars.Timer_count);
-                    int respons = Message_Box_Classes.DisplayMessageBox($"Game compleated in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations");
-                    if (respons == 1)
-                    {
-                        GameCards = Initialization_Of_Game.Setgame(card_amount);
-                        Card_set.Children.Clear();
-                        Initializeboard();
-                        GlobalVars.ResetTimerCount();
-                    }
-                    else
-                    {
-                        this.Close();
-                    }
-                }
-            }
             timer.Tick += Timed_Actions;
             timer.Start();
-            void Window_Closed(object sender, EventArgs e)
+            Closed += Window_Closed;
+        }
+
+   public  void Timed_Actions(object sender, EventArgs e)
+    {
+        int freeCards = 0;
+        GlobalVars.SetTimerCount();
+        Time_keeper.Text = GlobalVars.Timer_count.ToString();
+        foreach (Memory_Card card in GameCards)
+        {
+            if (card.Viable)
             {
-                timer.Stop();
+                freeCards++;
             }
+        }
+        if (freeCards == 0)
+        {
+            GlobalVars.AddHighScore(card_amount, GlobalVars.Timer_count);
+            int respons = Message_Box_Classes.DisplayMessageBox($"Game compleated in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations");
+            if (respons == 1)
+            {
+                GameCards = Initialization_Of_Game.Setgame(card_amount);
+                Card_set.Children.Clear();
+                Initializeboard();
+                GlobalVars.ResetTimerCount();
+            }
+            else
+            {
+                Close();
+            }
+        }
+        }
+
+        public void Initializeboard()
+        {
+            foreach (Memory_Card card in GameCards)
+            {
+                Card M_card = new Card(card)
+                {
+                    Margin = new Thickness(3),
+                    Height = 225,
+                    Width = 150,
+                };
+                Card_set.Children.Add(M_card);
+            }
+        }
+        public void Window_Closed(object sender, EventArgs e)
+        {
+            timer.Stop();
         }
     }
 }

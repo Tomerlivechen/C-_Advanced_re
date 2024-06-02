@@ -28,6 +28,8 @@ public partial class Game_window : Window
     public int timeDifficalty = 5;
     bool nightMare = false;
     public scoreKeeping scores = new scoreKeeping();
+    DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
+    DispatcherTimer timer100;
     public Game_window(double difficalty_Set)
     {
         difficaltyHolder = difficalty_Set / 10;
@@ -36,66 +38,70 @@ public partial class Game_window : Window
         {
             nightMare=true;
         }
-        DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
-        DispatcherTimer timer100 = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(timeDifficalty) };
+        timer100 = new DispatcherTimer() { Interval = TimeSpan.FromMilliseconds(timeDifficalty) };
         InitializeComponent();
         initialzeObjects();
         initialzeImages();
-        void Timed_100_Actions(object sender, EventArgs e)
-        {
-            MoveAllObjects();
-            double[] position = Getposition(frog);
-            FrogPosition.Text = $"{position[0]} x {position[1]}";
-            SafeFrog(getWinPosition(position[1], position[0]));
-            if (position[1] < 180 && position[1] >= 145 || position[1] < 110 && position[1] >= 75)
-            {
-                if (position[0] < 0) { Death(); }
-                else { moveObject(frog, "Left", waterspeed); }
-              
-            }
-            if (position[1] < 145 && position[1] >= 110 || position[1] < 75 && position[1] >= 40)
-            {
-                if (position[0] > 610) { Death(); }
-                else { moveObject(frog, "Right", waterspeed); }
-                
-            }
-        }
-        void Timed_1_Actions(object sender, EventArgs e)
-        {
-            GlobalVars.SetTimerCount();
-            time.Text = GlobalVars.Timer_count.ToString();
-            wins.Text = scores.Wins.ToString();
-            lives.Text = scores.Lives.ToString();
-            if (scores.Wins == 5 || scores.Lives < 0)
-            {
-                string reason = "";
-                int respons = 0;
-                
-                if (scores.Lives < 0 && scores.Wins < 5) { respons = Message_Box_Classes.DisplayMessageBox($"You have lost\n Play again?", "Game Over"); }
-                if (scores.Wins == 5) { respons = Message_Box_Classes.DisplayMessageBox($"You win, You have compleated the game in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations"); GlobalVars.AddHighScore((int)difficalty_Set, GlobalVars.Timer_count); }
-                if (respons == 1)
-                {
-                    initialzeGame();
-                    GlobalVars.ResetTimerCount();
-                    initialzeImages();
-                }
-                else
-                {
-                    this.Close();
-                }
-            }
-        }
         timer1.Tick += Timed_1_Actions;
         timer100.Tick += Timed_100_Actions;
         timer1.Start();
         timer100.Start();
         Closed += Window_Closed;
-        void Window_Closed(object sender, EventArgs e)
+        
+
+    }
+
+    public void Timed_100_Actions(object sender, EventArgs e)
+    {
+        MoveAllObjects();
+        double[] position = Getposition(frog);
+        FrogPosition.Text = $"{position[0]} x {position[1]}";
+        SafeFrog(getWinPosition(position[1], position[0]));
+        if (position[1] < 180 && position[1] >= 145 || position[1] < 110 && position[1] >= 75)
         {
-            timer1.Stop();
-            timer100.Stop();
-            GlobalVars.ResetTimerCount();
+            if (position[0] < 0) { Death(); }
+            else { moveObject(frog, "Left", waterspeed); }
+
         }
+        if (position[1] < 145 && position[1] >= 110 || position[1] < 75 && position[1] >= 40)
+        {
+            if (position[0] > 610) { Death(); }
+            else { moveObject(frog, "Right", waterspeed); }
+
+        }
+    }
+
+    public void Timed_1_Actions(object sender, EventArgs e)
+    {
+        GlobalVars.SetTimerCount();
+        time.Text = GlobalVars.Timer_count.ToString();
+        wins.Text = scores.Wins.ToString();
+        lives.Text = scores.Lives.ToString();
+        if (scores.Wins == 5 || scores.Lives < 0)
+        {
+            string reason = "";
+            int respons = 0;
+
+            if (scores.Lives < 0 && scores.Wins < 5) { respons = Message_Box_Classes.DisplayMessageBox($"You have lost\n Play again?", "Game Over"); }
+            if (scores.Wins == 5) { respons = Message_Box_Classes.DisplayMessageBox($"You win, You have compleated the game in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations"); GlobalVars.AddHighScore((int)difficalty_Set, GlobalVars.Timer_count); }
+            if (respons == 1)
+            {
+                initialzeGame();
+                GlobalVars.ResetTimerCount();
+                initialzeImages();
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+    }
+
+    public void Window_Closed(object sender, EventArgs e)
+    {
+        timer1.Stop();
+        timer100.Stop();
+        GlobalVars.ResetTimerCount();
     }
     public void notonlog()
     {
@@ -111,6 +117,7 @@ public partial class Game_window : Window
         }
     }
     
+
     public void initialzeObjects()
     {
         Canvas.SetTop(frog, 355);

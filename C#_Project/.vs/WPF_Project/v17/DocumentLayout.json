@@ -3,6 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\common_classes\\common_elements\\input_box.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\common_classes\\common_elements\\input_box.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\frogger\\windows\\game_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91622E5-8D25-4163-A0B4-E6E9E5C1107B}|..\\Memory_game\\Memory_game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\memory_game\\windows\\memorygamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91622E5-8D25-4163-A0B4-E6E9E5C1107B}|..\\Memory_game\\Memory_game.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\memory_game\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\frogger\\windows\\game_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|c:\\users\\tomer\\documents\\dot_net course\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,31 +70,155 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GlobalVars.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Classes\\GlobalVars.cs",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Classes\\GlobalVars.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Classes\\GlobalVars.cs",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Classes\\GlobalVars.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAADwv08AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:15:54.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Input_box.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
+              "RelativeToolTip": "..\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:15:41.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Input_box.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml",
+              "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Input_box.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml",
+              "RelativeToolTip": "..\\Common_Classes\\Common_Elements\\Input_box.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T18:15:39.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game_Window.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwEwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:11:39.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Game_Window.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T18:11:35.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MemoryGameWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Windows\\MemoryGameWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Memory_game\\Windows\\MemoryGameWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Windows\\MemoryGameWindow.xaml.cs",
+              "RelativeToolTip": "..\\Memory_game\\Windows\\MemoryGameWindow.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwCoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:03:25.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Memory_game\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\Memory_game\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T18:03:19.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game_window.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Frogger\\Windows\\Game_window.xaml.cs",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml.cs",
+              "RelativeToolTip": "..\\Frogger\\Windows\\Game_window.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwDAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T17:41:41.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game_window.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml",
+              "RelativeDocumentMoniker": "..\\Frogger\\Windows\\Game_window.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml",
+              "RelativeToolTip": "..\\Frogger\\Windows\\Game_window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T17:41:36.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-02T17:41:19.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Random_image.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
               "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
               "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
               "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAiwH8AAAAFAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAUwH8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T14:39:02.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Random_image.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
               "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
               "ToolTip": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
               "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-02T14:38:57.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T14:38:57.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "GlobalVars.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
@@ -72,12 +226,11 @@
               "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
               "ViewState": "AQIAAHEAAAAAAAAAAAAawIAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:09:53.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:09:53.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Player_class.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
@@ -89,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
@@ -101,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
@@ -113,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",

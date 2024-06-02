@@ -60,6 +60,7 @@ namespace Speed_Racer.Windows
             distanceView.Width = Distance_layout.Width;
             distanceView.HorizontalAlignment = HorizontalAlignment.Stretch;
             distanceView.VerticalAlignment = VerticalAlignment.Stretch;
+            Closed += Window_Closed;
         }
         public void insertColectables(Colectable colectable, string tag)
         {
@@ -69,7 +70,14 @@ namespace Speed_Racer.Windows
             Canvas.SetLeft(colectable, 0);
             colectable.Tag = tag;
         }
-        public void FourSecondtimer(object sender, EventArgs e)
+        public void Window_Closed(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            timer1s.Stop();
+            timer4s.Stop();
+
+        }
+            public void FourSecondtimer(object sender, EventArgs e)
         {
             if (countDown == 0)
             {
@@ -288,4 +296,4 @@ namespace Speed_Racer.Windows
             }
         }
     }
-}
+}
