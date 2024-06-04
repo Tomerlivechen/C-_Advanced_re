@@ -54,13 +54,16 @@ public partial class Random_image : Window
 
     public void Window_Closed(object sender, EventArgs e)
     {
-        int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
-        if (respons == 1)
+        if (GlobalVars.changes > 0)
         {
-            GlobalVars.SavePiclists();
-            GlobalVars.CheckDuplicate();
+            int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
+            if (respons == 1)
+            {
+                GlobalVars.SavePiclists();
+                GlobalVars.CheckDuplicate();
+            }
+            else { return; }
         }
-        else { return; }
     }
     private async void Button_ClickAsync(object sender, RoutedEventArgs e)
     {
@@ -134,6 +137,7 @@ public partial class Random_image : Window
     }
     private void Save_image_Click(object sender, RoutedEventArgs e)
     {
+        GlobalVars.changes++;
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
         Status_Bar.Text = "Image saved To list";
         GlobalVars.AddPic(animallistname, currentPic);
@@ -145,6 +149,7 @@ public partial class Random_image : Window
     }
     private void Save_image_list_Click(object sender, RoutedEventArgs e)
     {
+        GlobalVars.changes++;
         Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
         Status_Bar.Text = "List saved";
         GlobalVars.SavePiclists();

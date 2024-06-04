@@ -1,7 +1,0 @@
-ddd____28/05/2024 0:18:07
-ID:4 , Item Name:Pizza , Main Category:Sports , Secondery Category:Garden , Amount:66008 , Min Amount:1571 , Added Date:f/]*P)q5BF, LastUpdate:uk|8|<'Lp=,Last Updater:-|bHQ#!@N0
-ID:5 , Item Name:Gloves , Main Category:Health , Secondery Category:Garden , Amount:77381 , Min Amount:5170 , Added Date:!`|=4+J0!3, LastUpdate:$za-"yP>A),Last Updater:AukE>S'=Qx
-ID:7 , Item Name:Tuna , Main Category:Tools , Secondery Category:Shoes , Amount:92204 , Min Amount:41536 , Added Date:]&}s"q")[(, LastUpdate:SsgTt$3k|m,Last Updater:.mXS"yXraZ
-ID:8 , Item Name:Chips , Main Category:Computers , Secondery Category:Health , Amount:34723 , Min Amount:74340 , Added Date:$?J8`c\lrJ, LastUpdate:lkFW9(rEI8,Last Updater:F24`*W}}AA
-ID:9 , Item Name:Mouse , Main Category:Industrial , Secondery Category:Kids , Amount:43652 , Min Amount:75058 , Added Date:|y?.z1QOkW, LastUpdate:@W1ujK-n<,,Last Updater:FmAa<mZiHN
-ID:10 , Item Name:Fish , Main Category:Sports , Secondery Category:Games , Amount:73184 , Min Amount:41731 , Added Date::z8#5s)0b., LastUpdate:q/e77M6b3%,Last Updater:9GE:`tqV;F

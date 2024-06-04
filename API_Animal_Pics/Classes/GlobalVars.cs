@@ -17,6 +17,7 @@ namespace API_Animal_Pics.Classes
     {
         const string filePath = (@"Resources\API_Animal_Pics_Piclists.json");
         public static Animallists animalPiclists = new Animallists();
+        public static int changes = 0;
         public static void LoadPicLists()
         {
             if (!File.Exists(filePath))
@@ -56,6 +57,7 @@ namespace API_Animal_Pics.Classes
                 {
                     writer.Write(export);
                 }
+                changes = 0;
             }
             catch (Exception ex)
             {
@@ -66,6 +68,7 @@ namespace API_Animal_Pics.Classes
         public static void AddPicList()
         {
             {
+                GlobalVars.changes++;
                 bool checkName = false;
                 Animallist animallist = new Animallist();
                 do
@@ -74,16 +77,21 @@ namespace API_Animal_Pics.Classes
                     var title = "Insert Name Of Picture list";
                     var Input_field = new Common_Classes.Classes.Input_box_field();
                     Input_field.Input_label = "Enter name:";
-                    var input_Box = new Input_box(number_of_field, title, Input_field);
-                    input_Box.ShowDialog();
-                    if (UniversalVars.inputBoxReturn[0].ToString() != null)
+                    Input_box input_Box;
+                    UniversalVars.inputBoxReturn = null;
+                    do
                     {
-                        animallist.Name = UniversalVars.inputBoxReturn[0].ToString();
+                        input_Box = new Input_box(number_of_field, title, Input_field);
+                        input_Box.ShowDialog();
+                        if (UniversalVars.inputBoxReturn == null)
+                        {
+                            MessageBox.Show("You must Name the list", "List Cannot Be Nameless");
+                        }
                     }
-                    else
-                    {
-                        animallist.Name = "UnNamed";
-                    }
+                    while (UniversalVars.inputBoxReturn == null);
+                    animallist.Name = UniversalVars.inputBoxReturn[0].ToString();
+
+
                     checkName = false;
                     foreach (Animallist pic_list in animalPiclists.animalPiclists)
                     {
@@ -99,6 +107,7 @@ namespace API_Animal_Pics.Classes
         }
         public static void AddPic(string animallist, AnimalPic pic)
         {
+            GlobalVars.changes++;
             Animallist selectedanimallist = animalPiclists.animalPiclists.Find(list => list.Name == animallist);
             if (selectedanimallist != null)
             {
@@ -107,6 +116,7 @@ namespace API_Animal_Pics.Classes
         }
         public static void RemovePic(string animallist, AnimalPic pic)
         {
+            GlobalVars.changes++;
             Animallist selectedanimallist = animalPiclists.animalPiclists.Find(list => list.Name == animallist);
             if (selectedanimallist != null)
             {

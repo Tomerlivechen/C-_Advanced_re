@@ -83,21 +83,42 @@ namespace Common_Classes.Common_Elements
             switch (number_of_field)
             {
                 case 3:
-                    fields.Add(Field1_TB.Text);
-                    fields.Add(Field2_TB.Text);
-                    fields.Add(Field3_TB.Text);
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    {
+                        fields.Add(Field1_TB.Text);
+                    }
+                    if (!string.IsNullOrEmpty(Field2_TB.Text) || !string.IsNullOrWhiteSpace(Field2_TB.Text))
+                    {
+                        fields.Add(Field2_TB.Text);
+                    }
+                    if (!string.IsNullOrEmpty(Field3_TB.Text) || !string.IsNullOrWhiteSpace(Field3_TB.Text))
+                    {
+                        fields.Add(Field3_TB.Text);
+                    }
                     break;
                 case 2:
-                    fields.Add(Field1_TB.Text);
-                    fields.Add(Field2_TB.Text);
+                    if (!string.IsNullOrEmpty(Field2_TB.Text) || !string.IsNullOrWhiteSpace(Field2_TB.Text))
+                    {
+                        fields.Add(Field1_TB.Text);
+                    }
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    {
+                        fields.Add(Field2_TB.Text);
+                    }
                     break;
                 case 1:
-                    fields.Add(Field1_TB.Text);
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    {
+                        fields.Add(Field1_TB.Text);
+                    }
                     break;
                 default:
                     break;
             }
-            UniversalVars.SetInputBoxReturn(fields);
+            if (fields.Count > 0)
+            {
+                UniversalVars.SetInputBoxReturn(fields);
+            }
             Close();
 
         }

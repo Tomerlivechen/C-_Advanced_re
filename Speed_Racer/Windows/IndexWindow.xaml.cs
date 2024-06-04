@@ -45,13 +45,20 @@ namespace Speed_Racer.Windows
                 var title = $"Insert Name of player";
                 var Input_field = new Input_box_field();
                 Input_field.Input_label = "Enter name:";
-                do
+            Input_box input_Box;
+            UniversalVars.inputBoxReturn = null;
+            do
+            {
+                input_Box = new Input_box(number_of_field, title, Input_field);
+                input_Box.ShowDialog();
+                if (UniversalVars.inputBoxReturn == null)
                 {
-                    var input_Box = new Input_box(number_of_field, title, Input_field);
-                    input_Box.ShowDialog();
-                } while (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()));
-                name = UniversalVars.inputBoxReturn[0].ToString();
-                UniversalVars.inputBoxReturn.Clear();
+                    MessageBox.Show("What is your name?", "Name your player");
+                }
+            }
+            while (UniversalVars.inputBoxReturn == null);
+            name = UniversalVars.inputBoxReturn[0].ToString();
+            UniversalVars.inputBoxReturn = null;
             return name;
             
         }
@@ -63,4 +70,4 @@ namespace Speed_Racer.Windows
             return Difficulty;
         }
     }
-}
+}

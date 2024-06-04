@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Lt6EHvAA0uQI1W6e4JPdFffWTI5pXorJP7gscpBv0Ze4VxCJTgn2FVMt+ou+L1jfGUVsGB6ynKrux0Ex2AQwfg==",
+  "dgSpecHash": "JNT+h8ph0UGCpPjVf6bJztUqojTKEvYL1Mk8cNw9GoJ0x+eQ/krdndspdVyXNlxiOboehUxhEiz1hicu8PxFJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
+  "projectFilePath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tomer\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+    "C:\\Users\\Tomer Chen\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
   ],
   "logs": []
 }

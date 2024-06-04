@@ -26,12 +26,14 @@ public partial class Game_window : Window
     public double difficaltyHolder = 0.1;
     public double difficalty = 0.1;
     public int timeDifficalty = 5;
+    public int intDifficalty_Set;
     bool nightMare = false;
     public scoreKeeping scores = new scoreKeeping();
     DispatcherTimer timer1 = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(1) };
     DispatcherTimer timer100;
     public Game_window(double difficalty_Set)
     {
+        intDifficalty_Set =  (int)difficalty_Set;
         difficaltyHolder = difficalty_Set / 10;
         difficalty = difficalty_Set / 10;
         if (difficalty >= 6)
@@ -42,6 +44,7 @@ public partial class Game_window : Window
         InitializeComponent();
         initialzeObjects();
         initialzeImages();
+        scores.initialze();
         timer1.Tick += Timed_1_Actions;
         timer100.Tick += Timed_100_Actions;
         timer1.Start();
@@ -83,7 +86,7 @@ public partial class Game_window : Window
             int respons = 0;
 
             if (scores.Lives < 0 && scores.Wins < 5) { respons = Message_Box_Classes.DisplayMessageBox($"You have lost\n Play again?", "Game Over"); }
-            if (scores.Wins == 5) { respons = Message_Box_Classes.DisplayMessageBox($"You win, You have compleated the game in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations"); GlobalVars.AddHighScore((int)difficalty_Set, GlobalVars.Timer_count); }
+            if (scores.Wins == 5) { respons = Message_Box_Classes.DisplayMessageBox($"You win, You have compleated the game in {GlobalVars.Timer_count} seconds\n Play again?", "Congratulations"); GlobalVars.AddHighScore(intDifficalty_Set, GlobalVars.Timer_count); }
             if (respons == 1)
             {
                 initialzeGame();
@@ -102,6 +105,9 @@ public partial class Game_window : Window
         timer1.Stop();
         timer100.Stop();
         GlobalVars.ResetTimerCount();
+        initialzeObjects();
+        initialzeImages();
+        scores.initialze();
     }
     public void notonlog()
     {
@@ -180,8 +186,9 @@ public partial class Game_window : Window
     public void Win()
     {
         initialzeObjects();
-        MessageBox.Show("Safe");
         scores.Wins++;
+        MessageBox.Show($"Frog is safe {5 - scores.Wins} more to go");
+
     }
     public void SafeFrog(int position)
     {

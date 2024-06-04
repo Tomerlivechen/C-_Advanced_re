@@ -36,13 +36,16 @@ namespace API_Animal_Pics
         }
         public void Window_Closed(object sender, EventArgs e)
         {
-            int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
-            if (respons == 1)
+            if (GlobalVars.changes > 0)
             {
-                GlobalVars.SavePiclists();
-                GlobalVars.CheckDuplicate();
+                int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
+                if (respons == 1)
+                {
+                    GlobalVars.SavePiclists();
+                    GlobalVars.CheckDuplicate();
+                }
+                else { return; }
             }
-            else { return; }
         }
         private void Add_new_list_Click(object sender, RoutedEventArgs e)
         {
@@ -83,15 +86,10 @@ namespace API_Animal_Pics
         private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
             Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
-            if (Selectd_List != null)
-            {
+ 
                 Random_image window = new Random_image(Selectd_List);
                 window.ShowDialog();
-            }
-            if (Selectd_List == null)
-            {
-                Add_new_list_Click(sender, e);
-            }
+
             updateLists();
         }
         private void View_Button_Click(object sender, RoutedEventArgs e)
@@ -106,6 +104,11 @@ namespace API_Animal_Pics
         {
             GlobalVars.SavePiclists();
             GlobalVars.CheckDuplicate();
+        }
+
+        private void Add_List_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Add_new_list_Click(sender, e);
         }
     }
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8PUFi8PzqIDvg4OrBqD3MB76Er1+ArRnrmvWs5Spkv5y4PmuiWfwBDo/L/E8H1s649E388MxR6iRj5jJibtd3A==",
+  "dgSpecHash": "hNEbR7CAL1oC8DOK9l4kR71IyzvFZ2+D/lhuSxFXFUO40gpZufn9j/UgWzytNhB7zqZQGRgE1Cu6jSrUUs+Grg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
+  "projectFilePath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tomer\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+    "C:\\Users\\Tomer Chen\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
   ],
   "logs": []
 }

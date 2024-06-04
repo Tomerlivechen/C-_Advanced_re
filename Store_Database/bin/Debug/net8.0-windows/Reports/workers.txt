@@ -1,8 +1,0 @@
-workers____28/05/2024 0:20:11
-ID:1 , Name:Jay Weissnat , Start Date:K2;tb(>,{< , End Date:[xh4@KDiI{ , Manager:True , Still Employed:True
-ID:3 , Name:Irvin Kautzer , Start Date:=HilXYKYwH , End Date:WzlGdvV)}\ , Manager:True , Still Employed:True
-ID:4 , Name:Alyssa Hirthe DDS , Start Date:GBm-ob@JcR , End Date:rBiM@.m1gK , Manager:False , Still Employed:True
-ID:5 , Name:Evelyn Sporer , Start Date:UxcgSre?[| , End Date:Rq]q7RA(7= , Manager:True , Still Employed:True
-ID:6 , Name:Noel McDermott , Start Date:|T3W}">Y?O , End Date:27/05/2024 , Manager:True , Still Employed:False
-ID:7 , Name:Tanya Terry , Start Date:[ZoA6A/P@x , End Date:27/05/2024 , Manager:False , Still Employed:False
-ID:8 , Name:Bertha Crist , Start Date:GU(f#Pt:cn , End Date:27/05/2024 , Manager:False , Still Employed:True

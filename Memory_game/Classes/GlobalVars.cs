@@ -30,22 +30,19 @@ namespace Memory_game.Classes
             var title = "Insert Name for high score";
             var Input_field = new Input_box_field();
             Input_field.Input_label = "Enter name:";
-            var input_Box = new Input_box(number_of_field, title, Input_field);
-            input_Box.ShowDialog();
-            try
+            Input_box input_Box;
+            UniversalVars.inputBoxReturn = null;
+            do
             {
-                if (!string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()))
+                input_Box = new Input_box(number_of_field, title, Input_field);
+                input_Box.ShowDialog();
+                if (UniversalVars.inputBoxReturn == null)
                 {
-                    highScore_Player.player_Name = UniversalVars.inputBoxReturn[0].ToString();
+                    MessageBox.Show("What is your name?", "Score Cannot Be Nameless");
                 }
             }
-            catch (Exception ex)
-            {
-            }
-            if (string.IsNullOrEmpty(highScore_Player.player_Name))
-            {
-                highScore_Player.player_Name = "Anonymous";
-            }
+            while (UniversalVars.inputBoxReturn == null);
+            highScore_Player.player_Name = UniversalVars.inputBoxReturn[0].ToString();
             switch (cardNum)
             {
                 case 12:

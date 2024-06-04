@@ -265,25 +265,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomer\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Tomer Chen\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
+      "projectUniqueName": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
       "projectName": "Project_Gallery",
-      "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
-      "packagesPath": "C:\\Users\\tomer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Project_Gallery\\obj\\",
+      "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\Project_Gallery.csproj",
+      "packagesPath": "C:\\Users\\Tomer Chen\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Tomer Chen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
@@ -296,35 +296,35 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\API_hub.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Classes.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Frogger.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Frogger\\Frogger.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Frogger.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Frogger.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Memory_game.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Memory_game\\Memory_game.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Memory_game\\Memory_game.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Memory_game\\Memory_game.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\PriorityDefiner.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Speed_Racer.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\Store_Database.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Store_Database\\Store_Database.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Store_Database.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Store_Database.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Taki_Game.csproj"
             },
-            "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj": {
-              "projectPath": "C:\\Users\\tomer\\Documents\\Dot_Net course\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj"
+            "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj": {
+              "projectPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\TickTackTow_WPF.csproj"
             }
           }
         }

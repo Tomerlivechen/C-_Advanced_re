@@ -49,13 +49,16 @@ namespace API_Animal_Pics.Windows
         }
         public void Window_Closed(object sender, EventArgs e)
         {
-            int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
-            if (respons == 1)
+            if (GlobalVars.changes > 0)
             {
-                GlobalVars.SavePiclists();
-                GlobalVars.CheckDuplicate();
+                int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
+                if (respons == 1)
+                {
+                    GlobalVars.SavePiclists();
+                    GlobalVars.CheckDuplicate();
+                }
+                else { return; }
             }
-            else { return; }
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
@@ -72,4 +75,4 @@ namespace API_Animal_Pics.Windows
         }
         
     }
-}
+}

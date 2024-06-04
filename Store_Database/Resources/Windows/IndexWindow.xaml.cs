@@ -88,8 +88,8 @@ namespace Store_Database
         }
         public void getComboBoxes(List<DB_Item> dB_Items)
         {
-            var resultMainCategory = (from item in dB_Items 
-                         select new Categories
+            var resultMainCategory = (from item in dB_Items
+                                      select new Categories
                          {
                              Name = item.MainCategory.Trim()
                          });
