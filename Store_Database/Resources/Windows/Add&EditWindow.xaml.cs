@@ -60,6 +60,48 @@ namespace Store_Database.Resources.Windows
             }
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (ValidateAndSetLastUpdater())
+            {
+                if (AddorEdit == "Edit")
+                {
+                    UpdateItem();
+                }
+                else if (AddorEdit == "Add")
+                {
+                    AddItem();
+                }
+            }
+        }
+        private bool ValidateAndSetLastUpdater()
+        {
+            if (string.IsNullOrEmpty(Updater_text.Text))
+            {
+                MessageBox.Show("Must give a valid worker ID");
+                return false;
+            }
+
+            bool updaterValid = false;
+            foreach (var user in Static_Data.ShopWorkors)
+            {
+                if (user.ID == Updater_text.Text && user.StillEmployed)
+                {
+                    updaterValid = true;
+                    Item.LastUpdater = Updater_text.Text;
+                    break;
+                }
+            }
+
+            if (!updaterValid)
+            {
+                MessageBox.Show("Invalid worker ID or worker is no longer employed");
+                Log.addToLog("Invalid worker ID used");
+                return false;
+            }
+            return true;
+        }
+
         private void UpdateItem()
         {
             if (!string.IsNullOrEmpty(Catagories1_text.Text))
@@ -105,7 +147,6 @@ namespace Store_Database.Resources.Windows
                 return;
             }
 
-            ValidateAndSetLastUpdater();
             Static_Data.BDItem = Item;
             Close();
         }
@@ -159,47 +200,10 @@ namespace Store_Database.Resources.Windows
                 MessageBox.Show("Minimum amount must be a number");
                 return;
             }
-
-            ValidateAndSetLastUpdater();
             Static_Data.BDItem = new DB_Item(Item.ItemName, Item.MainCategory, Item.SeconderyCategory, Item.Amount, Item.MinAmount, Item.LastUpdater);
             Close();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (AddorEdit == "Edit")
-            {
-                UpdateItem();
-            }
-            else if (AddorEdit == "Add")
-            {
-                AddItem();
-            }
-        }
-        private void ValidateAndSetLastUpdater()
-        {
-            if (string.IsNullOrEmpty(Updater_text.Text))
-            {
-                MessageBox.Show("Must give a valid worker ID");
-                return;
-            }
 
-            bool updaterValid = false;
-            foreach (var user in Static_Data.ShopWorkors)
-            {
-                if (user.ID == Updater_text.Text && user.StillEmployed)
-                {
-                    updaterValid = true;
-                    Item.LastUpdater = Updater_text.Text;
-                    break;
-                }
-            }
-
-            if (!updaterValid)
-            {
-                MessageBox.Show("Invalid worker ID or worker is no longer employed");
-                return;
-            }
-        }
         private void Catagories1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Catagories1_text.Text = string.Empty;
