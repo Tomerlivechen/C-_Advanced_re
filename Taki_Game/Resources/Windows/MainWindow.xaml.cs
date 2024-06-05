@@ -28,11 +28,23 @@ namespace Taki_Game
         {
             InitializeComponent();
             InitializeImages();
+            GlobalVars.InitilizeAllParameters();
             GlobalVars.setNumOfPlayers(players);
             Game.StartGame(players);
             timer1.Start();
             timer1.Tick += visualUpdates;
+            Closed += Close_Window;
         }
+
+        private void Close_Window(object? sender, EventArgs e)
+        {
+            GlobalVars.InitilizeAllParameters();
+            GlobalVars.Win=true;
+
+        }
+
+
+
         public void InitializeImages()
         {
             Table.Source = GlobalVars.LoadImageFromResource("Table_Top.png");
@@ -57,7 +69,7 @@ namespace Taki_Game
         {
             if (Game.players_list.Count > 0)
             {
-                player_num.Content = $"Player {GlobalVars.player.ToString()}:";
+                player_num.Content = $"Player {GlobalVars.player.ToString()}: ";
                 setPlayer = GlobalVars.player;
                 UpdateCardSet(Game.players_list[GlobalVars.player - 1]);
                 player_num.Content += Game.players_list[GlobalVars.player - 1].name;

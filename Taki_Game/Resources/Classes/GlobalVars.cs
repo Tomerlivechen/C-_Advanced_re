@@ -275,6 +275,10 @@ namespace Taki_Game.Resources.Classes
             Win = false;
             setNumOfPlayers(0);
             setDeck();
+            Game.players_list.Clear();
+            GlobalVars.player = 0;
+
+
         }
         public static bool revers { get; set; } = false;
         public static bool TakiActive { get; set; } = true;

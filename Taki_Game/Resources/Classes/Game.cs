@@ -46,23 +46,43 @@ namespace Taki_Game.Resources.Classes
             }
         }
         public static List<Player_class> players_list = new List<Player_class>();
-        public static void SetPlayerName(Player_class player, bool initilize)
-        {
-            if (initilize)
-            {
+        public static void SetPlayerName(Player_class player, bool initilize) {
+
+            if (initilize) {
                 var number_of_field = 1;
-                var title = $"Insert Name of player {player.index}";
+                var title = $"Insert Name of player";
                 var Input_field = new Input_box_field();
                 Input_field.Input_label = "Enter name:";
+                Input_box input_Box;
+                UniversalVars.inputBoxReturn = null;
                 do
                 {
-                    var input_Box = new Input_box(number_of_field, title, Input_field);
+                    input_Box = new Input_box(number_of_field, title, Input_field);
                     input_Box.ShowDialog();
-                } while (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()));
+                    if (UniversalVars.inputBoxReturn == null)
+                    {
+                        MessageBox.Show("What is your name?", "Name your player");
+                    }
+                    if (UniversalVars.inputBoxReturn != null && players_list.Count>0)
+                    {
+                        foreach (Player_class setplayer in players_list)
+                        {
+                            if(setplayer.name == UniversalVars.inputBoxReturn[0].ToString())
+                            {
+                                MessageBox.Show("Name alredy in use?", "Name alredy in use");
+                                UniversalVars.inputBoxReturn = null;
+                                break;
+                            }
+
+                        }
+                    }
+                }
+                while (UniversalVars.inputBoxReturn == null);
                 player.name = UniversalVars.inputBoxReturn[0].ToString();
-                UniversalVars.inputBoxReturn.Clear();
+                UniversalVars.inputBoxReturn = null;
             }
         }
+
         public static void StartGame(int players, bool initilaize = true)
         {
             players_list.Clear();
@@ -110,6 +130,7 @@ namespace Taki_Game.Resources.Classes
         }
         public static void PeneltyDraw(Player_class player)
         {
+            MessageBox.Show($" {player.name} takes {GlobalVars.Plus2Accumulation} Cards", "+2 Penelty");
             if (GlobalVars.activeDeck.Count > GlobalVars.Plus2Accumulation)
             {
                 for (int i = 0; i < GlobalVars.Plus2Accumulation; i++)

@@ -3,85 +3,34 @@
   "WorkspaceRootPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add_edituserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\classes\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\static_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\db_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\classes\\player_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\indexwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\classes\\takicard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add\u0026editwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\common_classes\\common_elements\\input_box.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\frogger\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\common_classes\\classes\\universalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\saved_pics.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B91622E5-8D25-4163-A0B4-E6E9E5C1107B}|..\\Memory_game\\Memory_game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\memory_game\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\windows\\indexwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\indexwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\saved_pics.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\frogger\\classes\\frogger_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\common_classes\\common_elements\\input_box.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\highscores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\frogger\\classes\\scorekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\frogger\\windows\\game_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0BD00C5-7FEE-4169-8FAE-D75A2A0203B9}|..\\Frogger\\Frogger.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\frogger\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,331 +43,135 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GlobalVars.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\GlobalVars.cs",
-              "RelativeDocumentMoniker": "..\\Frogger\\Classes\\GlobalVars.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\GlobalVars.cs",
-              "RelativeToolTip": "..\\Frogger\\Classes\\GlobalVars.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAhwBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:21:06.568Z",
-              "IsPinned": true
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Add\u0026EditWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAE8AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:21:57.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DB_Item.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\DB_Item.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\DB_Item.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\DB_Item.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\DB_Item.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Title": "Player_class.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:13:55.56Z",
+              "WhenOpened": "2024-06-05T16:16:13.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Static_Data.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Static_Data.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Static_Data.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Static_Data.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Static_Data.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABAAAAAuAAAA",
+              "DocumentIndex": 5,
+              "Title": "IndexWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:14:19.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Add_EditUserWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:21:32.445Z",
+              "WhenOpened": "2024-06-05T16:16:08.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Microsoft.WinFX.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "ViewState": "AQIAANMBAAAAAAAAAAAuwOUBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-06-04T17:15:07.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IndexWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAApwFIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:08:35.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Users.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Users.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Users.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Users.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAIwAoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T07:14:42.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Security.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Security.cs",
-              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Security.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Security.cs",
-              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Security.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwDwAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:03:26.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Input_box.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
-              "RelativeToolTip": "..\\Common_Classes\\Common_Elements\\Input_box.xaml.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAgwHcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:43:48.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UniversalVars.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\UniversalVars.cs",
-              "RelativeDocumentMoniker": "..\\Common_Classes\\Classes\\UniversalVars.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\UniversalVars.cs",
-              "RelativeToolTip": "..\\Common_Classes\\Classes\\UniversalVars.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:17:48.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Saved_pics.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Saved_pics.xaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAkwDwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:07:25.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Random_image.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAjwDgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:04:45.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GlobalVars.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Classes\\GlobalVars.cs",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Classes\\GlobalVars.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Classes\\GlobalVars.cs",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Classes\\GlobalVars.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAADgv08AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:01:13.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GlobalVars.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Memory_game\\Classes\\GlobalVars.cs",
-              "RelativeDocumentMoniker": "..\\Memory_game\\Classes\\GlobalVars.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Memory_game\\Classes\\GlobalVars.cs",
-              "RelativeToolTip": "..\\Memory_game\\Classes\\GlobalVars.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAwwCAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:26:37.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "IndexWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\IndexWindow.xaml.cs",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml.cs",
               "RelativeToolTip": "..\\Speed_Racer\\Windows\\IndexWindow.xaml.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAwwC8AAAAgAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:32:51.003Z"
+              "WhenOpened": "2024-06-05T16:15:46.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAswDMAAAAcAAAA",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAAHcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:55:18.907Z"
+              "WhenOpened": "2024-06-05T16:14:12.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Saved_pics.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Saved_pics.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:07:22.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Frogger_Classes.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\Frogger_Classes.cs",
-              "RelativeDocumentMoniker": "..\\Frogger\\Classes\\Frogger_Classes.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\Frogger_Classes.cs",
-              "RelativeToolTip": "..\\Frogger\\Classes\\Frogger_Classes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:21:05.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HighScores.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
-              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
-              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:32:32.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Input_box.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml",
-              "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Input_box.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml",
-              "RelativeToolTip": "..\\Common_Classes\\Common_Elements\\Input_box.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:43:46.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IndexWindow.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml",
-              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\IndexWindow.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml",
-              "RelativeToolTip": "..\\Speed_Racer\\Windows\\IndexWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:32:47.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "scoreKeeping.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\scoreKeeping.cs",
-              "RelativeDocumentMoniker": "..\\Frogger\\Classes\\scoreKeeping.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\scoreKeeping.cs",
-              "RelativeToolTip": "..\\Frogger\\Classes\\scoreKeeping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T16:21:32.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Game_window.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml",
-              "RelativeDocumentMoniker": "..\\Frogger\\Windows\\Game_window.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Windows\\Game_window.xaml",
-              "RelativeToolTip": "..\\Frogger\\Windows\\Game_window.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:19:43.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IndexWindow.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Windows\\IndexWindow.xaml",
-              "RelativeDocumentMoniker": "..\\Frogger\\Windows\\IndexWindow.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Windows\\IndexWindow.xaml",
-              "RelativeToolTip": "..\\Frogger\\Windows\\IndexWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:19:38.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Random_image.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T16:06:21.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
-              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-04T15:55:10.992Z"
+              "WhenOpened": "2024-06-05T16:10:57.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalVars.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
+              "ViewState": "AQIAAP0AAAAAAAAAAAArwBcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:19:03.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TakiCard.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:19:56.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Game_Window.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:15:44.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game_Window.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-05T16:15:41.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IndexWindow.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeToolTip": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-05T16:11:03.221Z",
+              "EditorCaption": ""
             }
           ]
         }
