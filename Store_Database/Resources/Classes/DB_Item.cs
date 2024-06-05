@@ -8,9 +8,8 @@ namespace Store_Database.Resources.Classes
 {
     public class DB_Item
     {
-        Guid guid = new Guid();
-        DateTime DateTime = DateTime.Now;
-        public string ID { get; set; }
+
+        public string Id { get; set; }
         public string ItemName { get; set; }
         public string MainCategory { get; set; }
         public string SeconderyCategory { get; set; }
@@ -22,9 +21,9 @@ namespace Store_Database.Resources.Classes
         public int Index {  get; set; }
         public DB_Item(string itemName, string mainCategory, string seconderyCategory, double amount, double minAmount , string lastUpdater )
         {
-            AddedDate = DateTime.Now.ToShortDateString();
-            LastUpdate = DateTime.Now.ToShortDateString();
-            ID = Guid.NewGuid().ToString();
+            AddedDate = DateTime.Now.ToString("yyyy-MM-dd");
+            LastUpdate = DateTime.Now.ToString("yyyy-MM-dd");
+            Id = Guid.NewGuid().ToString();
             ItemName = itemName;
             MainCategory = mainCategory;
             SeconderyCategory = seconderyCategory;
@@ -36,49 +35,49 @@ namespace Store_Database.Resources.Classes
         {
         }
         [JsonConstructor]
-        public DB_Item(int Index, string ID, string ItemName, string MainCategory, string SeconderyCategory, double Amount, double MinAmount, string AddedDate, string LastUpdate, string LastUpdater)
+        public DB_Item(int index, string id, string itemName, string mainCategory, string seconderyCategory, double amount, double minAmount, string addedDate, string lastUpdate, string lastUpdater)
         {
-            this.Index = Index;
-            this.ID = ID;
-            this.ItemName = ItemName;
-            this.MainCategory = MainCategory;
-            this.SeconderyCategory = SeconderyCategory;
-            this.Amount = Amount;
-            this.MinAmount = MinAmount;
-            this.AddedDate = AddedDate;
-            this.LastUpdate = LastUpdate;
-            this.LastUpdater = LastUpdater;
+            this.Index = index;
+            this.Id = id;
+            this.ItemName = itemName;
+            this.MainCategory = mainCategory;
+            this.SeconderyCategory = seconderyCategory;
+            this.Amount = amount;
+            this.MinAmount = minAmount;
+            this.AddedDate = addedDate;
+            this.LastUpdate = lastUpdate;
+            this.LastUpdater = lastUpdater;
     }
-        public void AddAmount(double _Amount)
+        public void AddAmount(double amount)
         {
-            Amount = _Amount;
+            Amount = amount;
             updateLastUpdate();
             Log.addToLog($"{this.ToString()} amount edited");
         }
-        public void UpdateMinAmount (double _Amount)
+        public void UpdateMinAmount (double amount)
         {
-            MinAmount = _Amount;
+            MinAmount = amount;
             updateLastUpdate();
             Log.addToLog($"{this.ToString()} min-amount edited");
         }
         public override string ToString()
         {
-            string tostring = $"ID:{ID} , Item Name:{ItemName} , Main Category:{MainCategory} , Secondery Category:{SeconderyCategory} , Amount:{Amount} , Min Amount:{MinAmount} , Added Date:{AddedDate}, LastUpdate:{LastUpdate},Last Updater:{LastUpdater}";
+            string tostring = $"ID:{Id} , Item Name:{ItemName} , Main Category:{MainCategory} , Secondery Category:{SeconderyCategory} , Amount:{Amount} , Min Amount:{MinAmount} , Added Date:{AddedDate}, LastUpdate:{LastUpdate},Last Updater:{LastUpdater}";
             return tostring;
         }
         public void updateLastUpdate()
         {
-            LastUpdate = DateTime.Now.ToShortDateString();
+            LastUpdate = DateTime.Now.ToString("yyyy-MM-dd");
         }
-        public void ChangeCat1(string _CatName)
+        public void ChangeCat1(string catName)
         {
-            MainCategory = _CatName;
+            MainCategory = catName;
             updateLastUpdate();
             Log.addToLog($"{this.ToString()} Main Category edited");
         }
-        public void ChangeCat2(string _CatName)
+        public void ChangeCat2(string catName)
         {
-            SeconderyCategory = _CatName;
+            SeconderyCategory = catName;
             updateLastUpdate();
             Log.addToLog($"{this.ToString()} Secondery Category edited");
         }

@@ -1,2 +1,22 @@
 Manager Passwared Changed to attempted ___ 04/06/2024 18:03:10
 Manager Passwared Changed to attempted ___ 04/06/2024 18:08:33
+ID:8cdb0a04-b113-4224-9035-622583307c67 , Item Name:Bacon , Main Category:Health , Secondery Category:Baby , Amount:41765 , Min Amount:52395 , Added Date:AddedDate 12, LastUpdate:2024-06-05,Last Updater:y2ww&8s1ko Main Category edited ___ 05/06/2024 8:22:02
+ID:8cdb0a04-b113-4224-9035-622583307c67 , Item Name:Bacon , Main Category:Health , Secondery Category:Baby , Amount:41765 , Min Amount:52395 , Added Date:AddedDate 12, LastUpdate:2024-06-05,Last Updater:y2ww&8s1ko Secondery Category edited ___ 05/06/2024 8:22:02
+ID:8cdb0a04-b113-4224-9035-622583307c67 , Item Name:Bacon , Main Category:Health , Secondery Category:Baby , Amount:141765 , Min Amount:52395 , Added Date:AddedDate 12, LastUpdate:2024-06-05,Last Updater:y2ww&8s1ko amount edited ___ 05/06/2024 8:22:02
+ID:8cdb0a04-b113-4224-9035-622583307c67 , Item Name:Bacon , Main Category:Health , Secondery Category:Baby , Amount:141765 , Min Amount:52395 , Added Date:AddedDate 12, LastUpdate:2024-06-05,Last Updater:y2ww&8s1ko min-amount edited ___ 05/06/2024 8:22:02
+ID:8cdb0a04-b113-4224-9035-622583307c67 , Item Name:Bacon , Main Category:Health , Secondery Category:Baby , Amount:141765 , Min Amount:52395 , Added Date:AddedDate 12, LastUpdate:2024-06-05,Last Updater:1111 Edited ___ 05/06/2024 8:22:02
+Manager Passwared used ___ 05/06/2024 8:23:53
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Games , Secondery Category:Health , Amount:81826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-05,Last Updater:zt$)bQZ`*g Main Category edited ___ 05/06/2024 8:24:45
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Games , Secondery Category:Health , Amount:81826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-05,Last Updater:zt$)bQZ`*g Secondery Category edited ___ 05/06/2024 8:24:45
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Games , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-05,Last Updater:zt$)bQZ`*g amount edited ___ 05/06/2024 8:24:45
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Games , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-05,Last Updater:zt$)bQZ`*g min-amount edited ___ 05/06/2024 8:24:45
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Games , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-05,Last Updater:1111 Edited ___ 05/06/2024 8:24:45
+Manager Passwared used ___ 05/06/2024 8:26:03
+Manager Passwared used ___ 05/06/2024 8:26:17
+Manager Passwared used ___ 05/06/2024 8:26:48
+ID:id 13 , Name:Roy Koch , Start Date:"_vfl$`rN4 , End Date:X;Dh%7LW^9 , Manager:True , Still Employed:True worker edited ___ 05/06/2024 8:26:48
+ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:52142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 Main Category edited ___ 05/06/2024 8:27:27
+ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:52142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 Secondery Category edited ___ 05/06/2024 8:27:27
+ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:52142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 amount edited ___ 05/06/2024 8:27:27
+ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:92142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 min-amount edited ___ 05/06/2024 8:27:27
+ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:92142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:id 13 Edited ___ 05/06/2024 8:27:27

@@ -26,12 +26,12 @@ namespace Store_Database.Resources.Windows
             Item = dB_Item;
             AddorEdit  = addOrEdit;
             InitializeComponent();
-            getComboBoxes();
+            GetComboBoxes();
             if (addOrEdit == "Edit" ) {
                 Title.Content = "Edit Item";
-                Catagories1.Text =  Item.MainCategory.ToString();
-                Catagories2.Text = Item.SeconderyCategory.ToString();
-                ItemName_text.Text = dB_Item.ItemName.ToString();
+                Catagories1.Text =  Item.MainCategory;
+                Catagories2.Text = Item.SeconderyCategory;
+                ItemName_text.Text = dB_Item.ItemName;
                 Amount_text.Text = dB_Item.Amount.ToString();
                 MinAmount_text.Text = dB_Item.MinAmount.ToString();
             }else
@@ -40,190 +40,164 @@ namespace Store_Database.Resources.Windows
                 Item = new DB_Item();
             }
         }
-        public void getComboBoxes()
+        public void GetComboBoxes()
         {
             addToComboBox(Catagories1, Static_Data.MainCatagories);
             addToComboBox(Catagories2, Static_Data.SeconderyCatagories);
         }
         public ComboBoxItem? GetComboBoxItem( ComboBox combo,  string tag)
         {
-            foreach (ComboBoxItem item in combo.Items)
-            {
-                if (item.Tag == tag)
-                {
-                    return item;
+            return combo.Items.Cast<ComboBoxItem>().FirstOrDefault(item => item.Tag?.ToString() == tag);
                 }
-            }
-            return null;
-        }
+
         public void addToComboBox(ComboBox comboBox, List<Categories> categories)
         {
             comboBox.Items.Clear();
             foreach (Categories title in categories)
             {
-                ComboBoxItem comboBoxItem = new ComboBoxItem() { Content = title.Name.ToString(), Tag = title.Name.ToString() };
+                ComboBoxItem comboBoxItem = new ComboBoxItem() { Content = title.Name, Tag = title.Name };
                 comboBox.Items.Add(comboBoxItem);
             }
         }
+
+        private void UpdateItem()
+        {
+            if (!string.IsNullOrEmpty(Catagories1_text.Text))
+            {
+                Item.ChangeCat1(Catagories1_text.Text);
+            }
+            else if (Catagories1.SelectedItem is ComboBoxItem comboCat1BoxItem)
+            {
+                Item.ChangeCat1(comboCat1BoxItem.Tag.ToString());
+            }
+
+            if (!string.IsNullOrEmpty(Catagories2_text.Text))
+            {
+                Item.ChangeCat2(Catagories2_text.Text);
+            }
+            else if (Catagories2.SelectedItem is ComboBoxItem comboCat2BoxItem)
+            {
+                Item.ChangeCat2(comboCat2BoxItem.Tag.ToString());
+            }
+
+            if (!string.IsNullOrEmpty(ItemName_text.Text))
+            {
+                Item.ItemName = ItemName_text.Text;
+            }
+
+            if (double.TryParse(Amount_text.Text, out double amount))
+            {
+                Item.AddAmount(amount);
+            }
+            else
+            {
+                MessageBox.Show("Amount must be a number");
+                return;
+            }
+
+            if (double.TryParse(MinAmount_text.Text, out double minAmount))
+            {
+                Item.UpdateMinAmount(minAmount);
+            }
+            else
+            {
+                MessageBox.Show("Minimum amount must be a number");
+                return;
+            }
+
+            ValidateAndSetLastUpdater();
+            Static_Data.BDItem = Item;
+            Close();
+        }
+
+        private void AddItem()
+        {
+            if (!string.IsNullOrEmpty(Catagories1_text.Text))
+            {
+                Item.ChangeCat1(Catagories1_text.Text);
+            }
+            else if (Catagories1.SelectedItem is ComboBoxItem cat1BoxItem)
+            {
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+            }
+
+            if (!string.IsNullOrEmpty(Catagories2_text.Text))
+            {
+                Item.ChangeCat2(Catagories2_text.Text);
+            }
+            else if (Catagories2.SelectedItem is ComboBoxItem cat2BoxItem)
+            {
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString());
+            }
+
+            if (!string.IsNullOrEmpty(ItemName_text.Text))
+            {
+                Item.ItemName = ItemName_text.Text;
+            }
+            else
+            {
+                MessageBox.Show("Item must have a name");
+                return;
+            }
+
+            if (double.TryParse(Amount_text.Text, out double amount))
+            {
+                Item.AddAmount(amount);
+            }
+            else
+            {
+                MessageBox.Show("Amount must be a number");
+                return;
+            }
+
+            if (double.TryParse(MinAmount_text.Text, out double minAmount))
+            {
+                Item.UpdateMinAmount(minAmount);
+            }
+            else
+            {
+                MessageBox.Show("Minimum amount must be a number");
+                return;
+            }
+
+            ValidateAndSetLastUpdater();
+            Static_Data.BDItem = new DB_Item(Item.ItemName, Item.MainCategory, Item.SeconderyCategory, Item.Amount, Item.MinAmount, Item.LastUpdater);
+            Close();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(AddorEdit == "Edit")
+            if (AddorEdit == "Edit")
             {
-                if (!string.IsNullOrEmpty(Catagories1_text.Text))
-                {
-                    Item.ChangeCat1(Catagories1_text.Text.ToString());
-                }
-                else
-                {
-                    if (Catagories1.SelectedItem is ComboBoxItem comboCat1BoxItem)
-                    {
-                        Item.ChangeCat1(comboCat1BoxItem.Tag.ToString());
-                    }
-                }
-                if (!string.IsNullOrEmpty(Catagories2_text.Text))
-                {
-                    Item.ChangeCat2(Catagories2_text.Text.ToString());
-                }
-                else
-                {
-                    if (Catagories2.SelectedItem is ComboBoxItem comboCat2BoxItem)
-                    {
-                        Item.ChangeCat2(comboCat2BoxItem.Tag.ToString());
-                    }
-                }
-                if (!string.IsNullOrEmpty(ItemName_text.Text.ToString()))
-                {
-                    Item.ItemName = ItemName_text.Text.ToString();
-                }
-                if (double.TryParse(Amount_text.Text.ToString(), out double amount)){
-                    Item.AddAmount(amount);
-                }
-                else
-                {
-                    MessageBox.Show("Amount must be a number");
-                    return;
-                }
-                if (double.TryParse(MinAmount_text.Text.ToString(), out double minamount))
-                {
-                    Item.UpdateMinAmount(minamount);
-                }
-                else
-                {
-                    MessageBox.Show("Minumum amount must be a number");
-                    return;
-                }
-                if (string.IsNullOrEmpty(Updater_text.Text.ToString()) || (string.IsNullOrWhiteSpace(Updater_text.Text.ToString())))
-                {
-                    MessageBox.Show("Must give a vlaid worker ID");
-                    return;
-                }
-                    if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
-                {
-                    bool updaterValid = false;
-                foreach (Users user in Static_Data.ShopWorkors)
-                {
-                    if (user.ID.ToString() == Updater_text.Text.ToString() && user.StillEmployed)
-                        {
-                            updaterValid = true;
-                            Item.LastUpdater = Updater_text.Text.ToString();
-                        }
-                }
-                    if (updaterValid == false) {
-                        MessageBox.Show("Invalid worker ID");
-                        return;
-                    }        }
-                else
-                {
-                    MessageBox.Show("Must give a vlaid worker ID");
-                    return;
-                }
-                Static_Data.BDItem = Item;
-                Close();
+                UpdateItem();
             }
-            if (AddorEdit == "Add")
+            else if (AddorEdit == "Add")
             {
-                if (!string.IsNullOrEmpty(Catagories1_text.Text))
+                AddItem();
+            }
+        }
+        private void ValidateAndSetLastUpdater()
+        {
+            if (string.IsNullOrEmpty(Updater_text.Text))
+            {
+                MessageBox.Show("Must give a valid worker ID");
+                return;
+            }
+
+            bool updaterValid = false;
+            foreach (var user in Static_Data.ShopWorkors)
+            {
+                if (user.ID == Updater_text.Text && user.StillEmployed)
                 {
-                    Item.ChangeCat1(Catagories1_text.Text.ToString());
+                    updaterValid = true;
+                    Item.LastUpdater = Updater_text.Text;
+                    break;
                 }
-                else
-                {
-                    if (Catagories1.SelectedItem is ComboBoxItem cat1BoxItem)
-                    {
-                        Item.ChangeCat1(cat1BoxItem.Tag.ToString());
-                    }
-                }
-                if (!string.IsNullOrEmpty(Catagories2_text.Text))
-                {
-                    Item.ChangeCat2(Catagories2_text.Text.ToString());
-                }
-                else
-                {
-                    if (Catagories2.SelectedItem is ComboBoxItem cat2BoxItem)
-                    {
-                        Item.ChangeCat2(cat2BoxItem.Tag.ToString());
-                    }
-                }
-                if (!string.IsNullOrEmpty(ItemName_text.Text.ToString())) {
-                    Item.ItemName = ItemName_text.Text.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Item Must have a name");
-                    return;
-                }
-                if (double.TryParse(Amount_text.Text.ToString(), out double amount))
-                {
-                    Item.AddAmount(amount);
-                }
-                else
-                {
-                    MessageBox.Show("Amount must be a number");
-                    return;
-                }
-                if (double.TryParse(MinAmount_text.Text.ToString(), out double minamount))
-                {
-                    Item.UpdateMinAmount(minamount);
-                }
-                else
-                {
-                    MessageBox.Show("Minumum amount must be a number");
-                    return;
-                }
-                if (!string.IsNullOrEmpty(Updater_text.Text.ToString()))
-                {
-                    bool updaterValid = false;
-                    foreach (Users user in Static_Data.ShopWorkors)
-                    {
-                        if (user.ID.ToString() == Updater_text.Text.ToString())
-                        {
-                            updaterValid = false;
-                            if (user.StillEmployed ==true)
-                            {
-                                updaterValid = true;
-                                Item.LastUpdater = Updater_text.Text.ToString();
-                                break;
-                            }
-                            if (updaterValid = true && user.StillEmployed == false)
-                            {
-                                MessageBox.Show("This worker dosen't work here any more");
-                                return;
-                            }
-                        }
-                    }
-                    if (updaterValid == false)
-                    {
-                        MessageBox.Show("Invalid worker ID");
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Must give a vlaid worker ID");
-                    return;
-                }
-                Static_Data.BDItem = new DB_Item(Item.ItemName, Item.MainCategory, Item.SeconderyCategory, Item.Amount, Item.MinAmount, Item.LastUpdater);
-                Close();
+            }
+
+            if (!updaterValid)
+            {
+                MessageBox.Show("Invalid worker ID or worker is no longer employed");
+                return;
             }
         }
         private void Catagories1_SelectionChanged(object sender, SelectionChangedEventArgs e)
