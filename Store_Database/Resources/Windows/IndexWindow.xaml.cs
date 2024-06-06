@@ -282,19 +282,27 @@ namespace Store_Database
             var title = "Name the report";
             var Input_field1 = new Input_box_field();
             Input_field1.Input_label = "Report Name";
+            Input_box input_Box;
+            UniversalVars.inputBoxReturn = null;
             do
             {
-                var input_Box = new Input_box(number_of_field, title, Input_field1);
+                input_Box = new Input_box(number_of_field, title, Input_field1);
+
                 input_Box.ShowDialog();
-                if (UniversalVars.inputBoxReturn.Count == 0 || string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) || string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
+                if (UniversalVars.inputBoxReturn == null)
                 {
-                    hasInput = false;
+                    MessageBox.Show("Name the report", "Report is Nameless");
                 }
-                if (UniversalVars.inputBoxReturn.Count == 1 && !string.IsNullOrEmpty(UniversalVars.inputBoxReturn[0].ToString()) && !string.IsNullOrWhiteSpace(UniversalVars.inputBoxReturn[0].ToString()))
+                if (UniversalVars.inputBoxReturn != null)
                 {
-                    hasInput = true;
+                    if (File.Exists($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt"))
+                    {
+                        MessageBox.Show("A report by that name already exists", "Report Exists");
+                        UniversalVars.inputBoxReturn = null;
+                    }
                 }
-            } while (!hasInput);
+
+            } while (UniversalVars.inputBoxReturn == null);
             if (!Directory.Exists("Reports/"))
             {
                 Directory.CreateDirectory("Reports/");

@@ -16,7 +16,7 @@ namespace Frogger
     internal class Opening_Panel : IOpening_Panel
     {
         public string Name { get; set; } = "Frogger";
-        public string Description { get; set; } = "This application was developed for playing the clasic Saga game Frogger using WPF. The player guides the frog to fill the empty ponds across the road and river and avoid obstacles. The game has seven difficulty levels the obstacles get faster the higher the difficulty. ";
+        public string Description { get; set; } = "This application was developed for playing the classic Saga game Frogger using WPF. The player uses the arrow keys to guide the frog to fill the empty ponds across the road and river and avoid obstacles. The game has seven difficulty levels the obstacles get faster the higher the difficulty.";
         public List<string> Tags { get; set; } = new List<string>() { "CSharp", "WPF", "OOP", "JSON" };
 
         public BitmapImage buttonImage

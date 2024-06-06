@@ -20,3 +20,18 @@ ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games
 ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:52142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 amount edited ___ 05/06/2024 8:27:27
 ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:92142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:C{j'enUMT1 min-amount edited ___ 05/06/2024 8:27:27
 ID:b7eb4b8a-adfe-4859-a615-a5ecaec21c52 , Item Name:Cheese , Main Category:Games , Secondery Category:Grocery , Amount:86660 , Min Amount:92142 , Added Date:addedDate 9, LastUpdate:2024-06-05,Last Updater:id 13 Edited ___ 05/06/2024 8:27:27
+Invalid worker ID used ___ 06/06/2024 18:56:36
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Cars , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-06,Last Updater:id 6 Main Category edited ___ 06/06/2024 18:56:42
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Cars , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-06,Last Updater:id 6 Secondery Category edited ___ 06/06/2024 18:56:42
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Cars , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-06,Last Updater:id 6 amount edited ___ 06/06/2024 18:56:42
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Cars , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-06,Last Updater:id 6 min-amount edited ___ 06/06/2024 18:56:42
+ID:8b75c369-8e2c-48ba-aa2e-9be706a42a3b , Item Name:Chair , Main Category:Cars , Secondery Category:Health , Amount:91826 , Min Amount:65098 , Added Date:addedDate 4, LastUpdate:2024-06-06,Last Updater:id 6 Edited ___ 06/06/2024 18:56:42
+Manager Passwared used ___ 06/06/2024 18:57:17
+Report workers Generated ___ 06/06/2024 18:57:59
+@Report report Generated ___ 06/06/2024 19:04:33
+Report r Generated ___ 06/06/2024 19:08:43
+Report r Generated ___ 06/06/2024 19:08:47
+Report r Generated ___ 06/06/2024 19:09:39
+Report r Generated ___ 06/06/2024 19:09:43
+Report rr Generated ___ 06/06/2024 19:10:40
+Report rrr Generated ___ 06/06/2024 19:11:03

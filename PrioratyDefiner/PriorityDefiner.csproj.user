@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="TaskLists.xaml.cs">
+    <Compile Update="windows\TaskLists.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="windows\Show_list.xaml.cs">
@@ -15,10 +15,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="ListCreation.xaml">
+    <Page Update="windows\ListCreation.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="TaskLists.xaml">
+    <Page Update="windows\TaskLists.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\Show_list.xaml">

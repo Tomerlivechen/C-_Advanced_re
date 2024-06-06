@@ -15,29 +15,39 @@ namespace PriorityDefiner.Classes
     {
         const string filePath = (@"Resources\PriorityDefiner_Tasklists.json");
         public static MylistOfTakLists allTaskLists = new MylistOfTakLists();
+        public static int change = 0;
         public static void addlist(MyTaskList newTaskList)
         {
-            bool checkName = false;
+            var number_of_field = 1;
+            var title = "Insert Name Of Task list";
+            var Input_field = new Input_box_field();
+            Input_field.Input_label = "Enter name:";
+            Input_box input_Box;
+            UniversalVars.inputBoxReturn = null;
+
             do
             {
-                var number_of_field = 1;
-                var title = "Insert Name Of Task list";
-                var Input_field = new Input_box_field();
-                Input_field.Input_label = "Enter name:";
-                var input_Box = new Input_box(number_of_field, title, Input_field);
+                input_Box = new Input_box(number_of_field, title, Input_field);
                 input_Box.ShowDialog();
-                newTaskList.TaskListName = UniversalVars.inputBoxReturn[0].ToString();
-                checkName = false;
-                foreach (MyTaskList task_list in allTaskLists.listOfLists)
+                if (UniversalVars.inputBoxReturn == null)
                 {
-                    if (newTaskList.TaskListName == task_list.TaskListName)
+                    MessageBox.Show("Please name your table", "Table cannot be nameless");
+                }
+                if (UniversalVars.inputBoxReturn != null)
+                {
+                    foreach (MyTaskList task_list in allTaskLists.listOfLists)
                     {
-                        checkName = true;
-                        MessageBox.Show("List Name alredy in use", "Name in use");
+                        if (UniversalVars.inputBoxReturn[0].ToString() == task_list.TaskListName)
+                        {
+                            MessageBox.Show("List Name alredy in use", "Name in use");
+                            UniversalVars.inputBoxReturn = null;
+                        }
                     }
                 }
-            } while (checkName);
+            } while (UniversalVars.inputBoxReturn == null);
+            newTaskList.TaskListName = UniversalVars.inputBoxReturn[0].ToString();
             allTaskLists.listOfLists.Add(newTaskList);
+
         }
         public static void LoadTaks()
         {
@@ -67,6 +77,7 @@ namespace PriorityDefiner.Classes
         }
         public static void SaveTasklists()
         {
+            change = 0;
             var export = JsonSerializer.Serialize(allTaskLists);
             try
             {

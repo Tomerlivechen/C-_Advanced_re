@@ -32,21 +32,34 @@ namespace Memory_game
         {
             
             InitializeComponent();
-            Initializeboard();
             GlobalVars.ResetTimerCount();
             card_amount = card_amount_;
-            int[] screenSize= Initialization_Of_Game.screen_size(card_amount);
+            GameCards = Initialization_Of_Game.Setgame(card_amount);
+            SetTableSize();
+            Initializeboard();
+            BG_Image.Source = Initialization_Of_Game.LoadImageFromResource("BG_Image.jpg");
+            timer.Tick += Timed_Actions;
+            timer.Start();
+            Closed += Window_Closed;
+        }
+
+        public void SetTableSize()
+        {
+            int[] screenSize = Initialization_Of_Game.screen_size(card_amount);
             Height = screenSize[0];
             Width = screenSize[1];
             if (card_amount == 48)
             {
                 WindowState = WindowState.Maximized;
             }
-            GameCards = Initialization_Of_Game.Setgame(card_amount);
-            BG_Image.Source = Initialization_Of_Game.LoadImageFromResource("BG_Image.jpg");
-            timer.Tick += Timed_Actions;
-            timer.Start();
-            Closed += Window_Closed;
+            if (card_amount == 12)
+            {
+                Card_set.Width = Width * 0.95;
+            }
+            else
+            {
+                Card_set.Width = Width;
+            }
         }
 
    public  void Timed_Actions(object sender, EventArgs e)

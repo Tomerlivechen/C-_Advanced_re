@@ -40,7 +40,7 @@
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0" Grid.Column="0" FontWeight="ExtraBlack" Name="Title" FontSize="25" Margin="5" Content="Title" VerticalAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
                 <Label Grid.Row="1" Grid.Column="0" FontWeight="ExtraBlack" FontSize="25" Margin="5" Content="Ingredients:" VerticalAlignment="Center"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" Name="Ingredients" FontSize="25" Margin="5" Text="Ingredients:" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Name="Ingredients" FontSize="25" Margin="5" Text="Ingredients:" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
                 <Label Grid.Row="3" Grid.Column="0" FontWeight="ExtraBlack" FontSize="25" Margin="5" Content="Instructions:" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="4" Grid.Column="0" Name="Instructions" FontSize="25" Margin="5" Text="Instructions:" VerticalAlignment="Center" TextWrapping="Wrap" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
             </Grid>

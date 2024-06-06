@@ -39,12 +39,14 @@ namespace PriorityDefiner.windows
         }
         private void Handle_progress(object sender, RoutedEventArgs e)
         {
+            GlobalVars.change++;
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.inProgress = !myTask.inProgress;
             TaskSetsView.Refresh();
         }
         private void Handle_Complete(object sender, RoutedEventArgs e)
         {
+            GlobalVars.change++;
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             if (myTask.inProgress==true) {
                 myTask.inProgress = false;
@@ -54,6 +56,7 @@ namespace PriorityDefiner.windows
         }
         private void Handle_Delete(object sender, RoutedEventArgs e)
         {
+            GlobalVars.change++;
             int respons = Message_Box_Classes.DisplayMessageBox("Are you sure you want to delete this task?", "Deleting task");
             if (respons == 1)
             {
@@ -75,18 +78,21 @@ namespace PriorityDefiner.windows
         }
         private void Handle_Decrease(object sender, RoutedEventArgs e)
         {
+            GlobalVars.change++;
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.priority--;
             update_task_grid();
         }
         private void Handle_Increase(object sender, RoutedEventArgs e)
         {
+            GlobalVars.change++;
             MyTask myTask = Task_DataGrid.SelectedItem as MyTask;
             myTask.priority++;
             update_task_grid();
         }
         public void update_task_grid()
         {
+
             List<MyTask> TaskDataGrid = TaskSetsView.SourceCollection.Cast<MyTask>().ToList();
             MyTaskList myTaskList = new MyTaskList();
             myTaskList.Task_List = TaskDataGrid;
@@ -106,12 +112,16 @@ namespace PriorityDefiner.windows
         }
         private void Window_Closed(object sender, EventArgs e)
         {
-            int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
-            if (respons == 1)
+            if (GlobalVars.change > 0)
             {
-                Handle_Save(sender, e as RoutedEventArgs);
+                int respons = Message_Box_Classes.DisplayMessageBox("Save before closeing?", "Close");
+                if (respons == 1)
+                {
+                    Handle_Save(sender, e as RoutedEventArgs);
+                }
+                else { return; }
             }
-            else { return; }
+
         }
     }
 }

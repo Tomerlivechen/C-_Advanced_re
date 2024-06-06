@@ -12,8 +12,8 @@
             <RowDefinition/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
-        <Border Background="#3DB1A1" Grid.Row="0" />
-        <Border Background="#3DB1A1" Grid.Row="2" />
+        <Border Background="#3DB1A1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" />
+
         <ScrollViewer Grid.Row="1">
             <Grid>
                 <Grid.ColumnDefinitions>

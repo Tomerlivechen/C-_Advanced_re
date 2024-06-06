@@ -66,14 +66,10 @@ D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\bin\Debug\net8.0-windo
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\bin\Debug\net8.0-windows\Common_Classes.dll
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\bin\Debug\net8.0-windows\Common_Classes.pdb
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.csproj.AssemblyReference.cache
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\ListCreation.g.cs
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\TaskLists.g.cs
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Show_list.g.cs
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\App.g.cs
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner_MarkupCompile.cache
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner_MarkupCompile.lref
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\ListCreation.baml
-D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\TaskLists.baml
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\Show_list.baml
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.g.resources
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.GeneratedMSBuildEditorConfig.editorconfig
@@ -87,3 +83,7 @@ D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windo
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.pdb
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\PriorityDefiner.genruntimeconfig.cache
 D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\ref\PriorityDefiner.dll
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\ListCreation.g.cs
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\TaskLists.g.cs
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\ListCreation.baml
+D:\Users\Tomer Chen\GitHub\C#_Advanced_re\PrioratyDefiner\obj\Debug\net8.0-windows\windows\TaskLists.baml
