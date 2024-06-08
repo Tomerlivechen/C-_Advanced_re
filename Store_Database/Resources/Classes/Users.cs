@@ -19,7 +19,7 @@ namespace Store_Database.Resources.Classes
         {
             this.Name = Name;
             this.ID = ID;
-            this.StartDate = DateTime.Now.ToShortDateString();
+            this.StartDate = DateTime.Now.ToString("yyyy-MM-dd");
             this.EndDate = null;
             this.StillEmployed = StillEmployed;
             this.Manager = Manager;
@@ -41,7 +41,7 @@ namespace Store_Database.Resources.Classes
         }
         public void LetGo()
         {
-            EndDate = DateTime.Now.ToShortDateString();
+            EndDate = DateTime.Now.ToString("yyyy-MM-dd");
             StillEmployed = false;
         }
         public override string ToString()

@@ -67,15 +67,15 @@ namespace Store_Database
             var data = await response.Content.ReadFromJsonAsync<List<Users>>();
             Static_Data.ShopWorkors = data;
         }
-        
-        async Task<List<DB_Item>> GetUsersAsync()
+
+        public async Task<List<DB_Item>> GetUsersAsync()
         {
             var response = await client.GetAsync(apiResource);
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadFromJsonAsync<List<DB_Item>>();
             return data;
         }
-        async void Load_Button_Click(object sender, RoutedEventArgs e)
+        public async void Load_Button_Click(object sender, RoutedEventArgs e)
         {
             var apiReponse = await GetUsersAsync();
             RawProductList = apiReponse;
@@ -277,7 +277,6 @@ namespace Store_Database
         {
             List<DB_Item> report_list = new List<DB_Item>();
             report_list = resultsDataGrid.Items.Cast<DB_Item>().ToList();
-            bool hasInput = false;
             var number_of_field = 1;
             var title = "Name the report";
             var Input_field1 = new Input_box_field();

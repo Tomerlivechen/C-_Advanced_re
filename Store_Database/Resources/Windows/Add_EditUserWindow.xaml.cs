@@ -21,29 +21,45 @@ namespace Store_Database.Resources.Windows
     {
         Users? Import_user = new Users();
         string AddorEdit;
+        bool validateed = false;
         public Add_EditUserWindow(string addOrEdit, Users? user=null ) {
             Import_user = user;
             AddorEdit = addOrEdit;
             InitializeComponent();
-            if (addOrEdit == "Edit" ) {
+            InitilizeFiealds();
+            Closed += Add_EditUserWindow_Closed;
+        }
+
+        private void Add_EditUserWindow_Closed(object? sender, EventArgs e)
+        {
+            if (!validateed)
+            {
+                Static_Data.tempUser = null;
+            }
+        }
+
+        private void InitilizeFiealds()
+        {
+            if (AddorEdit == "Edit")
+            {
                 Title.Content = "Edit Worker";
-                ID_text.Text = user.ID.ToString();
-                Name_text.Text=user.Name.ToString();
-                Start_text.Text = user.StartDate;
+                ID_text.Text = Import_user.ID.ToString();
+                Name_text.Text = Import_user.Name.ToString();
+                Start_text.Text = Import_user.StartDate;
                 Start_text.IsReadOnly = true;
-                if (user.EndDate != null)
+                if (Import_user.EndDate != null)
                 {
-                    End_text.Text = user.EndDate;
-                    
+                    End_text.Text = Import_user.EndDate;
+
                 }
                 End_text.IsReadOnly = true;
-                Manager_Check.IsChecked = user.Manager;
-                Still_Check.IsChecked = user.StillEmployed;
+                Manager_Check.IsChecked = Import_user.Manager;
+                Still_Check.IsChecked = Import_user.StillEmployed;
             }
-            if (addOrEdit == "Add")
+            if (AddorEdit == "Add")
             {
                 Title.Content = "Add New Worker";
-                Start_text.Text = DateTime.Now.ToShortDateString();  
+                Start_text.Text = DateTime.Now.ToShortDateString();
                 Start_text.IsReadOnly = true;
                 Still_Check.IsChecked = true;
                 Still_Check.IsEnabled = false;
@@ -53,16 +69,17 @@ namespace Store_Database.Resources.Windows
         {
             if (Security.checkManagerCode())
             {
+                validateed = true;
                 if (AddorEdit == "Edit" && ID_text.Text != Import_user.ID.ToString())
                 {
                     Static_Data.tempUser = Import_user;
-                    Static_Data.tempUser2 = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked.Value, Manager = (bool)Manager_Check.IsChecked, EndDate = End_text.Text };
+                    Static_Data.tempUser2 = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
                     Close();
                     return;
                 }
                 if (AddorEdit == "Edit" && ID_text.Text == Import_user.ID.ToString())
                 {
-                    Static_Data.tempUser = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked.Value, Manager = (bool)Manager_Check.IsChecked, EndDate = End_text.Text };
+                    Static_Data.tempUser = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
                     Close();
                     return;
                 }
@@ -80,7 +97,7 @@ namespace Store_Database.Resources.Windows
                     }
                     if (isRepeatID == false)
                     {
-                        Static_Data.tempUser = new Users(Name_text.Text, ID_text.Text, true, (bool)Manager_Check.IsChecked , Static_Data.ShopWorkors.Count());
+                        Static_Data.tempUser = new Users(Name_text.Text, ID_text.Text, true, Manager_Check.IsChecked ?? false, Static_Data.ShopWorkors.Count());
                         Close();
                         return;
                     }

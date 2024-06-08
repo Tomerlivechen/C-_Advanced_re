@@ -35,3 +35,80 @@ Report r Generated ___ 06/06/2024 19:09:39
 Report r Generated ___ 06/06/2024 19:09:43
 Report rr Generated ___ 06/06/2024 19:10:40
 Report rrr Generated ___ 06/06/2024 19:11:03
+Manager Passwared used ___ 08/06/2024 13:08:11
+Manager Passwared used ___ 08/06/2024 13:08:47
+ID:1111 , Name:Bob marly , Start Date:08/06/2024 , End Date: , Manager:True , Still Employed:True worker added ___ 08/06/2024 13:08:47
+ID: , Item Name: , Main Category: , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:,Last Updater: Added ___ 08/06/2024 13:09:18
+ID: , Item Name: , Main Category: , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:,Last Updater: Added ___ 08/06/2024 13:11:07
+Manager Passwared used ___ 08/06/2024 13:14:14
+ID: , Item Name: , Main Category:Home , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Main Category edited ___ 08/06/2024 13:34:25
+ID: , Item Name: , Main Category:Home , Secondery Category:Toys , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Secondery Category edited ___ 08/06/2024 13:34:25
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 amount edited ___ 08/06/2024 13:34:25
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 min-amount edited ___ 08/06/2024 13:34:25
+ID: , Item Name: , Main Category:Home , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Main Category edited ___ 08/06/2024 13:35:03
+ID: , Item Name: , Main Category:Home , Secondery Category:Toys , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Secondery Category edited ___ 08/06/2024 13:35:03
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 amount edited ___ 08/06/2024 13:35:03
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 min-amount edited ___ 08/06/2024 13:35:03
+ID: , Item Name: , Main Category:Home , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Main Category edited ___ 08/06/2024 13:37:26
+ID: , Item Name: , Main Category:Home , Secondery Category:Toys , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 Secondery Category edited ___ 08/06/2024 13:37:26
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 amount edited ___ 08/06/2024 13:37:26
+ID: , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-08,Last Updater:1322 min-amount edited ___ 08/06/2024 13:37:26
+ID:20d0950c-bace-41ca-818a-96649dc26166 , Item Name:Slinky , Main Category:Home , Secondery Category:Toys , Amount:10000 , Min Amount:500 , Added Date:2024-06-08, LastUpdate:2024-06-08,Last Updater:1322 Added ___ 08/06/2024 13:37:27
+Manager Passwared used ___ 08/06/2024 13:38:54
+Manager Passwared used ___ 08/06/2024 13:39:31
+Manager Passwared used ___ 08/06/2024 13:42:09
+Manager Passwared used ___ 08/06/2024 13:42:22
+ID:2478 , Name:Liam Parker , Start Date:2021-03-25 , End Date:2022-09-25 , Manager:False , Still Employed:True worker edited ___ 08/06/2024 13:42:23
+Manager Passwared used ___ 08/06/2024 13:42:30
+ID:2478 , Name:Liam Parker , Start Date:2021-03-25 , End Date:08/06/2024 , Manager:False , Still Employed:False worker Let Go ___ 08/06/2024 13:42:30
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared failed ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+API changed to https://662006073bf790e070aec029.mockapi.io//Store_items ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed to https://662006073bf790e070aec029.mockapi.io//https://662006073bf790e070aec029.mockapi.io/ ___ 2024-06-08
+Manager Passwared Changed to attempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed to https://662006073bf790e070aec029.mockapi.io//Tlc/Users ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed to https://662006073bf790e070aec029.mockapi.io//Tlc/Users ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed atempted ___ 2024-06-08
+Manager Passwared used ___ 2024-06-08
+API changed to https://662006073bf790e070aec029.mockapi.io/Tlc/Store_items ___ 2024-06-08

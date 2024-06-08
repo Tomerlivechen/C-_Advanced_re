@@ -39,7 +39,18 @@ namespace Store_Database.Resources.Windows
                 Title.Content = "Add New Item";
                 Item = new DB_Item();
             }
+
+            Closed += Add_EditWindow_Closed;
         }
+
+        private void Add_EditWindow_Closed(object? sender, EventArgs e)
+        {
+            if (!ValidateAndSetLastUpdater())
+            {
+                Static_Data.BDItem = null;
+            }
+        }
+
         public void GetComboBoxes()
         {
             addToComboBox(Catagories1, Static_Data.MainCatagories);
