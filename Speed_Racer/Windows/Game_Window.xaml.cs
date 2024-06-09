@@ -144,7 +144,7 @@ namespace Speed_Racer.Windows
         {
             timer1.Stop();
             timer1s.Stop();
-            MessageBox.Show("You Lose");
+            MessageBox.Show("Out of repair kits You Lose","Game Over");
             start = false;
             GameOver(sender, e);
         }
@@ -152,9 +152,9 @@ namespace Speed_Racer.Windows
         {
             timer1.Stop();
             timer1s.Stop();
-            MessageBox.Show("You Win");
+            MessageBox.Show("You Win","Game Over");
             start = false;
-            MessageBox.Show("You Have been added to the high score list");
+            MessageBox.Show("You Have been added to the high score list", "High Score");
             int newScore = NewGame.GetScore();
             HighScores.AddHighScore(name, newScore);
             GameOver(sender, e);
@@ -224,6 +224,14 @@ namespace Speed_Racer.Windows
                 }
             }
         }
+
+        public void forcedPause()
+        {
+                timer1.Stop();
+                timer1s.Stop();
+                start = false;
+                pause_screen.Visibility = Visibility.Visible;
+        }
         public void moveAllCars(double moveto)
         {
             Random rnd = new Random();
@@ -266,12 +274,15 @@ namespace Speed_Racer.Windows
                 EventArgs e = new EventArgs();
                 GameOver(sender, e);
             }
-            MessageBox.Show("You died");
+            MessageBox.Show("Repair kit used");
             timer1.Start();
             timer1s.Start();
             Fix();
             Canvas.SetLeft(player, 100);
-            
+            if (sidecrash)
+            {
+                forcedPause();
+            }
             Speed = speed_Holder;
             NewGame.Car_death();
             moveAllCars(700);

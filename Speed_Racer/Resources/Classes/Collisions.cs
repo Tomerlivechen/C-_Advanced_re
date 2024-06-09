@@ -89,39 +89,36 @@ namespace Speed_Racer.Resources.Classes
                 if (obj is Colectable goody)
                 {
                     verticalTolerance += (int)goody.ActualWidth ;
-                    verticalTolerance = (verticalTolerance / 2) ;
+                    verticalTolerance = (verticalTolerance / 2)+5 ;
                     horizontalTolerance += (int)goody.ActualHeight ;
-                    horizontalTolerance = (horizontalTolerance / 2) ;
+                    horizontalTolerance = (horizontalTolerance / 2)+5 ;
                     double[] ElementPosition = Get_From_Canvas.Getposition(goody);
-                    if (carPosition[1] > ElementPosition[1] - horizontalTolerance && carPosition[1] < ElementPosition[1] + horizontalTolerance)
+                    if (carPosition[1] > ElementPosition[1] - horizontalTolerance && carPosition[1] < ElementPosition[1] + horizontalTolerance &&
+                        carPosition[0] > ElementPosition[0] - verticalTolerance && carPosition[0] < ElementPosition[0] + verticalTolerance)
                     {
-                        if (carPosition[0] > ElementPosition[0] - verticalTolerance && carPosition[0] < ElementPosition[0] + verticalTolerance)
-                        {
-                            if (goody.Visibility == Visibility.Visible)
+                        if (goody.Visibility == Visibility.Visible)
                             {
-                                if (goody.Tag.ToString() == "Fule")
-                                {
-                                    goody.Visibility = Visibility.Collapsed;
+                            goody.Visibility = Visibility.Collapsed;
+                            switch (goody.Tag.ToString()) {
+                                case "Fule":
                                     NewGame.AddFule();
-                                    return;
-                                }
-                                if (goody.Tag.ToString() == "Fix")
-                                {
-                                    goody.Visibility = Visibility.Collapsed;
+                                    break;
+                                case "Fix":
                                     NewGame.AddRepair();
-                                    return;
-                                }
-                                if (goody.Tag.ToString() == "Chocolate")
-                                {
-                                    goody.Visibility = Visibility.Collapsed;
-                                    NewGame.addToScore(50);
-                                    return;
-                                }
+                                    break;
+                                case "Chocolate":
+                                    NewGame.addToScore(100);
+                                    break;
+                                default:
+                                    break;
+
+                            }
+
                             }
                         }
                     }
                 }
             }
         }
-    }
+    
 }
