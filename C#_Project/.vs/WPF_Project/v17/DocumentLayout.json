@@ -6,7 +6,40 @@
       "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\collisions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\race_game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\move_objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\image_import.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\highscores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\classes\\get_from_canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\controls\\speedometer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\controls\\repair_item.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\controls\\fulegauge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\controls\\distanceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\resources\\controls\\colectable.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\game_window.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AE79292-ACC4-443C-A84F-5BD24D93B96E}|..\\Speed_Racer\\Speed_Racer.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\speed_racer\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -97,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,14 +139,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Game_Window.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
-              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
-              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAjwC8AAAAnAAAA",
+              "Title": "Race_Game.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Race_Game.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\Race_Game.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Race_Game.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\Race_Game.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA5wCIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T14:25:15.863Z",
+              "WhenOpened": "2024-06-09T20:22:21.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Image_Import.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Image_Import.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\Image_Import.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Image_Import.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\Image_Import.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T20:21:12.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HighScores.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\HighScores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T20:20:57.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Get_From_Canvas.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Get_From_Canvas.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\Get_From_Canvas.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Get_From_Canvas.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\Get_From_Canvas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T20:20:48.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Speedometer.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Speedometer.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Controls\\Speedometer.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Speedometer.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Controls\\Speedometer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:16:34.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Repair_item.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Repair_item.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Controls\\Repair_item.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Repair_item.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Controls\\Repair_item.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:16:32.945Z",
               "EditorCaption": ""
             },
             {
@@ -124,7 +220,7 @@
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\Collisions.cs",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Collisions.cs",
               "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\Collisions.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAjwGAAAAB0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T14:24:41.071Z",
               "EditorCaption": ""
@@ -132,18 +228,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Move_objects.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Move_objects.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Classes\\Move_objects.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Classes\\Move_objects.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Classes\\Move_objects.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T20:21:17.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FuleGauge.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\FuleGauge.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Controls\\FuleGauge.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\FuleGauge.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Controls\\FuleGauge.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:16:30.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DistanceView.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\DistanceView.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Controls\\DistanceView.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\DistanceView.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Controls\\DistanceView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:16:29.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Colectable.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Colectable.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Resources\\Controls\\Colectable.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Resources\\Controls\\Colectable.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Resources\\Controls\\Colectable.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:16:27.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Game_Window.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAGoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T14:25:15.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Game_Window.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "RelativeToolTip": "..\\Speed_Racer\\Windows\\Game_Window.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T20:15:39.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\IndexWindow.xaml",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml",
               "RelativeToolTip": "..\\Speed_Racer\\Windows\\IndexWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-09T14:24:32.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T14:24:32.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Opening_Panel.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Opening_Panel.cs",
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Opening_Panel.cs",
@@ -155,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Smart_Move.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\Classes\\Smart_Move.cs",
               "RelativeDocumentMoniker": "..\\TickTackTow_WPF\\Classes\\Smart_Move.cs",
@@ -163,12 +332,11 @@
               "RelativeToolTip": "..\\TickTackTow_WPF\\Classes\\Smart_Move.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAABUAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T10:19:02.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T10:19:02.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Project_Gallery\\MainWindow.xaml",
@@ -179,19 +347,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\TickTackTow_WPF\\MainWindow.xaml",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\TickTackTow_WPF\\MainWindow.xaml",
               "RelativeToolTip": "..\\TickTackTow_WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-09T10:10:41.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T10:10:41.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
@@ -202,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "Security.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Security.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Security.cs",
@@ -214,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "DB_Item.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\DB_Item.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\DB_Item.cs",
@@ -226,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "IndexWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
@@ -239,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "API_Static.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\API_Static.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\API_Static.cs",
@@ -252,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "Add_EditUserWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
@@ -264,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "Static_Data.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Static_Data.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Static_Data.cs",
@@ -276,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "UsersWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
@@ -288,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "UsersWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\UsersWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\UsersWindow.xaml",
@@ -299,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "Log.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Log.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Log.cs",
@@ -311,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "Catagory.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Catagory.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Catagory.cs",
@@ -323,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "Add_EditUserWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml",
@@ -334,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "Users.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Users.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Users.cs",
@@ -346,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "Add\u0026EditWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
@@ -358,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "Opening_Panel.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Opening_Panel.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Opening_Panel.cs",
@@ -370,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 38,
               "Title": "ListCreation.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\ListCreation.xaml",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\ListCreation.xaml",
@@ -381,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "GlobalVars.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Frogger\\Classes\\GlobalVars.cs",
               "RelativeDocumentMoniker": "..\\Frogger\\Classes\\GlobalVars.cs",
@@ -393,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 35,
               "Title": "Show_list.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\Show_list.xaml.cs",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\Show_list.xaml.cs",
@@ -405,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 36,
               "Title": "GlobalVars.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\Classes\\GlobalVars.cs",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\Classes\\GlobalVars.cs",
@@ -417,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 37,
               "Title": "ListCreation.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\ListCreation.xaml.cs",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\ListCreation.xaml.cs",
@@ -429,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "TaskLists.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
@@ -441,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "TaskLists.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml",
               "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\TaskLists.xaml",

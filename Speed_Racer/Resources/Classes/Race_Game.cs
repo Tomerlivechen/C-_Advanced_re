@@ -32,7 +32,7 @@
         public double fullDistance { get; set; }
         public void addToScore(int points)
         {
-            score += points;
+            score += points* (difficulty + 1)/2;
         }
         public void moveForward(double dis)
         {

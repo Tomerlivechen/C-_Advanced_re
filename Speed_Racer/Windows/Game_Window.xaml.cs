@@ -27,6 +27,7 @@ namespace Speed_Racer.Windows
         Colectable Repairkit = new Colectable("RepairKit.png");
         Colectable Chocolate = new Colectable("Chocolate.png");
         List<Image> enimyCars;
+        List<Colectable> colectables;
         Race_Game NewGame;
         Speedometer speedometer;
         DistanceView distanceView = new DistanceView();
@@ -48,6 +49,7 @@ namespace Speed_Racer.Windows
             insertColectables(fule_Tank, "Fule");
             insertColectables(Repairkit, "Fix");
             insertColectables(Chocolate, "Chocolate");
+            colectables = new List<Colectable>() { fule_Tank, Repairkit, Chocolate };
             enimyCars = new List<Image>() { Car2, Car3, Car5, Car6, Car8 };
             FuleGauge fuleGauge = new FuleGauge(NewGame);
             FuleGaugebox.Children.Add(fuleGauge);
@@ -100,6 +102,10 @@ namespace Speed_Racer.Windows
                 timer1.Start();
                 timer1s.Start();
                 start = true;
+                if (pause_screen.Visibility == Visibility.Visible)
+                {
+                    pause_screen.Visibility = Visibility.Collapsed;
+                }
                 return;
             }
         }
@@ -163,8 +169,8 @@ namespace Speed_Racer.Windows
         {
             Collisions.CheckEnemyCollision(enimyCars);
             Move_objects.MoveAllObjects(Track_Canvas, difficalty, Speed);
-            Collisions.CheckCollision(Track_Canvas, player, NewGame, this);
-            Collisions.CheckGoodCollision(Track_Canvas, player, NewGame);
+            Collisions.CheckCollision(enimyCars, player, this);
+            Collisions.CheckGoodCollision(colectables, player, NewGame);
             speedometer.GenerateGage((int)(Speed * 0.8)+1);
             moveLines();
         }
@@ -232,6 +238,15 @@ namespace Speed_Racer.Windows
                 start = false;
                 pause_screen.Visibility = Visibility.Visible;
         }
+
+        public void forcedupPause()
+        {
+            timer1.Start();
+            timer1s.Start();
+            start = true;
+            pause_screen.Visibility = Visibility.Collapsed;
+            return; ;
+        }
         public void moveAllCars(double moveto)
         {
             Random rnd = new Random();
@@ -260,6 +275,7 @@ namespace Speed_Racer.Windows
             {
                 InitializeComponent();
                 NewGame.initilize(difficalty);
+                moveAllCars(700);
                 timer4s.Start();
             }
         }
