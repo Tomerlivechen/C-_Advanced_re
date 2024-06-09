@@ -17,6 +17,10 @@ namespace TickTackTow_WPF.Classes
             int enemy = player == 2 ? 1 : 2;
             int attack = Checkwinline(positions, player);
             int defence = Checkwinline(positions, enemy);
+            if (positions[1,1] != player && positions[1, 1] != enemy)
+            {
+                return sapceConverstion(1, 1);
+            }
             if (attack != 10)
             {
                 return attack;
