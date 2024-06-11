@@ -168,5 +168,14 @@ namespace PriorityDefiner
             }
         }
 
+        private void New_List_Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddTasklist_Click(sender, e);
+        }
+
+        private void Save_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Save_Click(sender, e);
+        }
     }
 }

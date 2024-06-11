@@ -112,3 +112,12 @@ Manager Passwared used ___ 2024-06-08
 API changed atempted ___ 2024-06-08
 Manager Passwared used ___ 2024-06-08
 API changed to https://662006073bf790e070aec029.mockapi.io/Tlc/Store_items ___ 2024-06-08
+Manager Passwared used ___ 2024-06-11
+Manager Passwared used ___ 2024-06-11
+Manager Passwared used ___ 2024-06-11
+ID:8ac5b5b2-f01a-4bc7-98f5-5c8658d2b529 , Item Name:Robot Vacuum , Main Category:Home , Secondery Category:Appliances , Amount:57000 , Min Amount:59000 , Added Date:2022-03-23, LastUpdate:2024-08-01,Last Updater:1456 Deleted ___ 2024-06-11
+ID: , Item Name: , Main Category:Food , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 Main Category edited ___ 2024-06-11
+ID: , Item Name: , Main Category:Food , Secondery Category:Sea Food , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 Secondery Category edited ___ 2024-06-11
+ID: , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 amount edited ___ 2024-06-11
+ID: , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 min-amount edited ___ 2024-06-11
+ID:fd86c152-7fb4-4674-8114-b931df61ed2b , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:500 , Added Date:2024-06-11, LastUpdate:2024-06-11,Last Updater:1322 Added ___ 2024-06-11
