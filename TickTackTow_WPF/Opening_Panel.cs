@@ -11,7 +11,7 @@ namespace TickTackTow_WPF
     internal class Opening_Panel : IOpening_Panel
     {
         public string Name { get; set; } = "Tic Tac Toe";
-        public string Description { get; set; } = "This application was developed to simulate the classic game Tic Tac Toe. Originally a two-player game, each player takes turns placing an 'X' or an 'O' on a 3x3 grid, intending to form a straight line of three of their symbols, either by row, column, or diagonal. This game also has the option to play against the computer, either with the randomized placement of symbols or an algorithm that actively tries to win, or let two computer players play against each other. ";
+        public string Description { get; set; } = "This application was developed to simulate the classic game Tic Tac Toe. Originally a two-player game, each player takes turns placing an 'X' or an 'O' on a 3x3 grid, intending to form a straight line of three of their symbols, either by row, column, or diagonal. This game also has the option to play against the computer, either with the randomized placement of symbols or an algorithm that actively tries to win, or let two computer players play against each other.";
         public List<string> Tags { get; set; } = new List<string>() { "CSharp", "WPF", "OOP" };
         public BitmapImage buttonImage
         {

@@ -11,7 +11,7 @@ namespace API_hub
     internal class Opening_Panel : IOpening_Panel
     {
         public string Name { get; set; } = "API Hub";
-        public string Description { get; set; } = "This project enables you to access 4 different APIs, Animal Taxonomy, Recipes, drink recipes, and cocktail recipes on the same system and displays each dataset in it’s own structured window. ";
+        public string Description { get; set; } = "This project enables you to access 4 different APIs: Animal Taxonomy, Recipes, drink recipes, and cocktail recipes on the same system and displays each dataset in its own structured window.";
         public List<string> Tags { get; set; } = new List<string>() { "CSharp", "WPF" ,"API","OOP"};
         public BitmapImage buttonImage
         {

@@ -1,11 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\C#_Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E2D143E1-9301-47D9-AF36-7F914D29BB94}|..\\Animal_Facts\\API_hub.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\animal_facts\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -13,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\Windows\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\MainWindow.xaml",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\Windows\\MainWindow.xaml",
-              "RelativeToolTip": "..\\Animal_Facts\\Windows\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-11T19:44:56.166Z",
-              "EditorCaption": ""
             }
           ]
         }

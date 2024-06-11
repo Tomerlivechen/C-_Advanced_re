@@ -11,7 +11,7 @@ using System.Reflection;
     internal class Opening_Panel : IOpening_Panel
     {
         public string Name { get; set; } = "Memory Game";
-        public string Description { get; set; } = "This application simulates a tabletop memory card game. The goal is to match all the card pairs one by one by flipping two cards each time and remembering the position of the cards that have been viewed. The player wins once all the cards are matched. ";
+        public string Description { get; set; } = "This application simulates a tabletop memory card game. The goal is to match all the card pairs one by one by flipping two cards each time and remembering the position of the cards that have been viewed. The player wins once all the cards are matched.";
         public List<string> Tags { get; set; } = new List<string>() { "CSharp", "WPF", "OOP", "JSON" };
         public BitmapImage buttonImage
         {
