@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_Animal_Pics")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c766cfad84a99c68f16fcfcd1e5dd52f5a5f50a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95fa3e1118110a44e667a3cbe036347d6567d02")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_Animal_Pics")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_Animal_Pics")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
