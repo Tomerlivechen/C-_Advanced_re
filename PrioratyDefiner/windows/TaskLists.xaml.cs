@@ -117,6 +117,7 @@ namespace PriorityDefiner
             ListOfTaskLists.Clear();
             foreach (MyTaskList tasklist in GlobalVars.allTaskLists.listOfLists)
             {
+                tasklist.CheckComplete();
                 ListOfTaskLists.Add(tasklist);
             }
             TaskSetsView.Refresh();

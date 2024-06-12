@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95fa3e1118110a44e667a3cbe036347d6567d02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1e5fc0ee89f5662716c65a4b699fd59eabf687a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

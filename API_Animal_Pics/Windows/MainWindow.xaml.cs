@@ -86,10 +86,12 @@ namespace API_Animal_Pics
         private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
             Animallist Selectd_List = ImageListDataGrid.SelectedItem as Animallist;
- 
+
+            if (Selectd_List != null)
+            {
                 Random_image window = new Random_image(Selectd_List);
                 window.ShowDialog();
-
+            }
             updateLists();
         }
         private void View_Button_Click(object sender, RoutedEventArgs e)

@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A215F04F-506B-4179-9C94-BD61FC8C8EDB}|..\\PrioratyDefiner\\PriorityDefiner.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\prioratydefiner\\windows\\tasklists.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A215F04F-506B-4179-9C94-BD61FC8C8EDB}|..\\PrioratyDefiner\\PriorityDefiner.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\prioratydefiner\\windows\\tasklists.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A215F04F-506B-4179-9C94-BD61FC8C8EDB}|..\\PrioratyDefiner\\PriorityDefiner.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\prioratydefiner\\windows\\listcreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A215F04F-506B-4179-9C94-BD61FC8C8EDB}|..\\PrioratyDefiner\\PriorityDefiner.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\prioratydefiner\\windows\\show_list.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A215F04F-506B-4179-9C94-BD61FC8C8EDB}|..\\PrioratyDefiner\\PriorityDefiner.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\prioratydefiner\\classes\\mytasklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\api_animal_pics.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add\u0026editwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,7 +60,107 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListCreation.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\ListCreation.xaml",
+              "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\ListCreation.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\ListCreation.xaml",
+              "RelativeToolTip": "..\\PrioratyDefiner\\windows\\ListCreation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-12T16:25:41.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyTaskList.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\Classes\\MyTaskList.cs",
+              "RelativeDocumentMoniker": "..\\PrioratyDefiner\\Classes\\MyTaskList.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\Classes\\MyTaskList.cs",
+              "RelativeToolTip": "..\\PrioratyDefiner\\Classes\\MyTaskList.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T16:25:25.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskLists.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
+              "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
+              "RelativeToolTip": "..\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowFEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T16:23:37.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskLists.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml",
+              "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\TaskLists.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\TaskLists.xaml",
+              "RelativeToolTip": "..\\PrioratyDefiner\\windows\\TaskLists.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-12T16:23:34.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Show_list.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\Show_list.xaml",
+              "RelativeDocumentMoniker": "..\\PrioratyDefiner\\windows\\Show_list.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\PrioratyDefiner\\windows\\Show_list.xaml",
+              "RelativeToolTip": "..\\PrioratyDefiner\\windows\\Show_list.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-12T16:23:31.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAArwFoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T16:16:35.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-12T16:16:32.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "API_Animal_Pics",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\API_Animal_Pics.csproj",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
+              "RelativeToolTip": "..\\API_Animal_Pics\\API_Animal_Pics.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-12T16:16:28.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Add_EditUserWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml",
@@ -47,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Add_EditUserWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
@@ -55,12 +179,11 @@
               "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAA5wE4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T15:11:22.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T15:11:22.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Add\u0026EditWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
@@ -73,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Add\u0026EditWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
@@ -84,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Game_Window.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\Game_Window.xaml.cs",
@@ -96,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Speed_Racer\\Windows\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\Speed_Racer\\Windows\\IndexWindow.xaml",
