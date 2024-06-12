@@ -115,22 +115,34 @@ namespace Store_Database.Resources.Windows
 
         private void UpdateItem()
         {
+            ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories1_text.Text))
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
-            else if (Catagories1.SelectedItem is ComboBoxItem comboCat1BoxItem)
+            else if (cat1BoxItem != null && !string.IsNullOrEmpty(cat1BoxItem.Tag.ToString()))
             {
-                Item.ChangeCat1(comboCat1BoxItem.Tag.ToString());
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+            }
+            else if (string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
+            {
+                MessageBox.Show("Main Catagory must be filled");
+                return;
             }
 
+            ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories2_text.Text))
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
-            else if (Catagories2.SelectedItem is ComboBoxItem comboCat2BoxItem)
+            else if (cat2BoxItem != null && !string.IsNullOrEmpty(cat2BoxItem.Tag.ToString()))
             {
-                Item.ChangeCat2(comboCat2BoxItem.Tag.ToString());
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString());
+            }
+            else if (string.IsNullOrEmpty(Catagories2_text.Text) && cat2BoxItem==null)
+            {
+                MessageBox.Show("Secondery Catagory must be filled");
+                return;
             }
 
             if (!string.IsNullOrEmpty(ItemName_text.Text))
@@ -164,23 +176,35 @@ namespace Store_Database.Resources.Windows
 
         private void AddItem()
         {
+             ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories1_text.Text))
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
-            else if (Catagories1.SelectedItem is ComboBoxItem cat1BoxItem)
+            else if (cat1BoxItem!=null && !string.IsNullOrEmpty(cat1BoxItem.Tag.ToString()))
             {
                 Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+            }else if(string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
+            {
+                MessageBox.Show("Main Catagory must be filled");
+                return;
             }
 
+            ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories2_text.Text))
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
-            else if (Catagories2.SelectedItem is ComboBoxItem cat2BoxItem)
+            else if (cat2BoxItem!=null && !string.IsNullOrEmpty(cat2BoxItem.Tag.ToString()))
             {
                 Item.ChangeCat2(cat2BoxItem.Tag.ToString());
             }
+            else if (string.IsNullOrEmpty(Catagories2_text.Text) && cat2BoxItem==null)
+            {
+                MessageBox.Show("Secondery Catagory must be filled");
+                return;
+            }
+
 
             if (!string.IsNullOrEmpty(ItemName_text.Text))
             {

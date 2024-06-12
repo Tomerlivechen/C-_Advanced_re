@@ -69,6 +69,16 @@ namespace Store_Database.Resources.Windows
         {
             if (Security.checkManagerCode())
             {
+                if (string.IsNullOrWhiteSpace(ID_text.Text) || string.IsNullOrEmpty(ID_text.Text))
+                {
+                    MessageBox.Show("Worker must have ID");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(Name_text.Text) || string.IsNullOrEmpty(Name_text.Text))
+                {
+                    MessageBox.Show("Worker must have a name");
+                    return;
+                }
                 validateed = true;
                 if (AddorEdit == "Edit" && ID_text.Text != Import_user.ID.ToString())
                 {

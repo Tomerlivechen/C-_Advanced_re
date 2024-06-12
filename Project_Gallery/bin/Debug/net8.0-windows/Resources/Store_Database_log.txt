@@ -121,3 +121,37 @@ ID: , Item Name: , Main Category:Food , Secondery Category:Sea Food , Amount:0 ,
 ID: , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 amount edited ___ 2024-06-11
 ID: , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-11,Last Updater:1322 min-amount edited ___ 2024-06-11
 ID:fd86c152-7fb4-4674-8114-b931df61ed2b , Item Name:Smoked Salamon , Main Category:Food , Secondery Category:Sea Food , Amount:10000 , Min Amount:500 , Added Date:2024-06-11, LastUpdate:2024-06-11,Last Updater:1322 Added ___ 2024-06-11
+Manager Passwared Changed to attempted ___ 2024-06-12
+Manager Passwared failed ___ 2024-06-12
+ID: , Item Name: , Main Category:minerals , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:n Main Category edited ___ 2024-06-12
+ID: , Item Name: , Main Category:Sea Food , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:n Main Category edited ___ 2024-06-12
+ID: , Item Name:starfish , Main Category:Sea Food , Secondery Category: , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:n amount edited ___ 2024-06-12
+ID: , Item Name:starfish , Main Category:Sea Food , Secondery Category: , Amount:1000 , Min Amount:5000 , Added Date:, LastUpdate:2024-06-12,Last Updater:n min-amount edited ___ 2024-06-12
+ID:caa8cbca-95c7-498f-a969-3ac7d95ae550 , Item Name:starfish , Main Category:Sea Food , Secondery Category: , Amount:1000 , Min Amount:5000 , Added Date:2024-06-12, LastUpdate:2024-06-12,Last Updater:n Added ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+ID: , Name: , Start Date:2024-06-12 , End Date:2024-06-12 , Manager:False , Still Employed:False worker Let Go ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+ID:3333 , Name: , Start Date:2024-06-12 , End Date:2024-06-12 , Manager:False , Still Employed:False worker edited ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+ID:5555 , Name:n , Start Date:2024-06-12 , End Date: , Manager:True , Still Employed:True worker edited ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+ID:12345 , Name:nn , Start Date:2024-06-12 , End Date: , Manager:True , Still Employed:True worker edited ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+Manager Passwared used ___ 2024-06-12
+ID:7777 , Name:ttt , Start Date:2024-06-12 , End Date: , Manager:False , Still Employed:True worker added ___ 2024-06-12
+ID: , Item Name: , Main Category:Electronics , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Main Category edited ___ 2024-06-12
+ID: , Item Name: , Main Category:Electronics , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Main Category edited ___ 2024-06-12
+ID: , Item Name: , Main Category:Electronics , Secondery Category:gold , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Secondery Category edited ___ 2024-06-12
+ID: , Item Name: , Main Category:Electronics , Secondery Category:gold , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Main Category edited ___ 2024-06-12
+ID: , Item Name: , Main Category:Electronics , Secondery Category:gold , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Secondery Category edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Main Category edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Secondery Category edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 amount edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Main Category edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 Secondery Category edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 amount edited ___ 2024-06-12
+ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:2 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 min-amount edited ___ 2024-06-12
+ID:f74161f9-3c18-4049-9732-4d0b1f314b71 , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:2 , Added Date:2024-06-12, LastUpdate:2024-06-12,Last Updater:7777 Added ___ 2024-06-12
