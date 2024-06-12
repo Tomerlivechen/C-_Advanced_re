@@ -116,7 +116,7 @@ namespace Store_Database.Resources.Windows
         private void UpdateItem()
         {
             ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
-            if (!string.IsNullOrEmpty(Catagories1_text.Text) && !string.IsNullOrWhiteSpace(Catagories1_text.Text))
+            if (!string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text))
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
@@ -131,7 +131,7 @@ namespace Store_Database.Resources.Windows
             }
 
             ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
-            if (!string.IsNullOrEmpty(Catagories2_text.Text) && !string.IsNullOrWhiteSpace(Catagories2_text.Text))
+            if (!string.IsNullOrEmpty(Catagories2_text.Text) || !string.IsNullOrWhiteSpace(Catagories2_text.Text))
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
@@ -177,7 +177,7 @@ namespace Store_Database.Resources.Windows
         private void AddItem()
         {
              ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
-            if (!string.IsNullOrEmpty(Catagories1_text.Text) && !string.IsNullOrWhiteSpace(Catagories1_text.Text))
+            if (!string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text))
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
@@ -191,7 +191,7 @@ namespace Store_Database.Resources.Windows
             }
 
             ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
-            if (!string.IsNullOrEmpty(Catagories2_text.Text) && !string.IsNullOrWhiteSpace(Catagories2_text.Text))
+            if (!string.IsNullOrEmpty(Catagories2_text.Text) || !string.IsNullOrWhiteSpace(Catagories2_text.Text))
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
