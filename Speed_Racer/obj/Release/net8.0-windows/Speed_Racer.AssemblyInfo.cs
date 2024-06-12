@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Speed_Racer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faab9db7a60fe7ac994f27672f42fb3f210e2a58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c766cfad84a99c68f16fcfcd1e5dd52f5a5f50a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Speed_Racer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Speed_Racer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
