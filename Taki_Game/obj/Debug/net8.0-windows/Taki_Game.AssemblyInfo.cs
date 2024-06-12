@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Taki_Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1e5fc0ee89f5662716c65a4b699fd59eabf687a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a40ba961b231b9eac7cee59805c51d727d392039")]
 [assembly: System.Reflection.AssemblyProductAttribute("Taki_Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Taki_Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

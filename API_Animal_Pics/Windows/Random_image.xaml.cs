@@ -137,12 +137,15 @@ public partial class Random_image : Window
     }
     private void Save_image_Click(object sender, RoutedEventArgs e)
     {
-        GlobalVars.changes++;
-        Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
-        Status_Bar.Text = "Image saved To list";
-        GlobalVars.AddPic(animallistname, currentPic);
-        GlobalVars.SavePiclists();
+        if (currentPic.url != null)
+        {
+            GlobalVars.changes++;
+            Status_Bar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#74b8FC"));
+            Status_Bar.Text = "Image saved To list";
+            GlobalVars.AddPic(animallistname, currentPic);
+            GlobalVars.SavePiclists();
         }
+    }
     private void Close_Click(object sender, RoutedEventArgs e)
     {
         Close();
