@@ -214,18 +214,12 @@ namespace Speed_Racer.Windows
             {
                 if (start)
                 {
-                    timer1.Stop();
-                    timer1s.Stop();
-                    start = false;
-                    pause_screen.Visibility= Visibility.Visible;
+                    forcedPause();
                     return;
                 }
                 if (!start)
                 {
-                    timer1.Start();
-                    timer1s.Start();
-                    start = true;
-                    pause_screen.Visibility = Visibility.Collapsed;
+                    forcedUnpause();
                     return;
                 }
             }
@@ -239,7 +233,7 @@ namespace Speed_Racer.Windows
                 pause_screen.Visibility = Visibility.Visible;
         }
 
-        public void forcedupPause()
+        public void forcedUnpause()
         {
             timer1.Start();
             timer1s.Start();

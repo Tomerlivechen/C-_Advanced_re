@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65e849d324eb77f30a03be55089c0a340ee0b8d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faab9db7a60fe7ac994f27672f42fb3f210e2a58")]
 [assembly: System.Reflection.AssemblyProductAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PriorityDefiner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
