@@ -120,11 +120,11 @@ namespace Store_Database.Resources.Windows
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
-            else if (cat1BoxItem != null && !string.IsNullOrEmpty(cat1BoxItem.Tag.ToString()))
+            else if (cat1BoxItem != null)
             {
                 Item.ChangeCat1(cat1BoxItem.Tag.ToString());
             }
-            else if (string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
+            else if ((string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text)) && cat1BoxItem==null)
             {
                 MessageBox.Show("Main Catagory must be filled");
                 return;
@@ -135,11 +135,11 @@ namespace Store_Database.Resources.Windows
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
-            else if (cat2BoxItem != null && !string.IsNullOrEmpty(cat2BoxItem.Tag.ToString()))
+            else if (cat2BoxItem != null)
             {
                 Item.ChangeCat2(cat2BoxItem.Tag.ToString());
             }
-            else if (string.IsNullOrEmpty(Catagories2_text.Text) && cat2BoxItem==null)
+            else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
                 MessageBox.Show("Secondery Catagory must be filled");
                 return;
@@ -181,7 +181,7 @@ namespace Store_Database.Resources.Windows
             {
                 Item.ChangeCat1(Catagories1_text.Text);
             }
-            else if (cat1BoxItem!=null && !string.IsNullOrEmpty(cat1BoxItem.Tag.ToString()))
+            else if (cat1BoxItem!=null)
             {
                 Item.ChangeCat1(cat1BoxItem.Tag.ToString());
             }else if(string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
@@ -195,11 +195,11 @@ namespace Store_Database.Resources.Windows
             {
                 Item.ChangeCat2(Catagories2_text.Text);
             }
-            else if (cat2BoxItem!=null && !string.IsNullOrEmpty(cat2BoxItem.Tag.ToString()))
+            else if (cat2BoxItem!=null)
             {
                 Item.ChangeCat2(cat2BoxItem.Tag.ToString());
             }
-            else if (string.IsNullOrEmpty(Catagories2_text.Text) && cat2BoxItem==null)
+            else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
                 MessageBox.Show("Secondery Catagory must be filled");
                 return;

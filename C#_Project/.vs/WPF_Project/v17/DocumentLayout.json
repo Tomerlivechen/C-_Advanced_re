@@ -74,8 +74,7 @@
               "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
               "ViewState": "AQIAAHcAAAAAAAAAAAAewIsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:39:50.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T16:39:50.641Z"
             },
             {
               "$type": "Document",
@@ -110,7 +109,8 @@
               "RelativeToolTip": "..\\PrioratyDefiner\\windows\\TaskLists.xaml.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAowFEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T16:23:37.88Z"
+              "WhenOpened": "2024-06-12T16:23:37.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -142,7 +142,7 @@
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "ViewState": "AQIAAK4AAAAAAAAAAAAlwLoAAABFAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAuwH8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T14:55:03.502Z",
               "EditorCaption": ""
