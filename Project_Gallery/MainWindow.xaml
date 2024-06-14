@@ -9,6 +9,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="620"
         Name ="ProjectGallery">
+
+
     <Grid Name="Main_grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.1*"/>
@@ -29,12 +31,12 @@
 
 
         <StackPanel Grid.Row="2" Grid.Column="1">
-        <TextBlock Text="Project Gallery" TextAlignment="Center" FontSize="30"></TextBlock>
-        <TextBlock Text="These project represent some of my WPF works" TextAlignment="Center" FontSize="20"></TextBlock>
-        <WrapPanel Name="ProjectButtons" Margin="10" HorizontalAlignment="Center">
+            <TextBlock Text="Project Gallery" TextAlignment="Center" FontSize="30"></TextBlock>
+            <TextBlock Text="These project represent some of my WPF works" TextAlignment="Center" FontSize="20"></TextBlock>
+            <WrapPanel Name="ProjectButtons" Margin="10" HorizontalAlignment="Center">
 
-            
-        </WrapPanel>
-    </StackPanel>
+
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Window>

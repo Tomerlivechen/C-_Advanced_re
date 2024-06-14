@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Common_Classes.Common_Elements"
         mc:Ignorable="d"
         Icon="pack://application:,,,/Resources/Indexicon.ico"
-        Title="Input_box" Height="390" Width="800" Background="#008080">
-    <Grid>
+        Title="Input_box" Height="390" Width="800" 
+    WindowStyle="None"  AllowsTransparency="True" Background="Transparent">
+    <Border CornerRadius="25" BorderBrush="Transparent" BorderThickness="2" Padding="6" Background="#1F9991">
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -25,4 +27,5 @@
         </StackPanel>
         <Button Name="Submit" Grid.Row="2" Content="Submit" FontSize="30" HorizontalAlignment="Center" FontWeight="ExtraBold" FontStyle="Italic" VerticalAlignment="Center" Margin="0,10,0,10" Click="Submit_Click"/>
     </Grid>
+    </Border>
 </Window>

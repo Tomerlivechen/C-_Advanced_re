@@ -50,7 +50,7 @@ namespace Taki_Game.Resources.Classes
 
             if (initilize) {
                 var number_of_field = 1;
-                var title = $"Insert Name of player";
+                var title = $"Insert name of player {player.index}";
                 var Input_field = new Input_box_field();
                 Input_field.Input_label = "Enter name:";
                 Input_box input_Box;
@@ -61,7 +61,7 @@ namespace Taki_Game.Resources.Classes
                     input_Box.ShowDialog();
                     if (UniversalVars.inputBoxReturn == null)
                     {
-                        MessageBox.Show("What is your name?", "Name your player");
+                        MessageBox.Show($"What is the name of player {player.index}?", "Name your player");
                     }
                     if (UniversalVars.inputBoxReturn != null && players_list.Count>0)
                     {

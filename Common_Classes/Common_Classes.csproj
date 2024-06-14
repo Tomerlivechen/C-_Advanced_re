@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Back.png" />
     <None Remove="Resources\Error.png" />
     <None Remove="Resources\Indexicon.ico" />
     <None Remove="Resources\Tech_images\API.png" />
@@ -20,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Error.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

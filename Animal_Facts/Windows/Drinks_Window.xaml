@@ -44,7 +44,7 @@
                 <Label Grid.Row="0" Grid.Column="0" FontWeight="ExtraBlack" Name="Title" FontSize="25" Margin="5" Content="Title" VerticalAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
                 <Label Grid.Row="1" Grid.Column="0" FontWeight="ExtraBlack" FontSize="25" Margin="5" Content="Ingredients:" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="2" Grid.Column="0" Name="Ingredients" TextWrapping="Wrap" FontSize="25" Margin="5" Text="Ingredients:" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-                <Label Grid.Row="3" Grid.Column="0" FontWeight="ExtraBlack" Name="glass" FontSize="25" Margin="5" Content="Type Of Glass: " VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="3" Grid.Column="0" FontWeight="ExtraBlack" Name="glass" FontSize="25" Margin="5" Content="Type Of Glass: " VerticalAlignment="Center" Grid.ColumnSpan="3"/>
 
                 <Border Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" Background="#CE970B">
                     <Image  Name="picture" Margin="5,10,5,10" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="2"/>

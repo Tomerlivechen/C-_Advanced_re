@@ -39,6 +39,7 @@ namespace Taki_Game
         private void Close_Window(object? sender, EventArgs e)
         {
             GlobalVars.InitilizeAllParameters();
+            Game.players_list.Clear();
             GlobalVars.Win=true;
 
         }

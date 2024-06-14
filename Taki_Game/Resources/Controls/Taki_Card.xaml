@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Taki_Game.Resources.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="225" d:DesignWidth="150">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

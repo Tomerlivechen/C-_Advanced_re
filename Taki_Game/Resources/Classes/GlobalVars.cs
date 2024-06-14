@@ -129,6 +129,11 @@ namespace Taki_Game.Resources.Classes
             lastCardInStack.notStack = false;
             lastCardInStack.VisibleImage = lastCardInStack.Image;
             lastCardInStack.Player = 0;
+            if (first)
+            {
+                nextPlayer();
+                return;
+            }
             removeCardfromPlayer(nextcard);
             if (lastCardInStack.val == "Taki")
             {
@@ -268,6 +273,7 @@ namespace Taki_Game.Resources.Classes
         }
         public static void InitilizeAllParameters()
         {
+            first = true;
             revers = false;
             TakiActive = false;
             Plus2Active = false;
@@ -281,6 +287,7 @@ namespace Taki_Game.Resources.Classes
 
         }
         public static bool revers { get; set; } = false;
+        public static bool first { get; set; } =true;
         public static bool TakiActive { get; set; } = true;
         public static string TakiColor { get; set; }
         public static bool Plus2Active { get; set; } = false;
@@ -309,13 +316,14 @@ namespace Taki_Game.Resources.Classes
         public static int player = 0;
         public static void nextPlayer(bool skip = false)
         {
-            if (player == 0)
+            if (first)
             {
+                first = false;
                 player = 1;
                 playerTurnMessage();
                 return;
             }
-            int index = 0;
+            int index;
             if (revers)
             {
                 index = -1;

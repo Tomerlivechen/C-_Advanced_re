@@ -52,5 +52,10 @@ namespace Common_Classes.Common_Elements
             Run_project.Click += (sender, e) => Open_panal_data.Run();
 
         }
+
+        private void Back_click(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
     }
 }
