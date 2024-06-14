@@ -1,4 +1,5 @@
-﻿using Store_Database.Resources.Classes;
+﻿using Common_Classes.Classes;
+using Store_Database.Resources.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -83,13 +84,13 @@ namespace Store_Database.Resources.Windows
                 if (AddorEdit == "Edit" && ID_text.Text != Import_user.ID.ToString())
                 {
                     Static_Data.tempUser = Import_user;
-                    Static_Data.tempUser2 = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
+                    Static_Data.tempUser2 = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text.FirstCapitalMulti(), StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
                     Close();
                     return;
                 }
                 if (AddorEdit == "Edit" && ID_text.Text == Import_user.ID.ToString())
                 {
-                    Static_Data.tempUser = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text, StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
+                    Static_Data.tempUser = new Users() { Index = Import_user.Index, ID = ID_text.Text, Name = Name_text.Text.FirstCapitalMulti(), StartDate = Start_text.Text, StillEmployed = Still_Check.IsChecked ?? false, Manager = Manager_Check.IsChecked ?? false, EndDate = End_text.Text };
                     Close();
                     return;
                 }
@@ -107,7 +108,7 @@ namespace Store_Database.Resources.Windows
                     }
                     if (isRepeatID == false)
                     {
-                        Static_Data.tempUser = new Users(Name_text.Text, ID_text.Text, true, Manager_Check.IsChecked ?? false, Static_Data.ShopWorkors.Count());
+                        Static_Data.tempUser = new Users(Name_text.Text.FirstCapitalMulti(), ID_text.Text, true, Manager_Check.IsChecked ?? false, Static_Data.ShopWorkors.Count());
                         Close();
                         return;
                     }

@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Common_Classes.Classes;
+
 namespace Store_Database.Resources.Windows
 {
     /// <summary>
@@ -118,7 +120,7 @@ namespace Store_Database.Resources.Windows
             ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text))
             {
-                Item.ChangeCat1(Catagories1_text.Text);
+                Item.ChangeCat1(Catagories1_text.Text.FirstCapitalMulti());
             }
             else if (cat1BoxItem != null)
             {
@@ -133,7 +135,7 @@ namespace Store_Database.Resources.Windows
             ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories2_text.Text) || !string.IsNullOrWhiteSpace(Catagories2_text.Text))
             {
-                Item.ChangeCat2(Catagories2_text.Text);
+                Item.ChangeCat2(Catagories2_text.Text.FirstCapitalMulti());
             }
             else if (cat2BoxItem != null)
             {
@@ -147,7 +149,7 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text))
             {
-                Item.ItemName = ItemName_text.Text;
+                Item.ItemName = ItemName_text.Text.FirstCapitalMulti();
             }
 
             if (double.TryParse(Amount_text.Text, out double amount))
@@ -179,7 +181,7 @@ namespace Store_Database.Resources.Windows
              ComboBoxItem? cat1BoxItem = Catagories1.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text))
             {
-                Item.ChangeCat1(Catagories1_text.Text);
+                Item.ChangeCat1(Catagories1_text.Text.FirstCapitalMulti());
             }
             else if (cat1BoxItem!=null)
             {
@@ -193,7 +195,7 @@ namespace Store_Database.Resources.Windows
             ComboBoxItem? cat2BoxItem = Catagories2.SelectedItem as ComboBoxItem;
             if (!string.IsNullOrEmpty(Catagories2_text.Text) || !string.IsNullOrWhiteSpace(Catagories2_text.Text))
             {
-                Item.ChangeCat2(Catagories2_text.Text);
+                Item.ChangeCat2(Catagories2_text.Text.FirstCapitalMulti());
             }
             else if (cat2BoxItem!=null)
             {
@@ -208,7 +210,7 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text) )
             {
-                Item.ItemName = ItemName_text.Text;
+                Item.ItemName = ItemName_text.Text.FirstCapitalMulti();
             }
             else
             {

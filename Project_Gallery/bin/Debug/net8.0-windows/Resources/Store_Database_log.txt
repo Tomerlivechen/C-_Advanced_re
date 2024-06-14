@@ -155,3 +155,27 @@ ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold 
 ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 amount edited ___ 2024-06-12
 ID: , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:2 , Added Date:, LastUpdate:2024-06-12,Last Updater:7777 min-amount edited ___ 2024-06-12
 ID:f74161f9-3c18-4049-9732-4d0b1f314b71 , Item Name:gold wire , Main Category:Electronics , Secondery Category:gold , Amount:1000 , Min Amount:2 , Added Date:2024-06-12, LastUpdate:2024-06-12,Last Updater:7777 Added ___ 2024-06-12
+ID: , Item Name: , Main Category:Food , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 Main Category edited ___ 2024-06-14
+ID: , Item Name: , Main Category:Food , Secondery Category:Sea food , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 Secondery Category edited ___ 2024-06-14
+ID: , Item Name:Crab , Main Category:Food , Secondery Category:Sea food , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 amount edited ___ 2024-06-14
+ID: , Item Name:Crab , Main Category:Food , Secondery Category:Sea food , Amount:1000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 min-amount edited ___ 2024-06-14
+ID:b0bf112c-0944-4423-98aa-86c7d640d6d3 , Item Name:Crab , Main Category:Food , Secondery Category:Sea food , Amount:1000 , Min Amount:500 , Added Date:2024-06-14, LastUpdate:2024-06-14,Last Updater:7777 Added ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+ID:8888 , Name:tttt , Start Date:2024-06-14 , End Date: , Manager:False , Still Employed:True worker added ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+ID:6666 , Name:Tttt , Start Date:2024-06-14 , End Date: , Manager:False , Still Employed:True worker added ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+ID:4444 , Name:TttCcc , Start Date:2024-06-14 , End Date: , Manager:False , Still Employed:True worker added ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
+ID:1357 , Name:Ggg Rrrr  , Start Date:2024-06-14 , End Date: , Manager:False , Still Employed:True worker added ___ 2024-06-14
+ID: , Item Name: , Main Category:Dog Toys  , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 Main Category edited ___ 2024-06-14
+ID: , Item Name: , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 Secondery Category edited ___ 2024-06-14
+ID: , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:10000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 amount edited ___ 2024-06-14
+ID: , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:10000 , Min Amount:5000 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 min-amount edited ___ 2024-06-14
+ID:c0a68b9a-8351-41a7-9f37-ea1f17faec8d , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:10000 , Min Amount:5000 , Added Date:2024-06-14, LastUpdate:2024-06-14,Last Updater:7777 Added ___ 2024-06-14
+Manager Passwared used ___ 2024-06-14
