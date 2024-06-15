@@ -13,6 +13,7 @@ using System.Windows.Threading;
 using Taki_Game.Resources.Controls;
 using static System.Net.Mime.MediaTypeNames;
 using Taki_Game.Resources.Classes;
+using System;
 namespace Taki_Game
 {
     /// <summary>
@@ -74,6 +75,8 @@ namespace Taki_Game
                 setPlayer = GlobalVars.player;
                 UpdateCardSet(Game.players_list[GlobalVars.player - 1]);
                 player_num.Content += Game.players_list[GlobalVars.player - 1].name;
+                player_num.Content += $" {Game.players_list[GlobalVars.player - 1].DeckInHand.Count()} Cards";
+                
             }
         }
         public void updatePlus2() { 
@@ -148,6 +151,23 @@ namespace Taki_Game
         private void Close_End_turn(object sender, RoutedEventArgs e)
         {
             GlobalVars.nextPlayer();
+        }
+
+        private void Sort_Color(object sender, RoutedEventArgs e)
+        {
+            Game.players_list[GlobalVars.player - 1].DeckInHand = Game.players_list[GlobalVars.player - 1].DeckInHand.OrderBy(p => p.color).ToList();
+            
+
+        }
+
+        private void Sort_Both(object sender, RoutedEventArgs e)
+        {
+            Game.players_list[GlobalVars.player - 1].DeckInHand = Game.players_list[GlobalVars.player - 1].DeckInHand.OrderBy(p => p.color).ThenBy(p => p.val).ToList();
+        }
+
+        private void Sort_value(object sender, RoutedEventArgs e)
+        {
+            Game.players_list[GlobalVars.player - 1].DeckInHand = Game.players_list[GlobalVars.player - 1].DeckInHand.OrderBy(p => p.val).ToList();
         }
     }
 }

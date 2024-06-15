@@ -83,31 +83,31 @@ namespace Common_Classes.Common_Elements
             switch (number_of_field)
             {
                 case 3:
-                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) && !string.IsNullOrWhiteSpace(Field1_TB.Text))
                     {
                         fields.Add(Field1_TB.Text.FirstCapital());
                     }
-                    if (!string.IsNullOrEmpty(Field2_TB.Text) || !string.IsNullOrWhiteSpace(Field2_TB.Text))
+                    if (!string.IsNullOrEmpty(Field2_TB.Text) && !string.IsNullOrWhiteSpace(Field2_TB.Text))
                     {
                         fields.Add(Field2_TB.Text.FirstCapital());
                     }
-                    if (!string.IsNullOrEmpty(Field3_TB.Text) || !string.IsNullOrWhiteSpace(Field3_TB.Text))
+                    if (!string.IsNullOrEmpty(Field3_TB.Text) && !string.IsNullOrWhiteSpace(Field3_TB.Text))
                     {
                         fields.Add(Field3_TB.Text.FirstCapital());
                     }
                     break;
                 case 2:
-                    if (!string.IsNullOrEmpty(Field2_TB.Text) || !string.IsNullOrWhiteSpace(Field2_TB.Text))
+                    if (!string.IsNullOrEmpty(Field2_TB.Text) && !string.IsNullOrWhiteSpace(Field2_TB.Text))
                     {
                         fields.Add(Field1_TB.Text.FirstCapital());
                     }
-                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) && !string.IsNullOrWhiteSpace(Field1_TB.Text))
                     {
                         fields.Add(Field2_TB.Text.FirstCapital());
                     }
                     break;
                 case 1:
-                    if (!string.IsNullOrEmpty(Field1_TB.Text) || !string.IsNullOrWhiteSpace(Field1_TB.Text))
+                    if (!string.IsNullOrEmpty(Field1_TB.Text) && !string.IsNullOrWhiteSpace(Field1_TB.Text))
                     {
                         fields.Add(Field1_TB.Text.FirstCapital());
                     }
