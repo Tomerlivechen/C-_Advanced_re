@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F060B8-7479-4643-8AC3-E4E66CA8F523}|..\\API_Animal_Pics\\API_Animal_Pics.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\api_animal_pics\\windows\\random_image.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A54A7E11-3B80-400C-ABD1-22ABC34FE89A}|..\\Taki_Game\\Taki_Game.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\taki_game\\resources\\classes\\globalvars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,7 +64,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,6 +73,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Random_image.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T17:00:54.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Random_image.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "RelativeDocumentMoniker": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "RelativeToolTip": "..\\API_Animal_Pics\\Windows\\Random_image.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-15T16:57:40.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Microsoft.WinFX.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
@@ -76,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "TakiCard.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\TakiCard.cs",
@@ -88,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Player_class.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Player_class.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Player_class.cs",
@@ -100,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\Game.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\Game.cs",
@@ -112,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GlobalVars.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Classes\\GlobalVars.cs",
@@ -125,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml.cs",
@@ -137,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\MainWindow.xaml",
@@ -148,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Input_box.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Input_box.xaml",
               "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Input_box.xaml",
@@ -159,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IndexWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml.cs",
@@ -171,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Taki_Card.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Controls\\Taki_Card.xaml",
@@ -182,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IndexWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
               "RelativeDocumentMoniker": "..\\Taki_Game\\Resources\\Windows\\IndexWindow.xaml",
@@ -193,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Window.cs",
               "DocumentMoniker": "C:\\Users\\Tomer Chen\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs",
               "ToolTip": "C:\\Users\\Tomer Chen\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs [Read Only]",
@@ -204,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Project_Gallery\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\Project_Gallery\\MainWindow.xaml",
@@ -215,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Drinks_Window.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\Windows\\Drinks_Window.xaml",
               "RelativeDocumentMoniker": "..\\Animal_Facts\\Windows\\Drinks_Window.xaml",
@@ -226,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Drinks_Classes.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Animal_Facts\\Classes\\Drinks_Classes.cs",
               "RelativeDocumentMoniker": "..\\Animal_Facts\\Classes\\Drinks_Classes.cs",
@@ -238,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Opening_panel_window.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",
               "RelativeDocumentMoniker": "..\\Common_Classes\\Common_Elements\\Opening_panel_window.xaml",

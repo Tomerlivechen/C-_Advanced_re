@@ -40,6 +40,7 @@ public partial class Random_image : Window
         InitializeImages();
         Closed += Window_Closed;
         timer3.Tick += Timed_03_Actions;
+        List_Lable.Content = $"Add images to list: {animallistname}";
         timer3.Start();
     }
     public void InitializeImages()

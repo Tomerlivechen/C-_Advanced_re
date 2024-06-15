@@ -18,6 +18,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="3*"/>
             <RowDefinition/>
             <RowDefinition Height="0.4*"/>
@@ -31,15 +32,15 @@
 
 
         </Menu>
-
-        <TextBlock Name="Status_Bar" Background="#FBFBFB"  Grid.Column="0"  Grid.Row="4"   Grid.ColumnSpan="6"  FontSize="20"/>
-        <Button Grid.Column="0"  Grid.Row="1"  Content="Get a cat pic" FontSize="24" Click="Button_ClickAsync" Tag="Cat" Height="35" VerticalAlignment="Center" Margin="5"/>
-        <Button Grid.Column="1"  Grid.Row="1"  Content="Get a dog pic" FontSize="24" Click="Button_ClickAsync" Tag="Dog" Height="35" VerticalAlignment="Center" Margin="5"/>
-        <Button Grid.Column="2"  Grid.Row="1"  Content="Get a fox pic" FontSize="24" Click="Button_ClickAsync" Tag="Fox" Height="35" VerticalAlignment="Center" Margin="5"/>
-        <Button Grid.Column="3"  Grid.Row="1"  Content="Get a Bear pic" FontSize="24" Click="Button_ClickAsync" Tag="Bear" Height="35" VerticalAlignment="Center" Margin="5,5,5,5"/>
+        <Label Grid.Column="1" Name="List_Lable" Grid.Row="1" Grid.ColumnSpan="2" Content="Add images to list:" FontSize="24" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock Name="Status_Bar" Background="#FBFBFB"  Grid.Column="0"  Grid.Row="5"   Grid.ColumnSpan="6"  FontSize="20"/>
+        <Button Grid.Column="0"  Grid.Row="2"  Content="Get a cat pic" FontSize="24" Click="Button_ClickAsync" Tag="Cat" Height="35" VerticalAlignment="Center" Margin="5"/>
+        <Button Grid.Column="1"  Grid.Row="2"  Content="Get a dog pic" FontSize="24" Click="Button_ClickAsync" Tag="Dog" Height="35" VerticalAlignment="Center" Margin="5"/>
+        <Button Grid.Column="2"  Grid.Row="2"  Content="Get a fox pic" FontSize="24" Click="Button_ClickAsync" Tag="Fox" Height="35" VerticalAlignment="Center" Margin="5"/>
+        <Button Grid.Column="3"  Grid.Row="2"  Content="Get a Bear pic" FontSize="24" Click="Button_ClickAsync" Tag="Bear" Height="35" VerticalAlignment="Center" Margin="5,5,5,5"/>
         
-        <Image Name="Animal_pic"  Grid.Column="1"  Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="5"/>
-        <Image Name="Loading_pic" Grid.Column="1"  Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="5" Visibility="Hidden" />
-        <Button Grid.Column="1"  Grid.Row="3"  Content="Save to my list" FontSize="24" Click="Save_image_Click" Tag="Bear" Height="35" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="60,5,60,5"/>
+        <Image Name="Animal_pic"  Grid.Column="1"  Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="5"/>
+        <Image Name="Loading_pic" Grid.Column="1"  Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="5" Visibility="Hidden" />
+        <Button Grid.Column="1"  Grid.Row="4"  Content="Save to my list" FontSize="24" Click="Save_image_Click" Height="35" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="60,5,60,5"/>
     </Grid>
 </Window>
