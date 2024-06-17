@@ -16,7 +16,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Store_Database.Resources.Classes;
 using Common_Classes.Classes;
 using Common_Classes.Common_Elements;
 using Store_Database.Resources.Windows;
