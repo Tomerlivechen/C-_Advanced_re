@@ -13,7 +13,7 @@ namespace Store_Database.Resources.Classes
     {
         public static List<Categories> MainCatagories { get; set; } 
         public static List<Categories> SeconderyCatagories { get; set; }
-        public static List<DB_Item>? BDItems { get; set; } = new List<DB_Item>();
+      public static List<DB_Item>? DB_Items { get; set; } = new List<DB_Item>();
         public static List<Users>? ShopWorkors { get; set; } = new List<Users>();
         public static DB_Item? BDItem { get; set; } = new DB_Item();
         public static Users? tempUser { get; set; } = new Users();
@@ -21,11 +21,11 @@ namespace Store_Database.Resources.Classes
         public static string ManagerPassward { get; set; } = "0000";
         public static string ManagerEditPassward { get; set; } = "0101";
         public static string filePath { get; set; } = "Resources/Store_Database_Passcode.json";
-        public static void LoadStoredDataBase()
-        {
-            string RawJSON = File.ReadAllText(filePath);
-            BDItems = JsonSerializer.Deserialize<List<DB_Item>>(RawJSON);
-        }
+  //      public static void LoadStoredDataBase()
+    //    {
+    //        string RawJSON = File.ReadAllText(filePath);
+    //        BDItems = JsonSerializer.Deserialize<List<DB_Item>>(RawJSON);
+    //    }
         public static void LoadManagerPassward()
         {
             if (!File.Exists(filePath))

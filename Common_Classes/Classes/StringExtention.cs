@@ -21,11 +21,13 @@ namespace Common_Classes.Classes
 
         public static string FirstCapitalMulti(this string input)
         {
+            
             string output = "";
             if (string.IsNullOrEmpty(input))
             {
                 return output;
             }
+            input=input.Trim();
             string[] pateredInput = input.Split(' ');
             for (int i = 0; i < pateredInput.Length;i++)
             {

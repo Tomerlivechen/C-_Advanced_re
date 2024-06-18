@@ -3,10 +3,40 @@
   "WorkspaceRootPath": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\C#_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\common_classes\\classes\\stringextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add_edituserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\userswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\indexwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add\u0026editwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\db_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7AD877-3450-46D2-835C-8F5AB7844E96}|..\\Common_Classes\\Common_Classes.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\common_classes\\classes\\stringextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\static_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\indexwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\api_static.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\classes\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7DA05FD-3102-4F22-879B-83FE42F3E3B8}|..\\Store_Database\\Store_Database.csproj|d:\\users\\tomer chen\\github\\c#_advanced_re\\store_database\\resources\\windows\\add\u0026editwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -22,7 +52,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,54 +60,181 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StringExtention.cs",
-              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\StringExtention.cs",
-              "RelativeDocumentMoniker": "..\\Common_Classes\\Classes\\StringExtention.cs",
-              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\StringExtention.cs",
-              "RelativeToolTip": "..\\Common_Classes\\Classes\\StringExtention.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCAAAAAXAAAA",
+              "DocumentIndex": 1,
+              "Title": "Add_EditUserWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add_EditUserWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T16:16:56.933Z",
+              "WhenOpened": "2024-06-18T17:34:44.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "IndexWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAjwKkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:43:50.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\UsersWindow.xaml.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAnwLAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:37:56.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Users.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Users.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Users.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Users.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAIwDEAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:35:41.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DB_Item.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\DB_Item.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\DB_Item.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\DB_Item.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\DB_Item.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAuwEoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:34:12.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Add\u0026EditWindow.xaml.cs",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
               "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAAwI0AAABEAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAnwHAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T16:10:58.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Log.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Log.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Log.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Log.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:42:55.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StringExtention.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\StringExtention.cs",
+              "RelativeDocumentMoniker": "..\\Common_Classes\\Classes\\StringExtention.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Common_Classes\\Classes\\StringExtention.cs",
+              "RelativeToolTip": "..\\Common_Classes\\Classes\\StringExtention.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAlwB0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:16:56.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Static_Data.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Static_Data.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Static_Data.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Static_Data.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Static_Data.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:55:32.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IndexWindow.xaml",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\IndexWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-18T17:07:35.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Security.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Security.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\Security.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\Security.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\Security.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:58:37.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "API_Static.cs",
+              "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\API_Static.cs",
+              "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Classes\\API_Static.cs",
+              "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Classes\\API_Static.cs",
+              "RelativeToolTip": "..\\Store_Database\\Resources\\Classes\\API_Static.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:29:55.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Add\u0026EditWindow.xaml",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
               "RelativeDocumentMoniker": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
               "RelativeToolTip": "..\\Store_Database\\Resources\\Windows\\Add\u0026EditWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-18T16:10:52.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T16:10:52.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "API_Animal_Pics",
+              "DocumentIndex": 13,
+              "Title": "API_Animal_Pics.csproj",
               "DocumentMoniker": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
               "RelativeDocumentMoniker": "..\\API_Animal_Pics\\API_Animal_Pics.csproj",
               "ToolTip": "D:\\Users\\Tomer Chen\\GitHub\\C#_Advanced_re\\API_Animal_Pics\\API_Animal_Pics.csproj",
               "RelativeToolTip": "..\\API_Animal_Pics\\API_Animal_Pics.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-18T16:07:00.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T16:07:00.167Z"
             }
           ]
         }

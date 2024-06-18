@@ -20,6 +20,7 @@ using Common_Classes.Classes;
 using Common_Classes.Common_Elements;
 using Store_Database.Resources.Windows;
 using System.IO;
+using System.Text.Json;
 namespace Store_Database
 {
     /// <summary>
@@ -67,7 +68,7 @@ namespace Store_Database
             Static_Data.ShopWorkors = data;
         }
 
-        public async Task<List<DB_Item>> GetUsersAsync()
+        public async Task<List<DB_Item>> GetItemsAsync()
         {
             var response = await client.GetAsync(apiResource);
             response.EnsureSuccessStatusCode();
@@ -76,9 +77,10 @@ namespace Store_Database
         }
         public async void Load_Button_Click(object sender, RoutedEventArgs e)
         {
-            var apiReponse = await GetUsersAsync();
+            var apiReponse = await GetItemsAsync();
             RawProductList = apiReponse;
             resultsDataGrid.ItemsSource = RawProductList;
+            Static_Data.DB_Items = RawProductList;
             getComboBoxes(apiReponse);
             foreach (Button button in buttonList)
             {
@@ -122,7 +124,7 @@ namespace Store_Database
             if (Static_Data.BDItem != null)
             {
                 await client.PostAsJsonAsync(apiResource, Static_Data.BDItem);
-                Log.addToLog($"{Static_Data.BDItem.ToString()} Added");
+                Log.addToLog($"{Static_Data.BDItem.ToString()} ,Added");
                 Static_Data.BDItem = null;
                 Load_Button_Click(sender, e);
                 MessageBox.Show("Item Added", "Success");
@@ -142,7 +144,7 @@ namespace Store_Database
                     if (Security.checkManagerCode())
                     {
                         await client.DeleteAsync($"{apiResource}/{itemToDelete.Index}");
-                        Log.addToLog($"{itemToDelete.ToString()} Deleted");
+                        Log.addToLog($"{itemToDelete.ToString()} ,Deleted");
                         Load_Button_Click(sender, e);
                         MessageBox.Show("Item deleted", "Success");
                     }
@@ -165,10 +167,12 @@ namespace Store_Database
                 if (Static_Data.BDItem != null)
                 {
                     await client.PutAsJsonAsync($"{apiResource}/{Static_Data.BDItem.Index}", Static_Data.BDItem);
-                    Log.addToLog($"{Static_Data.BDItem.ToString()} Edited");
+                    Log.addToLog($"{Static_Data.BDItem.ToString()} ,Edited");
                     Static_Data.BDItem = null;
                     Load_Button_Click(sender, e);
                     MessageBox.Show("Item Edited", "Success");
+                    
+
                 }
                 else
                 {
@@ -310,7 +314,7 @@ namespace Store_Database
             {
                 File.AppendAllText($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{item.ToString()}\n");
             }
-            Log.addToLog($"Report {UniversalVars.inputBoxReturn[0].ToString()} Generated");
+            Log.addToLog($"Report {UniversalVars.inputBoxReturn[0].ToString()} ,Generated");
             UniversalVars.inputBoxReturn = null;
         }
     }

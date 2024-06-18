@@ -47,7 +47,7 @@ namespace Store_Database.Resources.Windows
                 {
                     await client.DeleteAsync($"{apiUsers}/{Static_Data.tempUser.Index}");
                     await client.PostAsJsonAsync(apiUsers, Static_Data.tempUser2);
-                    Log.addToLog($"{Static_Data.tempUser2.ToString()} worker edited");
+                    Log.addToLog($"{Static_Data.tempUser2.ToString()} ,Worker ,Edited");
                     MessageBox.Show("Worker edited", "Success");
                     Static_Data.tempUser = null;
                     Static_Data.tempUser2 = null;
@@ -57,7 +57,7 @@ namespace Store_Database.Resources.Windows
                 if (Static_Data.tempUser2 == null && Static_Data.tempUser != null)
                 {
                     await client.PutAsJsonAsync($"{apiUsers}/{Static_Data.tempUser.Index}", Static_Data.tempUser);
-                    Log.addToLog($"{Static_Data.tempUser.ToString()} worker edited");
+                    Log.addToLog($"{Static_Data.tempUser.ToString()} ,Worker ,Edited");
                     MessageBox.Show("Worker edited", "Success");
                     Static_Data.tempUser = null ;
                     Static_Data.tempUser2 = null;
@@ -89,7 +89,7 @@ namespace Store_Database.Resources.Windows
             if (Static_Data.tempUser != null)
             {
                 await client.PostAsJsonAsync(apiUsers, Static_Data.tempUser);
-                Log.addToLog($"{Static_Data.tempUser.ToString()} worker added");
+                Log.addToLog($"{Static_Data.tempUser.ToString()} ,Worker ,Added");
                 Static_Data.tempUser = null;
                 MessageBox.Show("Worker added", "Success");
                 LoadUsers();
@@ -108,7 +108,7 @@ namespace Store_Database.Resources.Windows
                     Users user = UserGrid.SelectedItem as Users;
                     user.LetGo();
                     await client.PutAsJsonAsync($"{apiUsers}/{user.Index}", user);
-                    Log.addToLog($"{user.ToString()} worker Let Go");
+                    Log.addToLog($"{user.ToString()} ,Worker , Let Go");
                     LoadUsers();
                 }
             }
@@ -165,16 +165,16 @@ namespace Store_Database.Resources.Windows
             } while (UniversalVars.inputBoxReturn == null);
 
 
-            if (!Directory.Exists("@Reports/"))
+            if (!Directory.Exists("Reports/"))
             {
-                Directory.CreateDirectory("@Reports/");
+                Directory.CreateDirectory("Reports/");
             }
-            File.AppendAllText($"@Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{UniversalVars.inputBoxReturn[0].ToString()}____{DateTime.Now}\n");
+            File.AppendAllText($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{UniversalVars.inputBoxReturn[0].ToString()}____{DateTime.Now}\n");
             foreach (Users item in report_list)
             {
-                File.AppendAllText($"@Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{item.ToString()}\n");
+                File.AppendAllText($"Reports/{UniversalVars.inputBoxReturn[0].ToString()}.txt", $"{item.ToString()}\n");
             }
-            Log.addToLog($"@Report {UniversalVars.inputBoxReturn[0].ToString()} Generated");
+            Log.addToLog($"Report {UniversalVars.inputBoxReturn[0].ToString()} , Generated");
             UniversalVars.inputBoxReturn = null;
         }
     }

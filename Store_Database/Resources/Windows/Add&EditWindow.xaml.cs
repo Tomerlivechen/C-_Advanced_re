@@ -23,6 +23,7 @@ namespace Store_Database.Resources.Windows
     {
         DB_Item Item = new DB_Item();
         string AddorEdit;
+        bool item_Valid=false;
         public Add_EditWindow(DB_Item dB_Item, string addOrEdit)
         {
             Item = dB_Item;
@@ -47,7 +48,7 @@ namespace Store_Database.Resources.Windows
 
         private void Add_EditWindow_Closed(object? sender, EventArgs e)
         {
-            if (!ValidateAndSetLastUpdater())
+            if (!item_Valid)
             {
                 Static_Data.BDItem = null;
             }
@@ -124,7 +125,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat1BoxItem != null)
             {
-                Item.ChangeCat1(cat1BoxItem.Tag.ToString().TrimEnd());
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString().Trim());
             }
             else if ((string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text)) && cat1BoxItem==null)
             {
@@ -139,7 +140,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat2BoxItem != null)
             {
-                Item.ChangeCat2(cat2BoxItem.Tag.ToString().TrimEnd());
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString().Trim());
             }
             else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
@@ -149,7 +150,7 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text))
             {
-                Item.ItemName = ItemName_text.Text.FirstCapitalMulti().TrimEnd();
+                Item.ItemName = ItemName_text.Text.FirstCapitalMulti().Trim();
             }
 
             if (double.TryParse(Amount_text.Text, out double amount))
@@ -173,6 +174,7 @@ namespace Store_Database.Resources.Windows
             }
 
             Static_Data.BDItem = Item;
+            item_Valid = true;
             Close();
         }
 
@@ -185,7 +187,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat1BoxItem!=null)
             {
-                Item.ChangeCat1(cat1BoxItem.Tag.ToString().TrimEnd());
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString().Trim());
             }else if(string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
             {
                 MessageBox.Show("Main Catagory must be filled");
@@ -199,7 +201,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat2BoxItem!=null)
             {
-                Item.ChangeCat2(cat2BoxItem.Tag.ToString().TrimEnd());
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString().Trim());
             }
             else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
@@ -210,7 +212,17 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text) )
             {
-                Item.ItemName = ItemName_text.Text.FirstCapitalMulti().TrimEnd();
+                string Item_Name = ItemName_text.Text.FirstCapitalMulti().Trim();
+                foreach (DB_Item item in Static_Data.DB_Items)
+                {
+                    if (item.ItemName == Item_Name)
+                    {
+                        MessageBox.Show("Item alredy exists");
+                        return;
+                    }
+                }
+
+                Item.ItemName = Item_Name;
             }
             else
             {
@@ -238,6 +250,7 @@ namespace Store_Database.Resources.Windows
                 return;
             }
             Static_Data.BDItem = new DB_Item(Item.ItemName, Item.MainCategory, Item.SeconderyCategory, Item.Amount, Item.MinAmount, Item.LastUpdater);
+            item_Valid = true;
             Close();
         }
 

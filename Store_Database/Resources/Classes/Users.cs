@@ -47,7 +47,7 @@ namespace Store_Database.Resources.Classes
         public override string ToString()
         {
             string tostring;
-            tostring = $"ID:{ID} , Name:{Name} , Start Date:{StartDate} , End Date:{EndDate} , Manager:{Manager} , Still Employed:{StillEmployed}";
+            tostring = $"ID: {ID} , Name: {Name} , Start Date: {StartDate} , End Date: {EndDate} , Manager: {Manager} , Still Employed: {StillEmployed}";
             return tostring;
         }
     }

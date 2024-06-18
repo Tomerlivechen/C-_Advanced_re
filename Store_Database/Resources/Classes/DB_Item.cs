@@ -52,17 +52,17 @@ namespace Store_Database.Resources.Classes
         {
             Amount = amount;
             updateLastUpdate();
-            Log.addToLog($"{this.ToString()} amount edited");
+
         }
         public void UpdateMinAmount (double amount)
         {
             MinAmount = amount;
             updateLastUpdate();
-            Log.addToLog($"{this.ToString()} min-amount edited");
+
         }
         public override string ToString()
         {
-            string tostring = $"ID:{Id} , Item Name:{ItemName} , Main Category:{MainCategory} , Secondery Category:{SeconderyCategory} , Amount:{Amount} , Min Amount:{MinAmount} , Added Date:{AddedDate}, LastUpdate:{LastUpdate},Last Updater:{LastUpdater}";
+            string tostring = $"ID: {Id} , Item Name: {ItemName} , Main Category: {MainCategory} , Secondery Category: {SeconderyCategory} , Amount: {Amount} , Min Amount: {MinAmount} , Added Date: {AddedDate}, Last Update: {LastUpdate},Last Updater: {LastUpdater}";
             return tostring;
         }
         public void updateLastUpdate()
@@ -73,13 +73,11 @@ namespace Store_Database.Resources.Classes
         {
             MainCategory = catName;
             updateLastUpdate();
-            Log.addToLog($"{this.ToString()} Main Category edited");
         }
         public void ChangeCat2(string catName)
         {
             SeconderyCategory = catName;
             updateLastUpdate();
-            Log.addToLog($"{this.ToString()} Secondery Category edited");
         }
     }
 }
