@@ -179,3 +179,28 @@ ID: , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Che
 ID: , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:10000 , Min Amount:5000 , Added Date:, LastUpdate:2024-06-14,Last Updater:7777 min-amount edited ___ 2024-06-14
 ID:c0a68b9a-8351-41a7-9f37-ea1f17faec8d , Item Name:Squirrel Toy  , Main Category:Dog Toys  , Secondery Category:Chew Toys  , Amount:10000 , Min Amount:5000 , Added Date:2024-06-14, LastUpdate:2024-06-14,Last Updater:7777 Added ___ 2024-06-14
 Manager Passwared used ___ 2024-06-14
+ID: , Item Name: , Main Category:Food  , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Main Category edited ___ 2024-06-18
+ID: , Item Name: , Main Category:Food  , Secondery Category:Wheat Products  , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Secondery Category edited ___ 2024-06-18
+ID: , Item Name:Samolina  , Main Category:Food  , Secondery Category:Wheat Products  , Amount:1000 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 amount edited ___ 2024-06-18
+ID: , Item Name:Samolina  , Main Category:Food  , Secondery Category:Wheat Products  , Amount:1000 , Min Amount:500 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 min-amount edited ___ 2024-06-18
+ID:5915861a-7b1b-4c19-8873-87ce2c80f767 , Item Name:Samolina  , Main Category:Food  , Secondery Category:Wheat Products  , Amount:1000 , Min Amount:500 , Added Date:2024-06-18, LastUpdate:2024-06-18,Last Updater:7777 Added ___ 2024-06-18
+ID: , Item Name: , Main Category:Book  , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Main Category edited ___ 2024-06-18
+ID: , Item Name: , Main Category:Book  , Secondery Category:Adventure  , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Secondery Category edited ___ 2024-06-18
+ID: , Item Name:Jurassic Park , Main Category:Book  , Secondery Category:Adventure  , Amount:100 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 amount edited ___ 2024-06-18
+ID: , Item Name:Jurassic Park , Main Category:Book  , Secondery Category:Adventure  , Amount:100 , Min Amount:5 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 min-amount edited ___ 2024-06-18
+ID:c7f2710f-c6b6-432f-9dfb-bf544dc996e0 , Item Name:Jurassic Park , Main Category:Book  , Secondery Category:Adventure  , Amount:100 , Min Amount:5 , Added Date:2024-06-18, LastUpdate:2024-06-18,Last Updater:7777 Added ___ 2024-06-18
+ID: , Item Name: , Main Category:Book  , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Main Category edited ___ 2024-06-18
+ID: , Item Name: , Main Category:Book  , Secondery Category:Horror  , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Secondery Category edited ___ 2024-06-18
+ID: , Item Name:It , Main Category:Book  , Secondery Category:Horror  , Amount:100 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 amount edited ___ 2024-06-18
+ID: , Item Name:It , Main Category:Book  , Secondery Category:Horror  , Amount:100 , Min Amount:5 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 min-amount edited ___ 2024-06-18
+ID:4958df1b-3b22-4174-b8a5-22493bee8f83 , Item Name:It , Main Category:Book  , Secondery Category:Horror  , Amount:100 , Min Amount:5 , Added Date:2024-06-18, LastUpdate:2024-06-18,Last Updater:7777 Added ___ 2024-06-18
+ID: , Item Name: , Main Category:VideoGame , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Main Category edited ___ 2024-06-18
+ID: , Item Name: , Main Category:VideoGame , Secondery Category:Action , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Secondery Category edited ___ 2024-06-18
+ID: , Item Name:StarCraft , Main Category:VideoGame , Secondery Category:Action , Amount:100 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 amount edited ___ 2024-06-18
+ID: , Item Name:StarCraft , Main Category:VideoGame , Secondery Category:Action , Amount:100 , Min Amount:5 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 min-amount edited ___ 2024-06-18
+ID:894e2744-a2c5-41ff-84d2-4ff2f38927fb , Item Name:StarCraft , Main Category:VideoGame , Secondery Category:Action , Amount:100 , Min Amount:5 , Added Date:2024-06-18, LastUpdate:2024-06-18,Last Updater:7777 Added ___ 2024-06-18
+ID: , Item Name: , Main Category:Video Game , Secondery Category: , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Main Category edited ___ 2024-06-18
+ID: , Item Name: , Main Category:Video Game , Secondery Category:Computer Game , Amount:0 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 Secondery Category edited ___ 2024-06-18
+ID: , Item Name:Frogger , Main Category:Video Game , Secondery Category:Computer Game , Amount:100 , Min Amount:0 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 amount edited ___ 2024-06-18
+ID: , Item Name:Frogger , Main Category:Video Game , Secondery Category:Computer Game , Amount:100 , Min Amount:5 , Added Date:, LastUpdate:2024-06-18,Last Updater:7777 min-amount edited ___ 2024-06-18
+ID:ab559d16-c962-4dc3-b053-03dfcc7fa239 , Item Name:Frogger , Main Category:Video Game , Secondery Category:Computer Game , Amount:100 , Min Amount:5 , Added Date:2024-06-18, LastUpdate:2024-06-18,Last Updater:7777 Added ___ 2024-06-18

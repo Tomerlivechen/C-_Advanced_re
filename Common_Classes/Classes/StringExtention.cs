@@ -29,8 +29,11 @@ namespace Common_Classes.Classes
             string[] pateredInput = input.Split(' ');
             for (int i = 0; i < pateredInput.Length;i++)
             {
-               output+= char.ToUpper(pateredInput[i][0]) + pateredInput[i][1..] + " ";
-
+               output+= char.ToUpper(pateredInput[i][0]) + pateredInput[i][1..];
+                if (i < pateredInput.Length-1)
+                {
+                    output += " ";
+                }
                 
             }
             return output;

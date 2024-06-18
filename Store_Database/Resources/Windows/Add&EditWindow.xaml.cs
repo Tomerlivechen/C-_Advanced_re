@@ -124,7 +124,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat1BoxItem != null)
             {
-                Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString().TrimEnd());
             }
             else if ((string.IsNullOrEmpty(Catagories1_text.Text) || !string.IsNullOrWhiteSpace(Catagories1_text.Text)) && cat1BoxItem==null)
             {
@@ -139,7 +139,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat2BoxItem != null)
             {
-                Item.ChangeCat2(cat2BoxItem.Tag.ToString());
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString().TrimEnd());
             }
             else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
@@ -149,7 +149,7 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text))
             {
-                Item.ItemName = ItemName_text.Text.FirstCapitalMulti();
+                Item.ItemName = ItemName_text.Text.FirstCapitalMulti().TrimEnd();
             }
 
             if (double.TryParse(Amount_text.Text, out double amount))
@@ -185,7 +185,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat1BoxItem!=null)
             {
-                Item.ChangeCat1(cat1BoxItem.Tag.ToString());
+                Item.ChangeCat1(cat1BoxItem.Tag.ToString().TrimEnd());
             }else if(string.IsNullOrEmpty(Catagories1_text.Text) && cat1BoxItem==null)
             {
                 MessageBox.Show("Main Catagory must be filled");
@@ -199,7 +199,7 @@ namespace Store_Database.Resources.Windows
             }
             else if (cat2BoxItem!=null)
             {
-                Item.ChangeCat2(cat2BoxItem.Tag.ToString());
+                Item.ChangeCat2(cat2BoxItem.Tag.ToString().TrimEnd());
             }
             else if ((string.IsNullOrEmpty(Catagories2_text.Text) || string.IsNullOrWhiteSpace(Catagories2_text.Text)) && cat2BoxItem==null)
             {
@@ -210,7 +210,7 @@ namespace Store_Database.Resources.Windows
 
             if (!string.IsNullOrEmpty(ItemName_text.Text) && !string.IsNullOrWhiteSpace(ItemName_text.Text) )
             {
-                Item.ItemName = ItemName_text.Text.FirstCapitalMulti();
+                Item.ItemName = ItemName_text.Text.FirstCapitalMulti().TrimEnd();
             }
             else
             {
